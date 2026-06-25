@@ -29,6 +29,13 @@ export const es = {
     why: '¿Por qué?',
     noResults: 'Nada dentro de tu tiempo de viaje. Sube el máximo o cambia de base.',
   },
+  map: {
+    show: 'Mostrar',
+    score: 'Puntuación',
+    agua: 'Agua',
+    sol: 'Sol',
+    viaje: 'Viaje',
+  },
   card: {
     travel: 'min en coche',
     water: 'Agua',

@@ -3,23 +3,46 @@ import maplibregl from 'maplibre-gl';
 import type { Dict } from '@/i18n';
 import type { ScoredPlaya, ScoredRuta } from '@/lib/core/result';
 import type { Base } from '@/lib/core/types';
-import { round, scoreColor } from '@/lib/ui/format';
+import { hhmm, round, scoreColor } from '@/lib/ui/format';
 
 // Estilo de mapa gratuito y sin API key.
 const STYLE = 'https://tiles.openfreemap.org/styles/liberty';
+
+/** Qué dato muestran los marcadores del mapa (el color siempre es la puntuación). */
+export type MapMetric = 'score' | 'agua' | 'sol' | 'viaje';
+export const MAP_METRICS: MapMetric[] = ['score', 'agua', 'sol', 'viaje'];
 
 interface Props {
   base: Base;
   playas: ScoredPlaya[];
   rutas: ScoredRuta[];
   tab: 'playa' | 'ruta';
+  metric: MapMetric;
+  onMetric: (m: MapMetric) => void;
   activeId: string | null;
   onSelect: (id: string) => void;
   dict: Dict;
 }
 
+function beachLabel(p: ScoredPlaya, metric: MapMetric): string {
+  switch (metric) {
+    case 'agua':
+      return p.tempAguaC !== undefined ? `${round(p.tempAguaC)}°` : '·';
+    case 'sol':
+      return p.effectiveSunsetIso ? hhmm(p.effectiveSunsetIso) : '·';
+    case 'viaje':
+      return `${p.travelMin}'`;
+    default:
+      return `${round(p.score.total)}`;
+  }
+}
+
+function routeLabel(r: ScoredRuta, metric: MapMetric): string {
+  return metric === 'viaje' ? `${r.travelMin}'` : `${round(r.score.total)}`;
+}
+
 export function MapDashboard(props: Props) {
-  const { base, playas, rutas, tab, activeId, onSelect, dict } = props;
+  const { base, playas, rutas, tab, metric, onMetric, activeId, onSelect, dict } = props;
   const containerRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const markersRef = useRef<maplibregl.Marker[]>([]);
@@ -43,7 +66,7 @@ export function MapDashboard(props: Props) {
     };
   }, []);
 
-  // Marcadores: se recrean al cambiar datos, pestaña o selección.
+  // Marcadores: se recrean al cambiar datos, pestaña, métrica o selección.
   useEffect(() => {
     const map = mapRef.current;
     if (!map) return;
@@ -76,9 +99,14 @@ export function MapDashboard(props: Props) {
 
     if (tab === 'playa') {
       for (const p of playas) {
-        const label =
-          p.tempAguaC !== undefined ? `${round(p.tempAguaC)}°` : `${round(p.score.total)}`;
-        addMarker(p.playa.id, p.playa.lat, p.playa.lon, p.score.total, label, false);
+        addMarker(
+          p.playa.id,
+          p.playa.lat,
+          p.playa.lon,
+          p.score.total,
+          beachLabel(p, metric),
+          false,
+        );
       }
     } else {
       for (const r of rutas) {
@@ -87,7 +115,7 @@ export function MapDashboard(props: Props) {
           r.ruta.latInicio,
           r.ruta.lonInicio,
           r.score.total,
-          `${round(r.score.total)}`,
+          routeLabel(r, metric),
           true,
         );
       }
@@ -106,10 +134,24 @@ export function MapDashboard(props: Props) {
     if (!bounds.isEmpty()) {
       map.fitBounds(bounds, { padding: 60, maxZoom: 11, duration: 400 });
     }
-  }, [playas, rutas, tab, activeId, base]);
+  }, [playas, rutas, tab, metric, activeId, base]);
 
   return (
     <div>
+      <div className="map-toolbar">
+        <label htmlFor="map-metric">{dict.map.show}</label>
+        <select
+          id="map-metric"
+          value={metric}
+          onChange={(e) => onMetric(e.target.value as MapMetric)}
+        >
+          {MAP_METRICS.map((m) => (
+            <option key={m} value={m}>
+              {dict.map[m]}
+            </option>
+          ))}
+        </select>
+      </div>
       <div className="map" ref={containerRef} role="application" aria-label="Mapa de Galicia" />
       <div className="map-legend">
         <span>

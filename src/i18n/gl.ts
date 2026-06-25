@@ -30,6 +30,13 @@ export const gl: Dict = {
     why: 'Por que?',
     noResults: 'Nada dentro do teu tempo de viaxe. Sobe o máximo ou cambia de base.',
   },
+  map: {
+    show: 'Amosar',
+    score: 'Puntuación',
+    agua: 'Auga',
+    sol: 'Sol',
+    viaje: 'Viaxe',
+  },
   card: {
     travel: 'min en coche',
     water: 'Auga',

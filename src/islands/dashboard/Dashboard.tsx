@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { Controls } from '@/components/Controls';
 import { DestinationCard } from '@/components/DestinationCard';
 import { DestinationList, type Tab } from '@/components/DestinationList';
-import { MapDashboard } from '@/components/MapDashboard';
+import { MapDashboard, type MapMetric } from '@/components/MapDashboard';
 import { Methodology } from '@/components/Methodology';
 import { VerdictCard } from '@/components/VerdictCard';
 import { WeightSliders } from '@/components/WeightSliders';
@@ -33,6 +33,7 @@ export default function Dashboard() {
   const [maxViajeMin, setMaxViajeMin] = useState(initial.maxViajeMin);
   const [pesos, setPesos] = useState<Pesos>({ ...DEFAULT_PESOS });
   const [tab, setTab] = useState<Tab>('playa');
+  const [mapMetric, setMapMetric] = useState<MapMetric>('score');
   const [activeId, setActiveId] = useState<string | null>(null);
   const [date] = useState(() => new Date());
 
@@ -143,6 +144,8 @@ export default function Dashboard() {
             playas={playasTop}
             rutas={rutasTop}
             tab={effTab}
+            metric={mapMetric}
+            onMetric={setMapMetric}
             activeId={selected ? idOf(selected) : null}
             onSelect={setActiveId}
             dict={dict}
