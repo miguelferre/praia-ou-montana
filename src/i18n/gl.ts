@@ -54,6 +54,28 @@ export const gl: Dict = {
   sliders: {
     title: 'Axusta o que che importa',
     reset: 'Restablecer',
+    hint: '1 = pouco · 5 = moito',
+  },
+  metodologia: {
+    title: 'Como se calcula',
+    intro:
+      'Cada destino puntúa de 0 a 100 sumando estes factores co peso (1–5) que ti lles dás. O veredicto compara a mellor praia coa mellor ruta do día.',
+    clima:
+      'Clima: premia temperatura agradable e sol; penaliza choiva, nubes e vento. Nas rutas, a calor forte e a choiva pesan máis.',
+    cercania: 'Proximidade: canto menos tempo en coche desde a túa base, mellor.',
+    solEfectivo:
+      'Horas de sol: a que hora se pon o sol nesa praia de verdade, contando os montes ao oeste (non só o horizonte chan). Canto máis tarde, mellor.',
+    tempAgua: 'Auga: temperatura do mar; por debaixo de ~17° puntúa baixo.',
+    masificacion:
+      'Espazo: estimación de canto sitio hai (as praias longas puntúan máis). É só unha estimación.',
+    servicios:
+      'Servizos: chiringuitos e restauración preto. Se activas o acceso PMR, actúa como filtro: descarta as praias que non o teñen.',
+    dificultadFit: 'Dureza: o preto que está a ruta dos km e o desnivel que prefires.',
+    circular: 'Circular: bonus se a ruta é circular (non volves polo mesmo sitio).',
+    veredicto:
+      'Veredicto: gaña praia ou montaña segundo a mellor opción de cada unha. No inverno ou coa auga fría, a praia parte con desvantaxe. Se están moi igualadas, dicirache que serve para as dúas.',
+    datos:
+      'Datos: tempo de Open-Meteo, horizonte de PVGIS, praias da Xunta de Galicia, mapa de OpenStreetMap. As rutas ligan a Wikiloc.',
   },
   footer:
     'Datos: Open-Meteo · IDE Galicia · OpenStreetMap. As rutas fanse en Wikiloc. Demo con datos de exemplo.',

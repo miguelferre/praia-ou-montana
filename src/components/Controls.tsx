@@ -16,8 +16,6 @@ interface Props {
   dict: Dict;
 }
 
-const MAX_OPTS = [30, 60, 90, 120, 180];
-
 export function Controls(props: Props) {
   const {
     bases,
@@ -62,15 +60,19 @@ export function Controls(props: Props) {
         </div>
       </div>
 
-      <div className="field">
-        <label htmlFor="max">{dict.controls.maxTravel}</label>
-        <select id="max" value={maxViajeMin} onChange={(e) => onMax(Number(e.target.value))}>
-          {MAX_OPTS.map((m) => (
-            <option key={m} value={m}>
-              {m} min
-            </option>
-          ))}
-        </select>
+      <div className="field field-travel">
+        <label htmlFor="max">
+          {dict.controls.maxTravel}: <b>{maxViajeMin} min</b>
+        </label>
+        <input
+          id="max"
+          type="range"
+          min={15}
+          max={240}
+          step={15}
+          value={maxViajeMin}
+          onChange={(e) => onMax(Number(e.target.value))}
+        />
       </div>
 
       <label className="chk">

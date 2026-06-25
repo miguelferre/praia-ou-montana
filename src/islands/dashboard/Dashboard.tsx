@@ -3,6 +3,7 @@ import { Controls } from '@/components/Controls';
 import { DestinationCard } from '@/components/DestinationCard';
 import { DestinationList, type Tab } from '@/components/DestinationList';
 import { MapDashboard } from '@/components/MapDashboard';
+import { Methodology } from '@/components/Methodology';
 import { VerdictCard } from '@/components/VerdictCard';
 import { WeightSliders } from '@/components/WeightSliders';
 import { getDict, type Lang } from '@/i18n';
@@ -126,6 +127,13 @@ export default function Dashboard() {
         dict={dict}
       />
 
+      <WeightSliders
+        pesos={pesos}
+        onChange={setPesos}
+        onReset={() => setPesos({ ...DEFAULT_PESOS })}
+        dict={dict}
+      />
+
       <VerdictCard verdict={result.verdict} dict={dict} />
 
       <div className="dashboard">
@@ -157,14 +165,10 @@ export default function Dashboard() {
             showTabs={modo === 'auto'}
           />
           {selected && <DestinationCard item={selected} base={base} dict={dict} />}
-          <WeightSliders
-            pesos={pesos}
-            onChange={setPesos}
-            onReset={() => setPesos({ ...DEFAULT_PESOS })}
-            dict={dict}
-          />
         </div>
       </div>
+
+      <Methodology dict={dict} />
 
       <footer className="app-footer">{dict.footer}</footer>
     </div>

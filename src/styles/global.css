@@ -416,11 +416,46 @@ select,
 
 .slider-row {
   display: grid;
-  grid-template-columns: 110px 1fr;
+  grid-template-columns: 110px 1fr 26px;
   gap: 10px;
   align-items: center;
   margin-top: 10px;
   font-size: 0.85rem;
+}
+
+.slider-val {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--sea-deep);
+}
+
+.sliders-hint {
+  margin: 4px 0 0;
+  font-size: 0.78rem;
+}
+
+.field-travel {
+  min-width: 220px;
+  flex: 1 1 220px;
+}
+
+.field-travel input[type='range'] {
+  margin-top: 6px;
+}
+
+.methodology .method-list {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+.methodology .method-list li {
+  line-height: 1.45;
 }
 
 input[type='range'] {

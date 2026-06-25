@@ -8,25 +8,25 @@ Explicable y configurable (PAIR): cada destino expone su desglose y los pesos so
 
 ### Factores de PLAYA (`src/lib/beaches/index.ts`)
 
-| Factor         | Peso def. | Cálculo (0..1)                                                                    |
-| -------------- | --------- | --------------------------------------------------------------------------------- |
-| `clima`        | 0.30      | `0.4·temp(16–26) + 0.25·(1−lluvia%) + 0.2·(1−nubes) + 0.15·(1−viento)`            |
-| `cercania`     | 0.20      | `1 − min(viajeMin / maxViajeMin, 1)`                                              |
-| `solEfectivo`  | 0.20      | minutos de sol de tarde (mediodía solar → puesta efectiva) ÷ mejor del set        |
-| `tempAgua`     | 0.10      | banda `linear(14–21 °C)` (>=21 ideal)                                             |
-| `masificacion` | 0.10      | proxy de espacio: `linear(longitud 100–1500 m)`; sin dato, neutro. **Estimación** |
-| `servicios`    | 0.05      | `linear(chiringuitos 0–4)`                                                        |
+| Factor         | Peso (1–5) | Cálculo (0..1)                                                                    |
+| -------------- | ---------- | --------------------------------------------------------------------------------- |
+| `clima`        | 5          | `0.4·temp(16–26) + 0.25·(1−lluvia%) + 0.2·(1−nubes) + 0.15·(1−viento)`            |
+| `cercania`     | 3          | `1 − min(viajeMin / maxViajeMin, 1)`                                              |
+| `solEfectivo`  | 3          | minutos de sol de tarde (mediodía solar → puesta efectiva) ÷ mejor del set        |
+| `tempAgua`     | 2          | banda `linear(14–21 °C)` (>=21 ideal)                                             |
+| `masificacion` | 2          | proxy de espacio: `linear(longitud 100–1500 m)`; sin dato, neutro. **Estimación** |
+| `servicios`    | 1          | `linear(chiringuitos 0–4)`                                                        |
 
 Filtros DUROS (excluyen del ranking, no puntúan): `viajeMin > maxViajeMin`; si `requierePmr`, la playa debe tener rampa o silla anfibia.
 
 ### Factores de RUTA (`src/lib/routes/index.ts`)
 
-| Factor          | Peso def. | Cálculo (0..1)                                                     |
-| --------------- | --------- | ------------------------------------------------------------------ |
-| `clima`         | 0.30      | confort templado (ideal ~16 °C) + lluvia con más peso que en playa |
-| `cercania`      | 0.20      | igual que playa                                                    |
-| `dificultadFit` | 0.20      | cercanía de (km, desnivel) a la preferencia del usuario            |
-| `circular`      | 0.10      | 1 si circular, 0 si lineal                                         |
+| Factor          | Peso (1–5) | Cálculo (0..1)                                                     |
+| --------------- | ---------- | ------------------------------------------------------------------ |
+| `clima`         | 5          | confort templado (ideal ~16 °C) + lluvia con más peso que en playa |
+| `cercania`      | 3          | igual que playa                                                    |
+| `dificultadFit` | 3          | cercanía de (km, desnivel) a la preferencia del usuario            |
+| `circular`      | 2          | 1 si circular, 0 si lineal                                         |
 
 ## Veredicto del día (`src/lib/verdict/index.ts`)
 

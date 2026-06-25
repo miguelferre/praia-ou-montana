@@ -110,7 +110,7 @@ export type ForecastIndex = Record<string, Forecast>;
 export type Modo = 'auto' | 'solo_playa' | 'solo_ruta';
 export type Transporte = 'coche' | 'publico' | 'ambos';
 
-/** Pesos ajustables del motor (sliders). Valores 0..1, se normalizan al puntuar. */
+/** Pesos ajustables del motor (sliders 1..5 de importancia). Se normalizan al puntuar. */
 export interface Pesos {
   clima: number;
   cercania: number;
