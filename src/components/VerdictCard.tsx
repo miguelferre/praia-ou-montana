@@ -23,16 +23,15 @@ function why(v: VerdictResult, dict: Dict): ReactNode {
     </>
   ) : null;
 
-  if (v.veredicto === 'playa' && beachBits) return <>🏖️ {beachBits}</>;
-  if (v.veredicto === 'montana' && routeBits) return <>🥾 {routeBits}</>;
-  // ambas
+  if (v.veredicto === 'playa' && beachBits) return beachBits;
+  if (v.veredicto === 'montana' && routeBits) return routeBits;
   return (
     <>
-      🏖️ {beachBits}
+      {beachBits}
       <br />
-      🥾 {routeBits}
+      {routeBits}
       <br />
-      <span className="muted">{dict.verdict.tie}</span>
+      <span className="tie-note">{dict.verdict.tie}</span>
     </>
   );
 }
@@ -48,10 +47,13 @@ export function VerdictCard({ verdict, dict }: { verdict: VerdictResult; dict: D
           : dict.verdict.ninguna;
 
   return (
-    <section className="card verdict" data-kind={verdict.veredicto}>
-      <div className="verdict-eyebrow">{dict.verdict.heading}</div>
-      <h2 className="verdict-title">{title}</h2>
-      <p className="verdict-why">{why(verdict, dict)}</p>
+    <section className="verdict" data-kind={verdict.veredicto}>
+      <div className="verdict-scrim" aria-hidden="true" />
+      <div className="verdict-content">
+        <p className="verdict-eyebrow">{dict.verdict.heading}</p>
+        <h2 className="verdict-title">{title}</h2>
+        <div className="verdict-why">{why(verdict, dict)}</div>
+      </div>
     </section>
   );
 }

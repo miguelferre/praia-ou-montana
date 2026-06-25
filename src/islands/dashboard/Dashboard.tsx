@@ -152,6 +152,7 @@ export default function Dashboard() {
           />
         </div>
         <div className="col-panel">
+          {selected && <DestinationCard item={selected} base={base} dict={dict} />}
           {totalEnRango > list.length && (
             <p className="panel-count muted">{`${list.length} / ${totalEnRango}`}</p>
           )}
@@ -165,7 +166,6 @@ export default function Dashboard() {
             dict={dict}
             showTabs={modo === 'auto'}
           />
-          {selected && <DestinationCard item={selected} base={base} dict={dict} />}
         </div>
       </div>
 
