@@ -1,0 +1,5 @@
+[
+  { "id": "santiago", "nombre": "Santiago de Compostela", "lat": 42.8782, "lon": -8.5448 },
+  { "id": "esteiro", "nombre": "Esteiro (Muros)", "lat": 42.7686, "lon": -8.9447 },
+  { "id": "sanxenxo", "nombre": "Sanxenxo", "lat": 42.4003, "lon": -8.8079 }
+]

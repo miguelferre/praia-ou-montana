@@ -1,0 +1,22 @@
+---
+import '@/styles/global.css';
+import 'maplibre-gl/dist/maplibre-gl.css';
+import Dashboard from '@/islands/dashboard/Dashboard';
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="¿Playa o ruta hoy en Galicia? Recomendación según el tiempo, la luz y tu base."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Praia ou montaña</title>
+  </head>
+  <body>
+    <Dashboard client:only="react" />
+  </body>
+</html>

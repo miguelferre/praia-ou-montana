@@ -1,0 +1,87 @@
+[
+  {
+    "id": "monte-pindo-circular",
+    "nombre": "Monte Pindo (O Olimpo Celta)",
+    "concello": "Carnota",
+    "wikilocUrl": "https://www.wikiloc.com/trails/hiking?q=Monte%20Pindo",
+    "latInicio": 42.848,
+    "lonInicio": -9.113,
+    "km": 11,
+    "desnivelPosM": 700,
+    "tipo": "circular",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": { "cocheMin": 78 },
+      "esteiro": { "cocheMin": 22 },
+      "sanxenxo": { "cocheMin": 82 }
+    }
+  },
+  {
+    "id": "monte-louro-lagoa",
+    "nombre": "Monte Louro e Lagoa das Xarfas",
+    "concello": "Muros",
+    "wikilocUrl": "https://www.wikiloc.com/trails/hiking?q=Monte%20Louro",
+    "latInicio": 42.748,
+    "lonInicio": -9.116,
+    "km": 8,
+    "desnivelPosM": 300,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": { "cocheMin": 72 },
+      "esteiro": { "cocheMin": 15 },
+      "sanxenxo": { "cocheMin": 85 }
+    }
+  },
+  {
+    "id": "ezaro-mirador",
+    "nombre": "Mirador do Ézaro e Fervenza",
+    "concello": "Dumbría",
+    "wikilocUrl": "https://www.wikiloc.com/trails/hiking?q=%C3%89zaro%20mirador",
+    "latInicio": 42.908,
+    "lonInicio": -9.13,
+    "km": 6,
+    "desnivelPosM": 350,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": { "cocheMin": 85 },
+      "esteiro": { "cocheMin": 30 },
+      "sanxenxo": { "cocheMin": 95 }
+    }
+  },
+  {
+    "id": "barbanza-a-curota",
+    "nombre": "Miradoiro da Curota (Barbanza)",
+    "concello": "A Pobra do Caramiñal",
+    "wikilocUrl": "https://www.wikiloc.com/trails/hiking?q=A%20Curota%20Barbanza",
+    "latInicio": 42.63,
+    "lonInicio": -8.93,
+    "km": 9,
+    "desnivelPosM": 400,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": { "cocheMin": 70 },
+      "esteiro": { "cocheMin": 50 },
+      "sanxenxo": { "cocheMin": 45 }
+    }
+  },
+  {
+    "id": "fervenza-do-toxa",
+    "nombre": "Fervenza do Toxa",
+    "concello": "Silleda",
+    "wikilocUrl": "https://www.wikiloc.com/trails/hiking?q=Fervenza%20do%20Toxa",
+    "latInicio": 42.7,
+    "lonInicio": -8.24,
+    "km": 7,
+    "desnivelPosM": 200,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": { "cocheMin": 35 },
+      "esteiro": { "cocheMin": 70 },
+      "sanxenxo": { "cocheMin": 80 }
+    }
+  }
+]

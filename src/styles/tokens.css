@@ -1,0 +1,53 @@
+/* Tokens de diseño. Ningún componente usa hex: todo color sale de aquí. */
+:root {
+  /* Superficies cálidas tipo papel/arena */
+  --bg: #f6f2ea;
+  --surface: #fffdf8;
+  --surface-2: #efe9dd;
+  --text: #182a29;
+  --muted: #5d6b69;
+  --border: #e4ddcf;
+  --shadow: rgba(20, 35, 33, 0.1);
+
+  /* Identidad: mar, arena, monte, coral */
+  --sea: #1f7a8c;
+  --sea-deep: #11475a;
+  --sand: #e3b34d;
+  --mountain: #2f9e63;
+  --mountain-deep: #1f6e44;
+  --accent: #e2674b;
+
+  /* Escala de puntuación (se interpola en JS) */
+  --score-bad: #d9694f;
+  --score-mid: #e0a13a;
+  --score-good: #2f9e63;
+
+  /* Tipografía */
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /* Métricas */
+  --radius: 14px;
+  --radius-sm: 9px;
+  --gap: 16px;
+  --maxw: 1240px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #101617;
+    --surface: #18211f;
+    --surface-2: #212c2a;
+    --text: #eaf1ee;
+    --muted: #9fb0ac;
+    --border: #2b3836;
+    --shadow: rgba(0, 0, 0, 0.4);
+
+    --sea: #4bb6c9;
+    --sea-deep: #2a8499;
+    --sand: #e3b34d;
+    --mountain: #46bd7e;
+    --mountain-deep: #2f9e63;
+    --accent: #f0805f;
+  }
+}

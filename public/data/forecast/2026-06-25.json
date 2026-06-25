@@ -1,0 +1,135 @@
+{
+  "carnota-area-maior": {
+    "fecha": "2026-06-25",
+    "tempMaxC": 19,
+    "precipProb": 100,
+    "precipMm": 20.0,
+    "nubosidad": 90,
+    "vientoKmh": 25,
+    "uvIndex": 8,
+    "tempAguaC": 17.0,
+    "oleajeM": 0.9
+  },
+  "louro-san-francisco": {
+    "fecha": "2026-06-25",
+    "tempMaxC": 19,
+    "precipProb": 100,
+    "precipMm": 20.0,
+    "nubosidad": 90,
+    "vientoKmh": 25,
+    "uvIndex": 7,
+    "tempAguaC": 17.0,
+    "oleajeM": 0.9
+  },
+  "ancoradoiro-muros": {
+    "fecha": "2026-06-25",
+    "tempMaxC": 20,
+    "precipProb": 100,
+    "precipMm": 18.0,
+    "nubosidad": 90,
+    "vientoKmh": 22,
+    "uvIndex": 8,
+    "tempAguaC": 16.8,
+    "oleajeM": 0.8
+  },
+  "testal-noia": {
+    "fecha": "2026-06-25",
+    "tempMaxC": 21,
+    "precipProb": 100,
+    "precipMm": 13.9,
+    "nubosidad": 88,
+    "vientoKmh": 23,
+    "uvIndex": 7,
+    "tempAguaC": 16.8,
+    "oleajeM": 0.6
+  },
+  "coira-porto-do-son": {
+    "fecha": "2026-06-25",
+    "tempMaxC": 19,
+    "precipProb": 100,
+    "precipMm": 21.0,
+    "nubosidad": 92,
+    "vientoKmh": 26,
+    "uvIndex": 7,
+    "tempAguaC": 17.0,
+    "oleajeM": 0.7
+  },
+  "corrubedo-ribeira": {
+    "fecha": "2026-06-25",
+    "tempMaxC": 20,
+    "precipProb": 100,
+    "precipMm": 21.0,
+    "nubosidad": 88,
+    "vientoKmh": 23,
+    "uvIndex": 7,
+    "tempAguaC": 17.2,
+    "oleajeM": 1.0
+  },
+  "a-lanzada": {
+    "fecha": "2026-06-25",
+    "tempMaxC": 21,
+    "precipProb": 100,
+    "precipMm": 15.7,
+    "nubosidad": 87,
+    "vientoKmh": 26,
+    "uvIndex": 8,
+    "tempAguaC": 17.9,
+    "oleajeM": 0.8
+  },
+  "silgar-sanxenxo": {
+    "fecha": "2026-06-25",
+    "tempMaxC": 22,
+    "precipProb": 100,
+    "precipMm": 16.9,
+    "nubosidad": 89,
+    "vientoKmh": 24,
+    "uvIndex": 8,
+    "tempAguaC": 18.3,
+    "oleajeM": 0.6
+  },
+  "monte-pindo-circular": {
+    "fecha": "2026-06-25",
+    "tempMaxC": 19,
+    "precipProb": 100,
+    "precipMm": 20.0,
+    "nubosidad": 90,
+    "vientoKmh": 25,
+    "uvIndex": 8
+  },
+  "monte-louro-lagoa": {
+    "fecha": "2026-06-25",
+    "tempMaxC": 19,
+    "precipProb": 100,
+    "precipMm": 20.0,
+    "nubosidad": 90,
+    "vientoKmh": 25,
+    "uvIndex": 7
+  },
+  "ezaro-mirador": {
+    "fecha": "2026-06-25",
+    "tempMaxC": 20,
+    "precipProb": 100,
+    "precipMm": 18.1,
+    "nubosidad": 97,
+    "vientoKmh": 25,
+    "uvIndex": 8
+  },
+  "barbanza-a-curota": {
+    "fecha": "2026-06-25",
+    "tempMaxC": 20,
+    "precipProb": 100,
+    "precipMm": 21.9,
+    "nubosidad": 91,
+    "vientoKmh": 22,
+    "uvIndex": 7
+  },
+  "fervenza-do-toxa": {
+    "fecha": "2026-06-25",
+    "tempMaxC": 21,
+    "precipProb": 100,
+    "precipMm": 10.2,
+    "nubosidad": 82,
+    "vientoKmh": 20,
+    "uvIndex": 8
+  }
+}

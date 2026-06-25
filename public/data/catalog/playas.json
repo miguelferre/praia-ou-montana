@@ -1,0 +1,168 @@
+[
+  {
+    "id": "carnota-area-maior",
+    "ideGaliciaId": "carnota-area-maior",
+    "nombre": "Praia de Area Maior (Carnota)",
+    "concello": "Carnota",
+    "ria": "Ría de Muros e Noia",
+    "lat": 42.8226,
+    "lon": -9.1086,
+    "curado": true,
+    "orientacionDeg": 70,
+    "tipoArena": "fina",
+    "longitudM": 7000,
+    "banderaAzul": false,
+    "chiringuitosCount": 2,
+    "restauracionM": 600,
+    "pmr": { "rampa": true, "sillaAnfibia": false, "aseoAdaptado": true, "aparcamiento": true },
+    "travel": {
+      "santiago": { "cocheMin": 75 },
+      "esteiro": { "cocheMin": 20 },
+      "sanxenxo": { "cocheMin": 80 }
+    }
+  },
+  {
+    "id": "louro-san-francisco",
+    "ideGaliciaId": "louro-san-francisco",
+    "nombre": "Praia de San Francisco (Louro, Muros)",
+    "concello": "Muros",
+    "ria": "Ría de Muros e Noia",
+    "lat": 42.756,
+    "lon": -9.118,
+    "curado": true,
+    "orientacionDeg": 60,
+    "tipoArena": "fina",
+    "longitudM": 900,
+    "banderaAzul": true,
+    "chiringuitosCount": 1,
+    "restauracionM": 400,
+    "travel": {
+      "santiago": { "cocheMin": 70 },
+      "esteiro": { "cocheMin": 12 },
+      "sanxenxo": { "cocheMin": 85 }
+    }
+  },
+  {
+    "id": "ancoradoiro-muros",
+    "ideGaliciaId": "ancoradoiro-muros",
+    "nombre": "Praia do Ancoradoiro (Muros)",
+    "concello": "Muros",
+    "ria": "Ría de Muros e Noia",
+    "lat": 42.786,
+    "lon": -9.062,
+    "curado": true,
+    "orientacionDeg": 10,
+    "tipoArena": "fina",
+    "longitudM": 450,
+    "banderaAzul": false,
+    "chiringuitosCount": 0,
+    "restauracionM": 1200,
+    "travel": {
+      "santiago": { "cocheMin": 68 },
+      "esteiro": { "cocheMin": 10 },
+      "sanxenxo": { "cocheMin": 80 }
+    }
+  },
+  {
+    "id": "testal-noia",
+    "ideGaliciaId": "testal-noia",
+    "nombre": "Praia do Testal (Noia)",
+    "concello": "Noia",
+    "ria": "Ría de Muros e Noia",
+    "lat": 42.779,
+    "lon": -8.923,
+    "curado": true,
+    "orientacionDeg": -20,
+    "tipoArena": "fina",
+    "longitudM": 1300,
+    "banderaAzul": true,
+    "chiringuitosCount": 1,
+    "restauracionM": 500,
+    "pmr": { "rampa": true, "sillaAnfibia": true, "aseoAdaptado": true, "aparcamiento": true },
+    "travel": {
+      "santiago": { "cocheMin": 50 },
+      "esteiro": { "cocheMin": 25 },
+      "sanxenxo": { "cocheMin": 70 }
+    }
+  },
+  {
+    "id": "coira-porto-do-son",
+    "ideGaliciaId": "coira-porto-do-son",
+    "nombre": "Praia de Coira (Porto do Son)",
+    "concello": "Porto do Son",
+    "ria": "Ría de Muros e Noia",
+    "lat": 42.717,
+    "lon": -8.999,
+    "curado": false,
+    "travel": {
+      "santiago": { "cocheMin": 60 },
+      "esteiro": { "cocheMin": 35 },
+      "sanxenxo": { "cocheMin": 55 }
+    }
+  },
+  {
+    "id": "corrubedo-ribeira",
+    "ideGaliciaId": "corrubedo-ribeira",
+    "nombre": "Praia de Corrubedo (Ribeira)",
+    "concello": "Ribeira",
+    "ria": "Ría de Arousa",
+    "lat": 42.556,
+    "lon": -9.025,
+    "curado": true,
+    "orientacionDeg": 80,
+    "tipoArena": "fina",
+    "longitudM": 3600,
+    "banderaAzul": false,
+    "chiringuitosCount": 1,
+    "restauracionM": 900,
+    "travel": {
+      "santiago": { "cocheMin": 75 },
+      "esteiro": { "cocheMin": 55 },
+      "sanxenxo": { "cocheMin": 45 }
+    }
+  },
+  {
+    "id": "a-lanzada",
+    "ideGaliciaId": "a-lanzada",
+    "nombre": "Praia da Lanzada (O Grove / Sanxenxo)",
+    "concello": "Sanxenxo",
+    "ria": "Ría de Arousa / Pontevedra",
+    "lat": 42.433,
+    "lon": -8.877,
+    "curado": true,
+    "orientacionDeg": 75,
+    "tipoArena": "fina",
+    "longitudM": 2300,
+    "banderaAzul": true,
+    "chiringuitosCount": 4,
+    "restauracionM": 250,
+    "pmr": { "rampa": true, "sillaAnfibia": true, "aseoAdaptado": true, "aparcamiento": true },
+    "travel": {
+      "santiago": { "cocheMin": 75 },
+      "esteiro": { "cocheMin": 70 },
+      "sanxenxo": { "cocheMin": 12 }
+    }
+  },
+  {
+    "id": "silgar-sanxenxo",
+    "ideGaliciaId": "silgar-sanxenxo",
+    "nombre": "Praia de Silgar (Sanxenxo)",
+    "concello": "Sanxenxo",
+    "ria": "Ría de Pontevedra",
+    "lat": 42.398,
+    "lon": -8.809,
+    "curado": true,
+    "orientacionDeg": 20,
+    "tipoArena": "fina",
+    "longitudM": 700,
+    "banderaAzul": true,
+    "chiringuitosCount": 6,
+    "restauracionM": 80,
+    "pmr": { "rampa": true, "sillaAnfibia": true, "aseoAdaptado": true, "aparcamiento": true },
+    "travel": {
+      "santiago": { "cocheMin": 70 },
+      "esteiro": { "cocheMin": 75 },
+      "sanxenxo": { "cocheMin": 3 }
+    }
+  }
+]

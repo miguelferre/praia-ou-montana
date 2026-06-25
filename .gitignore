@@ -1,0 +1,26 @@
+# build
+dist/
+.astro/
+
+# deps
+node_modules/
+
+# test artifacts
+coverage/
+playwright-report/
+test-results/
+
+# env / secrets (las API keys de ingesta viven aquí en local; en CI son GitHub Secrets)
+.env
+.env.*
+!.env.example
+
+# python
+scripts/ingest/.venv/
+__pycache__/
+*.pyc
+
+# os
+.DS_Store
+Thumbs.db
+*.local
