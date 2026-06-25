@@ -25,6 +25,12 @@ OUT = ROOT / "public" / "data" / "forecast"
 FORECAST_URL = "https://api.open-meteo.com/v1/forecast"
 MARINE_URL = "https://marine-api.open-meteo.com/v1/marine"
 TZ = "Europe/Madrid"
+CHUNK = 100  # Open-Meteo admite varias coords por llamada, pero la URL no puede ser infinita
+
+
+def _chunks(seq: list[dict], size: int):
+    for i in range(0, len(seq), size):
+        yield seq[i : i + size]
 
 
 def _as_list(data: dict | list) -> list:
@@ -39,65 +45,63 @@ def _daytime_mean(values: list[float | None]) -> float:
 
 
 def fetch_forecast(points: list[dict]) -> dict[str, dict]:
-    lats = ",".join(str(p["lat"]) for p in points)
-    lons = ",".join(str(p["lon"]) for p in points)
-    resp = requests.get(
-        FORECAST_URL,
-        params={
-            "latitude": lats,
-            "longitude": lons,
-            "daily": "temperature_2m_max,precipitation_probability_max,"
-            "precipitation_sum,wind_speed_10m_max,uv_index_max",
-            "hourly": "cloud_cover",
-            "timezone": TZ,
-            "forecast_days": 1,
-        },
-        timeout=40,
-    )
-    resp.raise_for_status()
     out: dict[str, dict] = {}
-    for point, loc in zip(points, _as_list(resp.json())):
-        daily = loc["daily"]
-        hourly = loc.get("hourly", {})
-        out[point["id"]] = {
-            "fecha": daily["time"][0],
-            "tempMaxC": round(daily["temperature_2m_max"][0]),
-            "precipProb": int(daily["precipitation_probability_max"][0] or 0),
-            "precipMm": round(daily["precipitation_sum"][0] or 0, 1),
-            "nubosidad": round(_daytime_mean(hourly.get("cloud_cover", []))),
-            "vientoKmh": round(daily["wind_speed_10m_max"][0] or 0),
-            "uvIndex": round(daily["uv_index_max"][0] or 0),
-        }
+    for chunk in _chunks(points, CHUNK):
+        resp = requests.get(
+            FORECAST_URL,
+            params={
+                "latitude": ",".join(str(p["lat"]) for p in chunk),
+                "longitude": ",".join(str(p["lon"]) for p in chunk),
+                "daily": "temperature_2m_max,precipitation_probability_max,"
+                "precipitation_sum,wind_speed_10m_max,uv_index_max",
+                "hourly": "cloud_cover",
+                "timezone": TZ,
+                "forecast_days": 1,
+            },
+            timeout=40,
+        )
+        resp.raise_for_status()
+        for point, loc in zip(chunk, _as_list(resp.json())):
+            daily = loc["daily"]
+            hourly = loc.get("hourly", {})
+            out[point["id"]] = {
+                "fecha": daily["time"][0],
+                "tempMaxC": round(daily["temperature_2m_max"][0]),
+                "precipProb": int(daily["precipitation_probability_max"][0] or 0),
+                "precipMm": round(daily["precipitation_sum"][0] or 0, 1),
+                "nubosidad": round(_daytime_mean(hourly.get("cloud_cover", []))),
+                "vientoKmh": round(daily["wind_speed_10m_max"][0] or 0),
+                "uvIndex": round(daily["uv_index_max"][0] or 0),
+            }
     return out
 
 
 def fetch_marine(beaches: list[dict]) -> dict[str, dict]:
-    lats = ",".join(str(b["lat"]) for b in beaches)
-    lons = ",".join(str(b["lon"]) for b in beaches)
-    resp = requests.get(
-        MARINE_URL,
-        params={
-            "latitude": lats,
-            "longitude": lons,
-            "daily": "wave_height_max",
-            "hourly": "sea_surface_temperature",
-            "timezone": TZ,
-            "forecast_days": 1,
-        },
-        timeout=40,
-    )
-    resp.raise_for_status()
     out: dict[str, dict] = {}
-    for beach, loc in zip(beaches, _as_list(resp.json())):
-        sst = loc.get("hourly", {}).get("sea_surface_temperature", [])
-        wave = loc.get("daily", {}).get("wave_height_max", [None])
-        extra: dict[str, float] = {}
-        warm = [v for v in sst if v is not None]
-        if warm:
-            extra["tempAguaC"] = round(sum(warm) / len(warm), 1)
-        if wave and wave[0] is not None:
-            extra["oleajeM"] = round(wave[0], 1)
-        out[beach["id"]] = extra
+    for chunk in _chunks(beaches, CHUNK):
+        resp = requests.get(
+            MARINE_URL,
+            params={
+                "latitude": ",".join(str(b["lat"]) for b in chunk),
+                "longitude": ",".join(str(b["lon"]) for b in chunk),
+                "daily": "wave_height_max",
+                "hourly": "sea_surface_temperature",
+                "timezone": TZ,
+                "forecast_days": 1,
+            },
+            timeout=40,
+        )
+        resp.raise_for_status()
+        for beach, loc in zip(chunk, _as_list(resp.json())):
+            sst = loc.get("hourly", {}).get("sea_surface_temperature", [])
+            wave = loc.get("daily", {}).get("wave_height_max", [None])
+            extra: dict[str, float] = {}
+            warm = [v for v in sst if v is not None]
+            if warm:
+                extra["tempAguaC"] = round(sum(warm) / len(warm), 1)
+            if wave and wave[0] is not None:
+                extra["oleajeM"] = round(wave[0], 1)
+            out[beach["id"]] = extra
     return out
 
 
@@ -105,22 +109,40 @@ def main() -> None:
     playas = json.loads((CATALOG / "playas.json").read_text(encoding="utf-8"))
     rutas = json.loads((CATALOG / "rutas.json").read_text(encoding="utf-8"))
 
-    beach_points = [{"id": p["id"], "lat": p["lat"], "lon": p["lon"]} for p in playas]
-    route_points = [
-        {"id": r["id"], "lat": r["latInicio"], "lon": r["lonInicio"]} for r in rutas
+    # Una predicción por CONCELLO (las playas vecinas comparten el tiempo): reduce
+    # ~992 llamadas a ~100 y evita el rate limit. Representante = primera playa.
+    rep_by_concello: dict[str, dict] = {}
+    for p in playas:
+        rep_by_concello.setdefault(p["concello"], p)
+    concello_points = [
+        {"id": f"concello:{c}", "lat": p["lat"], "lon": p["lon"]}
+        for c, p in rep_by_concello.items()
     ]
+    route_points = [{"id": r["id"], "lat": r["latInicio"], "lon": r["lonInicio"]} for r in rutas]
 
-    forecast = fetch_forecast(beach_points + route_points)
-    marine = fetch_marine(beach_points)
-    for beach_id, extra in marine.items():
-        forecast.setdefault(beach_id, {}).update(extra)
+    by_key = fetch_forecast(concello_points + route_points)
+    for key, extra in fetch_marine(concello_points).items():
+        by_key.setdefault(key, {}).update(extra)
+
+    # Expande la predicción del concello a cada playa (clave = id de playa).
+    forecast: dict[str, dict] = {}
+    for p in playas:
+        cf = by_key.get(f"concello:{p['concello']}")
+        if cf:
+            forecast[p["id"]] = cf
+    for r in rutas:
+        if r["id"] in by_key:
+            forecast[r["id"]] = by_key[r["id"]]
 
     OUT.mkdir(parents=True, exist_ok=True)
     fecha = next(iter(forecast.values()))["fecha"]
     payload = json.dumps(forecast, ensure_ascii=False, indent=2)
     (OUT / "latest.json").write_text(payload, encoding="utf-8")
     (OUT / f"{fecha}.json").write_text(payload, encoding="utf-8")
-    print(f"OK: {len(forecast)} destinos para {fecha} -> forecast/latest.json")
+    print(
+        f"OK: {len(rep_by_concello)} concellos -> {len(forecast)} destinos para {fecha} "
+        f"-> forecast/latest.json"
+    )
 
 
 if __name__ == "__main__":

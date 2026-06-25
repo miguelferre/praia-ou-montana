@@ -1,0 +1,33 @@
+name: ingest-catalog
+
+# Catálogo (mensual o manual): playas + curación + horizonte PVGIS + tiempos de
+# viaje. ORS_API_KEY es un secret opcional; sin él, los tiempos caen a estimación.
+on:
+  schedule:
+    - cron: '30 4 1 * *' # día 1 de cada mes, 04:30 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  catalog:
+    runs-on: ubuntu-latest
+    env:
+      ORS_API_KEY: ${{ secrets.ORS_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install -r scripts/ingest/requirements.txt
+      - run: python scripts/ingest/build_catalog.py --wfs
+      - run: python scripts/ingest/fetch_horizon.py
+      - run: python scripts/ingest/build_travel.py
+      - name: Commit si cambió
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/catalog
+          git diff --staged --quiet || git commit -m "chore: catálogo $(date -u +%F)"
+          git push

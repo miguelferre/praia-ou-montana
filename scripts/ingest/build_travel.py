@@ -51,6 +51,7 @@ def ors_minutes(base: dict, dests: list[tuple[float, float]], key: str) -> list[
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true", help="no escribe, solo informa")
+    parser.add_argument("--force", action="store_true", help="recalcula también los tramos ya presentes")
     args = parser.parse_args()
 
     key = os.environ.get("ORS_API_KEY")
@@ -61,16 +62,23 @@ def main() -> None:
     for kind, latk, lonk in [("playas", "lat", "lon"), ("rutas", "latInicio", "lonInicio")]:
         path = DATA / "catalog" / f"{kind}.json"
         items = json.loads(path.read_text(encoding="utf-8"))
-        coords = [(it[latk], it[lonk]) for it in items]
         for base in bases:
+            # Por defecto solo rellena tramos que falten (preserva los curados a mano).
+            pending = [
+                it
+                for it in items
+                if args.force or "cocheMin" not in it.get("travel", {}).get(base["id"], {})
+            ]
+            if not pending:
+                continue
+            pcoords = [(it[latk], it[lonk]) for it in pending]
             mins = (
-                ors_minutes(base, coords, key)
+                ors_minutes(base, pcoords, key)
                 if key
-                else [rough_minutes(base, lat, lon) for lat, lon in coords]
+                else [rough_minutes(base, lat, lon) for lat, lon in pcoords]
             )
-            for it, m in zip(items, mins):
-                leg = it.setdefault("travel", {}).setdefault(base["id"], {})
-                leg["cocheMin"] = m
+            for it, m in zip(pending, mins):
+                it.setdefault("travel", {}).setdefault(base["id"], {})["cocheMin"] = m
         if args.dry_run:
             print(f"  [dry-run] {kind}: {len(items)} destinos x {len(bases)} bases")
         else:

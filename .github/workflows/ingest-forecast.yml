@@ -1,0 +1,29 @@
+name: ingest-forecast
+
+# Predicción diaria (Open-Meteo, sin API key). Escribe public/data/forecast/*
+# y lo commitea de vuelta al repo, que es lo que sirve la CDN.
+on:
+  schedule:
+    - cron: '15 5 * * *' # 05:15 UTC cada día
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  forecast:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install -r scripts/ingest/requirements.txt
+      - run: python scripts/ingest/fetch_forecast.py
+      - name: Commit si cambió
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/forecast
+          git diff --staged --quiet || git commit -m "chore: forecast $(date -u +%F)"
+          git push

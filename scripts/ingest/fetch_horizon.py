@@ -39,10 +39,16 @@ def fetch_profile(lat: float, lon: float) -> list[float]:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--force", action="store_true", help="refresca también las que ya tienen perfil")
     args = parser.parse_args()
 
     playas = json.loads(PLAYAS.read_text(encoding="utf-8"))
-    for p in playas:
+    # Solo playas curadas (sería abusivo pedir las 987 a PVGIS); salta las ya cacheadas.
+    targets = [
+        p for p in playas if p.get("curado") and (args.force or not p.get("horizonProfile"))
+    ]
+    print(f"{len(targets)} playas curadas a procesar (de {len(playas)} totales)")
+    for p in targets:
         try:
             profile = fetch_profile(p["lat"], p["lon"])
         except Exception as err:  # noqa: BLE001 - degradación deliberada

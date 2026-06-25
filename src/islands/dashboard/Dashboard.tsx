@@ -88,8 +88,16 @@ export default function Dashboard() {
     );
   }
 
+  // El catálogo tiene cientos de playas; mostramos solo las mejores para no saturar
+  // el mapa ni la lista. El veredicto usa el ranking completo (best), no el recorte.
+  const TOP = 40;
+  const playasTop = result.beaches.ranked.slice(0, TOP);
+  const rutasTop = result.routes.ranked.slice(0, TOP);
+
   const effTab: Tab = modo === 'solo_playa' ? 'playa' : modo === 'solo_ruta' ? 'ruta' : tab;
-  const list: ScoredItem[] = effTab === 'playa' ? result.beaches.ranked : result.routes.ranked;
+  const list: ScoredItem[] = effTab === 'playa' ? playasTop : rutasTop;
+  const totalEnRango =
+    effTab === 'playa' ? result.beaches.ranked.length : result.routes.ranked.length;
   const selected: ScoredItem | undefined = list.find((it) => idOf(it) === activeId) ?? list[0];
 
   return (
@@ -124,8 +132,8 @@ export default function Dashboard() {
         <div className="col-map">
           <MapDashboard
             base={base}
-            playas={result.beaches.ranked}
-            rutas={result.routes.ranked}
+            playas={playasTop}
+            rutas={rutasTop}
             tab={effTab}
             activeId={selected ? idOf(selected) : null}
             onSelect={setActiveId}
@@ -133,11 +141,16 @@ export default function Dashboard() {
           />
         </div>
         <div className="col-panel">
+          {totalEnRango > list.length && (
+            <p className="muted" style={{ marginTop: 0 }}>
+              {`${list.length} / ${totalEnRango}`}
+            </p>
+          )}
           <DestinationList
             tab={effTab}
             onTab={setTab}
-            playas={result.beaches.ranked}
-            rutas={result.routes.ranked}
+            playas={playasTop}
+            rutas={rutasTop}
             activeId={selected ? idOf(selected) : null}
             onSelect={setActiveId}
             dict={dict}
