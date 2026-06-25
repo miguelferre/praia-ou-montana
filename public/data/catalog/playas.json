@@ -25,7 +25,7 @@
         "cocheMin": 75
       },
       "esteiro": {
-        "cocheMin": 50
+        "cocheMin": 31
       },
       "sanxenxo": {
         "cocheMin": 107
@@ -102,7 +102,7 @@
         "cocheMin": 68
       },
       "esteiro": {
-        "cocheMin": 43
+        "cocheMin": 24
       },
       "sanxenxo": {
         "cocheMin": 100
@@ -179,7 +179,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 32
+        "cocheMin": 12
       },
       "sanxenxo": {
         "cocheMin": 88
@@ -262,7 +262,7 @@
         "cocheMin": 38
       },
       "esteiro": {
-        "cocheMin": 4
+        "cocheMin": 19
       },
       "sanxenxo": {
         "cocheMin": 70
@@ -333,7 +333,7 @@
         "cocheMin": 62
       },
       "esteiro": {
-        "cocheMin": 24
+        "cocheMin": 43
       },
       "sanxenxo": {
         "cocheMin": 90
@@ -410,7 +410,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 34
+        "cocheMin": 54
       },
       "sanxenxo": {
         "cocheMin": 66
@@ -493,7 +493,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 79
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 15
@@ -576,7 +576,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 71
+        "cocheMin": 77
       },
       "sanxenxo": {
         "cocheMin": 1
@@ -647,7 +647,7 @@
         "cocheMin": 51
       },
       "esteiro": {
-        "cocheMin": 66
+        "cocheMin": 73
       },
       "sanxenxo": {
         "cocheMin": 24
@@ -718,7 +718,7 @@
         "cocheMin": 53
       },
       "esteiro": {
-        "cocheMin": 67
+        "cocheMin": 75
       },
       "sanxenxo": {
         "cocheMin": 23
@@ -789,7 +789,7 @@
         "cocheMin": 53
       },
       "esteiro": {
-        "cocheMin": 67
+        "cocheMin": 74
       },
       "sanxenxo": {
         "cocheMin": 23
@@ -860,7 +860,7 @@
         "cocheMin": 51
       },
       "esteiro": {
-        "cocheMin": 65
+        "cocheMin": 73
       },
       "sanxenxo": {
         "cocheMin": 16
@@ -931,7 +931,7 @@
         "cocheMin": 52
       },
       "esteiro": {
-        "cocheMin": 66
+        "cocheMin": 73
       },
       "sanxenxo": {
         "cocheMin": 16
@@ -1002,7 +1002,7 @@
         "cocheMin": 53
       },
       "esteiro": {
-        "cocheMin": 67
+        "cocheMin": 75
       },
       "sanxenxo": {
         "cocheMin": 16
@@ -1073,7 +1073,7 @@
         "cocheMin": 57
       },
       "esteiro": {
-        "cocheMin": 73
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 16
@@ -1144,7 +1144,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 75
+        "cocheMin": 81
       },
       "sanxenxo": {
         "cocheMin": 18
@@ -1215,7 +1215,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 74
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 17
@@ -1286,7 +1286,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 74
+        "cocheMin": 79
       },
       "sanxenxo": {
         "cocheMin": 16
@@ -1357,7 +1357,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 74
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 10
@@ -1428,7 +1428,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 79
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 15
@@ -1499,7 +1499,7 @@
         "cocheMin": 65
       },
       "esteiro": {
-        "cocheMin": 81
+        "cocheMin": 87
       },
       "sanxenxo": {
         "cocheMin": 17
@@ -1570,7 +1570,7 @@
         "cocheMin": 66
       },
       "esteiro": {
-        "cocheMin": 42
+        "cocheMin": 62
       },
       "sanxenxo": {
         "cocheMin": 73
@@ -1641,7 +1641,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 39
+        "cocheMin": 59
       },
       "sanxenxo": {
         "cocheMin": 70
@@ -1712,7 +1712,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 39
+        "cocheMin": 59
       },
       "sanxenxo": {
         "cocheMin": 70
@@ -1783,7 +1783,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 40
+        "cocheMin": 59
       },
       "sanxenxo": {
         "cocheMin": 70
@@ -1854,7 +1854,7 @@
         "cocheMin": 76
       },
       "esteiro": {
-        "cocheMin": 92
+        "cocheMin": 98
       },
       "sanxenxo": {
         "cocheMin": 28
@@ -1925,7 +1925,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 40
+        "cocheMin": 59
       },
       "sanxenxo": {
         "cocheMin": 70
@@ -1996,7 +1996,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 69
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 28
@@ -2067,7 +2067,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 69
+        "cocheMin": 77
       },
       "sanxenxo": {
         "cocheMin": 29
@@ -2138,7 +2138,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 77
       },
       "sanxenxo": {
         "cocheMin": 30
@@ -2209,7 +2209,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 73
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 33
@@ -2280,7 +2280,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 73
+        "cocheMin": 81
       },
       "sanxenxo": {
         "cocheMin": 33
@@ -2351,7 +2351,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 75
+        "cocheMin": 83
       },
       "sanxenxo": {
         "cocheMin": 35
@@ -2422,7 +2422,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 75
+        "cocheMin": 82
       },
       "sanxenxo": {
         "cocheMin": 35
@@ -2493,7 +2493,7 @@
         "cocheMin": 62
       },
       "esteiro": {
-        "cocheMin": 77
+        "cocheMin": 84
       },
       "sanxenxo": {
         "cocheMin": 36
@@ -2564,7 +2564,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 69
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 28
@@ -2635,7 +2635,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 69
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 29
@@ -2706,7 +2706,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 69
+        "cocheMin": 77
       },
       "sanxenxo": {
         "cocheMin": 29
@@ -2777,7 +2777,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 68
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 28
@@ -2848,7 +2848,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 69
+        "cocheMin": 77
       },
       "sanxenxo": {
         "cocheMin": 29
@@ -2919,7 +2919,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 30
@@ -2990,7 +2990,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 30
@@ -3061,7 +3061,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 77
       },
       "sanxenxo": {
         "cocheMin": 30
@@ -3132,7 +3132,7 @@
         "cocheMin": 51
       },
       "esteiro": {
-        "cocheMin": 37
+        "cocheMin": 48
       },
       "sanxenxo": {
         "cocheMin": 58
@@ -3203,7 +3203,7 @@
         "cocheMin": 52
       },
       "esteiro": {
-        "cocheMin": 38
+        "cocheMin": 48
       },
       "sanxenxo": {
         "cocheMin": 59
@@ -3274,7 +3274,7 @@
         "cocheMin": 52
       },
       "esteiro": {
-        "cocheMin": 36
+        "cocheMin": 47
       },
       "sanxenxo": {
         "cocheMin": 59
@@ -3345,7 +3345,7 @@
         "cocheMin": 50
       },
       "esteiro": {
-        "cocheMin": 34
+        "cocheMin": 45
       },
       "sanxenxo": {
         "cocheMin": 57
@@ -3416,7 +3416,7 @@
         "cocheMin": 38
       },
       "esteiro": {
-        "cocheMin": 28
+        "cocheMin": 39
       },
       "sanxenxo": {
         "cocheMin": 46
@@ -3487,7 +3487,7 @@
         "cocheMin": 45
       },
       "esteiro": {
-        "cocheMin": 42
+        "cocheMin": 53
       },
       "sanxenxo": {
         "cocheMin": 48
@@ -3558,7 +3558,7 @@
         "cocheMin": 44
       },
       "esteiro": {
-        "cocheMin": 46
+        "cocheMin": 57
       },
       "sanxenxo": {
         "cocheMin": 31
@@ -3629,7 +3629,7 @@
         "cocheMin": 46
       },
       "esteiro": {
-        "cocheMin": 57
+        "cocheMin": 67
       },
       "sanxenxo": {
         "cocheMin": 26
@@ -3700,7 +3700,7 @@
         "cocheMin": 48
       },
       "esteiro": {
-        "cocheMin": 61
+        "cocheMin": 70
       },
       "sanxenxo": {
         "cocheMin": 28
@@ -3771,7 +3771,7 @@
         "cocheMin": 51
       },
       "esteiro": {
-        "cocheMin": 64
+        "cocheMin": 72
       },
       "sanxenxo": {
         "cocheMin": 25
@@ -3842,7 +3842,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 74
+        "cocheMin": 81
       },
       "sanxenxo": {
         "cocheMin": 34
@@ -3913,7 +3913,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 77
+        "cocheMin": 84
       },
       "sanxenxo": {
         "cocheMin": 37
@@ -3984,7 +3984,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 35
+        "cocheMin": 54
       },
       "sanxenxo": {
         "cocheMin": 65
@@ -4055,7 +4055,7 @@
         "cocheMin": 57
       },
       "esteiro": {
-        "cocheMin": 34
+        "cocheMin": 53
       },
       "sanxenxo": {
         "cocheMin": 64
@@ -4126,7 +4126,7 @@
         "cocheMin": 57
       },
       "esteiro": {
-        "cocheMin": 34
+        "cocheMin": 53
       },
       "sanxenxo": {
         "cocheMin": 64
@@ -4197,7 +4197,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 33
+        "cocheMin": 52
       },
       "sanxenxo": {
         "cocheMin": 63
@@ -4268,7 +4268,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 35
+        "cocheMin": 55
       },
       "sanxenxo": {
         "cocheMin": 63
@@ -4339,7 +4339,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 35
+        "cocheMin": 54
       },
       "sanxenxo": {
         "cocheMin": 62
@@ -4410,7 +4410,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 34
+        "cocheMin": 54
       },
       "sanxenxo": {
         "cocheMin": 62
@@ -4481,7 +4481,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 34
+        "cocheMin": 53
       },
       "sanxenxo": {
         "cocheMin": 62
@@ -4552,7 +4552,7 @@
         "cocheMin": 53
       },
       "esteiro": {
-        "cocheMin": 35
+        "cocheMin": 52
       },
       "sanxenxo": {
         "cocheMin": 61
@@ -4623,7 +4623,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 36
+        "cocheMin": 53
       },
       "sanxenxo": {
         "cocheMin": 61
@@ -4694,7 +4694,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 36
+        "cocheMin": 52
       },
       "sanxenxo": {
         "cocheMin": 61
@@ -4765,7 +4765,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 41
+        "cocheMin": 60
       },
       "sanxenxo": {
         "cocheMin": 71
@@ -4836,7 +4836,7 @@
         "cocheMin": 65
       },
       "esteiro": {
-        "cocheMin": 41
+        "cocheMin": 61
       },
       "sanxenxo": {
         "cocheMin": 72
@@ -4907,7 +4907,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 40
+        "cocheMin": 60
       },
       "sanxenxo": {
         "cocheMin": 71
@@ -4978,7 +4978,7 @@
         "cocheMin": 62
       },
       "esteiro": {
-        "cocheMin": 39
+        "cocheMin": 59
       },
       "sanxenxo": {
         "cocheMin": 70
@@ -5049,7 +5049,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 38
+        "cocheMin": 57
       },
       "sanxenxo": {
         "cocheMin": 68
@@ -5120,7 +5120,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 37
+        "cocheMin": 57
       },
       "sanxenxo": {
         "cocheMin": 68
@@ -5191,7 +5191,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 36
+        "cocheMin": 56
       },
       "sanxenxo": {
         "cocheMin": 67
@@ -5262,7 +5262,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 35
+        "cocheMin": 55
       },
       "sanxenxo": {
         "cocheMin": 66
@@ -5333,7 +5333,7 @@
         "cocheMin": 51
       },
       "esteiro": {
-        "cocheMin": 37
+        "cocheMin": 48
       },
       "sanxenxo": {
         "cocheMin": 59
@@ -5404,7 +5404,7 @@
         "cocheMin": 53
       },
       "esteiro": {
-        "cocheMin": 39
+        "cocheMin": 50
       },
       "sanxenxo": {
         "cocheMin": 60
@@ -5475,7 +5475,7 @@
         "cocheMin": 57
       },
       "esteiro": {
-        "cocheMin": 43
+        "cocheMin": 54
       },
       "sanxenxo": {
         "cocheMin": 64
@@ -5546,7 +5546,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 41
+        "cocheMin": 52
       },
       "sanxenxo": {
         "cocheMin": 62
@@ -5617,7 +5617,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 41
+        "cocheMin": 52
       },
       "sanxenxo": {
         "cocheMin": 62
@@ -5688,7 +5688,7 @@
         "cocheMin": 50
       },
       "esteiro": {
-        "cocheMin": 35
+        "cocheMin": 46
       },
       "sanxenxo": {
         "cocheMin": 57
@@ -5759,7 +5759,7 @@
         "cocheMin": 52
       },
       "esteiro": {
-        "cocheMin": 36
+        "cocheMin": 47
       },
       "sanxenxo": {
         "cocheMin": 59
@@ -5830,7 +5830,7 @@
         "cocheMin": 51
       },
       "esteiro": {
-        "cocheMin": 35
+        "cocheMin": 46
       },
       "sanxenxo": {
         "cocheMin": 58
@@ -5901,7 +5901,7 @@
         "cocheMin": 49
       },
       "esteiro": {
-        "cocheMin": 33
+        "cocheMin": 44
       },
       "sanxenxo": {
         "cocheMin": 56
@@ -5972,7 +5972,7 @@
         "cocheMin": 48
       },
       "esteiro": {
-        "cocheMin": 32
+        "cocheMin": 42
       },
       "sanxenxo": {
         "cocheMin": 55
@@ -6043,7 +6043,7 @@
         "cocheMin": 48
       },
       "esteiro": {
-        "cocheMin": 31
+        "cocheMin": 42
       },
       "sanxenxo": {
         "cocheMin": 55
@@ -6114,7 +6114,7 @@
         "cocheMin": 47
       },
       "esteiro": {
-        "cocheMin": 29
+        "cocheMin": 40
       },
       "sanxenxo": {
         "cocheMin": 54
@@ -6185,7 +6185,7 @@
         "cocheMin": 46
       },
       "esteiro": {
-        "cocheMin": 27
+        "cocheMin": 38
       },
       "sanxenxo": {
         "cocheMin": 54
@@ -6256,7 +6256,7 @@
         "cocheMin": 46
       },
       "esteiro": {
-        "cocheMin": 27
+        "cocheMin": 38
       },
       "sanxenxo": {
         "cocheMin": 53
@@ -6327,7 +6327,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 37
+        "cocheMin": 53
       },
       "sanxenxo": {
         "cocheMin": 62
@@ -6398,7 +6398,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 38
+        "cocheMin": 53
       },
       "sanxenxo": {
         "cocheMin": 62
@@ -6469,7 +6469,7 @@
         "cocheMin": 57
       },
       "esteiro": {
-        "cocheMin": 40
+        "cocheMin": 55
       },
       "sanxenxo": {
         "cocheMin": 64
@@ -6540,7 +6540,7 @@
         "cocheMin": 52
       },
       "esteiro": {
-        "cocheMin": 35
+        "cocheMin": 51
       },
       "sanxenxo": {
         "cocheMin": 59
@@ -6611,7 +6611,7 @@
         "cocheMin": 50
       },
       "esteiro": {
-        "cocheMin": 34
+        "cocheMin": 49
       },
       "sanxenxo": {
         "cocheMin": 58
@@ -6682,7 +6682,7 @@
         "cocheMin": 48
       },
       "esteiro": {
-        "cocheMin": 34
+        "cocheMin": 47
       },
       "sanxenxo": {
         "cocheMin": 55
@@ -6753,7 +6753,7 @@
         "cocheMin": 48
       },
       "esteiro": {
-        "cocheMin": 35
+        "cocheMin": 47
       },
       "sanxenxo": {
         "cocheMin": 56
@@ -6824,7 +6824,7 @@
         "cocheMin": 46
       },
       "esteiro": {
-        "cocheMin": 34
+        "cocheMin": 44
       },
       "sanxenxo": {
         "cocheMin": 53
@@ -6895,7 +6895,7 @@
         "cocheMin": 47
       },
       "esteiro": {
-        "cocheMin": 35
+        "cocheMin": 46
       },
       "sanxenxo": {
         "cocheMin": 55
@@ -6966,7 +6966,7 @@
         "cocheMin": 48
       },
       "esteiro": {
-        "cocheMin": 35
+        "cocheMin": 46
       },
       "sanxenxo": {
         "cocheMin": 55
@@ -7037,7 +7037,7 @@
         "cocheMin": 46
       },
       "esteiro": {
-        "cocheMin": 33
+        "cocheMin": 44
       },
       "sanxenxo": {
         "cocheMin": 53
@@ -7108,7 +7108,7 @@
         "cocheMin": 48
       },
       "esteiro": {
-        "cocheMin": 34
+        "cocheMin": 45
       },
       "sanxenxo": {
         "cocheMin": 55
@@ -7179,7 +7179,7 @@
         "cocheMin": 44
       },
       "esteiro": {
-        "cocheMin": 37
+        "cocheMin": 48
       },
       "sanxenxo": {
         "cocheMin": 51
@@ -7250,7 +7250,7 @@
         "cocheMin": 48
       },
       "esteiro": {
-        "cocheMin": 41
+        "cocheMin": 52
       },
       "sanxenxo": {
         "cocheMin": 53
@@ -7321,7 +7321,7 @@
         "cocheMin": 46
       },
       "esteiro": {
-        "cocheMin": 39
+        "cocheMin": 50
       },
       "sanxenxo": {
         "cocheMin": 51
@@ -7392,7 +7392,7 @@
         "cocheMin": 50
       },
       "esteiro": {
-        "cocheMin": 63
+        "cocheMin": 72
       },
       "sanxenxo": {
         "cocheMin": 26
@@ -7463,7 +7463,7 @@
         "cocheMin": 50
       },
       "esteiro": {
-        "cocheMin": 64
+        "cocheMin": 72
       },
       "sanxenxo": {
         "cocheMin": 24
@@ -7534,7 +7534,7 @@
         "cocheMin": 49
       },
       "esteiro": {
-        "cocheMin": 63
+        "cocheMin": 71
       },
       "sanxenxo": {
         "cocheMin": 23
@@ -7605,7 +7605,7 @@
         "cocheMin": 50
       },
       "esteiro": {
-        "cocheMin": 64
+        "cocheMin": 72
       },
       "sanxenxo": {
         "cocheMin": 24
@@ -7676,7 +7676,7 @@
         "cocheMin": 51
       },
       "esteiro": {
-        "cocheMin": 65
+        "cocheMin": 73
       },
       "sanxenxo": {
         "cocheMin": 24
@@ -7747,7 +7747,7 @@
         "cocheMin": 51
       },
       "esteiro": {
-        "cocheMin": 65
+        "cocheMin": 73
       },
       "sanxenxo": {
         "cocheMin": 25
@@ -7818,7 +7818,7 @@
         "cocheMin": 53
       },
       "esteiro": {
-        "cocheMin": 67
+        "cocheMin": 74
       },
       "sanxenxo": {
         "cocheMin": 27
@@ -7889,7 +7889,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 68
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 28
@@ -7960,7 +7960,7 @@
         "cocheMin": 49
       },
       "esteiro": {
-        "cocheMin": 42
+        "cocheMin": 53
       },
       "sanxenxo": {
         "cocheMin": 53
@@ -8031,7 +8031,7 @@
         "cocheMin": 47
       },
       "esteiro": {
-        "cocheMin": 41
+        "cocheMin": 52
       },
       "sanxenxo": {
         "cocheMin": 50
@@ -8102,7 +8102,7 @@
         "cocheMin": 43
       },
       "esteiro": {
-        "cocheMin": 45
+        "cocheMin": 55
       },
       "sanxenxo": {
         "cocheMin": 32
@@ -8173,7 +8173,7 @@
         "cocheMin": 44
       },
       "esteiro": {
-        "cocheMin": 49
+        "cocheMin": 60
       },
       "sanxenxo": {
         "cocheMin": 29
@@ -8244,7 +8244,7 @@
         "cocheMin": 45
       },
       "esteiro": {
-        "cocheMin": 56
+        "cocheMin": 67
       },
       "sanxenxo": {
         "cocheMin": 27
@@ -8315,7 +8315,7 @@
         "cocheMin": 45
       },
       "esteiro": {
-        "cocheMin": 57
+        "cocheMin": 67
       },
       "sanxenxo": {
         "cocheMin": 27
@@ -8386,7 +8386,7 @@
         "cocheMin": 45
       },
       "esteiro": {
-        "cocheMin": 57
+        "cocheMin": 67
       },
       "sanxenxo": {
         "cocheMin": 26
@@ -8457,7 +8457,7 @@
         "cocheMin": 46
       },
       "esteiro": {
-        "cocheMin": 59
+        "cocheMin": 68
       },
       "sanxenxo": {
         "cocheMin": 25
@@ -8528,7 +8528,7 @@
         "cocheMin": 47
       },
       "esteiro": {
-        "cocheMin": 60
+        "cocheMin": 69
       },
       "sanxenxo": {
         "cocheMin": 26
@@ -8599,7 +8599,7 @@
         "cocheMin": 48
       },
       "esteiro": {
-        "cocheMin": 61
+        "cocheMin": 70
       },
       "sanxenxo": {
         "cocheMin": 27
@@ -8670,7 +8670,7 @@
         "cocheMin": 49
       },
       "esteiro": {
-        "cocheMin": 62
+        "cocheMin": 70
       },
       "sanxenxo": {
         "cocheMin": 26
@@ -8741,7 +8741,7 @@
         "cocheMin": 39
       },
       "esteiro": {
-        "cocheMin": 31
+        "cocheMin": 42
       },
       "sanxenxo": {
         "cocheMin": 46
@@ -8812,7 +8812,7 @@
         "cocheMin": 40
       },
       "esteiro": {
-        "cocheMin": 32
+        "cocheMin": 43
       },
       "sanxenxo": {
         "cocheMin": 47
@@ -8883,7 +8883,7 @@
         "cocheMin": 45
       },
       "esteiro": {
-        "cocheMin": 38
+        "cocheMin": 49
       },
       "sanxenxo": {
         "cocheMin": 52
@@ -8954,7 +8954,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 68
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 28
@@ -9025,7 +9025,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 76
+        "cocheMin": 82
       },
       "sanxenxo": {
         "cocheMin": 34
@@ -9096,7 +9096,7 @@
         "cocheMin": 62
       },
       "esteiro": {
-        "cocheMin": 78
+        "cocheMin": 84
       },
       "sanxenxo": {
         "cocheMin": 37
@@ -9167,7 +9167,7 @@
         "cocheMin": 62
       },
       "esteiro": {
-        "cocheMin": 78
+        "cocheMin": 83
       },
       "sanxenxo": {
         "cocheMin": 36
@@ -9238,7 +9238,7 @@
         "cocheMin": 62
       },
       "esteiro": {
-        "cocheMin": 78
+        "cocheMin": 83
       },
       "sanxenxo": {
         "cocheMin": 36
@@ -9309,7 +9309,7 @@
         "cocheMin": 62
       },
       "esteiro": {
-        "cocheMin": 78
+        "cocheMin": 84
       },
       "sanxenxo": {
         "cocheMin": 37
@@ -9380,7 +9380,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 14
@@ -9451,7 +9451,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 14
@@ -9522,7 +9522,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 14
@@ -9593,7 +9593,7 @@
         "cocheMin": 91
       },
       "esteiro": {
-        "cocheMin": 107
+        "cocheMin": 112
       },
       "sanxenxo": {
         "cocheMin": 65
@@ -9664,7 +9664,7 @@
         "cocheMin": 85
       },
       "esteiro": {
-        "cocheMin": 101
+        "cocheMin": 107
       },
       "sanxenxo": {
         "cocheMin": 59
@@ -9735,7 +9735,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 100
+        "cocheMin": 106
       },
       "sanxenxo": {
         "cocheMin": 58
@@ -9806,7 +9806,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 100
+        "cocheMin": 105
       },
       "sanxenxo": {
         "cocheMin": 58
@@ -9877,7 +9877,7 @@
         "cocheMin": 79
       },
       "esteiro": {
-        "cocheMin": 95
+        "cocheMin": 101
       },
       "sanxenxo": {
         "cocheMin": 53
@@ -9948,7 +9948,7 @@
         "cocheMin": 82
       },
       "esteiro": {
-        "cocheMin": 98
+        "cocheMin": 104
       },
       "sanxenxo": {
         "cocheMin": 56
@@ -10019,7 +10019,7 @@
         "cocheMin": 79
       },
       "esteiro": {
-        "cocheMin": 95
+        "cocheMin": 101
       },
       "sanxenxo": {
         "cocheMin": 54
@@ -10090,7 +10090,7 @@
         "cocheMin": 78
       },
       "esteiro": {
-        "cocheMin": 94
+        "cocheMin": 100
       },
       "sanxenxo": {
         "cocheMin": 53
@@ -10161,7 +10161,7 @@
         "cocheMin": 78
       },
       "esteiro": {
-        "cocheMin": 94
+        "cocheMin": 100
       },
       "sanxenxo": {
         "cocheMin": 52
@@ -10232,7 +10232,7 @@
         "cocheMin": 78
       },
       "esteiro": {
-        "cocheMin": 94
+        "cocheMin": 99
       },
       "sanxenxo": {
         "cocheMin": 52
@@ -10303,7 +10303,7 @@
         "cocheMin": 76
       },
       "esteiro": {
-        "cocheMin": 93
+        "cocheMin": 98
       },
       "sanxenxo": {
         "cocheMin": 51
@@ -10374,7 +10374,7 @@
         "cocheMin": 76
       },
       "esteiro": {
-        "cocheMin": 92
+        "cocheMin": 98
       },
       "sanxenxo": {
         "cocheMin": 51
@@ -10445,7 +10445,7 @@
         "cocheMin": 83
       },
       "esteiro": {
-        "cocheMin": 99
+        "cocheMin": 105
       },
       "sanxenxo": {
         "cocheMin": 58
@@ -10516,7 +10516,7 @@
         "cocheMin": 82
       },
       "esteiro": {
-        "cocheMin": 98
+        "cocheMin": 103
       },
       "sanxenxo": {
         "cocheMin": 56
@@ -10587,7 +10587,7 @@
         "cocheMin": 81
       },
       "esteiro": {
-        "cocheMin": 97
+        "cocheMin": 103
       },
       "sanxenxo": {
         "cocheMin": 55
@@ -10658,7 +10658,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 100
+        "cocheMin": 105
       },
       "sanxenxo": {
         "cocheMin": 58
@@ -10729,7 +10729,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 100
+        "cocheMin": 105
       },
       "sanxenxo": {
         "cocheMin": 58
@@ -10800,7 +10800,7 @@
         "cocheMin": 86
       },
       "esteiro": {
-        "cocheMin": 102
+        "cocheMin": 107
       },
       "sanxenxo": {
         "cocheMin": 60
@@ -10871,7 +10871,7 @@
         "cocheMin": 85
       },
       "esteiro": {
-        "cocheMin": 101
+        "cocheMin": 107
       },
       "sanxenxo": {
         "cocheMin": 60
@@ -10942,7 +10942,7 @@
         "cocheMin": 85
       },
       "esteiro": {
-        "cocheMin": 101
+        "cocheMin": 106
       },
       "sanxenxo": {
         "cocheMin": 59
@@ -11013,7 +11013,7 @@
         "cocheMin": 85
       },
       "esteiro": {
-        "cocheMin": 101
+        "cocheMin": 107
       },
       "sanxenxo": {
         "cocheMin": 59
@@ -11084,7 +11084,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 100
+        "cocheMin": 105
       },
       "sanxenxo": {
         "cocheMin": 58
@@ -11155,7 +11155,7 @@
         "cocheMin": 82
       },
       "esteiro": {
-        "cocheMin": 98
+        "cocheMin": 104
       },
       "sanxenxo": {
         "cocheMin": 56
@@ -11226,7 +11226,7 @@
         "cocheMin": 81
       },
       "esteiro": {
-        "cocheMin": 97
+        "cocheMin": 102
       },
       "sanxenxo": {
         "cocheMin": 55
@@ -11297,7 +11297,7 @@
         "cocheMin": 85
       },
       "esteiro": {
-        "cocheMin": 101
+        "cocheMin": 107
       },
       "sanxenxo": {
         "cocheMin": 59
@@ -11368,7 +11368,7 @@
         "cocheMin": 88
       },
       "esteiro": {
-        "cocheMin": 104
+        "cocheMin": 110
       },
       "sanxenxo": {
         "cocheMin": 62
@@ -11439,7 +11439,7 @@
         "cocheMin": 86
       },
       "esteiro": {
-        "cocheMin": 102
+        "cocheMin": 108
       },
       "sanxenxo": {
         "cocheMin": 60
@@ -11510,7 +11510,7 @@
         "cocheMin": 65
       },
       "esteiro": {
-        "cocheMin": 81
+        "cocheMin": 87
       },
       "sanxenxo": {
         "cocheMin": 40
@@ -11581,7 +11581,7 @@
         "cocheMin": 65
       },
       "esteiro": {
-        "cocheMin": 81
+        "cocheMin": 87
       },
       "sanxenxo": {
         "cocheMin": 40
@@ -11652,7 +11652,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 77
+        "cocheMin": 82
       },
       "sanxenxo": {
         "cocheMin": 35
@@ -11723,7 +11723,7 @@
         "cocheMin": 65
       },
       "esteiro": {
-        "cocheMin": 81
+        "cocheMin": 87
       },
       "sanxenxo": {
         "cocheMin": 40
@@ -11794,7 +11794,7 @@
         "cocheMin": 66
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 40
@@ -11865,7 +11865,7 @@
         "cocheMin": 65
       },
       "esteiro": {
-        "cocheMin": 81
+        "cocheMin": 86
       },
       "sanxenxo": {
         "cocheMin": 39
@@ -11936,7 +11936,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 77
+        "cocheMin": 82
       },
       "sanxenxo": {
         "cocheMin": 35
@@ -12007,7 +12007,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 74
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 32
@@ -12078,7 +12078,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 71
+        "cocheMin": 77
       },
       "sanxenxo": {
         "cocheMin": 30
@@ -12149,7 +12149,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 74
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 33
@@ -12220,7 +12220,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 75
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 33
@@ -12291,7 +12291,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 75
+        "cocheMin": 81
       },
       "sanxenxo": {
         "cocheMin": 33
@@ -12362,7 +12362,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 75
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 33
@@ -12433,7 +12433,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 75
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 33
@@ -12504,7 +12504,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 75
+        "cocheMin": 81
       },
       "sanxenxo": {
         "cocheMin": 33
@@ -12575,7 +12575,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 76
+        "cocheMin": 82
       },
       "sanxenxo": {
         "cocheMin": 35
@@ -12646,7 +12646,7 @@
         "cocheMin": 76
       },
       "esteiro": {
-        "cocheMin": 92
+        "cocheMin": 98
       },
       "sanxenxo": {
         "cocheMin": 51
@@ -12717,7 +12717,7 @@
         "cocheMin": 76
       },
       "esteiro": {
-        "cocheMin": 92
+        "cocheMin": 97
       },
       "sanxenxo": {
         "cocheMin": 50
@@ -12788,7 +12788,7 @@
         "cocheMin": 76
       },
       "esteiro": {
-        "cocheMin": 92
+        "cocheMin": 97
       },
       "sanxenxo": {
         "cocheMin": 50
@@ -12859,7 +12859,7 @@
         "cocheMin": 76
       },
       "esteiro": {
-        "cocheMin": 92
+        "cocheMin": 98
       },
       "sanxenxo": {
         "cocheMin": 50
@@ -12930,7 +12930,7 @@
         "cocheMin": 75
       },
       "esteiro": {
-        "cocheMin": 91
+        "cocheMin": 97
       },
       "sanxenxo": {
         "cocheMin": 49
@@ -13001,7 +13001,7 @@
         "cocheMin": 72
       },
       "esteiro": {
-        "cocheMin": 88
+        "cocheMin": 94
       },
       "sanxenxo": {
         "cocheMin": 47
@@ -13072,7 +13072,7 @@
         "cocheMin": 65
       },
       "esteiro": {
-        "cocheMin": 81
+        "cocheMin": 87
       },
       "sanxenxo": {
         "cocheMin": 17
@@ -13143,7 +13143,7 @@
         "cocheMin": 66
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 87
       },
       "sanxenxo": {
         "cocheMin": 18
@@ -13214,7 +13214,7 @@
         "cocheMin": 68
       },
       "esteiro": {
-        "cocheMin": 84
+        "cocheMin": 89
       },
       "sanxenxo": {
         "cocheMin": 20
@@ -13285,7 +13285,7 @@
         "cocheMin": 65
       },
       "esteiro": {
-        "cocheMin": 81
+        "cocheMin": 87
       },
       "sanxenxo": {
         "cocheMin": 17
@@ -13356,7 +13356,7 @@
         "cocheMin": 65
       },
       "esteiro": {
-        "cocheMin": 81
+        "cocheMin": 87
       },
       "sanxenxo": {
         "cocheMin": 17
@@ -13427,7 +13427,7 @@
         "cocheMin": 68
       },
       "esteiro": {
-        "cocheMin": 84
+        "cocheMin": 89
       },
       "sanxenxo": {
         "cocheMin": 20
@@ -13498,7 +13498,7 @@
         "cocheMin": 69
       },
       "esteiro": {
-        "cocheMin": 85
+        "cocheMin": 90
       },
       "sanxenxo": {
         "cocheMin": 21
@@ -13569,7 +13569,7 @@
         "cocheMin": 69
       },
       "esteiro": {
-        "cocheMin": 85
+        "cocheMin": 90
       },
       "sanxenxo": {
         "cocheMin": 21
@@ -13640,7 +13640,7 @@
         "cocheMin": 71
       },
       "esteiro": {
-        "cocheMin": 87
+        "cocheMin": 92
       },
       "sanxenxo": {
         "cocheMin": 23
@@ -13711,7 +13711,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 2
@@ -13782,7 +13782,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 76
+        "cocheMin": 81
       },
       "sanxenxo": {
         "cocheMin": 7
@@ -13853,7 +13853,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 76
+        "cocheMin": 81
       },
       "sanxenxo": {
         "cocheMin": 7
@@ -13924,7 +13924,7 @@
         "cocheMin": 37
       },
       "esteiro": {
-        "cocheMin": 45
+        "cocheMin": 54
       },
       "sanxenxo": {
         "cocheMin": 43
@@ -13995,7 +13995,7 @@
         "cocheMin": 45
       },
       "esteiro": {
-        "cocheMin": 58
+        "cocheMin": 67
       },
       "sanxenxo": {
         "cocheMin": 25
@@ -14066,7 +14066,7 @@
         "cocheMin": 51
       },
       "esteiro": {
-        "cocheMin": 65
+        "cocheMin": 73
       },
       "sanxenxo": {
         "cocheMin": 20
@@ -14137,7 +14137,7 @@
         "cocheMin": 51
       },
       "esteiro": {
-        "cocheMin": 65
+        "cocheMin": 73
       },
       "sanxenxo": {
         "cocheMin": 20
@@ -14208,7 +14208,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 77
+        "cocheMin": 82
       },
       "sanxenxo": {
         "cocheMin": 12
@@ -14279,7 +14279,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 72
+        "cocheMin": 77
       },
       "sanxenxo": {
         "cocheMin": 30
@@ -14350,7 +14350,7 @@
         "cocheMin": 67
       },
       "esteiro": {
-        "cocheMin": 83
+        "cocheMin": 89
       },
       "sanxenxo": {
         "cocheMin": 19
@@ -14421,7 +14421,7 @@
         "cocheMin": 66
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 18
@@ -14492,7 +14492,7 @@
         "cocheMin": 67
       },
       "esteiro": {
-        "cocheMin": 83
+        "cocheMin": 89
       },
       "sanxenxo": {
         "cocheMin": 19
@@ -14563,7 +14563,7 @@
         "cocheMin": 66
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 18
@@ -14634,7 +14634,7 @@
         "cocheMin": 68
       },
       "esteiro": {
-        "cocheMin": 84
+        "cocheMin": 90
       },
       "sanxenxo": {
         "cocheMin": 20
@@ -14705,7 +14705,7 @@
         "cocheMin": 69
       },
       "esteiro": {
-        "cocheMin": 85
+        "cocheMin": 91
       },
       "sanxenxo": {
         "cocheMin": 21
@@ -14776,7 +14776,7 @@
         "cocheMin": 68
       },
       "esteiro": {
-        "cocheMin": 84
+        "cocheMin": 90
       },
       "sanxenxo": {
         "cocheMin": 20
@@ -14847,7 +14847,7 @@
         "cocheMin": 69
       },
       "esteiro": {
-        "cocheMin": 85
+        "cocheMin": 91
       },
       "sanxenxo": {
         "cocheMin": 21
@@ -14918,7 +14918,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 74
+        "cocheMin": 82
       },
       "sanxenxo": {
         "cocheMin": 34
@@ -14989,7 +14989,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 74
+        "cocheMin": 82
       },
       "sanxenxo": {
         "cocheMin": 34
@@ -15060,7 +15060,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 74
+        "cocheMin": 82
       },
       "sanxenxo": {
         "cocheMin": 34
@@ -15131,7 +15131,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 74
+        "cocheMin": 81
       },
       "sanxenxo": {
         "cocheMin": 34
@@ -15202,7 +15202,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 72
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 32
@@ -15273,7 +15273,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 77
       },
       "sanxenxo": {
         "cocheMin": 30
@@ -15344,7 +15344,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 30
@@ -15415,7 +15415,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 77
       },
       "sanxenxo": {
         "cocheMin": 29
@@ -15486,7 +15486,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 30
@@ -15557,7 +15557,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 30
@@ -15628,7 +15628,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 30
@@ -15699,7 +15699,7 @@
         "cocheMin": 57
       },
       "esteiro": {
-        "cocheMin": 71
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 31
@@ -15770,7 +15770,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 68
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 28
@@ -15841,7 +15841,7 @@
         "cocheMin": 52
       },
       "esteiro": {
-        "cocheMin": 66
+        "cocheMin": 74
       },
       "sanxenxo": {
         "cocheMin": 21
@@ -15912,7 +15912,7 @@
         "cocheMin": 52
       },
       "esteiro": {
-        "cocheMin": 66
+        "cocheMin": 73
       },
       "sanxenxo": {
         "cocheMin": 21
@@ -15983,7 +15983,7 @@
         "cocheMin": 52
       },
       "esteiro": {
-        "cocheMin": 66
+        "cocheMin": 73
       },
       "sanxenxo": {
         "cocheMin": 20
@@ -16054,7 +16054,7 @@
         "cocheMin": 52
       },
       "esteiro": {
-        "cocheMin": 66
+        "cocheMin": 74
       },
       "sanxenxo": {
         "cocheMin": 19
@@ -16125,7 +16125,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 74
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 17
@@ -16196,7 +16196,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 77
+        "cocheMin": 83
       },
       "sanxenxo": {
         "cocheMin": 12
@@ -16267,7 +16267,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 75
+        "cocheMin": 81
       },
       "sanxenxo": {
         "cocheMin": 11
@@ -16338,7 +16338,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 79
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 15
@@ -16409,7 +16409,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 86
       },
       "sanxenxo": {
         "cocheMin": 16
@@ -16480,7 +16480,7 @@
         "cocheMin": 67
       },
       "esteiro": {
-        "cocheMin": 83
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 18
@@ -16551,7 +16551,7 @@
         "cocheMin": 68
       },
       "esteiro": {
-        "cocheMin": 84
+        "cocheMin": 89
       },
       "sanxenxo": {
         "cocheMin": 20
@@ -16622,7 +16622,7 @@
         "cocheMin": 68
       },
       "esteiro": {
-        "cocheMin": 84
+        "cocheMin": 89
       },
       "sanxenxo": {
         "cocheMin": 20
@@ -16693,7 +16693,7 @@
         "cocheMin": 67
       },
       "esteiro": {
-        "cocheMin": 83
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 19
@@ -16764,7 +16764,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 32
+        "cocheMin": 52
       },
       "sanxenxo": {
         "cocheMin": 63
@@ -16835,7 +16835,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 37
+        "cocheMin": 53
       },
       "sanxenxo": {
         "cocheMin": 62
@@ -16906,7 +16906,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 37
+        "cocheMin": 53
       },
       "sanxenxo": {
         "cocheMin": 62
@@ -16977,7 +16977,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 37
+        "cocheMin": 53
       },
       "sanxenxo": {
         "cocheMin": 62
@@ -17048,7 +17048,7 @@
         "cocheMin": 57
       },
       "esteiro": {
-        "cocheMin": 40
+        "cocheMin": 56
       },
       "sanxenxo": {
         "cocheMin": 64
@@ -17119,7 +17119,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 38
+        "cocheMin": 54
       },
       "sanxenxo": {
         "cocheMin": 62
@@ -17190,7 +17190,7 @@
         "cocheMin": 48
       },
       "esteiro": {
-        "cocheMin": 34
+        "cocheMin": 47
       },
       "sanxenxo": {
         "cocheMin": 55
@@ -17261,7 +17261,7 @@
         "cocheMin": 49
       },
       "esteiro": {
-        "cocheMin": 35
+        "cocheMin": 48
       },
       "sanxenxo": {
         "cocheMin": 56
@@ -17332,7 +17332,7 @@
         "cocheMin": 47
       },
       "esteiro": {
-        "cocheMin": 35
+        "cocheMin": 46
       },
       "sanxenxo": {
         "cocheMin": 54
@@ -17403,7 +17403,7 @@
         "cocheMin": 48
       },
       "esteiro": {
-        "cocheMin": 35
+        "cocheMin": 46
       },
       "sanxenxo": {
         "cocheMin": 55
@@ -17474,7 +17474,7 @@
         "cocheMin": 48
       },
       "esteiro": {
-        "cocheMin": 35
+        "cocheMin": 46
       },
       "sanxenxo": {
         "cocheMin": 56
@@ -17545,7 +17545,7 @@
         "cocheMin": 50
       },
       "esteiro": {
-        "cocheMin": 36
+        "cocheMin": 47
       },
       "sanxenxo": {
         "cocheMin": 57
@@ -17616,7 +17616,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 79
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 15
@@ -17687,7 +17687,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 76
+        "cocheMin": 82
       },
       "sanxenxo": {
         "cocheMin": 12
@@ -17758,7 +17758,7 @@
         "cocheMin": 62
       },
       "esteiro": {
-        "cocheMin": 78
+        "cocheMin": 84
       },
       "sanxenxo": {
         "cocheMin": 11
@@ -17829,7 +17829,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 76
+        "cocheMin": 82
       },
       "sanxenxo": {
         "cocheMin": 10
@@ -17900,7 +17900,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 77
+        "cocheMin": 82
       },
       "sanxenxo": {
         "cocheMin": 10
@@ -17971,7 +17971,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 74
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 8
@@ -18042,7 +18042,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 72
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 6
@@ -18113,7 +18113,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 72
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 6
@@ -18184,7 +18184,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 72
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 6
@@ -18255,7 +18255,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 4
@@ -18326,7 +18326,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 3
@@ -18397,7 +18397,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 71
+        "cocheMin": 77
       },
       "sanxenxo": {
         "cocheMin": 1
@@ -18468,7 +18468,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 2
@@ -18539,7 +18539,7 @@
         "cocheMin": 68
       },
       "esteiro": {
-        "cocheMin": 84
+        "cocheMin": 90
       },
       "sanxenxo": {
         "cocheMin": 20
@@ -18610,7 +18610,7 @@
         "cocheMin": 69
       },
       "esteiro": {
-        "cocheMin": 86
+        "cocheMin": 91
       },
       "sanxenxo": {
         "cocheMin": 21
@@ -18681,7 +18681,7 @@
         "cocheMin": 70
       },
       "esteiro": {
-        "cocheMin": 86
+        "cocheMin": 92
       },
       "sanxenxo": {
         "cocheMin": 22
@@ -18752,7 +18752,7 @@
         "cocheMin": 72
       },
       "esteiro": {
-        "cocheMin": 88
+        "cocheMin": 94
       },
       "sanxenxo": {
         "cocheMin": 24
@@ -18823,7 +18823,7 @@
         "cocheMin": 74
       },
       "esteiro": {
-        "cocheMin": 90
+        "cocheMin": 96
       },
       "sanxenxo": {
         "cocheMin": 26
@@ -18894,7 +18894,7 @@
         "cocheMin": 68
       },
       "esteiro": {
-        "cocheMin": 84
+        "cocheMin": 90
       },
       "sanxenxo": {
         "cocheMin": 20
@@ -18965,7 +18965,7 @@
         "cocheMin": 68
       },
       "esteiro": {
-        "cocheMin": 84
+        "cocheMin": 90
       },
       "sanxenxo": {
         "cocheMin": 20
@@ -19036,7 +19036,7 @@
         "cocheMin": 66
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 18
@@ -19107,7 +19107,7 @@
         "cocheMin": 66
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 18
@@ -19178,7 +19178,7 @@
         "cocheMin": 66
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 18
@@ -19249,7 +19249,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 86
       },
       "sanxenxo": {
         "cocheMin": 16
@@ -19320,7 +19320,7 @@
         "cocheMin": 62
       },
       "esteiro": {
-        "cocheMin": 78
+        "cocheMin": 84
       },
       "sanxenxo": {
         "cocheMin": 14
@@ -19391,7 +19391,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 75
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 11
@@ -19462,7 +19462,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 75
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 6
@@ -19533,7 +19533,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 75
+        "cocheMin": 81
       },
       "sanxenxo": {
         "cocheMin": 7
@@ -19604,7 +19604,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 76
+        "cocheMin": 82
       },
       "sanxenxo": {
         "cocheMin": 8
@@ -19675,7 +19675,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 76
+        "cocheMin": 82
       },
       "sanxenxo": {
         "cocheMin": 8
@@ -19746,7 +19746,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 68
+        "cocheMin": 75
       },
       "sanxenxo": {
         "cocheMin": 17
@@ -19817,7 +19817,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 17
@@ -19888,7 +19888,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 75
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 17
@@ -19959,7 +19959,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 79
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 15
@@ -20030,7 +20030,7 @@
         "cocheMin": 68
       },
       "esteiro": {
-        "cocheMin": 84
+        "cocheMin": 90
       },
       "sanxenxo": {
         "cocheMin": 20
@@ -20101,7 +20101,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 86
       },
       "sanxenxo": {
         "cocheMin": 16
@@ -20172,7 +20172,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 16
@@ -20243,7 +20243,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 72
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 12
@@ -20314,7 +20314,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 76
+        "cocheMin": 82
       },
       "sanxenxo": {
         "cocheMin": 8
@@ -20385,7 +20385,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 76
+        "cocheMin": 81
       },
       "sanxenxo": {
         "cocheMin": 8
@@ -20456,7 +20456,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 75
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 9
@@ -20527,7 +20527,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 74
+        "cocheMin": 79
       },
       "sanxenxo": {
         "cocheMin": 10
@@ -20598,7 +20598,7 @@
         "cocheMin": 57
       },
       "esteiro": {
-        "cocheMin": 73
+        "cocheMin": 79
       },
       "sanxenxo": {
         "cocheMin": 10
@@ -20669,7 +20669,7 @@
         "cocheMin": 57
       },
       "esteiro": {
-        "cocheMin": 73
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 11
@@ -20740,7 +20740,7 @@
         "cocheMin": 37
       },
       "esteiro": {
-        "cocheMin": 38
+        "cocheMin": 49
       },
       "sanxenxo": {
         "cocheMin": 38
@@ -20811,7 +20811,7 @@
         "cocheMin": 46
       },
       "esteiro": {
-        "cocheMin": 58
+        "cocheMin": 67
       },
       "sanxenxo": {
         "cocheMin": 25
@@ -20882,7 +20882,7 @@
         "cocheMin": 46
       },
       "esteiro": {
-        "cocheMin": 59
+        "cocheMin": 68
       },
       "sanxenxo": {
         "cocheMin": 25
@@ -20953,7 +20953,7 @@
         "cocheMin": 50
       },
       "esteiro": {
-        "cocheMin": 63
+        "cocheMin": 72
       },
       "sanxenxo": {
         "cocheMin": 29
@@ -21024,7 +21024,7 @@
         "cocheMin": 51
       },
       "esteiro": {
-        "cocheMin": 64
+        "cocheMin": 72
       },
       "sanxenxo": {
         "cocheMin": 25
@@ -21095,7 +21095,7 @@
         "cocheMin": 50
       },
       "esteiro": {
-        "cocheMin": 64
+        "cocheMin": 71
       },
       "sanxenxo": {
         "cocheMin": 17
@@ -21166,7 +21166,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 2
@@ -21237,7 +21237,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 72
+        "cocheMin": 77
       },
       "sanxenxo": {
         "cocheMin": 3
@@ -21308,7 +21308,7 @@
         "cocheMin": 57
       },
       "esteiro": {
-        "cocheMin": 73
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 4
@@ -21379,7 +21379,7 @@
         "cocheMin": 90
       },
       "esteiro": {
-        "cocheMin": 106
+        "cocheMin": 112
       },
       "sanxenxo": {
         "cocheMin": 65
@@ -21450,7 +21450,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 14
@@ -21521,7 +21521,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 14
@@ -21592,7 +21592,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 14
@@ -21663,7 +21663,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 14
@@ -21734,7 +21734,7 @@
         "cocheMin": 101
       },
       "esteiro": {
-        "cocheMin": 117
+        "cocheMin": 123
       },
       "sanxenxo": {
         "cocheMin": 76
@@ -21805,7 +21805,7 @@
         "cocheMin": 103
       },
       "esteiro": {
-        "cocheMin": 119
+        "cocheMin": 125
       },
       "sanxenxo": {
         "cocheMin": 77
@@ -21876,7 +21876,7 @@
         "cocheMin": 111
       },
       "esteiro": {
-        "cocheMin": 127
+        "cocheMin": 133
       },
       "sanxenxo": {
         "cocheMin": 86
@@ -21947,7 +21947,7 @@
         "cocheMin": 114
       },
       "esteiro": {
-        "cocheMin": 130
+        "cocheMin": 136
       },
       "sanxenxo": {
         "cocheMin": 89
@@ -22018,7 +22018,7 @@
         "cocheMin": 115
       },
       "esteiro": {
-        "cocheMin": 131
+        "cocheMin": 137
       },
       "sanxenxo": {
         "cocheMin": 90
@@ -22089,7 +22089,7 @@
         "cocheMin": 110
       },
       "esteiro": {
-        "cocheMin": 126
+        "cocheMin": 131
       },
       "sanxenxo": {
         "cocheMin": 84
@@ -22160,7 +22160,7 @@
         "cocheMin": 108
       },
       "esteiro": {
-        "cocheMin": 124
+        "cocheMin": 130
       },
       "sanxenxo": {
         "cocheMin": 83
@@ -22231,7 +22231,7 @@
         "cocheMin": 109
       },
       "esteiro": {
-        "cocheMin": 125
+        "cocheMin": 131
       },
       "sanxenxo": {
         "cocheMin": 83
@@ -22302,7 +22302,7 @@
         "cocheMin": 105
       },
       "esteiro": {
-        "cocheMin": 121
+        "cocheMin": 127
       },
       "sanxenxo": {
         "cocheMin": 79
@@ -22373,7 +22373,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 23
@@ -22444,7 +22444,7 @@
         "cocheMin": 53
       },
       "esteiro": {
-        "cocheMin": 69
+        "cocheMin": 74
       },
       "sanxenxo": {
         "cocheMin": 23
@@ -22515,7 +22515,7 @@
         "cocheMin": 52
       },
       "esteiro": {
-        "cocheMin": 68
+        "cocheMin": 74
       },
       "sanxenxo": {
         "cocheMin": 26
@@ -22586,7 +22586,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 72
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 12
@@ -22657,7 +22657,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 74
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 32
@@ -22728,7 +22728,7 @@
         "cocheMin": 86
       },
       "esteiro": {
-        "cocheMin": 102
+        "cocheMin": 107
       },
       "sanxenxo": {
         "cocheMin": 60
@@ -22799,7 +22799,7 @@
         "cocheMin": 86
       },
       "esteiro": {
-        "cocheMin": 102
+        "cocheMin": 108
       },
       "sanxenxo": {
         "cocheMin": 60
@@ -22870,7 +22870,7 @@
         "cocheMin": 83
       },
       "esteiro": {
-        "cocheMin": 99
+        "cocheMin": 104
       },
       "sanxenxo": {
         "cocheMin": 57
@@ -22941,7 +22941,7 @@
         "cocheMin": 82
       },
       "esteiro": {
-        "cocheMin": 98
+        "cocheMin": 104
       },
       "sanxenxo": {
         "cocheMin": 57
@@ -23012,7 +23012,7 @@
         "cocheMin": 83
       },
       "esteiro": {
-        "cocheMin": 99
+        "cocheMin": 104
       },
       "sanxenxo": {
         "cocheMin": 57
@@ -23083,7 +23083,7 @@
         "cocheMin": 82
       },
       "esteiro": {
-        "cocheMin": 98
+        "cocheMin": 104
       },
       "sanxenxo": {
         "cocheMin": 56
@@ -23154,7 +23154,7 @@
         "cocheMin": 79
       },
       "esteiro": {
-        "cocheMin": 95
+        "cocheMin": 101
       },
       "sanxenxo": {
         "cocheMin": 53
@@ -23225,7 +23225,7 @@
         "cocheMin": 76
       },
       "esteiro": {
-        "cocheMin": 92
+        "cocheMin": 98
       },
       "sanxenxo": {
         "cocheMin": 50
@@ -23296,7 +23296,7 @@
         "cocheMin": 76
       },
       "esteiro": {
-        "cocheMin": 92
+        "cocheMin": 98
       },
       "sanxenxo": {
         "cocheMin": 50
@@ -23367,7 +23367,7 @@
         "cocheMin": 74
       },
       "esteiro": {
-        "cocheMin": 90
+        "cocheMin": 95
       },
       "sanxenxo": {
         "cocheMin": 48
@@ -23438,7 +23438,7 @@
         "cocheMin": 73
       },
       "esteiro": {
-        "cocheMin": 89
+        "cocheMin": 95
       },
       "sanxenxo": {
         "cocheMin": 47
@@ -23509,7 +23509,7 @@
         "cocheMin": 74
       },
       "esteiro": {
-        "cocheMin": 90
+        "cocheMin": 95
       },
       "sanxenxo": {
         "cocheMin": 48
@@ -23580,7 +23580,7 @@
         "cocheMin": 75
       },
       "esteiro": {
-        "cocheMin": 91
+        "cocheMin": 96
       },
       "sanxenxo": {
         "cocheMin": 49
@@ -23651,7 +23651,7 @@
         "cocheMin": 75
       },
       "esteiro": {
-        "cocheMin": 91
+        "cocheMin": 96
       },
       "sanxenxo": {
         "cocheMin": 49
@@ -23722,7 +23722,7 @@
         "cocheMin": 75
       },
       "esteiro": {
-        "cocheMin": 91
+        "cocheMin": 97
       },
       "sanxenxo": {
         "cocheMin": 50
@@ -23793,7 +23793,7 @@
         "cocheMin": 74
       },
       "esteiro": {
-        "cocheMin": 90
+        "cocheMin": 96
       },
       "sanxenxo": {
         "cocheMin": 48
@@ -23864,7 +23864,7 @@
         "cocheMin": 90
       },
       "esteiro": {
-        "cocheMin": 106
+        "cocheMin": 112
       },
       "sanxenxo": {
         "cocheMin": 65
@@ -23935,7 +23935,7 @@
         "cocheMin": 90
       },
       "esteiro": {
-        "cocheMin": 106
+        "cocheMin": 112
       },
       "sanxenxo": {
         "cocheMin": 65
@@ -24006,7 +24006,7 @@
         "cocheMin": 90
       },
       "esteiro": {
-        "cocheMin": 106
+        "cocheMin": 112
       },
       "sanxenxo": {
         "cocheMin": 65
@@ -24077,7 +24077,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 21
@@ -24148,7 +24148,7 @@
         "cocheMin": 79
       },
       "esteiro": {
-        "cocheMin": 95
+        "cocheMin": 101
       },
       "sanxenxo": {
         "cocheMin": 53
@@ -24219,7 +24219,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 86
       },
       "sanxenxo": {
         "cocheMin": 39
@@ -24290,7 +24290,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 75
+        "cocheMin": 81
       },
       "sanxenxo": {
         "cocheMin": 34
@@ -24361,7 +24361,7 @@
         "cocheMin": 77
       },
       "esteiro": {
-        "cocheMin": 93
+        "cocheMin": 98
       },
       "sanxenxo": {
         "cocheMin": 51
@@ -24432,7 +24432,7 @@
         "cocheMin": 79
       },
       "esteiro": {
-        "cocheMin": 95
+        "cocheMin": 100
       },
       "sanxenxo": {
         "cocheMin": 53
@@ -24503,7 +24503,7 @@
         "cocheMin": 150
       },
       "esteiro": {
-        "cocheMin": 176
+        "cocheMin": 182
       },
       "sanxenxo": {
         "cocheMin": 191
@@ -24574,7 +24574,7 @@
         "cocheMin": 152
       },
       "esteiro": {
-        "cocheMin": 178
+        "cocheMin": 184
       },
       "sanxenxo": {
         "cocheMin": 193
@@ -24645,7 +24645,7 @@
         "cocheMin": 150
       },
       "esteiro": {
-        "cocheMin": 176
+        "cocheMin": 182
       },
       "sanxenxo": {
         "cocheMin": 191
@@ -24716,7 +24716,7 @@
         "cocheMin": 151
       },
       "esteiro": {
-        "cocheMin": 177
+        "cocheMin": 183
       },
       "sanxenxo": {
         "cocheMin": 192
@@ -24787,7 +24787,7 @@
         "cocheMin": 145
       },
       "esteiro": {
-        "cocheMin": 172
+        "cocheMin": 177
       },
       "sanxenxo": {
         "cocheMin": 186
@@ -24858,7 +24858,7 @@
         "cocheMin": 134
       },
       "esteiro": {
-        "cocheMin": 160
+        "cocheMin": 166
       },
       "sanxenxo": {
         "cocheMin": 175
@@ -24929,7 +24929,7 @@
         "cocheMin": 133
       },
       "esteiro": {
-        "cocheMin": 160
+        "cocheMin": 165
       },
       "sanxenxo": {
         "cocheMin": 174
@@ -25000,7 +25000,7 @@
         "cocheMin": 134
       },
       "esteiro": {
-        "cocheMin": 160
+        "cocheMin": 166
       },
       "sanxenxo": {
         "cocheMin": 175
@@ -25071,7 +25071,7 @@
         "cocheMin": 135
       },
       "esteiro": {
-        "cocheMin": 161
+        "cocheMin": 167
       },
       "sanxenxo": {
         "cocheMin": 176
@@ -25142,7 +25142,7 @@
         "cocheMin": 136
       },
       "esteiro": {
-        "cocheMin": 162
+        "cocheMin": 168
       },
       "sanxenxo": {
         "cocheMin": 177
@@ -25213,7 +25213,7 @@
         "cocheMin": 136
       },
       "esteiro": {
-        "cocheMin": 162
+        "cocheMin": 168
       },
       "sanxenxo": {
         "cocheMin": 177
@@ -25284,7 +25284,7 @@
         "cocheMin": 137
       },
       "esteiro": {
-        "cocheMin": 163
+        "cocheMin": 169
       },
       "sanxenxo": {
         "cocheMin": 178
@@ -25355,7 +25355,7 @@
         "cocheMin": 136
       },
       "esteiro": {
-        "cocheMin": 162
+        "cocheMin": 168
       },
       "sanxenxo": {
         "cocheMin": 177
@@ -25426,7 +25426,7 @@
         "cocheMin": 138
       },
       "esteiro": {
-        "cocheMin": 165
+        "cocheMin": 170
       },
       "sanxenxo": {
         "cocheMin": 179
@@ -25497,7 +25497,7 @@
         "cocheMin": 138
       },
       "esteiro": {
-        "cocheMin": 165
+        "cocheMin": 170
       },
       "sanxenxo": {
         "cocheMin": 179
@@ -25568,7 +25568,7 @@
         "cocheMin": 138
       },
       "esteiro": {
-        "cocheMin": 165
+        "cocheMin": 170
       },
       "sanxenxo": {
         "cocheMin": 179
@@ -25639,7 +25639,7 @@
         "cocheMin": 141
       },
       "esteiro": {
-        "cocheMin": 167
+        "cocheMin": 173
       },
       "sanxenxo": {
         "cocheMin": 182
@@ -25710,7 +25710,7 @@
         "cocheMin": 144
       },
       "esteiro": {
-        "cocheMin": 170
+        "cocheMin": 176
       },
       "sanxenxo": {
         "cocheMin": 185
@@ -25781,7 +25781,7 @@
         "cocheMin": 144
       },
       "esteiro": {
-        "cocheMin": 171
+        "cocheMin": 176
       },
       "sanxenxo": {
         "cocheMin": 185
@@ -25852,7 +25852,7 @@
         "cocheMin": 145
       },
       "esteiro": {
-        "cocheMin": 171
+        "cocheMin": 177
       },
       "sanxenxo": {
         "cocheMin": 186
@@ -25923,7 +25923,7 @@
         "cocheMin": 74
       },
       "esteiro": {
-        "cocheMin": 91
+        "cocheMin": 96
       },
       "sanxenxo": {
         "cocheMin": 117
@@ -25994,7 +25994,7 @@
         "cocheMin": 74
       },
       "esteiro": {
-        "cocheMin": 91
+        "cocheMin": 96
       },
       "sanxenxo": {
         "cocheMin": 117
@@ -26065,7 +26065,7 @@
         "cocheMin": 81
       },
       "esteiro": {
-        "cocheMin": 89
+        "cocheMin": 86
       },
       "sanxenxo": {
         "cocheMin": 121
@@ -26136,7 +26136,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 76
+        "cocheMin": 81
       },
       "sanxenxo": {
         "cocheMin": 11
@@ -26207,7 +26207,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 77
+        "cocheMin": 82
       },
       "sanxenxo": {
         "cocheMin": 35
@@ -26278,7 +26278,7 @@
         "cocheMin": 57
       },
       "esteiro": {
-        "cocheMin": 32
+        "cocheMin": 13
       },
       "sanxenxo": {
         "cocheMin": 89
@@ -26349,7 +26349,7 @@
         "cocheMin": 66
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 87
       },
       "sanxenxo": {
         "cocheMin": 40
@@ -26420,7 +26420,7 @@
         "cocheMin": 66
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 40
@@ -26491,7 +26491,7 @@
         "cocheMin": 71
       },
       "esteiro": {
-        "cocheMin": 87
+        "cocheMin": 92
       },
       "sanxenxo": {
         "cocheMin": 45
@@ -26562,7 +26562,7 @@
         "cocheMin": 82
       },
       "esteiro": {
-        "cocheMin": 98
+        "cocheMin": 103
       },
       "sanxenxo": {
         "cocheMin": 56
@@ -26633,7 +26633,7 @@
         "cocheMin": 76
       },
       "esteiro": {
-        "cocheMin": 92
+        "cocheMin": 98
       },
       "sanxenxo": {
         "cocheMin": 51
@@ -26704,7 +26704,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 75
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 33
@@ -26775,7 +26775,7 @@
         "cocheMin": 76
       },
       "esteiro": {
-        "cocheMin": 92
+        "cocheMin": 98
       },
       "sanxenxo": {
         "cocheMin": 50
@@ -26846,7 +26846,7 @@
         "cocheMin": 73
       },
       "esteiro": {
-        "cocheMin": 90
+        "cocheMin": 95
       },
       "sanxenxo": {
         "cocheMin": 48
@@ -26917,7 +26917,7 @@
         "cocheMin": 85
       },
       "esteiro": {
-        "cocheMin": 101
+        "cocheMin": 106
       },
       "sanxenxo": {
         "cocheMin": 59
@@ -26988,7 +26988,7 @@
         "cocheMin": 88
       },
       "esteiro": {
-        "cocheMin": 104
+        "cocheMin": 110
       },
       "sanxenxo": {
         "cocheMin": 63
@@ -27059,7 +27059,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 77
+        "cocheMin": 83
       },
       "sanxenxo": {
         "cocheMin": 13
@@ -27130,7 +27130,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 76
+        "cocheMin": 82
       },
       "sanxenxo": {
         "cocheMin": 10
@@ -27201,7 +27201,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 72
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 11
@@ -27272,7 +27272,7 @@
         "cocheMin": 65
       },
       "esteiro": {
-        "cocheMin": 81
+        "cocheMin": 87
       },
       "sanxenxo": {
         "cocheMin": 40
@@ -27343,7 +27343,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 79
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 38
@@ -27414,7 +27414,7 @@
         "cocheMin": 90
       },
       "esteiro": {
-        "cocheMin": 106
+        "cocheMin": 112
       },
       "sanxenxo": {
         "cocheMin": 65
@@ -27485,7 +27485,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 75
       },
       "sanxenxo": {
         "cocheMin": 13
@@ -27556,7 +27556,7 @@
         "cocheMin": 53
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 75
       },
       "sanxenxo": {
         "cocheMin": 14
@@ -27627,7 +27627,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 33
+        "cocheMin": 52
       },
       "sanxenxo": {
         "cocheMin": 61
@@ -27698,7 +27698,7 @@
         "cocheMin": 53
       },
       "esteiro": {
-        "cocheMin": 32
+        "cocheMin": 52
       },
       "sanxenxo": {
         "cocheMin": 61
@@ -27769,7 +27769,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 36
+        "cocheMin": 53
       },
       "sanxenxo": {
         "cocheMin": 61
@@ -27840,7 +27840,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 68
+        "cocheMin": 75
       },
       "sanxenxo": {
         "cocheMin": 28
@@ -27911,7 +27911,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 68
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 28
@@ -27982,7 +27982,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 100
+        "cocheMin": 106
       },
       "sanxenxo": {
         "cocheMin": 58
@@ -28053,7 +28053,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 100
+        "cocheMin": 106
       },
       "sanxenxo": {
         "cocheMin": 59
@@ -28124,7 +28124,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 86
       },
       "sanxenxo": {
         "cocheMin": 38
@@ -28195,7 +28195,7 @@
         "cocheMin": 133
       },
       "esteiro": {
-        "cocheMin": 159
+        "cocheMin": 165
       },
       "sanxenxo": {
         "cocheMin": 174
@@ -28266,7 +28266,7 @@
         "cocheMin": 135
       },
       "esteiro": {
-        "cocheMin": 161
+        "cocheMin": 167
       },
       "sanxenxo": {
         "cocheMin": 176
@@ -28337,7 +28337,7 @@
         "cocheMin": 136
       },
       "esteiro": {
-        "cocheMin": 162
+        "cocheMin": 168
       },
       "sanxenxo": {
         "cocheMin": 177
@@ -28408,7 +28408,7 @@
         "cocheMin": 52
       },
       "esteiro": {
-        "cocheMin": 68
+        "cocheMin": 73
       },
       "sanxenxo": {
         "cocheMin": 26
@@ -28479,7 +28479,7 @@
         "cocheMin": 66
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 87
       },
       "sanxenxo": {
         "cocheMin": 18
@@ -28550,7 +28550,7 @@
         "cocheMin": 66
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 18
@@ -28621,7 +28621,7 @@
         "cocheMin": 67
       },
       "esteiro": {
-        "cocheMin": 83
+        "cocheMin": 89
       },
       "sanxenxo": {
         "cocheMin": 19
@@ -28692,7 +28692,7 @@
         "cocheMin": 57
       },
       "esteiro": {
-        "cocheMin": 73
+        "cocheMin": 79
       },
       "sanxenxo": {
         "cocheMin": 10
@@ -28763,7 +28763,7 @@
         "cocheMin": 53
       },
       "esteiro": {
-        "cocheMin": 69
+        "cocheMin": 75
       },
       "sanxenxo": {
         "cocheMin": 23
@@ -28834,7 +28834,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 100
+        "cocheMin": 105
       },
       "sanxenxo": {
         "cocheMin": 58
@@ -28905,7 +28905,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 100
+        "cocheMin": 105
       },
       "sanxenxo": {
         "cocheMin": 58
@@ -28976,7 +28976,7 @@
         "cocheMin": 57
       },
       "esteiro": {
-        "cocheMin": 73
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 31
@@ -29047,7 +29047,7 @@
         "cocheMin": 57
       },
       "esteiro": {
-        "cocheMin": 73
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 31
@@ -29118,7 +29118,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 73
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 31
@@ -29189,7 +29189,7 @@
         "cocheMin": 69
       },
       "esteiro": {
-        "cocheMin": 85
+        "cocheMin": 91
       },
       "sanxenxo": {
         "cocheMin": 44
@@ -29260,7 +29260,7 @@
         "cocheMin": 70
       },
       "esteiro": {
-        "cocheMin": 86
+        "cocheMin": 91
       },
       "sanxenxo": {
         "cocheMin": 44
@@ -29331,7 +29331,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 15
@@ -29402,7 +29402,7 @@
         "cocheMin": 130
       },
       "esteiro": {
-        "cocheMin": 157
+        "cocheMin": 162
       },
       "sanxenxo": {
         "cocheMin": 171
@@ -29473,7 +29473,7 @@
         "cocheMin": 130
       },
       "esteiro": {
-        "cocheMin": 156
+        "cocheMin": 162
       },
       "sanxenxo": {
         "cocheMin": 171
@@ -29544,7 +29544,7 @@
         "cocheMin": 130
       },
       "esteiro": {
-        "cocheMin": 156
+        "cocheMin": 162
       },
       "sanxenxo": {
         "cocheMin": 171
@@ -29615,7 +29615,7 @@
         "cocheMin": 131
       },
       "esteiro": {
-        "cocheMin": 158
+        "cocheMin": 163
       },
       "sanxenxo": {
         "cocheMin": 172
@@ -29686,7 +29686,7 @@
         "cocheMin": 127
       },
       "esteiro": {
-        "cocheMin": 154
+        "cocheMin": 159
       },
       "sanxenxo": {
         "cocheMin": 168
@@ -29757,7 +29757,7 @@
         "cocheMin": 130
       },
       "esteiro": {
-        "cocheMin": 157
+        "cocheMin": 162
       },
       "sanxenxo": {
         "cocheMin": 171
@@ -29828,7 +29828,7 @@
         "cocheMin": 131
       },
       "esteiro": {
-        "cocheMin": 158
+        "cocheMin": 163
       },
       "sanxenxo": {
         "cocheMin": 172
@@ -29899,7 +29899,7 @@
         "cocheMin": 130
       },
       "esteiro": {
-        "cocheMin": 157
+        "cocheMin": 162
       },
       "sanxenxo": {
         "cocheMin": 171
@@ -29970,7 +29970,7 @@
         "cocheMin": 131
       },
       "esteiro": {
-        "cocheMin": 158
+        "cocheMin": 163
       },
       "sanxenxo": {
         "cocheMin": 172
@@ -30041,7 +30041,7 @@
         "cocheMin": 129
       },
       "esteiro": {
-        "cocheMin": 156
+        "cocheMin": 161
       },
       "sanxenxo": {
         "cocheMin": 170
@@ -30112,7 +30112,7 @@
         "cocheMin": 130
       },
       "esteiro": {
-        "cocheMin": 156
+        "cocheMin": 162
       },
       "sanxenxo": {
         "cocheMin": 171
@@ -30183,7 +30183,7 @@
         "cocheMin": 129
       },
       "esteiro": {
-        "cocheMin": 156
+        "cocheMin": 161
       },
       "sanxenxo": {
         "cocheMin": 170
@@ -30254,7 +30254,7 @@
         "cocheMin": 131
       },
       "esteiro": {
-        "cocheMin": 158
+        "cocheMin": 163
       },
       "sanxenxo": {
         "cocheMin": 172
@@ -30325,7 +30325,7 @@
         "cocheMin": 132
       },
       "esteiro": {
-        "cocheMin": 158
+        "cocheMin": 164
       },
       "sanxenxo": {
         "cocheMin": 173
@@ -30396,7 +30396,7 @@
         "cocheMin": 132
       },
       "esteiro": {
-        "cocheMin": 158
+        "cocheMin": 164
       },
       "sanxenxo": {
         "cocheMin": 173
@@ -30467,7 +30467,7 @@
         "cocheMin": 131
       },
       "esteiro": {
-        "cocheMin": 157
+        "cocheMin": 163
       },
       "sanxenxo": {
         "cocheMin": 172
@@ -30538,7 +30538,7 @@
         "cocheMin": 131
       },
       "esteiro": {
-        "cocheMin": 158
+        "cocheMin": 163
       },
       "sanxenxo": {
         "cocheMin": 172
@@ -30609,7 +30609,7 @@
         "cocheMin": 130
       },
       "esteiro": {
-        "cocheMin": 157
+        "cocheMin": 163
       },
       "sanxenxo": {
         "cocheMin": 171
@@ -30680,7 +30680,7 @@
         "cocheMin": 137
       },
       "esteiro": {
-        "cocheMin": 164
+        "cocheMin": 169
       },
       "sanxenxo": {
         "cocheMin": 178
@@ -30751,7 +30751,7 @@
         "cocheMin": 135
       },
       "esteiro": {
-        "cocheMin": 162
+        "cocheMin": 168
       },
       "sanxenxo": {
         "cocheMin": 176
@@ -30822,7 +30822,7 @@
         "cocheMin": 132
       },
       "esteiro": {
-        "cocheMin": 158
+        "cocheMin": 164
       },
       "sanxenxo": {
         "cocheMin": 173
@@ -30893,7 +30893,7 @@
         "cocheMin": 131
       },
       "esteiro": {
-        "cocheMin": 157
+        "cocheMin": 163
       },
       "sanxenxo": {
         "cocheMin": 172
@@ -30964,7 +30964,7 @@
         "cocheMin": 145
       },
       "esteiro": {
-        "cocheMin": 171
+        "cocheMin": 177
       },
       "sanxenxo": {
         "cocheMin": 186
@@ -31035,7 +31035,7 @@
         "cocheMin": 147
       },
       "esteiro": {
-        "cocheMin": 173
+        "cocheMin": 179
       },
       "sanxenxo": {
         "cocheMin": 188
@@ -31106,7 +31106,7 @@
         "cocheMin": 148
       },
       "esteiro": {
-        "cocheMin": 174
+        "cocheMin": 180
       },
       "sanxenxo": {
         "cocheMin": 189
@@ -31177,7 +31177,7 @@
         "cocheMin": 149
       },
       "esteiro": {
-        "cocheMin": 175
+        "cocheMin": 181
       },
       "sanxenxo": {
         "cocheMin": 190
@@ -31248,7 +31248,7 @@
         "cocheMin": 148
       },
       "esteiro": {
-        "cocheMin": 175
+        "cocheMin": 180
       },
       "sanxenxo": {
         "cocheMin": 189
@@ -31319,7 +31319,7 @@
         "cocheMin": 148
       },
       "esteiro": {
-        "cocheMin": 175
+        "cocheMin": 180
       },
       "sanxenxo": {
         "cocheMin": 189
@@ -31390,7 +31390,7 @@
         "cocheMin": 147
       },
       "esteiro": {
-        "cocheMin": 174
+        "cocheMin": 179
       },
       "sanxenxo": {
         "cocheMin": 188
@@ -31461,7 +31461,7 @@
         "cocheMin": 162
       },
       "esteiro": {
-        "cocheMin": 189
+        "cocheMin": 194
       },
       "sanxenxo": {
         "cocheMin": 203
@@ -31532,7 +31532,7 @@
         "cocheMin": 153
       },
       "esteiro": {
-        "cocheMin": 179
+        "cocheMin": 185
       },
       "sanxenxo": {
         "cocheMin": 194
@@ -31603,7 +31603,7 @@
         "cocheMin": 152
       },
       "esteiro": {
-        "cocheMin": 179
+        "cocheMin": 184
       },
       "sanxenxo": {
         "cocheMin": 193
@@ -31674,7 +31674,7 @@
         "cocheMin": 150
       },
       "esteiro": {
-        "cocheMin": 176
+        "cocheMin": 182
       },
       "sanxenxo": {
         "cocheMin": 191
@@ -31745,7 +31745,7 @@
         "cocheMin": 62
       },
       "esteiro": {
-        "cocheMin": 78
+        "cocheMin": 84
       },
       "sanxenxo": {
         "cocheMin": 37
@@ -31816,7 +31816,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 14
@@ -31887,7 +31887,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 14
@@ -31958,7 +31958,7 @@
         "cocheMin": 80
       },
       "esteiro": {
-        "cocheMin": 96
+        "cocheMin": 102
       },
       "sanxenxo": {
         "cocheMin": 55
@@ -32029,7 +32029,7 @@
         "cocheMin": 82
       },
       "esteiro": {
-        "cocheMin": 98
+        "cocheMin": 104
       },
       "sanxenxo": {
         "cocheMin": 56
@@ -32100,7 +32100,7 @@
         "cocheMin": 76
       },
       "esteiro": {
-        "cocheMin": 92
+        "cocheMin": 98
       },
       "sanxenxo": {
         "cocheMin": 50
@@ -32171,7 +32171,7 @@
         "cocheMin": 66
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 40
@@ -32242,7 +32242,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 81
+        "cocheMin": 86
       },
       "sanxenxo": {
         "cocheMin": 39
@@ -32313,7 +32313,7 @@
         "cocheMin": 65
       },
       "esteiro": {
-        "cocheMin": 81
+        "cocheMin": 87
       },
       "sanxenxo": {
         "cocheMin": 39
@@ -32384,7 +32384,7 @@
         "cocheMin": 69
       },
       "esteiro": {
-        "cocheMin": 85
+        "cocheMin": 90
       },
       "sanxenxo": {
         "cocheMin": 43
@@ -32455,7 +32455,7 @@
         "cocheMin": 69
       },
       "esteiro": {
-        "cocheMin": 85
+        "cocheMin": 91
       },
       "sanxenxo": {
         "cocheMin": 44
@@ -32526,7 +32526,7 @@
         "cocheMin": 72
       },
       "esteiro": {
-        "cocheMin": 88
+        "cocheMin": 93
       },
       "sanxenxo": {
         "cocheMin": 46
@@ -32597,7 +32597,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 100
+        "cocheMin": 105
       },
       "sanxenxo": {
         "cocheMin": 58
@@ -32668,7 +32668,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 100
+        "cocheMin": 105
       },
       "sanxenxo": {
         "cocheMin": 58
@@ -32739,7 +32739,7 @@
         "cocheMin": 90
       },
       "esteiro": {
-        "cocheMin": 106
+        "cocheMin": 112
       },
       "sanxenxo": {
         "cocheMin": 65
@@ -32810,7 +32810,7 @@
         "cocheMin": 90
       },
       "esteiro": {
-        "cocheMin": 106
+        "cocheMin": 112
       },
       "sanxenxo": {
         "cocheMin": 65
@@ -32881,7 +32881,7 @@
         "cocheMin": 95
       },
       "esteiro": {
-        "cocheMin": 111
+        "cocheMin": 117
       },
       "sanxenxo": {
         "cocheMin": 70
@@ -32952,7 +32952,7 @@
         "cocheMin": 88
       },
       "esteiro": {
-        "cocheMin": 104
+        "cocheMin": 110
       },
       "sanxenxo": {
         "cocheMin": 62
@@ -33023,7 +33023,7 @@
         "cocheMin": 88
       },
       "esteiro": {
-        "cocheMin": 104
+        "cocheMin": 110
       },
       "sanxenxo": {
         "cocheMin": 63
@@ -33094,7 +33094,7 @@
         "cocheMin": 69
       },
       "esteiro": {
-        "cocheMin": 85
+        "cocheMin": 91
       },
       "sanxenxo": {
         "cocheMin": 44
@@ -33165,7 +33165,7 @@
         "cocheMin": 70
       },
       "esteiro": {
-        "cocheMin": 86
+        "cocheMin": 92
       },
       "sanxenxo": {
         "cocheMin": 44
@@ -33236,7 +33236,7 @@
         "cocheMin": 71
       },
       "esteiro": {
-        "cocheMin": 87
+        "cocheMin": 92
       },
       "sanxenxo": {
         "cocheMin": 45
@@ -33307,7 +33307,7 @@
         "cocheMin": 74
       },
       "esteiro": {
-        "cocheMin": 90
+        "cocheMin": 95
       },
       "sanxenxo": {
         "cocheMin": 48
@@ -33378,7 +33378,7 @@
         "cocheMin": 75
       },
       "esteiro": {
-        "cocheMin": 91
+        "cocheMin": 96
       },
       "sanxenxo": {
         "cocheMin": 49
@@ -33449,7 +33449,7 @@
         "cocheMin": 73
       },
       "esteiro": {
-        "cocheMin": 89
+        "cocheMin": 95
       },
       "sanxenxo": {
         "cocheMin": 48
@@ -33520,7 +33520,7 @@
         "cocheMin": 75
       },
       "esteiro": {
-        "cocheMin": 91
+        "cocheMin": 97
       },
       "sanxenxo": {
         "cocheMin": 49
@@ -33591,7 +33591,7 @@
         "cocheMin": 75
       },
       "esteiro": {
-        "cocheMin": 92
+        "cocheMin": 97
       },
       "sanxenxo": {
         "cocheMin": 50
@@ -33662,7 +33662,7 @@
         "cocheMin": 82
       },
       "esteiro": {
-        "cocheMin": 98
+        "cocheMin": 104
       },
       "sanxenxo": {
         "cocheMin": 57
@@ -33733,7 +33733,7 @@
         "cocheMin": 82
       },
       "esteiro": {
-        "cocheMin": 98
+        "cocheMin": 104
       },
       "sanxenxo": {
         "cocheMin": 57
@@ -33804,7 +33804,7 @@
         "cocheMin": 81
       },
       "esteiro": {
-        "cocheMin": 97
+        "cocheMin": 103
       },
       "sanxenxo": {
         "cocheMin": 56
@@ -33875,7 +33875,7 @@
         "cocheMin": 80
       },
       "esteiro": {
-        "cocheMin": 96
+        "cocheMin": 102
       },
       "sanxenxo": {
         "cocheMin": 55
@@ -33946,7 +33946,7 @@
         "cocheMin": 62
       },
       "esteiro": {
-        "cocheMin": 78
+        "cocheMin": 83
       },
       "sanxenxo": {
         "cocheMin": 36
@@ -34017,7 +34017,7 @@
         "cocheMin": 65
       },
       "esteiro": {
-        "cocheMin": 81
+        "cocheMin": 87
       },
       "sanxenxo": {
         "cocheMin": 39
@@ -34088,7 +34088,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 86
       },
       "sanxenxo": {
         "cocheMin": 38
@@ -34159,7 +34159,7 @@
         "cocheMin": 65
       },
       "esteiro": {
-        "cocheMin": 81
+        "cocheMin": 86
       },
       "sanxenxo": {
         "cocheMin": 39
@@ -34230,7 +34230,7 @@
         "cocheMin": 73
       },
       "esteiro": {
-        "cocheMin": 89
+        "cocheMin": 94
       },
       "sanxenxo": {
         "cocheMin": 47
@@ -34301,7 +34301,7 @@
         "cocheMin": 72
       },
       "esteiro": {
-        "cocheMin": 88
+        "cocheMin": 94
       },
       "sanxenxo": {
         "cocheMin": 47
@@ -34372,7 +34372,7 @@
         "cocheMin": 72
       },
       "esteiro": {
-        "cocheMin": 88
+        "cocheMin": 93
       },
       "sanxenxo": {
         "cocheMin": 46
@@ -34443,7 +34443,7 @@
         "cocheMin": 74
       },
       "esteiro": {
-        "cocheMin": 90
+        "cocheMin": 96
       },
       "sanxenxo": {
         "cocheMin": 48
@@ -34514,7 +34514,7 @@
         "cocheMin": 74
       },
       "esteiro": {
-        "cocheMin": 90
+        "cocheMin": 95
       },
       "sanxenxo": {
         "cocheMin": 48
@@ -34585,7 +34585,7 @@
         "cocheMin": 73
       },
       "esteiro": {
-        "cocheMin": 89
+        "cocheMin": 94
       },
       "sanxenxo": {
         "cocheMin": 47
@@ -34656,7 +34656,7 @@
         "cocheMin": 72
       },
       "esteiro": {
-        "cocheMin": 88
+        "cocheMin": 94
       },
       "sanxenxo": {
         "cocheMin": 47
@@ -34727,7 +34727,7 @@
         "cocheMin": 68
       },
       "esteiro": {
-        "cocheMin": 84
+        "cocheMin": 90
       },
       "sanxenxo": {
         "cocheMin": 42
@@ -34798,7 +34798,7 @@
         "cocheMin": 67
       },
       "esteiro": {
-        "cocheMin": 83
+        "cocheMin": 89
       },
       "sanxenxo": {
         "cocheMin": 41
@@ -34869,7 +34869,7 @@
         "cocheMin": 66
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 41
@@ -34940,7 +34940,7 @@
         "cocheMin": 66
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 40
@@ -35011,7 +35011,7 @@
         "cocheMin": 65
       },
       "esteiro": {
-        "cocheMin": 81
+        "cocheMin": 87
       },
       "sanxenxo": {
         "cocheMin": 40
@@ -35082,7 +35082,7 @@
         "cocheMin": 65
       },
       "esteiro": {
-        "cocheMin": 81
+        "cocheMin": 87
       },
       "sanxenxo": {
         "cocheMin": 39
@@ -35153,7 +35153,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 86
       },
       "sanxenxo": {
         "cocheMin": 38
@@ -35224,7 +35224,7 @@
         "cocheMin": 66
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 41
@@ -35295,7 +35295,7 @@
         "cocheMin": 57
       },
       "esteiro": {
-        "cocheMin": 71
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 31
@@ -35366,7 +35366,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 69
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 29
@@ -35437,7 +35437,7 @@
         "cocheMin": 53
       },
       "esteiro": {
-        "cocheMin": 67
+        "cocheMin": 75
       },
       "sanxenxo": {
         "cocheMin": 27
@@ -35508,7 +35508,7 @@
         "cocheMin": 74
       },
       "esteiro": {
-        "cocheMin": 90
+        "cocheMin": 96
       },
       "sanxenxo": {
         "cocheMin": 48
@@ -35579,7 +35579,7 @@
         "cocheMin": 82
       },
       "esteiro": {
-        "cocheMin": 98
+        "cocheMin": 104
       },
       "sanxenxo": {
         "cocheMin": 57
@@ -35650,7 +35650,7 @@
         "cocheMin": 90
       },
       "esteiro": {
-        "cocheMin": 106
+        "cocheMin": 112
       },
       "sanxenxo": {
         "cocheMin": 65
@@ -35721,7 +35721,7 @@
         "cocheMin": 90
       },
       "esteiro": {
-        "cocheMin": 106
+        "cocheMin": 112
       },
       "sanxenxo": {
         "cocheMin": 65
@@ -35792,7 +35792,7 @@
         "cocheMin": 90
       },
       "esteiro": {
-        "cocheMin": 106
+        "cocheMin": 112
       },
       "sanxenxo": {
         "cocheMin": 65
@@ -35863,7 +35863,7 @@
         "cocheMin": 90
       },
       "esteiro": {
-        "cocheMin": 106
+        "cocheMin": 112
       },
       "sanxenxo": {
         "cocheMin": 65
@@ -35934,7 +35934,7 @@
         "cocheMin": 90
       },
       "esteiro": {
-        "cocheMin": 106
+        "cocheMin": 112
       },
       "sanxenxo": {
         "cocheMin": 65
@@ -36005,7 +36005,7 @@
         "cocheMin": 77
       },
       "esteiro": {
-        "cocheMin": 93
+        "cocheMin": 99
       },
       "sanxenxo": {
         "cocheMin": 52
@@ -36076,7 +36076,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 76
+        "cocheMin": 81
       },
       "sanxenxo": {
         "cocheMin": 34
@@ -36147,7 +36147,7 @@
         "cocheMin": 85
       },
       "esteiro": {
-        "cocheMin": 101
+        "cocheMin": 106
       },
       "sanxenxo": {
         "cocheMin": 59
@@ -36218,7 +36218,7 @@
         "cocheMin": 83
       },
       "esteiro": {
-        "cocheMin": 99
+        "cocheMin": 105
       },
       "sanxenxo": {
         "cocheMin": 58
@@ -36289,7 +36289,7 @@
         "cocheMin": 53
       },
       "esteiro": {
-        "cocheMin": 69
+        "cocheMin": 75
       },
       "sanxenxo": {
         "cocheMin": 14
@@ -36360,7 +36360,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 75
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 33
@@ -36431,7 +36431,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 86
       },
       "sanxenxo": {
         "cocheMin": 39
@@ -36502,7 +36502,7 @@
         "cocheMin": 66
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 87
       },
       "sanxenxo": {
         "cocheMin": 40
@@ -36573,7 +36573,7 @@
         "cocheMin": 66
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 40
@@ -36644,7 +36644,7 @@
         "cocheMin": 43
       },
       "esteiro": {
-        "cocheMin": 4
+        "cocheMin": 24
       },
       "sanxenxo": {
         "cocheMin": 75
@@ -36715,7 +36715,7 @@
         "cocheMin": 44
       },
       "esteiro": {
-        "cocheMin": 5
+        "cocheMin": 25
       },
       "sanxenxo": {
         "cocheMin": 76
@@ -36786,7 +36786,7 @@
         "cocheMin": 45
       },
       "esteiro": {
-        "cocheMin": 6
+        "cocheMin": 26
       },
       "sanxenxo": {
         "cocheMin": 77
@@ -36857,7 +36857,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 101
+        "cocheMin": 106
       },
       "sanxenxo": {
         "cocheMin": 59
@@ -36928,7 +36928,7 @@
         "cocheMin": 52
       },
       "esteiro": {
-        "cocheMin": 79
+        "cocheMin": 84
       },
       "sanxenxo": {
         "cocheMin": 93
@@ -36999,7 +36999,7 @@
         "cocheMin": 73
       },
       "esteiro": {
-        "cocheMin": 74
+        "cocheMin": 60
       },
       "sanxenxo": {
         "cocheMin": 110
@@ -37070,7 +37070,7 @@
         "cocheMin": 66
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 40
@@ -37141,7 +37141,7 @@
         "cocheMin": 67
       },
       "esteiro": {
-        "cocheMin": 83
+        "cocheMin": 89
       },
       "sanxenxo": {
         "cocheMin": 19
@@ -37212,7 +37212,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 16
@@ -37283,7 +37283,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 38
@@ -37354,7 +37354,7 @@
         "cocheMin": 132
       },
       "esteiro": {
-        "cocheMin": 159
+        "cocheMin": 164
       },
       "sanxenxo": {
         "cocheMin": 173
@@ -37425,7 +37425,7 @@
         "cocheMin": 130
       },
       "esteiro": {
-        "cocheMin": 157
+        "cocheMin": 162
       },
       "sanxenxo": {
         "cocheMin": 171
@@ -37496,7 +37496,7 @@
         "cocheMin": 130
       },
       "esteiro": {
-        "cocheMin": 157
+        "cocheMin": 162
       },
       "sanxenxo": {
         "cocheMin": 171
@@ -37567,7 +37567,7 @@
         "cocheMin": 132
       },
       "esteiro": {
-        "cocheMin": 159
+        "cocheMin": 164
       },
       "sanxenxo": {
         "cocheMin": 173
@@ -37638,7 +37638,7 @@
         "cocheMin": 135
       },
       "esteiro": {
-        "cocheMin": 161
+        "cocheMin": 167
       },
       "sanxenxo": {
         "cocheMin": 176
@@ -37709,7 +37709,7 @@
         "cocheMin": 135
       },
       "esteiro": {
-        "cocheMin": 161
+        "cocheMin": 167
       },
       "sanxenxo": {
         "cocheMin": 176
@@ -37780,7 +37780,7 @@
         "cocheMin": 145
       },
       "esteiro": {
-        "cocheMin": 171
+        "cocheMin": 177
       },
       "sanxenxo": {
         "cocheMin": 186
@@ -37851,7 +37851,7 @@
         "cocheMin": 138
       },
       "esteiro": {
-        "cocheMin": 165
+        "cocheMin": 170
       },
       "sanxenxo": {
         "cocheMin": 179
@@ -37922,7 +37922,7 @@
         "cocheMin": 47
       },
       "esteiro": {
-        "cocheMin": 8
+        "cocheMin": 28
       },
       "sanxenxo": {
         "cocheMin": 79
@@ -37993,7 +37993,7 @@
         "cocheMin": 48
       },
       "esteiro": {
-        "cocheMin": 10
+        "cocheMin": 29
       },
       "sanxenxo": {
         "cocheMin": 80
@@ -38064,7 +38064,7 @@
         "cocheMin": 47
       },
       "esteiro": {
-        "cocheMin": 8
+        "cocheMin": 28
       },
       "sanxenxo": {
         "cocheMin": 76
@@ -38135,7 +38135,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 87
       },
       "sanxenxo": {
         "cocheMin": 96
@@ -38206,7 +38206,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 83
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 97
@@ -38277,7 +38277,7 @@
         "cocheMin": 52
       },
       "esteiro": {
-        "cocheMin": 68
+        "cocheMin": 74
       },
       "sanxenxo": {
         "cocheMin": 27
@@ -38348,7 +38348,7 @@
         "cocheMin": 133
       },
       "esteiro": {
-        "cocheMin": 159
+        "cocheMin": 165
       },
       "sanxenxo": {
         "cocheMin": 174
@@ -38419,7 +38419,7 @@
         "cocheMin": 135
       },
       "esteiro": {
-        "cocheMin": 161
+        "cocheMin": 167
       },
       "sanxenxo": {
         "cocheMin": 176
@@ -38490,7 +38490,7 @@
         "cocheMin": 134
       },
       "esteiro": {
-        "cocheMin": 160
+        "cocheMin": 166
       },
       "sanxenxo": {
         "cocheMin": 175
@@ -38561,7 +38561,7 @@
         "cocheMin": 128
       },
       "esteiro": {
-        "cocheMin": 154
+        "cocheMin": 160
       },
       "sanxenxo": {
         "cocheMin": 169
@@ -38632,7 +38632,7 @@
         "cocheMin": 130
       },
       "esteiro": {
-        "cocheMin": 156
+        "cocheMin": 162
       },
       "sanxenxo": {
         "cocheMin": 171
@@ -38703,7 +38703,7 @@
         "cocheMin": 124
       },
       "esteiro": {
-        "cocheMin": 150
+        "cocheMin": 156
       },
       "sanxenxo": {
         "cocheMin": 165
@@ -38774,7 +38774,7 @@
         "cocheMin": 124
       },
       "esteiro": {
-        "cocheMin": 151
+        "cocheMin": 156
       },
       "sanxenxo": {
         "cocheMin": 165
@@ -38845,7 +38845,7 @@
         "cocheMin": 127
       },
       "esteiro": {
-        "cocheMin": 153
+        "cocheMin": 159
       },
       "sanxenxo": {
         "cocheMin": 168
@@ -38916,7 +38916,7 @@
         "cocheMin": 127
       },
       "esteiro": {
-        "cocheMin": 153
+        "cocheMin": 159
       },
       "sanxenxo": {
         "cocheMin": 168
@@ -38987,7 +38987,7 @@
         "cocheMin": 124
       },
       "esteiro": {
-        "cocheMin": 150
+        "cocheMin": 156
       },
       "sanxenxo": {
         "cocheMin": 165
@@ -39058,7 +39058,7 @@
         "cocheMin": 124
       },
       "esteiro": {
-        "cocheMin": 150
+        "cocheMin": 156
       },
       "sanxenxo": {
         "cocheMin": 165
@@ -39129,7 +39129,7 @@
         "cocheMin": 119
       },
       "esteiro": {
-        "cocheMin": 145
+        "cocheMin": 151
       },
       "sanxenxo": {
         "cocheMin": 160
@@ -39200,7 +39200,7 @@
         "cocheMin": 118
       },
       "esteiro": {
-        "cocheMin": 145
+        "cocheMin": 150
       },
       "sanxenxo": {
         "cocheMin": 159
@@ -39271,7 +39271,7 @@
         "cocheMin": 49
       },
       "esteiro": {
-        "cocheMin": 10
+        "cocheMin": 30
       },
       "sanxenxo": {
         "cocheMin": 75
@@ -39342,7 +39342,7 @@
         "cocheMin": 49
       },
       "esteiro": {
-        "cocheMin": 10
+        "cocheMin": 30
       },
       "sanxenxo": {
         "cocheMin": 75
@@ -39413,7 +39413,7 @@
         "cocheMin": 49
       },
       "esteiro": {
-        "cocheMin": 11
+        "cocheMin": 30
       },
       "sanxenxo": {
         "cocheMin": 74
@@ -39484,7 +39484,7 @@
         "cocheMin": 50
       },
       "esteiro": {
-        "cocheMin": 11
+        "cocheMin": 31
       },
       "sanxenxo": {
         "cocheMin": 74
@@ -39555,7 +39555,7 @@
         "cocheMin": 94
       },
       "esteiro": {
-        "cocheMin": 110
+        "cocheMin": 116
       },
       "sanxenxo": {
         "cocheMin": 69
@@ -39626,7 +39626,7 @@
         "cocheMin": 100
       },
       "esteiro": {
-        "cocheMin": 126
+        "cocheMin": 132
       },
       "sanxenxo": {
         "cocheMin": 141
@@ -39697,7 +39697,7 @@
         "cocheMin": 92
       },
       "esteiro": {
-        "cocheMin": 119
+        "cocheMin": 125
       },
       "sanxenxo": {
         "cocheMin": 133
@@ -39768,7 +39768,7 @@
         "cocheMin": 90
       },
       "esteiro": {
-        "cocheMin": 106
+        "cocheMin": 112
       },
       "sanxenxo": {
         "cocheMin": 65
@@ -39839,7 +39839,7 @@
         "cocheMin": 116
       },
       "esteiro": {
-        "cocheMin": 143
+        "cocheMin": 148
       },
       "sanxenxo": {
         "cocheMin": 157
@@ -39910,7 +39910,7 @@
         "cocheMin": 69
       },
       "esteiro": {
-        "cocheMin": 96
+        "cocheMin": 101
       },
       "sanxenxo": {
         "cocheMin": 110
@@ -39981,7 +39981,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 75
       },
       "sanxenxo": {
         "cocheMin": 14
@@ -40052,7 +40052,7 @@
         "cocheMin": 62
       },
       "esteiro": {
-        "cocheMin": 78
+        "cocheMin": 83
       },
       "sanxenxo": {
         "cocheMin": 13
@@ -40123,7 +40123,7 @@
         "cocheMin": 90
       },
       "esteiro": {
-        "cocheMin": 106
+        "cocheMin": 112
       },
       "sanxenxo": {
         "cocheMin": 65
@@ -40194,7 +40194,7 @@
         "cocheMin": 120
       },
       "esteiro": {
-        "cocheMin": 146
+        "cocheMin": 152
       },
       "sanxenxo": {
         "cocheMin": 161
@@ -40265,7 +40265,7 @@
         "cocheMin": 120
       },
       "esteiro": {
-        "cocheMin": 146
+        "cocheMin": 152
       },
       "sanxenxo": {
         "cocheMin": 161
@@ -40336,7 +40336,7 @@
         "cocheMin": 117
       },
       "esteiro": {
-        "cocheMin": 144
+        "cocheMin": 149
       },
       "sanxenxo": {
         "cocheMin": 158
@@ -40407,7 +40407,7 @@
         "cocheMin": 109
       },
       "esteiro": {
-        "cocheMin": 135
+        "cocheMin": 141
       },
       "sanxenxo": {
         "cocheMin": 150
@@ -40478,7 +40478,7 @@
         "cocheMin": 115
       },
       "esteiro": {
-        "cocheMin": 141
+        "cocheMin": 147
       },
       "sanxenxo": {
         "cocheMin": 156
@@ -40549,7 +40549,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 30
+        "cocheMin": 11
       },
       "sanxenxo": {
         "cocheMin": 87
@@ -40620,7 +40620,7 @@
         "cocheMin": 52
       },
       "esteiro": {
-        "cocheMin": 28
+        "cocheMin": 9
       },
       "sanxenxo": {
         "cocheMin": 85
@@ -40691,7 +40691,7 @@
         "cocheMin": 49
       },
       "esteiro": {
-        "cocheMin": 25
+        "cocheMin": 6
       },
       "sanxenxo": {
         "cocheMin": 82
@@ -40762,7 +40762,7 @@
         "cocheMin": 42
       },
       "esteiro": {
-        "cocheMin": 18
+        "cocheMin": 6
       },
       "sanxenxo": {
         "cocheMin": 75
@@ -40833,7 +40833,7 @@
         "cocheMin": 38
       },
       "esteiro": {
-        "cocheMin": 7
+        "cocheMin": 20
       },
       "sanxenxo": {
         "cocheMin": 71
@@ -40904,7 +40904,7 @@
         "cocheMin": 39
       },
       "esteiro": {
-        "cocheMin": 3
+        "cocheMin": 20
       },
       "sanxenxo": {
         "cocheMin": 71
@@ -40975,7 +40975,7 @@
         "cocheMin": 82
       },
       "esteiro": {
-        "cocheMin": 64
+        "cocheMin": 49
       },
       "sanxenxo": {
         "cocheMin": 119
@@ -41046,7 +41046,7 @@
         "cocheMin": 79
       },
       "esteiro": {
-        "cocheMin": 59
+        "cocheMin": 44
       },
       "sanxenxo": {
         "cocheMin": 116
@@ -41117,7 +41117,7 @@
         "cocheMin": 80
       },
       "esteiro": {
-        "cocheMin": 56
+        "cocheMin": 41
       },
       "sanxenxo": {
         "cocheMin": 113
@@ -41188,7 +41188,7 @@
         "cocheMin": 78
       },
       "esteiro": {
-        "cocheMin": 54
+        "cocheMin": 39
       },
       "sanxenxo": {
         "cocheMin": 111
@@ -41259,7 +41259,7 @@
         "cocheMin": 49
       },
       "esteiro": {
-        "cocheMin": 25
+        "cocheMin": 5
       },
       "sanxenxo": {
         "cocheMin": 81
@@ -41330,7 +41330,7 @@
         "cocheMin": 49
       },
       "esteiro": {
-        "cocheMin": 25
+        "cocheMin": 5
       },
       "sanxenxo": {
         "cocheMin": 81
@@ -41401,7 +41401,7 @@
         "cocheMin": 50
       },
       "esteiro": {
-        "cocheMin": 25
+        "cocheMin": 6
       },
       "sanxenxo": {
         "cocheMin": 82
@@ -41472,7 +41472,7 @@
         "cocheMin": 49
       },
       "esteiro": {
-        "cocheMin": 24
+        "cocheMin": 5
       },
       "sanxenxo": {
         "cocheMin": 81
@@ -41543,7 +41543,7 @@
         "cocheMin": 49
       },
       "esteiro": {
-        "cocheMin": 24
+        "cocheMin": 5
       },
       "sanxenxo": {
         "cocheMin": 81
@@ -41614,7 +41614,7 @@
         "cocheMin": 80
       },
       "esteiro": {
-        "cocheMin": 87
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 119
@@ -41685,7 +41685,7 @@
         "cocheMin": 83
       },
       "esteiro": {
-        "cocheMin": 87
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 119
@@ -41756,7 +41756,7 @@
         "cocheMin": 81
       },
       "esteiro": {
-        "cocheMin": 86
+        "cocheMin": 83
       },
       "sanxenxo": {
         "cocheMin": 118
@@ -41827,7 +41827,7 @@
         "cocheMin": 47
       },
       "esteiro": {
-        "cocheMin": 8
+        "cocheMin": 28
       },
       "sanxenxo": {
         "cocheMin": 78
@@ -41898,7 +41898,7 @@
         "cocheMin": 52
       },
       "esteiro": {
-        "cocheMin": 14
+        "cocheMin": 33
       },
       "sanxenxo": {
         "cocheMin": 72
@@ -41969,7 +41969,7 @@
         "cocheMin": 57
       },
       "esteiro": {
-        "cocheMin": 18
+        "cocheMin": 38
       },
       "sanxenxo": {
         "cocheMin": 70
@@ -42040,7 +42040,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 30
+        "cocheMin": 49
       },
       "sanxenxo": {
         "cocheMin": 70
@@ -42111,7 +42111,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 31
+        "cocheMin": 50
       },
       "sanxenxo": {
         "cocheMin": 71
@@ -42182,7 +42182,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 33
+        "cocheMin": 53
       },
       "sanxenxo": {
         "cocheMin": 68
@@ -42253,7 +42253,7 @@
         "cocheMin": 81
       },
       "esteiro": {
-        "cocheMin": 56
+        "cocheMin": 42
       },
       "sanxenxo": {
         "cocheMin": 113
@@ -42324,7 +42324,7 @@
         "cocheMin": 42
       },
       "esteiro": {
-        "cocheMin": 3
+        "cocheMin": 23
       },
       "sanxenxo": {
         "cocheMin": 74
@@ -42395,7 +42395,7 @@
         "cocheMin": 80
       },
       "esteiro": {
-        "cocheMin": 81
+        "cocheMin": 70
       },
       "sanxenxo": {
         "cocheMin": 117
@@ -42466,7 +42466,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 89
+        "cocheMin": 86
       },
       "sanxenxo": {
         "cocheMin": 121
@@ -42537,7 +42537,7 @@
         "cocheMin": 72
       },
       "esteiro": {
-        "cocheMin": 89
+        "cocheMin": 95
       },
       "sanxenxo": {
         "cocheMin": 115
@@ -42608,7 +42608,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 88
+        "cocheMin": 93
       },
       "sanxenxo": {
         "cocheMin": 102
@@ -42679,7 +42679,7 @@
         "cocheMin": 81
       },
       "esteiro": {
-        "cocheMin": 56
+        "cocheMin": 41
       },
       "sanxenxo": {
         "cocheMin": 113
@@ -42750,7 +42750,7 @@
         "cocheMin": 80
       },
       "esteiro": {
-        "cocheMin": 55
+        "cocheMin": 41
       },
       "sanxenxo": {
         "cocheMin": 112
@@ -42821,7 +42821,7 @@
         "cocheMin": 78
       },
       "esteiro": {
-        "cocheMin": 53
+        "cocheMin": 39
       },
       "sanxenxo": {
         "cocheMin": 110
@@ -42892,7 +42892,7 @@
         "cocheMin": 75
       },
       "esteiro": {
-        "cocheMin": 51
+        "cocheMin": 36
       },
       "sanxenxo": {
         "cocheMin": 108
@@ -42963,7 +42963,7 @@
         "cocheMin": 49
       },
       "esteiro": {
-        "cocheMin": 24
+        "cocheMin": 5
       },
       "sanxenxo": {
         "cocheMin": 81
@@ -43034,7 +43034,7 @@
         "cocheMin": 49
       },
       "esteiro": {
-        "cocheMin": 24
+        "cocheMin": 5
       },
       "sanxenxo": {
         "cocheMin": 81
@@ -43105,7 +43105,7 @@
         "cocheMin": 47
       },
       "esteiro": {
-        "cocheMin": 23
+        "cocheMin": 4
       },
       "sanxenxo": {
         "cocheMin": 80
@@ -43176,7 +43176,7 @@
         "cocheMin": 47
       },
       "esteiro": {
-        "cocheMin": 22
+        "cocheMin": 3
       },
       "sanxenxo": {
         "cocheMin": 79
@@ -43247,7 +43247,7 @@
         "cocheMin": 82
       },
       "esteiro": {
-        "cocheMin": 57
+        "cocheMin": 43
       },
       "sanxenxo": {
         "cocheMin": 114
@@ -43318,7 +43318,7 @@
         "cocheMin": 43
       },
       "esteiro": {
-        "cocheMin": 18
+        "cocheMin": 2
       },
       "sanxenxo": {
         "cocheMin": 75
@@ -43389,7 +43389,7 @@
         "cocheMin": 42
       },
       "esteiro": {
-        "cocheMin": 18
+        "cocheMin": 2
       },
       "sanxenxo": {
         "cocheMin": 75
@@ -43460,7 +43460,7 @@
         "cocheMin": 41
       },
       "esteiro": {
-        "cocheMin": 3
+        "cocheMin": 22
       },
       "sanxenxo": {
         "cocheMin": 74
@@ -43531,7 +43531,7 @@
         "cocheMin": 136
       },
       "esteiro": {
-        "cocheMin": 162
+        "cocheMin": 168
       },
       "sanxenxo": {
         "cocheMin": 177
@@ -43602,7 +43602,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 40
+        "cocheMin": 59
       },
       "sanxenxo": {
         "cocheMin": 70
@@ -43673,7 +43673,7 @@
         "cocheMin": 49
       },
       "esteiro": {
-        "cocheMin": 62
+        "cocheMin": 70
       },
       "sanxenxo": {
         "cocheMin": 26
@@ -43744,7 +43744,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 74
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 33
@@ -43815,7 +43815,7 @@
         "cocheMin": 113
       },
       "esteiro": {
-        "cocheMin": 139
+        "cocheMin": 145
       },
       "sanxenxo": {
         "cocheMin": 154
@@ -43886,7 +43886,7 @@
         "cocheMin": 82
       },
       "esteiro": {
-        "cocheMin": 108
+        "cocheMin": 114
       },
       "sanxenxo": {
         "cocheMin": 123
@@ -43957,7 +43957,7 @@
         "cocheMin": 67
       },
       "esteiro": {
-        "cocheMin": 93
+        "cocheMin": 99
       },
       "sanxenxo": {
         "cocheMin": 108
@@ -44028,7 +44028,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 74
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 6
@@ -44099,7 +44099,7 @@
         "cocheMin": 139
       },
       "esteiro": {
-        "cocheMin": 166
+        "cocheMin": 171
       },
       "sanxenxo": {
         "cocheMin": 180
@@ -44170,7 +44170,7 @@
         "cocheMin": 139
       },
       "esteiro": {
-        "cocheMin": 166
+        "cocheMin": 171
       },
       "sanxenxo": {
         "cocheMin": 180
@@ -44241,7 +44241,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 85
+        "cocheMin": 91
       },
       "sanxenxo": {
         "cocheMin": 100
@@ -44312,7 +44312,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 75
+        "cocheMin": 83
       },
       "sanxenxo": {
         "cocheMin": 35
@@ -44383,7 +44383,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 75
+        "cocheMin": 83
       },
       "sanxenxo": {
         "cocheMin": 35
@@ -44454,7 +44454,7 @@
         "cocheMin": 75
       },
       "esteiro": {
-        "cocheMin": 50
+        "cocheMin": 35
       },
       "sanxenxo": {
         "cocheMin": 107
@@ -44525,7 +44525,7 @@
         "cocheMin": 71
       },
       "esteiro": {
-        "cocheMin": 46
+        "cocheMin": 27
       },
       "sanxenxo": {
         "cocheMin": 103
@@ -44596,7 +44596,7 @@
         "cocheMin": 70
       },
       "esteiro": {
-        "cocheMin": 46
+        "cocheMin": 26
       },
       "sanxenxo": {
         "cocheMin": 102
@@ -44667,7 +44667,7 @@
         "cocheMin": 47
       },
       "esteiro": {
-        "cocheMin": 22
+        "cocheMin": 3
       },
       "sanxenxo": {
         "cocheMin": 79
@@ -44738,7 +44738,7 @@
         "cocheMin": 44
       },
       "esteiro": {
-        "cocheMin": 20
+        "cocheMin": 2
       },
       "sanxenxo": {
         "cocheMin": 76
@@ -44809,7 +44809,7 @@
         "cocheMin": 39
       },
       "esteiro": {
-        "cocheMin": 14
+        "cocheMin": 8
       },
       "sanxenxo": {
         "cocheMin": 71
@@ -44880,7 +44880,7 @@
         "cocheMin": 41
       },
       "esteiro": {
-        "cocheMin": 16
+        "cocheMin": 12
       },
       "sanxenxo": {
         "cocheMin": 73
@@ -44951,7 +44951,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 33
+        "cocheMin": 53
       },
       "sanxenxo": {
         "cocheMin": 68
@@ -45022,7 +45022,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 33
+        "cocheMin": 53
       },
       "sanxenxo": {
         "cocheMin": 68
@@ -45093,7 +45093,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 86
       },
       "sanxenxo": {
         "cocheMin": 95
@@ -45164,7 +45164,7 @@
         "cocheMin": 76
       },
       "esteiro": {
-        "cocheMin": 93
+        "cocheMin": 98
       },
       "sanxenxo": {
         "cocheMin": 119
@@ -45235,7 +45235,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 75
+        "cocheMin": 83
       },
       "sanxenxo": {
         "cocheMin": 35
@@ -45306,7 +45306,7 @@
         "cocheMin": 62
       },
       "esteiro": {
-        "cocheMin": 77
+        "cocheMin": 84
       },
       "sanxenxo": {
         "cocheMin": 36
@@ -45377,7 +45377,7 @@
         "cocheMin": 62
       },
       "esteiro": {
-        "cocheMin": 77
+        "cocheMin": 84
       },
       "sanxenxo": {
         "cocheMin": 36
@@ -45448,7 +45448,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 73
+        "cocheMin": 81
       },
       "sanxenxo": {
         "cocheMin": 33
@@ -45519,7 +45519,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 72
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 32
@@ -45590,7 +45590,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 69
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 29
@@ -45661,7 +45661,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 30
@@ -45732,7 +45732,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 69
+        "cocheMin": 77
       },
       "sanxenxo": {
         "cocheMin": 29
@@ -45803,7 +45803,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 30
@@ -45874,7 +45874,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 30
@@ -45945,7 +45945,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 30
@@ -46016,7 +46016,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 69
+        "cocheMin": 77
       },
       "sanxenxo": {
         "cocheMin": 29
@@ -46087,7 +46087,7 @@
         "cocheMin": 71
       },
       "esteiro": {
-        "cocheMin": 46
+        "cocheMin": 27
       },
       "sanxenxo": {
         "cocheMin": 103
@@ -46158,7 +46158,7 @@
         "cocheMin": 71
       },
       "esteiro": {
-        "cocheMin": 47
+        "cocheMin": 27
       },
       "sanxenxo": {
         "cocheMin": 103
@@ -46229,7 +46229,7 @@
         "cocheMin": 71
       },
       "esteiro": {
-        "cocheMin": 47
+        "cocheMin": 27
       },
       "sanxenxo": {
         "cocheMin": 103
@@ -46300,7 +46300,7 @@
         "cocheMin": 72
       },
       "esteiro": {
-        "cocheMin": 47
+        "cocheMin": 28
       },
       "sanxenxo": {
         "cocheMin": 104
@@ -46371,7 +46371,7 @@
         "cocheMin": 50
       },
       "esteiro": {
-        "cocheMin": 25
+        "cocheMin": 23
       },
       "sanxenxo": {
         "cocheMin": 82
@@ -46442,7 +46442,7 @@
         "cocheMin": 36
       },
       "esteiro": {
-        "cocheMin": 10
+        "cocheMin": 16
       },
       "sanxenxo": {
         "cocheMin": 68
@@ -46513,7 +46513,7 @@
         "cocheMin": 38
       },
       "esteiro": {
-        "cocheMin": 7
+        "cocheMin": 19
       },
       "sanxenxo": {
         "cocheMin": 70
@@ -46584,7 +46584,7 @@
         "cocheMin": 76
       },
       "esteiro": {
-        "cocheMin": 83
+        "cocheMin": 81
       },
       "sanxenxo": {
         "cocheMin": 116
@@ -46655,7 +46655,7 @@
         "cocheMin": 79
       },
       "esteiro": {
-        "cocheMin": 86
+        "cocheMin": 83
       },
       "sanxenxo": {
         "cocheMin": 118
@@ -46726,7 +46726,7 @@
         "cocheMin": 80
       },
       "esteiro": {
-        "cocheMin": 87
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 119
@@ -46797,7 +46797,7 @@
         "cocheMin": 75
       },
       "esteiro": {
-        "cocheMin": 92
+        "cocheMin": 97
       },
       "sanxenxo": {
         "cocheMin": 118
@@ -46868,7 +46868,7 @@
         "cocheMin": 72
       },
       "esteiro": {
-        "cocheMin": 48
+        "cocheMin": 29
       },
       "sanxenxo": {
         "cocheMin": 105
@@ -46939,7 +46939,7 @@
         "cocheMin": 71
       },
       "esteiro": {
-        "cocheMin": 46
+        "cocheMin": 27
       },
       "sanxenxo": {
         "cocheMin": 103
@@ -47010,7 +47010,7 @@
         "cocheMin": 69
       },
       "esteiro": {
-        "cocheMin": 44
+        "cocheMin": 25
       },
       "sanxenxo": {
         "cocheMin": 101
@@ -47081,7 +47081,7 @@
         "cocheMin": 69
       },
       "esteiro": {
-        "cocheMin": 44
+        "cocheMin": 25
       },
       "sanxenxo": {
         "cocheMin": 101
@@ -47152,7 +47152,7 @@
         "cocheMin": 37
       },
       "esteiro": {
-        "cocheMin": 4
+        "cocheMin": 18
       },
       "sanxenxo": {
         "cocheMin": 69
@@ -47223,7 +47223,7 @@
         "cocheMin": 37
       },
       "esteiro": {
-        "cocheMin": 4
+        "cocheMin": 18
       },
       "sanxenxo": {
         "cocheMin": 69
@@ -47294,7 +47294,7 @@
         "cocheMin": 37
       },
       "esteiro": {
-        "cocheMin": 3
+        "cocheMin": 19
       },
       "sanxenxo": {
         "cocheMin": 70
@@ -47365,7 +47365,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 85
+        "cocheMin": 91
       },
       "sanxenxo": {
         "cocheMin": 100
@@ -47436,7 +47436,7 @@
         "cocheMin": 52
       },
       "esteiro": {
-        "cocheMin": 66
+        "cocheMin": 73
       },
       "sanxenxo": {
         "cocheMin": 26
@@ -47507,7 +47507,7 @@
         "cocheMin": 65
       },
       "esteiro": {
-        "cocheMin": 81
+        "cocheMin": 86
       },
       "sanxenxo": {
         "cocheMin": 17
@@ -47578,7 +47578,7 @@
         "cocheMin": 67
       },
       "esteiro": {
-        "cocheMin": 43
+        "cocheMin": 23
       },
       "sanxenxo": {
         "cocheMin": 99
@@ -47649,7 +47649,7 @@
         "cocheMin": 90
       },
       "esteiro": {
-        "cocheMin": 106
+        "cocheMin": 111
       },
       "sanxenxo": {
         "cocheMin": 64
@@ -47720,7 +47720,7 @@
         "cocheMin": 85
       },
       "esteiro": {
-        "cocheMin": 101
+        "cocheMin": 106
       },
       "sanxenxo": {
         "cocheMin": 59
@@ -47791,7 +47791,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 76
+        "cocheMin": 82
       },
       "sanxenxo": {
         "cocheMin": 35
@@ -47862,7 +47862,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 86
       },
       "sanxenxo": {
         "cocheMin": 39
@@ -47933,7 +47933,7 @@
         "cocheMin": 71
       },
       "esteiro": {
-        "cocheMin": 87
+        "cocheMin": 93
       },
       "sanxenxo": {
         "cocheMin": 46
@@ -48004,7 +48004,7 @@
         "cocheMin": 79
       },
       "esteiro": {
-        "cocheMin": 95
+        "cocheMin": 100
       },
       "sanxenxo": {
         "cocheMin": 53
@@ -48075,7 +48075,7 @@
         "cocheMin": 74
       },
       "esteiro": {
-        "cocheMin": 90
+        "cocheMin": 96
       },
       "sanxenxo": {
         "cocheMin": 48
@@ -48146,7 +48146,7 @@
         "cocheMin": 71
       },
       "esteiro": {
-        "cocheMin": 87
+        "cocheMin": 93
       },
       "sanxenxo": {
         "cocheMin": 45
@@ -48217,7 +48217,7 @@
         "cocheMin": 71
       },
       "esteiro": {
-        "cocheMin": 87
+        "cocheMin": 93
       },
       "sanxenxo": {
         "cocheMin": 45
@@ -48288,7 +48288,7 @@
         "cocheMin": 90
       },
       "esteiro": {
-        "cocheMin": 106
+        "cocheMin": 112
       },
       "sanxenxo": {
         "cocheMin": 65
@@ -48359,7 +48359,7 @@
         "cocheMin": 40
       },
       "esteiro": {
-        "cocheMin": 4
+        "cocheMin": 21
       },
       "sanxenxo": {
         "cocheMin": 72
@@ -48430,7 +48430,7 @@
         "cocheMin": 40
       },
       "esteiro": {
-        "cocheMin": 1
+        "cocheMin": 21
       },
       "sanxenxo": {
         "cocheMin": 72
@@ -48501,7 +48501,7 @@
         "cocheMin": 39
       },
       "esteiro": {
-        "cocheMin": 0
+        "cocheMin": 20
       },
       "sanxenxo": {
         "cocheMin": 72
@@ -48572,7 +48572,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 74
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 6
@@ -48643,7 +48643,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 77
+        "cocheMin": 83
       },
       "sanxenxo": {
         "cocheMin": 36
@@ -48714,7 +48714,7 @@
         "cocheMin": 62
       },
       "esteiro": {
-        "cocheMin": 78
+        "cocheMin": 83
       },
       "sanxenxo": {
         "cocheMin": 36
@@ -48785,7 +48785,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 86
       },
       "sanxenxo": {
         "cocheMin": 38
@@ -48856,7 +48856,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 30
@@ -48927,7 +48927,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 30
@@ -48998,7 +48998,7 @@
         "cocheMin": 52
       },
       "esteiro": {
-        "cocheMin": 66
+        "cocheMin": 74
       },
       "sanxenxo": {
         "cocheMin": 26
@@ -49069,7 +49069,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 68
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 28
@@ -49140,7 +49140,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 69
+        "cocheMin": 77
       },
       "sanxenxo": {
         "cocheMin": 29
@@ -49211,7 +49211,7 @@
         "cocheMin": 68
       },
       "esteiro": {
-        "cocheMin": 43
+        "cocheMin": 24
       },
       "sanxenxo": {
         "cocheMin": 100
@@ -49282,7 +49282,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 39
+        "cocheMin": 20
       },
       "sanxenxo": {
         "cocheMin": 96
@@ -49353,7 +49353,7 @@
         "cocheMin": 65
       },
       "esteiro": {
-        "cocheMin": 40
+        "cocheMin": 21
       },
       "sanxenxo": {
         "cocheMin": 97
@@ -49424,7 +49424,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 37
+        "cocheMin": 17
       },
       "sanxenxo": {
         "cocheMin": 93
@@ -49495,7 +49495,7 @@
         "cocheMin": 62
       },
       "esteiro": {
-        "cocheMin": 34
+        "cocheMin": 54
       },
       "sanxenxo": {
         "cocheMin": 69
@@ -49566,7 +49566,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 35
+        "cocheMin": 55
       },
       "sanxenxo": {
         "cocheMin": 66
@@ -49637,7 +49637,7 @@
         "cocheMin": 130
       },
       "esteiro": {
-        "cocheMin": 157
+        "cocheMin": 162
       },
       "sanxenxo": {
         "cocheMin": 171
@@ -49708,7 +49708,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 30
@@ -49779,7 +49779,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 30
@@ -49850,7 +49850,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 69
+        "cocheMin": 77
       },
       "sanxenxo": {
         "cocheMin": 29
@@ -49921,7 +49921,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 37
+        "cocheMin": 17
       },
       "sanxenxo": {
         "cocheMin": 93
@@ -49992,7 +49992,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 33
+        "cocheMin": 14
       },
       "sanxenxo": {
         "cocheMin": 90
@@ -50063,7 +50063,7 @@
         "cocheMin": 53
       },
       "esteiro": {
-        "cocheMin": 29
+        "cocheMin": 9
       },
       "sanxenxo": {
         "cocheMin": 86
@@ -50134,7 +50134,7 @@
         "cocheMin": 118
       },
       "esteiro": {
-        "cocheMin": 144
+        "cocheMin": 150
       },
       "sanxenxo": {
         "cocheMin": 159
@@ -50205,7 +50205,7 @@
         "cocheMin": 116
       },
       "esteiro": {
-        "cocheMin": 143
+        "cocheMin": 148
       },
       "sanxenxo": {
         "cocheMin": 157
@@ -50276,7 +50276,7 @@
         "cocheMin": 115
       },
       "esteiro": {
-        "cocheMin": 142
+        "cocheMin": 148
       },
       "sanxenxo": {
         "cocheMin": 156
@@ -50347,7 +50347,7 @@
         "cocheMin": 65
       },
       "esteiro": {
-        "cocheMin": 81
+        "cocheMin": 87
       },
       "sanxenxo": {
         "cocheMin": 17
@@ -50418,7 +50418,7 @@
         "cocheMin": 69
       },
       "esteiro": {
-        "cocheMin": 85
+        "cocheMin": 91
       },
       "sanxenxo": {
         "cocheMin": 21
@@ -50489,7 +50489,7 @@
         "cocheMin": 76
       },
       "esteiro": {
-        "cocheMin": 92
+        "cocheMin": 98
       },
       "sanxenxo": {
         "cocheMin": 28
@@ -50560,7 +50560,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 81
+        "cocheMin": 86
       },
       "sanxenxo": {
         "cocheMin": 39
@@ -50631,7 +50631,7 @@
         "cocheMin": 52
       },
       "esteiro": {
-        "cocheMin": 28
+        "cocheMin": 9
       },
       "sanxenxo": {
         "cocheMin": 85
@@ -50702,7 +50702,7 @@
         "cocheMin": 52
       },
       "esteiro": {
-        "cocheMin": 28
+        "cocheMin": 8
       },
       "sanxenxo": {
         "cocheMin": 85
@@ -50773,7 +50773,7 @@
         "cocheMin": 52
       },
       "esteiro": {
-        "cocheMin": 28
+        "cocheMin": 8
       },
       "sanxenxo": {
         "cocheMin": 85
@@ -50844,7 +50844,7 @@
         "cocheMin": 125
       },
       "esteiro": {
-        "cocheMin": 152
+        "cocheMin": 158
       },
       "sanxenxo": {
         "cocheMin": 166
@@ -50915,7 +50915,7 @@
         "cocheMin": 83
       },
       "esteiro": {
-        "cocheMin": 110
+        "cocheMin": 115
       },
       "sanxenxo": {
         "cocheMin": 124
@@ -50986,7 +50986,7 @@
         "cocheMin": 86
       },
       "esteiro": {
-        "cocheMin": 113
+        "cocheMin": 119
       },
       "sanxenxo": {
         "cocheMin": 128
@@ -51057,7 +51057,7 @@
         "cocheMin": 86
       },
       "esteiro": {
-        "cocheMin": 113
+        "cocheMin": 118
       },
       "sanxenxo": {
         "cocheMin": 127
@@ -51128,7 +51128,7 @@
         "cocheMin": 87
       },
       "esteiro": {
-        "cocheMin": 113
+        "cocheMin": 119
       },
       "sanxenxo": {
         "cocheMin": 128
@@ -51199,7 +51199,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 87
       },
       "sanxenxo": {
         "cocheMin": 96
@@ -51270,7 +51270,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 88
+        "cocheMin": 93
       },
       "sanxenxo": {
         "cocheMin": 102
@@ -51341,7 +51341,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 87
+        "cocheMin": 93
       },
       "sanxenxo": {
         "cocheMin": 102
@@ -51412,7 +51412,7 @@
         "cocheMin": 81
       },
       "esteiro": {
-        "cocheMin": 86
+        "cocheMin": 83
       },
       "sanxenxo": {
         "cocheMin": 118
@@ -51483,7 +51483,7 @@
         "cocheMin": 83
       },
       "esteiro": {
-        "cocheMin": 88
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 120
@@ -51554,7 +51554,7 @@
         "cocheMin": 89
       },
       "esteiro": {
-        "cocheMin": 94
+        "cocheMin": 91
       },
       "sanxenxo": {
         "cocheMin": 126
@@ -51625,7 +51625,7 @@
         "cocheMin": 124
       },
       "esteiro": {
-        "cocheMin": 151
+        "cocheMin": 156
       },
       "sanxenxo": {
         "cocheMin": 165
@@ -51696,7 +51696,7 @@
         "cocheMin": 124
       },
       "esteiro": {
-        "cocheMin": 150
+        "cocheMin": 156
       },
       "sanxenxo": {
         "cocheMin": 165
@@ -51767,7 +51767,7 @@
         "cocheMin": 118
       },
       "esteiro": {
-        "cocheMin": 145
+        "cocheMin": 150
       },
       "sanxenxo": {
         "cocheMin": 159
@@ -51838,7 +51838,7 @@
         "cocheMin": 81
       },
       "esteiro": {
-        "cocheMin": 107
+        "cocheMin": 113
       },
       "sanxenxo": {
         "cocheMin": 122
@@ -51909,7 +51909,7 @@
         "cocheMin": 75
       },
       "esteiro": {
-        "cocheMin": 101
+        "cocheMin": 107
       },
       "sanxenxo": {
         "cocheMin": 116
@@ -51980,7 +51980,7 @@
         "cocheMin": 73
       },
       "esteiro": {
-        "cocheMin": 100
+        "cocheMin": 105
       },
       "sanxenxo": {
         "cocheMin": 114
@@ -52051,7 +52051,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 85
+        "cocheMin": 91
       },
       "sanxenxo": {
         "cocheMin": 100
@@ -52122,7 +52122,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 83
+        "cocheMin": 89
       },
       "sanxenxo": {
         "cocheMin": 97
@@ -52193,7 +52193,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 83
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 97
@@ -52264,7 +52264,7 @@
         "cocheMin": 87
       },
       "esteiro": {
-        "cocheMin": 92
+        "cocheMin": 89
       },
       "sanxenxo": {
         "cocheMin": 124
@@ -52335,7 +52335,7 @@
         "cocheMin": 88
       },
       "esteiro": {
-        "cocheMin": 93
+        "cocheMin": 90
       },
       "sanxenxo": {
         "cocheMin": 125
@@ -52406,7 +52406,7 @@
         "cocheMin": 89
       },
       "esteiro": {
-        "cocheMin": 93
+        "cocheMin": 91
       },
       "sanxenxo": {
         "cocheMin": 126
@@ -52477,7 +52477,7 @@
         "cocheMin": 119
       },
       "esteiro": {
-        "cocheMin": 145
+        "cocheMin": 151
       },
       "sanxenxo": {
         "cocheMin": 160
@@ -52548,7 +52548,7 @@
         "cocheMin": 117
       },
       "esteiro": {
-        "cocheMin": 143
+        "cocheMin": 149
       },
       "sanxenxo": {
         "cocheMin": 158
@@ -52619,7 +52619,7 @@
         "cocheMin": 50
       },
       "esteiro": {
-        "cocheMin": 26
+        "cocheMin": 6
       },
       "sanxenxo": {
         "cocheMin": 82
@@ -52690,7 +52690,7 @@
         "cocheMin": 49
       },
       "esteiro": {
-        "cocheMin": 25
+        "cocheMin": 5
       },
       "sanxenxo": {
         "cocheMin": 82
@@ -52761,7 +52761,7 @@
         "cocheMin": 113
       },
       "esteiro": {
-        "cocheMin": 140
+        "cocheMin": 145
       },
       "sanxenxo": {
         "cocheMin": 154
@@ -52832,7 +52832,7 @@
         "cocheMin": 113
       },
       "esteiro": {
-        "cocheMin": 140
+        "cocheMin": 145
       },
       "sanxenxo": {
         "cocheMin": 154
@@ -52903,7 +52903,7 @@
         "cocheMin": 71
       },
       "esteiro": {
-        "cocheMin": 97
+        "cocheMin": 103
       },
       "sanxenxo": {
         "cocheMin": 112
@@ -52974,7 +52974,7 @@
         "cocheMin": 65
       },
       "esteiro": {
-        "cocheMin": 81
+        "cocheMin": 87
       },
       "sanxenxo": {
         "cocheMin": 39
@@ -53045,7 +53045,7 @@
         "cocheMin": 113
       },
       "esteiro": {
-        "cocheMin": 129
+        "cocheMin": 135
       },
       "sanxenxo": {
         "cocheMin": 87
@@ -53116,7 +53116,7 @@
         "cocheMin": 113
       },
       "esteiro": {
-        "cocheMin": 129
+        "cocheMin": 135
       },
       "sanxenxo": {
         "cocheMin": 88
@@ -53187,7 +53187,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 72
+        "cocheMin": 77
       },
       "sanxenxo": {
         "cocheMin": 3
@@ -53258,7 +53258,7 @@
         "cocheMin": 89
       },
       "esteiro": {
-        "cocheMin": 98
+        "cocheMin": 95
       },
       "sanxenxo": {
         "cocheMin": 130
@@ -53329,7 +53329,7 @@
         "cocheMin": 88
       },
       "esteiro": {
-        "cocheMin": 98
+        "cocheMin": 95
       },
       "sanxenxo": {
         "cocheMin": 130
@@ -53400,7 +53400,7 @@
         "cocheMin": 89
       },
       "esteiro": {
-        "cocheMin": 98
+        "cocheMin": 96
       },
       "sanxenxo": {
         "cocheMin": 130
@@ -53471,7 +53471,7 @@
         "cocheMin": 86
       },
       "esteiro": {
-        "cocheMin": 95
+        "cocheMin": 93
       },
       "sanxenxo": {
         "cocheMin": 127
@@ -53542,7 +53542,7 @@
         "cocheMin": 131
       },
       "esteiro": {
-        "cocheMin": 157
+        "cocheMin": 163
       },
       "sanxenxo": {
         "cocheMin": 172
@@ -53613,7 +53613,7 @@
         "cocheMin": 132
       },
       "esteiro": {
-        "cocheMin": 159
+        "cocheMin": 164
       },
       "sanxenxo": {
         "cocheMin": 173
@@ -53684,7 +53684,7 @@
         "cocheMin": 133
       },
       "esteiro": {
-        "cocheMin": 160
+        "cocheMin": 165
       },
       "sanxenxo": {
         "cocheMin": 174
@@ -53755,7 +53755,7 @@
         "cocheMin": 138
       },
       "esteiro": {
-        "cocheMin": 164
+        "cocheMin": 170
       },
       "sanxenxo": {
         "cocheMin": 179
@@ -53826,7 +53826,7 @@
         "cocheMin": 83
       },
       "esteiro": {
-        "cocheMin": 109
+        "cocheMin": 115
       },
       "sanxenxo": {
         "cocheMin": 124
@@ -53897,7 +53897,7 @@
         "cocheMin": 83
       },
       "esteiro": {
-        "cocheMin": 109
+        "cocheMin": 115
       },
       "sanxenxo": {
         "cocheMin": 124
@@ -53968,7 +53968,7 @@
         "cocheMin": 90
       },
       "esteiro": {
-        "cocheMin": 117
+        "cocheMin": 122
       },
       "sanxenxo": {
         "cocheMin": 131
@@ -54039,7 +54039,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 86
+        "cocheMin": 92
       },
       "sanxenxo": {
         "cocheMin": 101
@@ -54110,7 +54110,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 85
+        "cocheMin": 90
       },
       "sanxenxo": {
         "cocheMin": 99
@@ -54181,7 +54181,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 90
+        "cocheMin": 96
       },
       "sanxenxo": {
         "cocheMin": 105
@@ -54252,7 +54252,7 @@
         "cocheMin": 78
       },
       "esteiro": {
-        "cocheMin": 79
+        "cocheMin": 66
       },
       "sanxenxo": {
         "cocheMin": 115
@@ -54323,7 +54323,7 @@
         "cocheMin": 75
       },
       "esteiro": {
-        "cocheMin": 77
+        "cocheMin": 63
       },
       "sanxenxo": {
         "cocheMin": 112
@@ -54394,7 +54394,7 @@
         "cocheMin": 73
       },
       "esteiro": {
-        "cocheMin": 75
+        "cocheMin": 61
       },
       "sanxenxo": {
         "cocheMin": 110
@@ -54465,7 +54465,7 @@
         "cocheMin": 72
       },
       "esteiro": {
-        "cocheMin": 74
+        "cocheMin": 60
       },
       "sanxenxo": {
         "cocheMin": 109
@@ -54536,7 +54536,7 @@
         "cocheMin": 143
       },
       "esteiro": {
-        "cocheMin": 169
+        "cocheMin": 175
       },
       "sanxenxo": {
         "cocheMin": 184
@@ -54607,7 +54607,7 @@
         "cocheMin": 142
       },
       "esteiro": {
-        "cocheMin": 169
+        "cocheMin": 174
       },
       "sanxenxo": {
         "cocheMin": 183
@@ -54678,7 +54678,7 @@
         "cocheMin": 132
       },
       "esteiro": {
-        "cocheMin": 158
+        "cocheMin": 164
       },
       "sanxenxo": {
         "cocheMin": 173
@@ -54749,7 +54749,7 @@
         "cocheMin": 132
       },
       "esteiro": {
-        "cocheMin": 158
+        "cocheMin": 164
       },
       "sanxenxo": {
         "cocheMin": 173
@@ -54820,7 +54820,7 @@
         "cocheMin": 85
       },
       "esteiro": {
-        "cocheMin": 111
+        "cocheMin": 117
       },
       "sanxenxo": {
         "cocheMin": 126
@@ -54891,7 +54891,7 @@
         "cocheMin": 85
       },
       "esteiro": {
-        "cocheMin": 111
+        "cocheMin": 117
       },
       "sanxenxo": {
         "cocheMin": 126
@@ -54962,7 +54962,7 @@
         "cocheMin": 82
       },
       "esteiro": {
-        "cocheMin": 108
+        "cocheMin": 114
       },
       "sanxenxo": {
         "cocheMin": 123
@@ -55033,7 +55033,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 111
+        "cocheMin": 116
       },
       "sanxenxo": {
         "cocheMin": 125
@@ -55104,7 +55104,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 89
+        "cocheMin": 95
       },
       "sanxenxo": {
         "cocheMin": 104
@@ -55175,7 +55175,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 86
+        "cocheMin": 91
       },
       "sanxenxo": {
         "cocheMin": 100
@@ -55246,7 +55246,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 86
+        "cocheMin": 92
       },
       "sanxenxo": {
         "cocheMin": 100
@@ -55317,7 +55317,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 87
+        "cocheMin": 92
       },
       "sanxenxo": {
         "cocheMin": 101
@@ -55388,7 +55388,7 @@
         "cocheMin": 73
       },
       "esteiro": {
-        "cocheMin": 74
+        "cocheMin": 60
       },
       "sanxenxo": {
         "cocheMin": 110
@@ -55459,7 +55459,7 @@
         "cocheMin": 75
       },
       "esteiro": {
-        "cocheMin": 71
+        "cocheMin": 56
       },
       "sanxenxo": {
         "cocheMin": 112
@@ -55530,7 +55530,7 @@
         "cocheMin": 72
       },
       "esteiro": {
-        "cocheMin": 68
+        "cocheMin": 53
       },
       "sanxenxo": {
         "cocheMin": 109
@@ -55601,7 +55601,7 @@
         "cocheMin": 79
       },
       "esteiro": {
-        "cocheMin": 65
+        "cocheMin": 50
       },
       "sanxenxo": {
         "cocheMin": 116
@@ -55672,7 +55672,7 @@
         "cocheMin": 130
       },
       "esteiro": {
-        "cocheMin": 157
+        "cocheMin": 162
       },
       "sanxenxo": {
         "cocheMin": 171
@@ -55743,7 +55743,7 @@
         "cocheMin": 129
       },
       "esteiro": {
-        "cocheMin": 155
+        "cocheMin": 161
       },
       "sanxenxo": {
         "cocheMin": 170
@@ -55814,7 +55814,7 @@
         "cocheMin": 130
       },
       "esteiro": {
-        "cocheMin": 156
+        "cocheMin": 162
       },
       "sanxenxo": {
         "cocheMin": 171
@@ -55885,7 +55885,7 @@
         "cocheMin": 128
       },
       "esteiro": {
-        "cocheMin": 154
+        "cocheMin": 160
       },
       "sanxenxo": {
         "cocheMin": 169
@@ -55956,7 +55956,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 111
+        "cocheMin": 116
       },
       "sanxenxo": {
         "cocheMin": 125
@@ -56027,7 +56027,7 @@
         "cocheMin": 82
       },
       "esteiro": {
-        "cocheMin": 109
+        "cocheMin": 114
       },
       "sanxenxo": {
         "cocheMin": 123
@@ -56098,7 +56098,7 @@
         "cocheMin": 82
       },
       "esteiro": {
-        "cocheMin": 109
+        "cocheMin": 114
       },
       "sanxenxo": {
         "cocheMin": 123
@@ -56169,7 +56169,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 86
+        "cocheMin": 92
       },
       "sanxenxo": {
         "cocheMin": 101
@@ -56240,7 +56240,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 87
+        "cocheMin": 92
       },
       "sanxenxo": {
         "cocheMin": 101
@@ -56311,7 +56311,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 85
+        "cocheMin": 91
       },
       "sanxenxo": {
         "cocheMin": 100
@@ -56382,7 +56382,7 @@
         "cocheMin": 57
       },
       "esteiro": {
-        "cocheMin": 83
+        "cocheMin": 89
       },
       "sanxenxo": {
         "cocheMin": 98
@@ -56453,7 +56453,7 @@
         "cocheMin": 79
       },
       "esteiro": {
-        "cocheMin": 86
+        "cocheMin": 83
       },
       "sanxenxo": {
         "cocheMin": 118
@@ -56524,7 +56524,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 93
+        "cocheMin": 91
       },
       "sanxenxo": {
         "cocheMin": 125
@@ -56595,7 +56595,7 @@
         "cocheMin": 78
       },
       "esteiro": {
-        "cocheMin": 86
+        "cocheMin": 83
       },
       "sanxenxo": {
         "cocheMin": 118
@@ -56666,7 +56666,7 @@
         "cocheMin": 79
       },
       "esteiro": {
-        "cocheMin": 86
+        "cocheMin": 84
       },
       "sanxenxo": {
         "cocheMin": 118
@@ -56737,7 +56737,7 @@
         "cocheMin": 128
       },
       "esteiro": {
-        "cocheMin": 154
+        "cocheMin": 160
       },
       "sanxenxo": {
         "cocheMin": 169
@@ -56808,7 +56808,7 @@
         "cocheMin": 127
       },
       "esteiro": {
-        "cocheMin": 154
+        "cocheMin": 160
       },
       "sanxenxo": {
         "cocheMin": 168
@@ -56879,7 +56879,7 @@
         "cocheMin": 128
       },
       "esteiro": {
-        "cocheMin": 154
+        "cocheMin": 160
       },
       "sanxenxo": {
         "cocheMin": 169
@@ -56950,7 +56950,7 @@
         "cocheMin": 130
       },
       "esteiro": {
-        "cocheMin": 157
+        "cocheMin": 162
       },
       "sanxenxo": {
         "cocheMin": 171
@@ -57021,7 +57021,7 @@
         "cocheMin": 98
       },
       "esteiro": {
-        "cocheMin": 124
+        "cocheMin": 130
       },
       "sanxenxo": {
         "cocheMin": 139
@@ -57092,7 +57092,7 @@
         "cocheMin": 81
       },
       "esteiro": {
-        "cocheMin": 107
+        "cocheMin": 113
       },
       "sanxenxo": {
         "cocheMin": 122
@@ -57163,7 +57163,7 @@
         "cocheMin": 83
       },
       "esteiro": {
-        "cocheMin": 110
+        "cocheMin": 115
       },
       "sanxenxo": {
         "cocheMin": 124
@@ -57234,7 +57234,7 @@
         "cocheMin": 57
       },
       "esteiro": {
-        "cocheMin": 84
+        "cocheMin": 89
       },
       "sanxenxo": {
         "cocheMin": 98
@@ -57305,7 +57305,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 85
+        "cocheMin": 90
       },
       "sanxenxo": {
         "cocheMin": 99
@@ -57376,7 +57376,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 81
+        "cocheMin": 87
       },
       "sanxenxo": {
         "cocheMin": 96
@@ -57447,7 +57447,7 @@
         "cocheMin": 79
       },
       "esteiro": {
-        "cocheMin": 87
+        "cocheMin": 84
       },
       "sanxenxo": {
         "cocheMin": 119
@@ -57518,7 +57518,7 @@
         "cocheMin": 78
       },
       "esteiro": {
-        "cocheMin": 86
+        "cocheMin": 83
       },
       "sanxenxo": {
         "cocheMin": 118
@@ -57589,7 +57589,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 91
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 123
@@ -57660,7 +57660,7 @@
         "cocheMin": 87
       },
       "esteiro": {
-        "cocheMin": 92
+        "cocheMin": 89
       },
       "sanxenxo": {
         "cocheMin": 124
@@ -57731,7 +57731,7 @@
         "cocheMin": 134
       },
       "esteiro": {
-        "cocheMin": 161
+        "cocheMin": 166
       },
       "sanxenxo": {
         "cocheMin": 175
@@ -57802,7 +57802,7 @@
         "cocheMin": 127
       },
       "esteiro": {
-        "cocheMin": 153
+        "cocheMin": 159
       },
       "sanxenxo": {
         "cocheMin": 168
@@ -57873,7 +57873,7 @@
         "cocheMin": 87
       },
       "esteiro": {
-        "cocheMin": 113
+        "cocheMin": 119
       },
       "sanxenxo": {
         "cocheMin": 128
@@ -57944,7 +57944,7 @@
         "cocheMin": 74
       },
       "esteiro": {
-        "cocheMin": 100
+        "cocheMin": 106
       },
       "sanxenxo": {
         "cocheMin": 115
@@ -58015,7 +58015,7 @@
         "cocheMin": 68
       },
       "esteiro": {
-        "cocheMin": 94
+        "cocheMin": 100
       },
       "sanxenxo": {
         "cocheMin": 109
@@ -58086,7 +58086,7 @@
         "cocheMin": 69
       },
       "esteiro": {
-        "cocheMin": 96
+        "cocheMin": 101
       },
       "sanxenxo": {
         "cocheMin": 110
@@ -58157,7 +58157,7 @@
         "cocheMin": 67
       },
       "esteiro": {
-        "cocheMin": 93
+        "cocheMin": 99
       },
       "sanxenxo": {
         "cocheMin": 108
@@ -58228,7 +58228,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 90
+        "cocheMin": 95
       },
       "sanxenxo": {
         "cocheMin": 104
@@ -58299,7 +58299,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 87
+        "cocheMin": 93
       },
       "sanxenxo": {
         "cocheMin": 102
@@ -58370,7 +58370,7 @@
         "cocheMin": 53
       },
       "esteiro": {
-        "cocheMin": 14
+        "cocheMin": 34
       },
       "sanxenxo": {
         "cocheMin": 72
@@ -58441,7 +58441,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 16
+        "cocheMin": 35
       },
       "sanxenxo": {
         "cocheMin": 71
@@ -58512,7 +58512,7 @@
         "cocheMin": 57
       },
       "esteiro": {
-        "cocheMin": 18
+        "cocheMin": 38
       },
       "sanxenxo": {
         "cocheMin": 72
@@ -58583,7 +58583,7 @@
         "cocheMin": 83
       },
       "esteiro": {
-        "cocheMin": 110
+        "cocheMin": 115
       },
       "sanxenxo": {
         "cocheMin": 124
@@ -58654,7 +58654,7 @@
         "cocheMin": 46
       },
       "esteiro": {
-        "cocheMin": 8
+        "cocheMin": 28
       },
       "sanxenxo": {
         "cocheMin": 77
@@ -58725,7 +58725,7 @@
         "cocheMin": 50
       },
       "esteiro": {
-        "cocheMin": 11
+        "cocheMin": 31
       },
       "sanxenxo": {
         "cocheMin": 73
@@ -58796,7 +58796,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 75
+        "cocheMin": 81
       },
       "sanxenxo": {
         "cocheMin": 7
@@ -58867,7 +58867,7 @@
         "cocheMin": 57
       },
       "esteiro": {
-        "cocheMin": 84
+        "cocheMin": 89
       },
       "sanxenxo": {
         "cocheMin": 98
@@ -58938,7 +58938,7 @@
         "cocheMin": 69
       },
       "esteiro": {
-        "cocheMin": 96
+        "cocheMin": 102
       },
       "sanxenxo": {
         "cocheMin": 110
@@ -59009,7 +59009,7 @@
         "cocheMin": 78
       },
       "esteiro": {
-        "cocheMin": 98
+        "cocheMin": 104
       },
       "sanxenxo": {
         "cocheMin": 119
@@ -59080,7 +59080,7 @@
         "cocheMin": 80
       },
       "esteiro": {
-        "cocheMin": 99
+        "cocheMin": 105
       },
       "sanxenxo": {
         "cocheMin": 121
@@ -59151,7 +59151,7 @@
         "cocheMin": 80
       },
       "esteiro": {
-        "cocheMin": 99
+        "cocheMin": 105
       },
       "sanxenxo": {
         "cocheMin": 121
@@ -59222,7 +59222,7 @@
         "cocheMin": 78
       },
       "esteiro": {
-        "cocheMin": 95
+        "cocheMin": 101
       },
       "sanxenxo": {
         "cocheMin": 121
@@ -59293,7 +59293,7 @@
         "cocheMin": 77
       },
       "esteiro": {
-        "cocheMin": 94
+        "cocheMin": 99
       },
       "sanxenxo": {
         "cocheMin": 120
@@ -59364,7 +59364,7 @@
         "cocheMin": 81
       },
       "esteiro": {
-        "cocheMin": 98
+        "cocheMin": 101
       },
       "sanxenxo": {
         "cocheMin": 123
@@ -59435,7 +59435,7 @@
         "cocheMin": 87
       },
       "esteiro": {
-        "cocheMin": 92
+        "cocheMin": 89
       },
       "sanxenxo": {
         "cocheMin": 124
@@ -59506,7 +59506,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 89
+        "cocheMin": 86
       },
       "sanxenxo": {
         "cocheMin": 121
@@ -59577,7 +59577,7 @@
         "cocheMin": 96
       },
       "esteiro": {
-        "cocheMin": 101
+        "cocheMin": 98
       },
       "sanxenxo": {
         "cocheMin": 133
@@ -59648,7 +59648,7 @@
         "cocheMin": 86
       },
       "esteiro": {
-        "cocheMin": 91
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 123
@@ -59719,7 +59719,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 22
+        "cocheMin": 42
       },
       "sanxenxo": {
         "cocheMin": 68
@@ -59790,7 +59790,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 23
+        "cocheMin": 43
       },
       "sanxenxo": {
         "cocheMin": 69
@@ -59861,7 +59861,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 26
+        "cocheMin": 46
       },
       "sanxenxo": {
         "cocheMin": 68
@@ -59932,7 +59932,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 71
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 2
@@ -60003,7 +60003,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 74
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 10
@@ -60074,7 +60074,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 71
+        "cocheMin": 77
       },
       "sanxenxo": {
         "cocheMin": 3
@@ -60145,7 +60145,7 @@
         "cocheMin": 73
       },
       "esteiro": {
-        "cocheMin": 78
+        "cocheMin": 75
       },
       "sanxenxo": {
         "cocheMin": 110
@@ -60216,7 +60216,7 @@
         "cocheMin": 74
       },
       "esteiro": {
-        "cocheMin": 79
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 111
@@ -60287,7 +60287,7 @@
         "cocheMin": 73
       },
       "esteiro": {
-        "cocheMin": 78
+        "cocheMin": 75
       },
       "sanxenxo": {
         "cocheMin": 110
@@ -60358,7 +60358,7 @@
         "cocheMin": 80
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 71
       },
       "sanxenxo": {
         "cocheMin": 117
@@ -60429,7 +60429,7 @@
         "cocheMin": 80
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 71
       },
       "sanxenxo": {
         "cocheMin": 117
@@ -60500,7 +60500,7 @@
         "cocheMin": 81
       },
       "esteiro": {
-        "cocheMin": 58
+        "cocheMin": 43
       },
       "sanxenxo": {
         "cocheMin": 115
@@ -60571,7 +60571,7 @@
         "cocheMin": 71
       },
       "esteiro": {
-        "cocheMin": 46
+        "cocheMin": 27
       },
       "sanxenxo": {
         "cocheMin": 103
@@ -60642,7 +60642,7 @@
         "cocheMin": 76
       },
       "esteiro": {
-        "cocheMin": 52
+        "cocheMin": 32
       },
       "sanxenxo": {
         "cocheMin": 108
@@ -60713,7 +60713,7 @@
         "cocheMin": 65
       },
       "esteiro": {
-        "cocheMin": 40
+        "cocheMin": 21
       },
       "sanxenxo": {
         "cocheMin": 97
@@ -60784,7 +60784,7 @@
         "cocheMin": 65
       },
       "esteiro": {
-        "cocheMin": 34
+        "cocheMin": 54
       },
       "sanxenxo": {
         "cocheMin": 72
@@ -60855,7 +60855,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 36
+        "cocheMin": 56
       },
       "sanxenxo": {
         "cocheMin": 71
@@ -60926,7 +60926,7 @@
         "cocheMin": 62
       },
       "esteiro": {
-        "cocheMin": 35
+        "cocheMin": 54
       },
       "sanxenxo": {
         "cocheMin": 69
@@ -60997,7 +60997,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 35
+        "cocheMin": 55
       },
       "sanxenxo": {
         "cocheMin": 70
@@ -61068,7 +61068,7 @@
         "cocheMin": 73
       },
       "esteiro": {
-        "cocheMin": 68
+        "cocheMin": 54
       },
       "sanxenxo": {
         "cocheMin": 110
@@ -61139,7 +61139,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 69
+        "cocheMin": 77
       },
       "sanxenxo": {
         "cocheMin": 29
@@ -61210,7 +61210,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 78
       },
       "sanxenxo": {
         "cocheMin": 30
@@ -61281,7 +61281,7 @@
         "cocheMin": 94
       },
       "esteiro": {
-        "cocheMin": 120
+        "cocheMin": 126
       },
       "sanxenxo": {
         "cocheMin": 135
@@ -61352,7 +61352,7 @@
         "cocheMin": 85
       },
       "esteiro": {
-        "cocheMin": 111
+        "cocheMin": 117
       },
       "sanxenxo": {
         "cocheMin": 126
@@ -61423,7 +61423,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 85
+        "cocheMin": 90
       },
       "sanxenxo": {
         "cocheMin": 99
@@ -61494,7 +61494,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 87
+        "cocheMin": 93
       },
       "sanxenxo": {
         "cocheMin": 102
@@ -61565,7 +61565,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 89
+        "cocheMin": 95
       },
       "sanxenxo": {
         "cocheMin": 104
@@ -61636,7 +61636,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 90
+        "cocheMin": 95
       },
       "sanxenxo": {
         "cocheMin": 104
@@ -61707,7 +61707,7 @@
         "cocheMin": 87
       },
       "esteiro": {
-        "cocheMin": 103
+        "cocheMin": 101
       },
       "sanxenxo": {
         "cocheMin": 130
@@ -61778,7 +61778,7 @@
         "cocheMin": 90
       },
       "esteiro": {
-        "cocheMin": 104
+        "cocheMin": 102
       },
       "sanxenxo": {
         "cocheMin": 133
@@ -61849,7 +61849,7 @@
         "cocheMin": 88
       },
       "esteiro": {
-        "cocheMin": 97
+        "cocheMin": 95
       },
       "sanxenxo": {
         "cocheMin": 129
@@ -61920,7 +61920,7 @@
         "cocheMin": 87
       },
       "esteiro": {
-        "cocheMin": 97
+        "cocheMin": 94
       },
       "sanxenxo": {
         "cocheMin": 129
@@ -61991,7 +61991,7 @@
         "cocheMin": 117
       },
       "esteiro": {
-        "cocheMin": 144
+        "cocheMin": 149
       },
       "sanxenxo": {
         "cocheMin": 158
@@ -62062,7 +62062,7 @@
         "cocheMin": 71
       },
       "esteiro": {
-        "cocheMin": 97
+        "cocheMin": 103
       },
       "sanxenxo": {
         "cocheMin": 112
@@ -62133,7 +62133,7 @@
         "cocheMin": 72
       },
       "esteiro": {
-        "cocheMin": 98
+        "cocheMin": 104
       },
       "sanxenxo": {
         "cocheMin": 113
@@ -62204,7 +62204,7 @@
         "cocheMin": 81
       },
       "esteiro": {
-        "cocheMin": 107
+        "cocheMin": 113
       },
       "sanxenxo": {
         "cocheMin": 122
@@ -62275,7 +62275,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 84
+        "cocheMin": 90
       },
       "sanxenxo": {
         "cocheMin": 99
@@ -62346,7 +62346,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 85
+        "cocheMin": 90
       },
       "sanxenxo": {
         "cocheMin": 99
@@ -62417,7 +62417,7 @@
         "cocheMin": 62
       },
       "esteiro": {
-        "cocheMin": 89
+        "cocheMin": 94
       },
       "sanxenxo": {
         "cocheMin": 103
@@ -62488,7 +62488,7 @@
         "cocheMin": 59
       },
       "esteiro": {
-        "cocheMin": 86
+        "cocheMin": 91
       },
       "sanxenxo": {
         "cocheMin": 100
@@ -62559,7 +62559,7 @@
         "cocheMin": 90
       },
       "esteiro": {
-        "cocheMin": 95
+        "cocheMin": 92
       },
       "sanxenxo": {
         "cocheMin": 127
@@ -62630,7 +62630,7 @@
         "cocheMin": 91
       },
       "esteiro": {
-        "cocheMin": 95
+        "cocheMin": 93
       },
       "sanxenxo": {
         "cocheMin": 128
@@ -62701,7 +62701,7 @@
         "cocheMin": 88
       },
       "esteiro": {
-        "cocheMin": 92
+        "cocheMin": 90
       },
       "sanxenxo": {
         "cocheMin": 125
@@ -62772,7 +62772,7 @@
         "cocheMin": 111
       },
       "esteiro": {
-        "cocheMin": 137
+        "cocheMin": 143
       },
       "sanxenxo": {
         "cocheMin": 152
@@ -62843,7 +62843,7 @@
         "cocheMin": 116
       },
       "esteiro": {
-        "cocheMin": 143
+        "cocheMin": 149
       },
       "sanxenxo": {
         "cocheMin": 157
@@ -62914,7 +62914,7 @@
         "cocheMin": 116
       },
       "esteiro": {
-        "cocheMin": 142
+        "cocheMin": 148
       },
       "sanxenxo": {
         "cocheMin": 157
@@ -62985,7 +62985,7 @@
         "cocheMin": 74
       },
       "esteiro": {
-        "cocheMin": 101
+        "cocheMin": 106
       },
       "sanxenxo": {
         "cocheMin": 115
@@ -63056,7 +63056,7 @@
         "cocheMin": 73
       },
       "esteiro": {
-        "cocheMin": 100
+        "cocheMin": 105
       },
       "sanxenxo": {
         "cocheMin": 114
@@ -63127,7 +63127,7 @@
         "cocheMin": 73
       },
       "esteiro": {
-        "cocheMin": 99
+        "cocheMin": 105
       },
       "sanxenxo": {
         "cocheMin": 114
@@ -63198,7 +63198,7 @@
         "cocheMin": 73
       },
       "esteiro": {
-        "cocheMin": 100
+        "cocheMin": 105
       },
       "sanxenxo": {
         "cocheMin": 114
@@ -63269,7 +63269,7 @@
         "cocheMin": 62
       },
       "esteiro": {
-        "cocheMin": 89
+        "cocheMin": 94
       },
       "sanxenxo": {
         "cocheMin": 103
@@ -63340,7 +63340,7 @@
         "cocheMin": 65
       },
       "esteiro": {
-        "cocheMin": 91
+        "cocheMin": 97
       },
       "sanxenxo": {
         "cocheMin": 106
@@ -63411,7 +63411,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 91
+        "cocheMin": 96
       },
       "sanxenxo": {
         "cocheMin": 105
@@ -63482,7 +63482,7 @@
         "cocheMin": 66
       },
       "esteiro": {
-        "cocheMin": 92
+        "cocheMin": 98
       },
       "sanxenxo": {
         "cocheMin": 107
@@ -63553,7 +63553,7 @@
         "cocheMin": 82
       },
       "esteiro": {
-        "cocheMin": 87
+        "cocheMin": 84
       },
       "sanxenxo": {
         "cocheMin": 119
@@ -63624,7 +63624,7 @@
         "cocheMin": 83
       },
       "esteiro": {
-        "cocheMin": 88
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 120
@@ -63695,7 +63695,7 @@
         "cocheMin": 82
       },
       "esteiro": {
-        "cocheMin": 86
+        "cocheMin": 84
       },
       "sanxenxo": {
         "cocheMin": 119
@@ -63766,7 +63766,7 @@
         "cocheMin": 81
       },
       "esteiro": {
-        "cocheMin": 85
+        "cocheMin": 83
       },
       "sanxenxo": {
         "cocheMin": 117
@@ -63837,7 +63837,7 @@
         "cocheMin": 117
       },
       "esteiro": {
-        "cocheMin": 143
+        "cocheMin": 149
       },
       "sanxenxo": {
         "cocheMin": 158
@@ -63908,7 +63908,7 @@
         "cocheMin": 114
       },
       "esteiro": {
-        "cocheMin": 140
+        "cocheMin": 146
       },
       "sanxenxo": {
         "cocheMin": 155
@@ -63979,7 +63979,7 @@
         "cocheMin": 115
       },
       "esteiro": {
-        "cocheMin": 142
+        "cocheMin": 147
       },
       "sanxenxo": {
         "cocheMin": 156
@@ -64050,7 +64050,7 @@
         "cocheMin": 71
       },
       "esteiro": {
-        "cocheMin": 98
+        "cocheMin": 103
       },
       "sanxenxo": {
         "cocheMin": 112
@@ -64121,7 +64121,7 @@
         "cocheMin": 71
       },
       "esteiro": {
-        "cocheMin": 97
+        "cocheMin": 103
       },
       "sanxenxo": {
         "cocheMin": 112
@@ -64192,7 +64192,7 @@
         "cocheMin": 71
       },
       "esteiro": {
-        "cocheMin": 98
+        "cocheMin": 103
       },
       "sanxenxo": {
         "cocheMin": 112
@@ -64263,7 +64263,7 @@
         "cocheMin": 67
       },
       "esteiro": {
-        "cocheMin": 93
+        "cocheMin": 99
       },
       "sanxenxo": {
         "cocheMin": 108
@@ -64334,7 +64334,7 @@
         "cocheMin": 68
       },
       "esteiro": {
-        "cocheMin": 95
+        "cocheMin": 100
       },
       "sanxenxo": {
         "cocheMin": 109
@@ -64405,7 +64405,7 @@
         "cocheMin": 69
       },
       "esteiro": {
-        "cocheMin": 96
+        "cocheMin": 101
       },
       "sanxenxo": {
         "cocheMin": 110
@@ -64476,7 +64476,7 @@
         "cocheMin": 69
       },
       "esteiro": {
-        "cocheMin": 95
+        "cocheMin": 101
       },
       "sanxenxo": {
         "cocheMin": 110
@@ -64547,7 +64547,7 @@
         "cocheMin": 79
       },
       "esteiro": {
-        "cocheMin": 84
+        "cocheMin": 81
       },
       "sanxenxo": {
         "cocheMin": 116
@@ -64618,7 +64618,7 @@
         "cocheMin": 78
       },
       "esteiro": {
-        "cocheMin": 83
+        "cocheMin": 80
       },
       "sanxenxo": {
         "cocheMin": 115
@@ -64689,7 +64689,7 @@
         "cocheMin": 77
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 79
       },
       "sanxenxo": {
         "cocheMin": 114
@@ -64760,7 +64760,7 @@
         "cocheMin": 99
       },
       "esteiro": {
-        "cocheMin": 125
+        "cocheMin": 131
       },
       "sanxenxo": {
         "cocheMin": 140
@@ -64831,7 +64831,7 @@
         "cocheMin": 95
       },
       "esteiro": {
-        "cocheMin": 122
+        "cocheMin": 127
       },
       "sanxenxo": {
         "cocheMin": 136
@@ -64902,7 +64902,7 @@
         "cocheMin": 100
       },
       "esteiro": {
-        "cocheMin": 127
+        "cocheMin": 132
       },
       "sanxenxo": {
         "cocheMin": 141
@@ -64973,7 +64973,7 @@
         "cocheMin": 67
       },
       "esteiro": {
-        "cocheMin": 93
+        "cocheMin": 99
       },
       "sanxenxo": {
         "cocheMin": 108
@@ -65044,7 +65044,7 @@
         "cocheMin": 66
       },
       "esteiro": {
-        "cocheMin": 92
+        "cocheMin": 98
       },
       "sanxenxo": {
         "cocheMin": 107
@@ -65115,7 +65115,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 91
+        "cocheMin": 96
       },
       "sanxenxo": {
         "cocheMin": 105
@@ -65186,7 +65186,7 @@
         "cocheMin": 64
       },
       "esteiro": {
-        "cocheMin": 91
+        "cocheMin": 96
       },
       "sanxenxo": {
         "cocheMin": 105
@@ -65257,7 +65257,7 @@
         "cocheMin": 69
       },
       "esteiro": {
-        "cocheMin": 96
+        "cocheMin": 101
       },
       "sanxenxo": {
         "cocheMin": 110
@@ -65328,7 +65328,7 @@
         "cocheMin": 72
       },
       "esteiro": {
-        "cocheMin": 98
+        "cocheMin": 104
       },
       "sanxenxo": {
         "cocheMin": 113
@@ -65399,7 +65399,7 @@
         "cocheMin": 74
       },
       "esteiro": {
-        "cocheMin": 100
+        "cocheMin": 106
       },
       "sanxenxo": {
         "cocheMin": 115
@@ -65470,7 +65470,7 @@
         "cocheMin": 80
       },
       "esteiro": {
-        "cocheMin": 100
+        "cocheMin": 105
       },
       "sanxenxo": {
         "cocheMin": 121
@@ -65541,7 +65541,7 @@
         "cocheMin": 74
       },
       "esteiro": {
-        "cocheMin": 79
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 111
@@ -65612,7 +65612,7 @@
         "cocheMin": 69
       },
       "esteiro": {
-        "cocheMin": 74
+        "cocheMin": 71
       },
       "sanxenxo": {
         "cocheMin": 106
@@ -65683,7 +65683,7 @@
         "cocheMin": 69
       },
       "esteiro": {
-        "cocheMin": 73
+        "cocheMin": 71
       },
       "sanxenxo": {
         "cocheMin": 106
@@ -65754,7 +65754,7 @@
         "cocheMin": 88
       },
       "esteiro": {
-        "cocheMin": 114
+        "cocheMin": 120
       },
       "sanxenxo": {
         "cocheMin": 129
@@ -65825,7 +65825,7 @@
         "cocheMin": 90
       },
       "esteiro": {
-        "cocheMin": 116
+        "cocheMin": 122
       },
       "sanxenxo": {
         "cocheMin": 131
@@ -65896,7 +65896,7 @@
         "cocheMin": 88
       },
       "esteiro": {
-        "cocheMin": 114
+        "cocheMin": 120
       },
       "sanxenxo": {
         "cocheMin": 129
@@ -65967,7 +65967,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 89
+        "cocheMin": 95
       },
       "sanxenxo": {
         "cocheMin": 104
@@ -66038,7 +66038,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 87
+        "cocheMin": 93
       },
       "sanxenxo": {
         "cocheMin": 101
@@ -66109,7 +66109,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 89
+        "cocheMin": 95
       },
       "sanxenxo": {
         "cocheMin": 104
@@ -66180,7 +66180,7 @@
         "cocheMin": 63
       },
       "esteiro": {
-        "cocheMin": 89
+        "cocheMin": 95
       },
       "sanxenxo": {
         "cocheMin": 104
@@ -66251,7 +66251,7 @@
         "cocheMin": 79
       },
       "esteiro": {
-        "cocheMin": 98
+        "cocheMin": 103
       },
       "sanxenxo": {
         "cocheMin": 120
@@ -66322,7 +66322,7 @@
         "cocheMin": 79
       },
       "esteiro": {
-        "cocheMin": 97
+        "cocheMin": 103
       },
       "sanxenxo": {
         "cocheMin": 120
@@ -66393,7 +66393,7 @@
         "cocheMin": 80
       },
       "esteiro": {
-        "cocheMin": 97
+        "cocheMin": 102
       },
       "sanxenxo": {
         "cocheMin": 122
@@ -66464,7 +66464,7 @@
         "cocheMin": 72
       },
       "esteiro": {
-        "cocheMin": 76
+        "cocheMin": 74
       },
       "sanxenxo": {
         "cocheMin": 108
@@ -66535,7 +66535,7 @@
         "cocheMin": 73
       },
       "esteiro": {
-        "cocheMin": 78
+        "cocheMin": 75
       },
       "sanxenxo": {
         "cocheMin": 110
@@ -66606,7 +66606,7 @@
         "cocheMin": 74
       },
       "esteiro": {
-        "cocheMin": 79
+        "cocheMin": 76
       },
       "sanxenxo": {
         "cocheMin": 111
@@ -66677,7 +66677,7 @@
         "cocheMin": 72
       },
       "esteiro": {
-        "cocheMin": 77
+        "cocheMin": 74
       },
       "sanxenxo": {
         "cocheMin": 109
@@ -66748,7 +66748,7 @@
         "cocheMin": 89
       },
       "esteiro": {
-        "cocheMin": 116
+        "cocheMin": 121
       },
       "sanxenxo": {
         "cocheMin": 130
@@ -66819,7 +66819,7 @@
         "cocheMin": 87
       },
       "esteiro": {
-        "cocheMin": 113
+        "cocheMin": 119
       },
       "sanxenxo": {
         "cocheMin": 128
@@ -66890,7 +66890,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 110
+        "cocheMin": 116
       },
       "sanxenxo": {
         "cocheMin": 125
@@ -66961,7 +66961,7 @@
         "cocheMin": 61
       },
       "esteiro": {
-        "cocheMin": 88
+        "cocheMin": 94
       },
       "sanxenxo": {
         "cocheMin": 103
@@ -67032,7 +67032,7 @@
         "cocheMin": 60
       },
       "esteiro": {
-        "cocheMin": 87
+        "cocheMin": 92
       },
       "sanxenxo": {
         "cocheMin": 101
@@ -67103,7 +67103,7 @@
         "cocheMin": 57
       },
       "esteiro": {
-        "cocheMin": 84
+        "cocheMin": 89
       },
       "sanxenxo": {
         "cocheMin": 98
@@ -67174,7 +67174,7 @@
         "cocheMin": 58
       },
       "esteiro": {
-        "cocheMin": 84
+        "cocheMin": 90
       },
       "sanxenxo": {
         "cocheMin": 99
@@ -67245,7 +67245,7 @@
         "cocheMin": 75
       },
       "esteiro": {
-        "cocheMin": 92
+        "cocheMin": 98
       },
       "sanxenxo": {
         "cocheMin": 118
@@ -67316,7 +67316,7 @@
         "cocheMin": 75
       },
       "esteiro": {
-        "cocheMin": 92
+        "cocheMin": 97
       },
       "sanxenxo": {
         "cocheMin": 118
@@ -67387,7 +67387,7 @@
         "cocheMin": 69
       },
       "esteiro": {
-        "cocheMin": 86
+        "cocheMin": 92
       },
       "sanxenxo": {
         "cocheMin": 112
@@ -67458,7 +67458,7 @@
         "cocheMin": 72
       },
       "esteiro": {
-        "cocheMin": 76
+        "cocheMin": 74
       },
       "sanxenxo": {
         "cocheMin": 109
@@ -67529,7 +67529,7 @@
         "cocheMin": 73
       },
       "esteiro": {
-        "cocheMin": 78
+        "cocheMin": 75
       },
       "sanxenxo": {
         "cocheMin": 110
@@ -67600,7 +67600,7 @@
         "cocheMin": 75
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 77
       },
       "sanxenxo": {
         "cocheMin": 112
@@ -67671,7 +67671,7 @@
         "cocheMin": 80
       },
       "esteiro": {
-        "cocheMin": 84
+        "cocheMin": 82
       },
       "sanxenxo": {
         "cocheMin": 117
@@ -67742,7 +67742,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 111
+        "cocheMin": 117
       },
       "sanxenxo": {
         "cocheMin": 125
@@ -67813,7 +67813,7 @@
         "cocheMin": 83
       },
       "esteiro": {
-        "cocheMin": 110
+        "cocheMin": 115
       },
       "sanxenxo": {
         "cocheMin": 124
@@ -67884,7 +67884,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 111
+        "cocheMin": 117
       },
       "sanxenxo": {
         "cocheMin": 125
@@ -67955,7 +67955,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 81
+        "cocheMin": 86
       },
       "sanxenxo": {
         "cocheMin": 95
@@ -68026,7 +68026,7 @@
         "cocheMin": 52
       },
       "esteiro": {
-        "cocheMin": 79
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 94
@@ -68097,7 +68097,7 @@
         "cocheMin": 55
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 96
@@ -68168,7 +68168,7 @@
         "cocheMin": 77
       },
       "esteiro": {
-        "cocheMin": 94
+        "cocheMin": 100
       },
       "sanxenxo": {
         "cocheMin": 120
@@ -68239,7 +68239,7 @@
         "cocheMin": 74
       },
       "esteiro": {
-        "cocheMin": 91
+        "cocheMin": 97
       },
       "sanxenxo": {
         "cocheMin": 117
@@ -68310,7 +68310,7 @@
         "cocheMin": 74
       },
       "esteiro": {
-        "cocheMin": 91
+        "cocheMin": 97
       },
       "sanxenxo": {
         "cocheMin": 117
@@ -68381,7 +68381,7 @@
         "cocheMin": 88
       },
       "esteiro": {
-        "cocheMin": 88
+        "cocheMin": 77
       },
       "sanxenxo": {
         "cocheMin": 125
@@ -68452,7 +68452,7 @@
         "cocheMin": 85
       },
       "esteiro": {
-        "cocheMin": 86
+        "cocheMin": 75
       },
       "sanxenxo": {
         "cocheMin": 122
@@ -68523,7 +68523,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 83
+        "cocheMin": 68
       },
       "sanxenxo": {
         "cocheMin": 121
@@ -68594,7 +68594,7 @@
         "cocheMin": 87
       },
       "esteiro": {
-        "cocheMin": 114
+        "cocheMin": 119
       },
       "sanxenxo": {
         "cocheMin": 128
@@ -68665,7 +68665,7 @@
         "cocheMin": 87
       },
       "esteiro": {
-        "cocheMin": 114
+        "cocheMin": 119
       },
       "sanxenxo": {
         "cocheMin": 128
@@ -68736,7 +68736,7 @@
         "cocheMin": 85
       },
       "esteiro": {
-        "cocheMin": 112
+        "cocheMin": 118
       },
       "sanxenxo": {
         "cocheMin": 126
@@ -68807,7 +68807,7 @@
         "cocheMin": 53
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 94
@@ -68878,7 +68878,7 @@
         "cocheMin": 52
       },
       "esteiro": {
-        "cocheMin": 79
+        "cocheMin": 84
       },
       "sanxenxo": {
         "cocheMin": 93
@@ -68949,7 +68949,7 @@
         "cocheMin": 53
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 85
       },
       "sanxenxo": {
         "cocheMin": 94
@@ -69020,7 +69020,7 @@
         "cocheMin": 73
       },
       "esteiro": {
-        "cocheMin": 90
+        "cocheMin": 96
       },
       "sanxenxo": {
         "cocheMin": 116
@@ -69091,7 +69091,7 @@
         "cocheMin": 76
       },
       "esteiro": {
-        "cocheMin": 93
+        "cocheMin": 98
       },
       "sanxenxo": {
         "cocheMin": 119
@@ -69162,7 +69162,7 @@
         "cocheMin": 76
       },
       "esteiro": {
-        "cocheMin": 93
+        "cocheMin": 98
       },
       "sanxenxo": {
         "cocheMin": 119
@@ -69233,7 +69233,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 85
+        "cocheMin": 72
       },
       "sanxenxo": {
         "cocheMin": 121
@@ -69304,7 +69304,7 @@
         "cocheMin": 82
       },
       "esteiro": {
-        "cocheMin": 83
+        "cocheMin": 69
       },
       "sanxenxo": {
         "cocheMin": 119
@@ -69375,7 +69375,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 85
+        "cocheMin": 72
       },
       "sanxenxo": {
         "cocheMin": 121
@@ -69446,7 +69446,7 @@
         "cocheMin": 83
       },
       "esteiro": {
-        "cocheMin": 84
+        "cocheMin": 70
       },
       "sanxenxo": {
         "cocheMin": 119
@@ -69517,7 +69517,7 @@
         "cocheMin": 85
       },
       "esteiro": {
-        "cocheMin": 112
+        "cocheMin": 118
       },
       "sanxenxo": {
         "cocheMin": 126
@@ -69588,7 +69588,7 @@
         "cocheMin": 85
       },
       "esteiro": {
-        "cocheMin": 111
+        "cocheMin": 117
       },
       "sanxenxo": {
         "cocheMin": 126
@@ -69659,7 +69659,7 @@
         "cocheMin": 84
       },
       "esteiro": {
-        "cocheMin": 110
+        "cocheMin": 116
       },
       "sanxenxo": {
         "cocheMin": 125
@@ -69730,7 +69730,7 @@
         "cocheMin": 54
       },
       "esteiro": {
-        "cocheMin": 80
+        "cocheMin": 86
       },
       "sanxenxo": {
         "cocheMin": 95
@@ -69801,7 +69801,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 83
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 97
@@ -69872,7 +69872,7 @@
         "cocheMin": 56
       },
       "esteiro": {
-        "cocheMin": 82
+        "cocheMin": 88
       },
       "sanxenxo": {
         "cocheMin": 97
@@ -69943,7 +69943,7 @@
         "cocheMin": 80
       },
       "esteiro": {
-        "cocheMin": 97
+        "cocheMin": 101
       },
       "sanxenxo": {
         "cocheMin": 123
@@ -70014,7 +70014,7 @@
         "cocheMin": 81
       },
       "esteiro": {
-        "cocheMin": 98
+        "cocheMin": 102
       },
       "sanxenxo": {
         "cocheMin": 124
@@ -70085,7 +70085,7 @@
         "cocheMin": 87
       },
       "esteiro": {
-        "cocheMin": 103
+        "cocheMin": 100
       },
       "sanxenxo": {
         "cocheMin": 130
@@ -70156,7 +70156,7 @@
         "cocheMin": 144
       },
       "esteiro": {
-        "cocheMin": 171
+        "cocheMin": 176
       },
       "sanxenxo": {
         "cocheMin": 185
@@ -70227,7 +70227,7 @@
         "cocheMin": 144
       },
       "esteiro": {
-        "cocheMin": 171
+        "cocheMin": 176
       },
       "sanxenxo": {
         "cocheMin": 185
@@ -70298,7 +70298,7 @@
         "cocheMin": 136
       },
       "esteiro": {
-        "cocheMin": 163
+        "cocheMin": 169
       },
       "sanxenxo": {
         "cocheMin": 177
@@ -70369,7 +70369,7 @@
         "cocheMin": 132
       },
       "esteiro": {
-        "cocheMin": 159
+        "cocheMin": 164
       },
       "sanxenxo": {
         "cocheMin": 173
@@ -70440,7 +70440,7 @@
         "cocheMin": 83
       },
       "esteiro": {
-        "cocheMin": 110
+        "cocheMin": 115
       },
       "sanxenxo": {
         "cocheMin": 124

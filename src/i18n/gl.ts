@@ -35,13 +35,13 @@ export const gl: Dict = {
   map: {
     show: 'Amosar',
     score: 'Puntuación',
-    agua: 'Auga',
-    sol: 'Sol',
+    agua: 'Tª auga',
+    sol: 'Solpor',
     viaje: 'Viaxe',
   },
   card: {
     travel: 'min en coche',
-    water: 'Auga',
+    water: 'Tª auga',
     sunset: 'Sol ata',
     elevation: 'desnivel',
     circular: 'Circular',
@@ -54,10 +54,10 @@ export const gl: Dict = {
     clima: 'Clima',
     cercania: 'Proximidade',
     solEfectivo: 'Horas de sol',
-    tempAgua: 'Auga',
+    tempAgua: 'Tª auga',
     masificacion: 'Espazo',
     servicios: 'Servizos',
-    dificultadFit: 'Dureza',
+    dificultadFit: 'Esixencia',
     circular: 'Circular',
   },
   sliders: {
@@ -77,12 +77,12 @@ export const gl: Dict = {
     cercania: 'Proximidade: canto menos tempo en coche desde a túa base, mellor.',
     solEfectivo:
       'Horas de sol: a que hora se pon o sol nesa praia de verdade, contando os montes ao oeste (non só o horizonte chan). Canto máis tarde, mellor.',
-    tempAgua: 'Auga: temperatura do mar; por debaixo de ~17° puntúa baixo.',
+    tempAgua: 'Tª auga: temperatura do mar; por debaixo de ~17° puntúa baixo.',
     masificacion:
       'Espazo: estimación de canto sitio hai (as praias longas puntúan máis). É só unha estimación.',
     servicios:
       'Servizos: chiringuitos e restauración preto. Se activas o acceso PMR, actúa como filtro: descarta as praias que non o teñen.',
-    dificultadFit: 'Dureza: o preto que está a ruta dos km e o desnivel que prefires.',
+    dificultadFit: 'Esixencia: o preto que está a ruta dos km e o desnivel que prefires.',
     circular: 'Circular: bonus se a ruta é circular (non volves polo mesmo sitio).',
     veredicto:
       'Veredicto: gaña praia ou montaña segundo a mellor opción de cada unha. No inverno ou coa auga fría, a praia parte con desvantaxe. Se están moi igualadas, dicirache que serve para as dúas.',

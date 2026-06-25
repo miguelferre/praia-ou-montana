@@ -315,13 +315,23 @@ input[type='range'] {
 .map-toolbar {
   display: flex;
   align-items: center;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 8px 10px;
   margin-bottom: 10px;
-  font-size: 0.9rem;
 }
 
-.map-toolbar label {
+.map-toolbar-cap {
   color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.map-toolbar .seg {
+  flex-wrap: wrap;
+}
+
+.map-toolbar .seg button {
+  padding: 6px 12px;
+  font-size: 0.84rem;
 }
 
 .map {
@@ -591,9 +601,10 @@ input[type='range'] {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 0.84rem;
-  color: var(--muted);
-  margin-bottom: 7px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 8px;
 }
 
 /* Tooltip ⓘ por categoría */
@@ -652,13 +663,33 @@ input[type='range'] {
 
 /* Grupos del panel de pesos */
 .weights-group-title {
-  margin: 18px 0 12px;
-  padding-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 20px 0 14px;
+  padding-bottom: 7px;
   border-bottom: 1px solid var(--border);
   font-family: var(--font-sans);
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 600;
-  color: var(--muted);
+  letter-spacing: 0.01em;
+  color: var(--ink);
+}
+
+.weights-group-title::before {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--muted);
+}
+
+.weights-group[data-group='groupBeach'] .weights-group-title::before {
+  background: var(--sea);
+}
+
+.weights-group[data-group='groupRoute'] .weights-group-title::before {
+  background: var(--mountain);
 }
 
 /* Cabecera del panel de resultados + leyenda de color */

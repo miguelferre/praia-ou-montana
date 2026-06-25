@@ -139,18 +139,14 @@ export function MapDashboard(props: Props) {
   return (
     <div>
       <div className="map-toolbar">
-        <label htmlFor="map-metric">{dict.map.show}</label>
-        <select
-          id="map-metric"
-          value={metric}
-          onChange={(e) => onMetric(e.target.value as MapMetric)}
-        >
+        <span className="map-toolbar-cap">{dict.map.show}</span>
+        <div className="seg" role="group" aria-label={dict.map.show}>
           {MAP_METRICS.map((m) => (
-            <option key={m} value={m}>
+            <button key={m} type="button" aria-pressed={metric === m} onClick={() => onMetric(m)}>
               {dict.map[m]}
-            </option>
+            </button>
           ))}
-        </select>
+        </div>
       </div>
       <div className="map" ref={containerRef} role="application" aria-label="Mapa de Galicia" />
       <div className="map-legend">

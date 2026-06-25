@@ -34,13 +34,13 @@ export const es = {
   map: {
     show: 'Mostrar',
     score: 'Puntuación',
-    agua: 'Agua',
-    sol: 'Sol',
+    agua: 'Tª agua',
+    sol: 'Ocaso',
     viaje: 'Viaje',
   },
   card: {
     travel: 'min en coche',
-    water: 'Agua',
+    water: 'Tª agua',
     sunset: 'Sol hasta',
     elevation: 'desnivel',
     circular: 'Circular',
@@ -53,10 +53,10 @@ export const es = {
     clima: 'Clima',
     cercania: 'Cercanía',
     solEfectivo: 'Horas de sol',
-    tempAgua: 'Agua',
+    tempAgua: 'Tª agua',
     masificacion: 'Espacio',
     servicios: 'Servicios',
-    dificultadFit: 'Dureza',
+    dificultadFit: 'Exigencia',
     circular: 'Circular',
   },
   sliders: {
@@ -76,12 +76,12 @@ export const es = {
     cercania: 'Cercanía: cuanto menos tiempo en coche desde tu base, mejor.',
     solEfectivo:
       'Horas de sol: a qué hora se pone el sol en esa playa de verdad, contando los montes al oeste (no solo el horizonte llano). Cuanto más tarde, mejor.',
-    tempAgua: 'Agua: temperatura del mar; por debajo de ~17° puntúa bajo.',
+    tempAgua: 'Tª agua: temperatura del mar; por debajo de ~17° puntúa bajo.',
     masificacion:
       'Espacio: estimación de cuánto sitio hay (las playas largas puntúan más). Es solo una estimación.',
     servicios:
       'Servicios: chiringuitos y restauración cerca. Si activas el acceso PMR, actúa como filtro: descarta las playas que no lo tienen.',
-    dificultadFit: 'Dureza: lo cerca que está la ruta de los km y el desnivel que prefieres.',
+    dificultadFit: 'Exigencia: lo cerca que está la ruta de los km y el desnivel que prefieres.',
     circular: 'Circular: bonus si la ruta es circular (no vuelves por el mismo sitio).',
     veredicto:
       'Veredicto: gana playa o montaña según la mejor opción de cada una. En invierno o con el agua fría, la playa parte con desventaja. Si están muy igualadas, te dice que sirve para ambas.',

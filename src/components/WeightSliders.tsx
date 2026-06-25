@@ -27,7 +27,7 @@ export function WeightSliders({ pesos, onChange, onReset, dict }: Props) {
         </button>
       </div>
       {GROUPS.map((g) => (
-        <div className="weights-group" key={g.title}>
+        <div className="weights-group" data-group={g.title} key={g.title}>
           <h3 className="weights-group-title">{dict.sliders[g.title]}</h3>
           <div className="weights-grid">
             {g.keys.map((k) => (

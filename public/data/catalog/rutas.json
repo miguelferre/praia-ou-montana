@@ -15,7 +15,7 @@
         "cocheMin": 74
       },
       "esteiro": {
-        "cocheMin": 50
+        "cocheMin": 35
       },
       "sanxenxo": {
         "cocheMin": 107
@@ -38,7 +38,7 @@
         "cocheMin": 68
       },
       "esteiro": {
-        "cocheMin": 43
+        "cocheMin": 24
       },
       "sanxenxo": {
         "cocheMin": 100
@@ -61,7 +61,7 @@
         "cocheMin": 82
       },
       "esteiro": {
-        "cocheMin": 57
+        "cocheMin": 43
       },
       "sanxenxo": {
         "cocheMin": 114
@@ -84,7 +84,7 @@
         "cocheMin": 50
       },
       "esteiro": {
-        "cocheMin": 37
+        "cocheMin": 48
       },
       "sanxenxo": {
         "cocheMin": 57
@@ -107,7 +107,7 @@
         "cocheMin": 31
       },
       "esteiro": {
-        "cocheMin": 56
+        "cocheMin": 62
       },
       "sanxenxo": {
         "cocheMin": 70
