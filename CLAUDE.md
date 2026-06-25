@@ -10,6 +10,7 @@ npm run check        # typecheck + lint + format:check + tests (VERDE antes de c
 npm run test         # vitest (unitarios, puros, nunca tocan red)
 npm run build        # astro build -> dist/
 python scripts/ingest/fetch_forecast.py        # predicción diaria (Open-Meteo, sin key)
+python scripts/ingest/fetch_horizon.py [--dry-run]  # perfil de horizonte PVGIS -> sol efectivo
 python scripts/ingest/build_travel.py [--dry-run]   # tiempos de viaje (ORS_API_KEY opcional)
 python scripts/ingest/build_catalog.py [--wfs] [--dry-run]  # catálogo + curación
 ```

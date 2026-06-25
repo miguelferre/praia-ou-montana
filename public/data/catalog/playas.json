@@ -14,12 +14,73 @@
     "banderaAzul": false,
     "chiringuitosCount": 2,
     "restauracionM": 600,
-    "pmr": { "rampa": true, "sillaAnfibia": false, "aseoAdaptado": true, "aparcamiento": true },
+    "pmr": {
+      "rampa": true,
+      "sillaAnfibia": false,
+      "aseoAdaptado": true,
+      "aparcamiento": true
+    },
     "travel": {
-      "santiago": { "cocheMin": 75 },
-      "esteiro": { "cocheMin": 20 },
-      "sanxenxo": { "cocheMin": 80 }
-    }
+      "santiago": {
+        "cocheMin": 75
+      },
+      "esteiro": {
+        "cocheMin": 20
+      },
+      "sanxenxo": {
+        "cocheMin": 80
+      }
+    },
+    "horizonProfile": [
+      4.2,
+      2.7,
+      3.1,
+      4.2,
+      3.8,
+      4.2,
+      4.6,
+      5.3,
+      5.7,
+      5.7,
+      6.5,
+      6.5,
+      6.5,
+      6.5,
+      7.6,
+      8.8,
+      8.4,
+      8.8,
+      7.6,
+      6.9,
+      6.1,
+      6.5,
+      5.7,
+      4.2,
+      5.0,
+      6.1,
+      5.3,
+      3.1,
+      1.9,
+      1.1,
+      0.4,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.8,
+      0.8,
+      0.4,
+      0.4,
+      0.8,
+      1.9,
+      2.3,
+      4.2
+    ]
   },
   {
     "id": "louro-san-francisco",
@@ -37,10 +98,66 @@
     "chiringuitosCount": 1,
     "restauracionM": 400,
     "travel": {
-      "santiago": { "cocheMin": 70 },
-      "esteiro": { "cocheMin": 12 },
-      "sanxenxo": { "cocheMin": 85 }
-    }
+      "santiago": {
+        "cocheMin": 70
+      },
+      "esteiro": {
+        "cocheMin": 12
+      },
+      "sanxenxo": {
+        "cocheMin": 85
+      }
+    },
+    "horizonProfile": [
+      3.4,
+      3.1,
+      2.7,
+      4.2,
+      6.1,
+      7.3,
+      6.9,
+      5.7,
+      3.8,
+      2.7,
+      2.3,
+      1.1,
+      1.1,
+      1.9,
+      2.3,
+      3.4,
+      2.3,
+      2.3,
+      1.9,
+      0.8,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.4,
+      0.0,
+      0.4,
+      0.8,
+      2.3
+    ]
   },
   {
     "id": "ancoradoiro-muros",
@@ -58,10 +175,66 @@
     "chiringuitosCount": 0,
     "restauracionM": 1200,
     "travel": {
-      "santiago": { "cocheMin": 68 },
-      "esteiro": { "cocheMin": 10 },
-      "sanxenxo": { "cocheMin": 80 }
-    }
+      "santiago": {
+        "cocheMin": 68
+      },
+      "esteiro": {
+        "cocheMin": 10
+      },
+      "sanxenxo": {
+        "cocheMin": 80
+      }
+    },
+    "horizonProfile": [
+      5.7,
+      5.7,
+      5.0,
+      5.7,
+      7.6,
+      8.8,
+      9.5,
+      9.5,
+      7.6,
+      5.0,
+      2.3,
+      1.5,
+      0.8,
+      1.5,
+      1.5,
+      1.9,
+      3.1,
+      2.3,
+      2.7,
+      2.3,
+      2.7,
+      2.7,
+      3.1,
+      3.1,
+      5.3,
+      6.5,
+      8.4,
+      8.8,
+      9.5,
+      9.9,
+      8.0,
+      6.1,
+      5.7,
+      6.5,
+      8.0,
+      8.4,
+      8.4,
+      8.4,
+      8.0,
+      7.3,
+      6.9,
+      7.3,
+      7.3,
+      8.4,
+      9.2,
+      8.4,
+      7.3,
+      5.7
+    ]
   },
   {
     "id": "testal-noia",
@@ -78,12 +251,73 @@
     "banderaAzul": true,
     "chiringuitosCount": 1,
     "restauracionM": 500,
-    "pmr": { "rampa": true, "sillaAnfibia": true, "aseoAdaptado": true, "aparcamiento": true },
+    "pmr": {
+      "rampa": true,
+      "sillaAnfibia": true,
+      "aseoAdaptado": true,
+      "aparcamiento": true
+    },
     "travel": {
-      "santiago": { "cocheMin": 50 },
-      "esteiro": { "cocheMin": 25 },
-      "sanxenxo": { "cocheMin": 70 }
-    }
+      "santiago": {
+        "cocheMin": 50
+      },
+      "esteiro": {
+        "cocheMin": 25
+      },
+      "sanxenxo": {
+        "cocheMin": 70
+      }
+    },
+    "horizonProfile": [
+      1.5,
+      1.5,
+      1.1,
+      3.1,
+      4.2,
+      10.7,
+      10.7,
+      10.7,
+      10.7,
+      12.2,
+      13.4,
+      14.1,
+      14.9,
+      15.3,
+      15.7,
+      15.7,
+      15.3,
+      16.0,
+      16.8,
+      16.8,
+      16.0,
+      13.8,
+      9.9,
+      9.9,
+      8.4,
+      7.3,
+      6.5,
+      5.0,
+      5.0,
+      3.1,
+      3.1,
+      3.1,
+      3.1,
+      0.0,
+      0.4,
+      0.4,
+      1.1,
+      1.1,
+      1.5,
+      1.5,
+      1.9,
+      2.3,
+      2.3,
+      2.3,
+      3.1,
+      3.8,
+      1.9,
+      1.5
+    ]
   },
   {
     "id": "coira-porto-do-son",
@@ -95,10 +329,66 @@
     "lon": -8.999,
     "curado": false,
     "travel": {
-      "santiago": { "cocheMin": 60 },
-      "esteiro": { "cocheMin": 35 },
-      "sanxenxo": { "cocheMin": 55 }
-    }
+      "santiago": {
+        "cocheMin": 60
+      },
+      "esteiro": {
+        "cocheMin": 35
+      },
+      "sanxenxo": {
+        "cocheMin": 55
+      }
+    },
+    "horizonProfile": [
+      0.4,
+      0.8,
+      0.8,
+      2.7,
+      2.7,
+      12.6,
+      12.6,
+      12.6,
+      12.6,
+      12.6,
+      12.6,
+      12.6,
+      12.6,
+      12.6,
+      12.6,
+      12.6,
+      12.6,
+      12.6,
+      12.6,
+      12.6,
+      6.1,
+      6.1,
+      1.9,
+      1.5,
+      1.9,
+      1.1,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.4,
+      0.4,
+      0.8,
+      0.8,
+      1.1,
+      0.8
+    ]
   },
   {
     "id": "corrubedo-ribeira",
@@ -116,10 +406,66 @@
     "chiringuitosCount": 1,
     "restauracionM": 900,
     "travel": {
-      "santiago": { "cocheMin": 75 },
-      "esteiro": { "cocheMin": 55 },
-      "sanxenxo": { "cocheMin": 45 }
-    }
+      "santiago": {
+        "cocheMin": 75
+      },
+      "esteiro": {
+        "cocheMin": 55
+      },
+      "sanxenxo": {
+        "cocheMin": 45
+      }
+    },
+    "horizonProfile": [
+      0.8,
+      1.9,
+      1.1,
+      3.1,
+      3.8,
+      6.1,
+      7.3,
+      8.0,
+      6.9,
+      5.7,
+      4.6,
+      4.6,
+      3.8,
+      2.7,
+      2.7,
+      2.7,
+      2.7,
+      2.7,
+      2.7,
+      2.7,
+      1.5,
+      1.5,
+      0.4,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.8,
+      0.8,
+      0.8,
+      1.1,
+      0.8
+    ]
   },
   {
     "id": "a-lanzada",
@@ -136,12 +482,73 @@
     "banderaAzul": true,
     "chiringuitosCount": 4,
     "restauracionM": 250,
-    "pmr": { "rampa": true, "sillaAnfibia": true, "aseoAdaptado": true, "aparcamiento": true },
+    "pmr": {
+      "rampa": true,
+      "sillaAnfibia": true,
+      "aseoAdaptado": true,
+      "aparcamiento": true
+    },
     "travel": {
-      "santiago": { "cocheMin": 75 },
-      "esteiro": { "cocheMin": 70 },
-      "sanxenxo": { "cocheMin": 12 }
-    }
+      "santiago": {
+        "cocheMin": 75
+      },
+      "esteiro": {
+        "cocheMin": 70
+      },
+      "sanxenxo": {
+        "cocheMin": 12
+      }
+    },
+    "horizonProfile": [
+      1.9,
+      1.5,
+      0.8,
+      0.4,
+      0.8,
+      0.4,
+      0.8,
+      0.8,
+      1.1,
+      1.9,
+      2.3,
+      2.7,
+      3.4,
+      3.8,
+      3.4,
+      3.1,
+      3.1,
+      2.3,
+      2.3,
+      2.7,
+      2.3,
+      2.3,
+      2.3,
+      1.9,
+      1.5,
+      0.8,
+      0.4,
+      0.0,
+      0.0,
+      0.4,
+      0.8,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.4,
+      0.8,
+      0.8,
+      0.4,
+      0.4,
+      0.8,
+      1.1,
+      1.9
+    ]
   },
   {
     "id": "silgar-sanxenxo",
@@ -158,11 +565,72 @@
     "banderaAzul": true,
     "chiringuitosCount": 6,
     "restauracionM": 80,
-    "pmr": { "rampa": true, "sillaAnfibia": true, "aseoAdaptado": true, "aparcamiento": true },
+    "pmr": {
+      "rampa": true,
+      "sillaAnfibia": true,
+      "aseoAdaptado": true,
+      "aparcamiento": true
+    },
     "travel": {
-      "santiago": { "cocheMin": 70 },
-      "esteiro": { "cocheMin": 75 },
-      "sanxenxo": { "cocheMin": 3 }
-    }
+      "santiago": {
+        "cocheMin": 70
+      },
+      "esteiro": {
+        "cocheMin": 75
+      },
+      "sanxenxo": {
+        "cocheMin": 3
+      }
+    },
+    "horizonProfile": [
+      3.4,
+      4.2,
+      5.0,
+      5.0,
+      5.7,
+      5.7,
+      5.7,
+      5.0,
+      4.2,
+      3.4,
+      2.7,
+      1.9,
+      1.5,
+      1.5,
+      1.9,
+      2.3,
+      1.9,
+      2.7,
+      2.7,
+      2.7,
+      1.9,
+      2.3,
+      1.5,
+      1.1,
+      0.8,
+      0.4,
+      0.8,
+      0.4,
+      0.0,
+      0.0,
+      0.0,
+      0.4,
+      0.8,
+      1.1,
+      1.1,
+      1.1,
+      2.3,
+      2.7,
+      2.3,
+      1.9,
+      1.9,
+      2.3,
+      2.3,
+      2.3,
+      2.3,
+      2.7,
+      3.1,
+      3.4
+    ]
   }
 ]

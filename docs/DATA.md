@@ -23,8 +23,8 @@ La biblia de datos de Praia ou montaña. Toda fuente, endpoint, key, licencia y 
 ## Sol y puesta de sol efectiva (el diferenciador)
 
 - **SunCalc** (`src/lib/core/sun.ts`): astronómico, offline, da altitud+azimut. v0.
-- **Puesta EFECTIVA (v1)**: `PVGIS printhorizon` `https://re.jrc.ec.europa.eu/api/printhorizon?lat=&lon=` (sin key) devuelve el ángulo de horizonte por azimut; se cachea por playa en `Playa.horizonProfile`. En runtime la puesta efectiva es cuando la altitud del sol cae bajo el horizonte en su azimut (ya implementado en `computeSun`, solo falta poblar el perfil).
-  - **Convención a confirmar con un fixture real** (verificación del plan): asumimos índice `i` → azimut sur-referenciado `-180 + i·(360/N)`, oeste positivo (igual que SunCalc). Validar con dos playas conocidas (p. ej. los dos lados de la ría de Muros) antes de fiarse en rías encajonadas; PVGIS a ~90 m puede infraestimar montes muy próximos.
+- **Puesta EFECTIVA** ✅ **activa**: `PVGIS printhorizon` `https://re.jrc.ec.europa.eu/api/printhorizon?lat=&lon=&outputformat=json` (sin key) devuelve `outputs.horizon_profile` = 49 puntos `{A, H_hor}`. La puesta efectiva es cuando la altitud del sol cae bajo el horizonte en su azimut. Poblado por `scripts/ingest/fetch_horizon.py` en `Playa.horizonProfile`; calculado en `computeSun`.
+  - **Convención CONFIRMADA** con respuesta real: azimut `A` de −180 a 180 (sur=0, oeste positivo, idéntica a SunCalc). Se guardan 48 valores (A=−180..172.5; se descarta A=180, duplicado del wraparound). Verificado por `tests/unit/core/effective-sunset.test.ts`: en la ría de Muros, Ancoradoiro (monte al oeste) pierde el sol antes que Carnota (mar abierto). _Caveat_: PVGIS (~SRTM 90 m) puede infraestimar montes muy próximos en calas encajonadas.
 
 ## Catálogo de playas y claves de cruce (v1)
 
