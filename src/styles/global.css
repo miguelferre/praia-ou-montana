@@ -23,8 +23,14 @@ h2,
 h3 {
   font-family: var(--font-display);
   font-weight: 600;
-  line-height: 1.1;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
   margin: 0;
+}
+
+p {
+  text-wrap: pretty;
 }
 
 button {
@@ -101,9 +107,7 @@ a {
 }
 
 .field > label {
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  font-size: 0.78rem;
   color: var(--muted);
 }
 
@@ -157,32 +161,31 @@ select,
 }
 
 .verdict {
-  padding: 18px 20px;
+  padding: 22px 24px;
   margin-bottom: var(--gap);
-  border-left: 6px solid var(--border);
 }
 
 .verdict[data-kind='playa'] {
-  border-left-color: var(--sea);
+  background: var(--sea-wash);
+  border-color: color-mix(in oklch, var(--sea) 22%, var(--border));
 }
 .verdict[data-kind='montana'] {
-  border-left-color: var(--mountain);
+  background: var(--mountain-wash);
+  border-color: color-mix(in oklch, var(--mountain) 22%, var(--border));
 }
 .verdict[data-kind='ambas'] {
-  border-left-color: var(--sand);
+  background: var(--sun-wash);
+  border-color: color-mix(in oklch, var(--sun) 22%, var(--border));
 }
 
 .verdict-eyebrow {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  font-size: 0.92rem;
   color: var(--muted);
 }
 
 .verdict-title {
-  font-size: clamp(1.8rem, 5vw, 2.8rem);
-  letter-spacing: -0.02em;
-  margin: 2px 0 6px;
+  font-size: clamp(2rem, 5.5vw, 3rem);
+  margin: 4px 0 8px;
 }
 
 .verdict-why {
@@ -230,7 +233,7 @@ select,
   padding: 0 6px;
   border-radius: 16px;
   border: 2px solid var(--surface);
-  color: #fff;
+  color: white;
   font-size: 0.72rem;
   font-weight: 700;
   box-shadow: 0 1px 4px var(--shadow);
@@ -291,7 +294,7 @@ select,
   border-radius: 50%;
   display: grid;
   place-items: center;
-  color: #fff;
+  color: white;
   font-weight: 700;
   font-size: 1rem;
 }
@@ -334,21 +337,18 @@ select,
 }
 
 .stat {
-  background: var(--surface-2);
-  border-radius: var(--radius-sm);
-  padding: 8px 10px;
+  padding: 2px 0;
 }
 
 .stat .k {
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-size: 0.76rem;
   color: var(--muted);
 }
 
 .stat .v {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 600;
+  font-variant-numeric: tabular-nums;
 }
 
 .breakdown {
@@ -399,7 +399,7 @@ select,
 .btn.primary {
   background: var(--sea);
   border-color: var(--sea);
-  color: #fff;
+  color: white;
 }
 
 /* ---------- Sliders ---------- */
@@ -509,9 +509,7 @@ select,
 
 .map-toolbar label {
   color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 0.72rem;
+  font-size: 0.82rem;
 }
 
 input[type='range'] {
@@ -533,11 +531,16 @@ input[type='range'] {
 
 .tag {
   display: inline-block;
-  font-size: 0.68rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-size: 0.76rem;
   background: var(--surface-2);
   color: var(--muted);
   border-radius: 999px;
-  padding: 2px 8px;
+  padding: 2px 9px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
 }

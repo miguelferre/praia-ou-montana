@@ -14,6 +14,8 @@ export default tseslint.config(
       'playwright-report/**',
       'test-results/**',
       'public/**',
+      '.claude/**',
+      '.github/**',
     ],
   },
   eslint.configs.recommended,

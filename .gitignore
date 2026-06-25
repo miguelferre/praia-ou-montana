@@ -20,6 +20,13 @@ scripts/ingest/.venv/
 __pycache__/
 *.pyc
 
+# impeccable (herramienta de diseño local; se reinstala con `npx impeccable install`)
+.claude/skills/
+.github/skills/
+.github/hooks/
+.claude/settings.local.json
+.impeccable/
+
 # os
 .DS_Store
 Thumbs.db

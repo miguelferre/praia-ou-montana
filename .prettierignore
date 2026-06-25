@@ -6,3 +6,6 @@ playwright-report
 test-results
 package-lock.json
 public/data
+.claude
+.github/skills
+.impeccable

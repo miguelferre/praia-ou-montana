@@ -1,53 +1,73 @@
-/* Tokens de diseño. Ningún componente usa hex: todo color sale de aquí. */
+/* Tokens de diseño (OKLCH). Ningún componente usa hex: todo color sale de aquí.
+   Identidad atlántica gallega: mar y monte como polos, sol como acento.
+   Ver DESIGN.md. */
 :root {
-  /* Superficies cálidas tipo papel/arena */
-  --bg: #f6f2ea;
-  --surface: #fffdf8;
-  --surface-2: #efe9dd;
-  --text: #182a29;
-  --muted: #5d6b69;
-  --border: #e4ddcf;
-  --shadow: rgba(20, 35, 33, 0.1);
+  /* Superficies frías y nítidas — NUNCA arena/cream (tic de IA). */
+  --bg: oklch(0.985 0.004 230);
+  --surface: oklch(1 0 0);
+  --surface-2: oklch(0.965 0.006 230);
+  --ink: oklch(0.24 0.02 235);
+  --text: var(--ink);
+  --muted: oklch(0.46 0.018 235);
+  --border: oklch(0.9 0.008 235);
+  --shadow: oklch(0.24 0.02 235 / 0.09);
 
-  /* Identidad: mar, arena, monte, coral */
-  --sea: #1f7a8c;
-  --sea-deep: #11475a;
-  --sand: #e3b34d;
-  --mountain: #2f9e63;
-  --mountain-deep: #1f6e44;
-  --accent: #e2674b;
+  /* Polos de la decisión + acento */
+  --sea: oklch(0.5 0.105 226);
+  --sea-deep: oklch(0.43 0.11 226);
+  --mountain: oklch(0.5 0.1 150);
+  --mountain-deep: oklch(0.42 0.1 150);
+  --sun: oklch(0.74 0.162 68);
+
+  /* Tintes suaves para el héroe (fondo del veredicto) */
+  --sea-wash: oklch(0.5 0.105 226 / 0.08);
+  --mountain-wash: oklch(0.5 0.1 150 / 0.08);
+  --sun-wash: oklch(0.74 0.162 68 / 0.12);
 
   /* Escala de puntuación (se interpola en JS) */
-  --score-bad: #d9694f;
-  --score-mid: #e0a13a;
-  --score-good: #2f9e63;
+  --score-bad: oklch(0.58 0.16 25);
+  --score-mid: oklch(0.72 0.14 70);
+  --score-good: oklch(0.6 0.13 150);
 
-  /* Tipografía */
-  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
-  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  /* Tipografía: eje de contraste serif (display) + grotesca (cuerpo) */
+  --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Hanken Grotesque', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
   /* Métricas */
-  --radius: 14px;
-  --radius-sm: 9px;
-  --gap: 16px;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-lg: 18px;
+  --gap: 18px;
   --maxw: 1240px;
+
+  /* z-index semántico */
+  --z-sticky: 100;
+  --z-overlay: 400;
+  --z-marker: 5;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #101617;
-    --surface: #18211f;
-    --surface-2: #212c2a;
-    --text: #eaf1ee;
-    --muted: #9fb0ac;
-    --border: #2b3836;
-    --shadow: rgba(0, 0, 0, 0.4);
+    --bg: oklch(0.18 0.012 240);
+    --surface: oklch(0.225 0.014 240);
+    --surface-2: oklch(0.27 0.016 240);
+    --ink: oklch(0.95 0.005 230);
+    --muted: oklch(0.72 0.012 235);
+    --border: oklch(0.32 0.014 240);
+    --shadow: oklch(0 0 0 / 0.4);
 
-    --sea: #4bb6c9;
-    --sea-deep: #2a8499;
-    --sand: #e3b34d;
-    --mountain: #46bd7e;
-    --mountain-deep: #2f9e63;
-    --accent: #f0805f;
+    --sea: oklch(0.72 0.11 226);
+    --sea-deep: oklch(0.78 0.1 226);
+    --mountain: oklch(0.72 0.1 150);
+    --mountain-deep: oklch(0.78 0.1 150);
+    --sun: oklch(0.8 0.15 68);
+
+    --sea-wash: oklch(0.72 0.11 226 / 0.14);
+    --mountain-wash: oklch(0.72 0.1 150 / 0.14);
+    --sun-wash: oklch(0.8 0.15 68 / 0.16);
+
+    --score-bad: oklch(0.65 0.17 25);
+    --score-mid: oklch(0.78 0.14 70);
+    --score-good: oklch(0.7 0.13 150);
   }
 }
