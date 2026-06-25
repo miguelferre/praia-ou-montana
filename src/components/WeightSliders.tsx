@@ -1,3 +1,4 @@
+import { RatingControl } from './RatingControl';
 import type { Dict } from '@/i18n';
 import type { Pesos } from '@/lib/core/types';
 
@@ -11,8 +12,6 @@ const KEYS: (keyof Pesos)[] = [
   'dificultadFit',
   'circular',
 ];
-
-const OPTS = [1, 2, 3, 4, 5];
 
 interface Props {
   pesos: Pesos;
@@ -32,19 +31,12 @@ export function WeightSliders({ pesos, onChange, onReset, dict }: Props) {
       </div>
       <div className="weights-grid">
         {KEYS.map((k) => (
-          <label className="weight-field" key={k}>
-            <span>{dict.factors[k]}</span>
-            <select
-              value={pesos[k]}
-              onChange={(e) => onChange({ ...pesos, [k]: Number(e.target.value) })}
-            >
-              {OPTS.map((n) => (
-                <option key={n} value={n}>
-                  {n}
-                </option>
-              ))}
-            </select>
-          </label>
+          <RatingControl
+            key={k}
+            label={dict.factors[k]}
+            value={pesos[k]}
+            onChange={(v) => onChange({ ...pesos, [k]: v })}
+          />
         ))}
       </div>
       <p className="muted sliders-hint">{dict.sliders.hint}</p>

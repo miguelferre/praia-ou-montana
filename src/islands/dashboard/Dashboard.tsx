@@ -153,9 +153,7 @@ export default function Dashboard() {
         </div>
         <div className="col-panel">
           {totalEnRango > list.length && (
-            <p className="muted" style={{ marginTop: 0 }}>
-              {`${list.length} / ${totalEnRango}`}
-            </p>
+            <p className="panel-count muted">{`${list.length} / ${totalEnRango}`}</p>
           )}
           <DestinationList
             tab={effTab}

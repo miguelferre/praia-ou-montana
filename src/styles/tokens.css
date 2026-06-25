@@ -1,73 +1,55 @@
-/* Tokens de diseño (OKLCH). Ningún componente usa hex: todo color sale de aquí.
-   Identidad atlántica gallega: mar y monte como polos, sol como acento.
-   Ver DESIGN.md. */
+/* Tokens de diseño (OKLCH). Paleta CLARA y restringida (registro "product").
+   Identidad atlántica: mar-teal de acento, monte y sol como semánticos del veredicto.
+   La calidez/amabilidad la cargan el acento, las formas y la tipografía — NUNCA un
+   fondo crema/arena (anti-referencia de PRODUCT.md). Ver DESIGN.md. */
 :root {
-  /* Superficies frías y nítidas — NUNCA arena/cream (tic de IA). */
-  --bg: oklch(0.985 0.004 230);
+  /* Superficies: blanco frío y nítido + una segunda capa neutra para paneles */
+  --bg: oklch(0.984 0.005 225);
   --surface: oklch(1 0 0);
-  --surface-2: oklch(0.965 0.006 230);
-  --ink: oklch(0.24 0.02 235);
+  --panel: oklch(0.966 0.006 225);
+  --surface-2: oklch(0.95 0.007 225);
+  --ink: oklch(0.26 0.022 240);
   --text: var(--ink);
-  --muted: oklch(0.46 0.018 235);
-  --border: oklch(0.9 0.008 235);
-  --shadow: oklch(0.24 0.02 235 / 0.09);
+  --muted: oklch(0.475 0.016 240);
+  --border: oklch(0.91 0.006 235);
+  --border-strong: oklch(0.84 0.009 235);
+  --shadow: oklch(0.4 0.04 240 / 0.1);
+  --shadow-lg: oklch(0.4 0.04 240 / 0.14);
 
-  /* Polos de la decisión + acento */
-  --sea: oklch(0.5 0.105 226);
-  --sea-deep: oklch(0.43 0.11 226);
-  --mountain: oklch(0.5 0.1 150);
-  --mountain-deep: oklch(0.42 0.1 150);
-  --sun: oklch(0.74 0.162 68);
+  /* Acento único (acciones, selección, foco) + semánticos de la dualidad */
+  --accent: oklch(0.53 0.1 215);
+  --accent-deep: oklch(0.45 0.11 218);
+  --accent-wash: oklch(0.53 0.1 215 / 0.1);
+  --sea: var(--accent);
+  --mountain: oklch(0.52 0.11 150);
+  --sun: oklch(0.72 0.15 70);
 
-  /* Tintes suaves para el héroe (fondo del veredicto) */
-  --sea-wash: oklch(0.5 0.105 226 / 0.08);
-  --mountain-wash: oklch(0.5 0.1 150 / 0.08);
-  --sun-wash: oklch(0.74 0.162 68 / 0.12);
+  /* Tintes del héroe (fondo del veredicto según el polo ganador) */
+  --sea-wash: oklch(0.53 0.1 215 / 0.09);
+  --mountain-wash: oklch(0.52 0.11 150 / 0.1);
+  --sun-wash: oklch(0.72 0.15 70 / 0.13);
 
   /* Escala de puntuación (se interpola en JS) */
   --score-bad: oklch(0.58 0.16 25);
   --score-mid: oklch(0.72 0.14 70);
   --score-good: oklch(0.6 0.13 150);
 
-  /* Tipografía: eje de contraste serif (display) + grotesca (cuerpo) */
+  /* Tipografía: una grotesca para la UI; serif SOLO para el héroe del veredicto */
   --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
   --font-sans: 'Hanken Grotesque', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
-  /* Métricas */
-  --radius: 12px;
-  --radius-sm: 8px;
-  --radius-lg: 18px;
+  /* Métricas — redondeadas y con aire (referencia outdoor) */
+  --radius: 14px;
+  --radius-sm: 10px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
   --gap: 18px;
-  --maxw: 1240px;
+  --maxw: 1200px;
 
   /* z-index semántico */
   --z-sticky: 100;
   --z-overlay: 400;
   --z-marker: 5;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: oklch(0.18 0.012 240);
-    --surface: oklch(0.225 0.014 240);
-    --surface-2: oklch(0.27 0.016 240);
-    --ink: oklch(0.95 0.005 230);
-    --muted: oklch(0.72 0.012 235);
-    --border: oklch(0.32 0.014 240);
-    --shadow: oklch(0 0 0 / 0.4);
-
-    --sea: oklch(0.72 0.11 226);
-    --sea-deep: oklch(0.78 0.1 226);
-    --mountain: oklch(0.72 0.1 150);
-    --mountain-deep: oklch(0.78 0.1 150);
-    --sun: oklch(0.8 0.15 68);
-
-    --sea-wash: oklch(0.72 0.11 226 / 0.14);
-    --mountain-wash: oklch(0.72 0.1 150 / 0.14);
-    --sun-wash: oklch(0.8 0.15 68 / 0.16);
-
-    --score-bad: oklch(0.65 0.17 25);
-    --score-mid: oklch(0.78 0.14 70);
-    --score-good: oklch(0.7 0.13 150);
-  }
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 }

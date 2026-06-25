@@ -40,12 +40,16 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--force", action="store_true", help="refresca también las que ya tienen perfil")
+    parser.add_argument("--all", action="store_true", help="todas las playas, no solo las curadas")
     args = parser.parse_args()
 
     playas = json.loads(PLAYAS.read_text(encoding="utf-8"))
-    # Solo playas curadas (sería abusivo pedir las 987 a PVGIS); salta las ya cacheadas.
+    # Por defecto solo curadas; con --all, todas (la puesta efectiva orográfica para
+    # cada playa). Salta las ya cacheadas salvo --force.
     targets = [
-        p for p in playas if p.get("curado") and (args.force or not p.get("horizonProfile"))
+        p
+        for p in playas
+        if (args.all or p.get("curado")) and (args.force or not p.get("horizonProfile"))
     ]
     print(f"{len(targets)} playas curadas a procesar (de {len(playas)} totales)")
     for p in targets:
