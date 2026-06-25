@@ -153,9 +153,16 @@ export default function Dashboard() {
         </div>
         <div className="col-panel">
           {selected && <DestinationCard item={selected} base={base} dict={dict} />}
-          {totalEnRango > list.length && (
-            <p className="panel-count muted">{`${list.length} / ${totalEnRango}`}</p>
-          )}
+          <div className="panel-bar">
+            {totalEnRango > list.length && (
+              <span className="panel-count muted">{`${list.length} / ${totalEnRango}`}</span>
+            )}
+            <span className="score-legend" aria-hidden="true">
+              <span className="muted">{dict.panel.scoreLow}</span>
+              <span className="score-legend-bar" />
+              <span className="muted">{dict.panel.scoreHigh}</span>
+            </span>
+          </div>
           <DestinationList
             tab={effTab}
             onTab={setTab}

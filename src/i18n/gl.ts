@@ -29,6 +29,8 @@ export const gl: Dict = {
     routes: 'Rutas',
     why: 'Por que?',
     noResults: 'Nada dentro do teu tempo de viaxe. Sobe o máximo ou cambia de base.',
+    scoreLow: 'peor',
+    scoreHigh: 'mellor',
   },
   map: {
     show: 'Amosar',
@@ -61,7 +63,10 @@ export const gl: Dict = {
   sliders: {
     title: 'Axusta o que che importa',
     reset: 'Restablecer',
-    hint: '1 = pouco · 5 = moito',
+    hint: '1 = pouco · 5 = moito. Pasa o cursor pola ⓘ para ver que mide cada un.',
+    groupCommon: 'Comúns',
+    groupBeach: 'Praia',
+    groupRoute: 'Ruta',
   },
   metodologia: {
     title: 'Como se calcula',

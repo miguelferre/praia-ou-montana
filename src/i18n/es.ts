@@ -28,6 +28,8 @@ export const es = {
     routes: 'Rutas',
     why: '¿Por qué?',
     noResults: 'Nada dentro de tu tiempo de viaje. Sube el máximo o cambia de base.',
+    scoreLow: 'peor',
+    scoreHigh: 'mejor',
   },
   map: {
     show: 'Mostrar',
@@ -60,7 +62,10 @@ export const es = {
   sliders: {
     title: 'Ajusta lo que te importa',
     reset: 'Restablecer',
-    hint: '1 = poco · 5 = mucho',
+    hint: '1 = poco · 5 = mucho. Pasa el cursor por la ⓘ para ver qué mide cada uno.',
+    groupCommon: 'Comunes',
+    groupBeach: 'Playa',
+    groupRoute: 'Ruta',
   },
   metodologia: {
     title: 'Cómo se calcula',

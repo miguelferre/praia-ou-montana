@@ -4,13 +4,15 @@ interface Props {
   label: string;
   value: number; // 1..5
   onChange: (v: number) => void;
+  hint?: string;
 }
 
 const STEPS = [1, 2, 3, 4, 5];
 
 /** Escala 1–5 con círculos numerados (panel de control): se rellenan del 1 al valor
- *  elegido. Pulsas el círculo que quieras; flechas para ajustar con teclado. */
-export function RatingControl({ label, value, onChange }: Props) {
+ *  elegido. Pulsas el círculo que quieras; flechas para ajustar con teclado. La ⓘ
+ *  explica qué mide la categoría. */
+export function RatingControl({ label, value, onChange, hint }: Props) {
   function onKey(e: KeyboardEvent<HTMLButtonElement>) {
     if (e.key === 'ArrowRight' || e.key === 'ArrowUp') {
       e.preventDefault();
@@ -23,7 +25,17 @@ export function RatingControl({ label, value, onChange }: Props) {
 
   return (
     <div className="rating">
-      <span className="rating-label">{label}</span>
+      <span className="rating-label">
+        {label}
+        {hint && (
+          <button type="button" className="info" aria-label={hint}>
+            <span aria-hidden="true">i</span>
+            <span className="tooltip" aria-hidden="true">
+              {hint}
+            </span>
+          </button>
+        )}
+      </span>
       <div className="rating-dots" role="radiogroup" aria-label={label}>
         {STEPS.map((n) => (
           <button

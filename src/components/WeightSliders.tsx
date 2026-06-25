@@ -2,15 +2,12 @@ import { RatingControl } from './RatingControl';
 import type { Dict } from '@/i18n';
 import type { Pesos } from '@/lib/core/types';
 
-const KEYS: (keyof Pesos)[] = [
-  'clima',
-  'cercania',
-  'solEfectivo',
-  'tempAgua',
-  'masificacion',
-  'servicios',
-  'dificultadFit',
-  'circular',
+type GroupTitle = 'groupCommon' | 'groupBeach' | 'groupRoute';
+
+const GROUPS: { title: GroupTitle; keys: (keyof Pesos)[] }[] = [
+  { title: 'groupCommon', keys: ['clima', 'cercania'] },
+  { title: 'groupBeach', keys: ['solEfectivo', 'tempAgua', 'masificacion', 'servicios'] },
+  { title: 'groupRoute', keys: ['dificultadFit', 'circular'] },
 ];
 
 interface Props {
@@ -29,16 +26,22 @@ export function WeightSliders({ pesos, onChange, onReset, dict }: Props) {
           {dict.sliders.reset}
         </button>
       </div>
-      <div className="weights-grid">
-        {KEYS.map((k) => (
-          <RatingControl
-            key={k}
-            label={dict.factors[k]}
-            value={pesos[k]}
-            onChange={(v) => onChange({ ...pesos, [k]: v })}
-          />
-        ))}
-      </div>
+      {GROUPS.map((g) => (
+        <div className="weights-group" key={g.title}>
+          <h3 className="weights-group-title">{dict.sliders[g.title]}</h3>
+          <div className="weights-grid">
+            {g.keys.map((k) => (
+              <RatingControl
+                key={k}
+                label={dict.factors[k]}
+                value={pesos[k]}
+                onChange={(v) => onChange({ ...pesos, [k]: v })}
+                hint={dict.metodologia[k]}
+              />
+            ))}
+          </div>
+        </div>
+      ))}
       <p className="muted sliders-hint">{dict.sliders.hint}</p>
     </section>
   );

@@ -588,10 +588,105 @@ input[type='range'] {
 }
 
 .rating-label {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-size: 0.84rem;
   color: var(--muted);
   margin-bottom: 7px;
+}
+
+/* Tooltip ⓘ por categoría */
+.info {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: 1px solid var(--border-strong);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.66rem;
+  line-height: 1;
+  cursor: help;
+}
+
+.info:hover,
+.info:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 230px;
+  padding: 9px 11px;
+  background: var(--ink);
+  color: var(--surface);
+  font-style: normal;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  text-align: left;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 10px 28px -10px var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s var(--ease-out);
+  z-index: var(--z-overlay);
+  pointer-events: none;
+}
+
+.info:hover .tooltip,
+.info:focus-visible .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Grupos del panel de pesos */
+.weights-group-title {
+  margin: 18px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+/* Cabecera del panel de resultados + leyenda de color */
+.panel-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 2px 0 10px;
+}
+
+.score-legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.76rem;
+}
+
+.score-legend-bar {
+  width: 64px;
+  height: 7px;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(
+    90deg,
+    oklch(0.62 0.16 25),
+    oklch(0.62 0.16 82),
+    oklch(0.62 0.16 140)
+  );
 }
 
 .rating-dots {
