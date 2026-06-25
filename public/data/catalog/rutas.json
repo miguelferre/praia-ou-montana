@@ -12,13 +12,13 @@
     "dificultad": "alta",
     "travel": {
       "santiago": {
-        "cocheMin": 78
+        "cocheMin": 74
       },
       "esteiro": {
-        "cocheMin": 22
+        "cocheMin": 50
       },
       "sanxenxo": {
-        "cocheMin": 82
+        "cocheMin": 107
       }
     }
   },
@@ -35,13 +35,13 @@
     "dificultad": "media",
     "travel": {
       "santiago": {
-        "cocheMin": 72
+        "cocheMin": 68
       },
       "esteiro": {
-        "cocheMin": 15
+        "cocheMin": 43
       },
       "sanxenxo": {
-        "cocheMin": 85
+        "cocheMin": 100
       }
     }
   },
@@ -58,13 +58,13 @@
     "dificultad": "media",
     "travel": {
       "santiago": {
-        "cocheMin": 85
+        "cocheMin": 82
       },
       "esteiro": {
-        "cocheMin": 30
+        "cocheMin": 57
       },
       "sanxenxo": {
-        "cocheMin": 95
+        "cocheMin": 114
       }
     }
   },
@@ -81,13 +81,13 @@
     "dificultad": "media",
     "travel": {
       "santiago": {
-        "cocheMin": 70
-      },
-      "esteiro": {
         "cocheMin": 50
       },
+      "esteiro": {
+        "cocheMin": 37
+      },
       "sanxenxo": {
-        "cocheMin": 45
+        "cocheMin": 57
       }
     }
   },
@@ -104,13 +104,13 @@
     "dificultad": "baja",
     "travel": {
       "santiago": {
-        "cocheMin": 35
+        "cocheMin": 31
       },
       "esteiro": {
-        "cocheMin": 70
+        "cocheMin": 56
       },
       "sanxenxo": {
-        "cocheMin": 80
+        "cocheMin": 70
       }
     }
   }
