@@ -26,6 +26,11 @@ jobs:
       - run: python scripts/ingest/build_routes.py
       - run: python scripts/ingest/fetch_horizon.py
       - run: python scripts/ingest/build_travel.py
+      # Post-proceso: cada build reintroduce desde el IDE los casi-duplicados y un
+      # banderaAzul histórico (~2024). Se reconcilia contra la lista oficial del año
+      # y se funden los duplicados, para que las correcciones sobrevivan a la ingesta.
+      - run: python scripts/ingest/reconcile_blue_flags.py --apply
+      - run: python scripts/ingest/dedup_playas.py --apply
       - name: Validar catálogo (aborta antes de commitear si está corrupto)
         run: python scripts/ingest/validate_catalog.py
       - name: Commit si cambió
