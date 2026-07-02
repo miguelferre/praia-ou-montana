@@ -10,32 +10,23 @@ Uso:
     set ORS_API_KEY=...            # opcional (Windows: set, bash: export)
     python scripts/ingest/build_travel.py [--dry-run]
 """
+
 from __future__ import annotations
 
 import argparse
 import json
 import os
 import time
-from math import asin, cos, radians, sin, sqrt
 from pathlib import Path
 
-import requests
+from common import chunks, haversine_km, make_session
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "public" / "data"
 ORS_URL = "https://api.openrouteservice.org/v2/matrix/driving-car"
 OSRM_URL = "http://router.project-osrm.org/table/v1/driving/"
 
-
-def _chunks(seq: list, size: int):
-    for i in range(0, len(seq), size):
-        yield seq[i : i + size]
-
-
-def haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
-    dlat, dlon = radians(lat2 - lat1), radians(lon2 - lon1)
-    h = sin(dlat / 2) ** 2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon / 2) ** 2
-    return 2 * 6371 * asin(min(1, sqrt(h)))
+SESSION = make_session()
 
 
 def rough_minutes(base: dict, lat: float, lon: float) -> int:
@@ -50,7 +41,7 @@ def ors_minutes(base: dict, dests: list[tuple[float, float]], key: str) -> list[
         "destinations": list(range(1, len(locations))),
         "metrics": ["duration"],
     }
-    resp = requests.post(ORS_URL, json=body, headers={"Authorization": key}, timeout=40)
+    resp = SESSION.post(ORS_URL, json=body, headers={"Authorization": key}, timeout=40)
     resp.raise_for_status()
     return [round((s or 0) / 60) for s in resp.json()["durations"][0]]
 
@@ -59,18 +50,18 @@ def osrm_minutes(base: dict, dests: list[tuple[float, float]]) -> list[int]:
     """Tiempos reales por carretera vía OSRM (servidor público, sin key). Trocea en
     grupos para no exceder la longitud de la URL; haversine solo si un tramo falla."""
     out: list[int] = []
-    for chunk in _chunks(dests, 90):
+    for chunk in chunks(dests, 90):
         coords = [(base["lon"], base["lat"])] + [(lon, lat) for (lat, lon) in chunk]
         coordstr = ";".join(f"{lon:.5f},{lat:.5f}" for (lon, lat) in coords)
         try:
-            resp = requests.get(
+            resp = SESSION.get(
                 OSRM_URL + coordstr,
                 params={"sources": "0", "annotations": "duration"},
                 timeout=60,
             )
             resp.raise_for_status()
             durs = resp.json()["durations"][0][1:]  # quita el origen->origen
-            for (lat, lon), d in zip(chunk, durs):
+            for (lat, lon), d in zip(chunk, durs, strict=False):
                 out.append(round(d / 60) if d is not None else rough_minutes(base, lat, lon))
         except Exception as err:  # noqa: BLE001 - degradación deliberada
             print(f"  [aviso] OSRM fallo en un tramo ({err}); haversine para {len(chunk)}")
@@ -82,7 +73,9 @@ def osrm_minutes(base: dict, dests: list[tuple[float, float]]) -> list[int]:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true", help="no escribe, solo informa")
-    parser.add_argument("--force", action="store_true", help="recalcula también los tramos ya presentes")
+    parser.add_argument(
+        "--force", action="store_true", help="recalcula también los tramos ya presentes"
+    )
     args = parser.parse_args()
 
     key = os.environ.get("ORS_API_KEY")
@@ -104,7 +97,7 @@ def main() -> None:
                 continue
             pcoords = [(it[latk], it[lonk]) for it in pending]
             mins = ors_minutes(base, pcoords, key) if key else osrm_minutes(base, pcoords)
-            for it, m in zip(pending, mins):
+            for it, m in zip(pending, mins, strict=False):
                 it.setdefault("travel", {}).setdefault(base["id"], {})["cocheMin"] = m
         if args.dry_run:
             print(f"  [dry-run] {kind}: {len(items)} destinos x {len(bases)} bases")

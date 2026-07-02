@@ -1,0 +1,15 @@
+# Config de las herramientas Python de la ingesta (ruff + mypy). El proyecto es
+# Node; esto solo afecta a scripts/ y tests/ingest. Ver scripts/ingest/requirements-dev.txt.
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.lint]
+# E/F pyflakes+pycodestyle, I isort, UP pyupgrade, B bugbear, BLE blind-except
+# (los except Exception deliberados llevan su `# noqa: BLE001`).
+select = ["E", "F", "I", "UP", "B", "BLE"]
+
+[tool.mypy]
+python_version = "3.13"
+files = ["scripts/ingest"]
+ignore_missing_imports = true

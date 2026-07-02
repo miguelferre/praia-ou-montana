@@ -2,6 +2,9 @@ import type { LatLng } from './types';
 
 const EARTH_RADIUS_KM = 6371;
 
+/** Centro aproximado de Galicia, para encuadrar el mapa antes de tener marcadores. */
+export const GALICIA_CENTER: LatLng = { lat: 42.75, lon: -8.7 };
+
 function toRad(deg: number): number {
   return (deg * Math.PI) / 180;
 }

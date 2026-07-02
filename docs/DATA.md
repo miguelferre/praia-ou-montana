@@ -9,6 +9,8 @@ La biblia de datos de Praia ou montaña. Toda fuente, endpoint, key, licencia y 
 | Meteo              | **Open-Meteo** (sin key)                         | + MeteoGalicia + AEMET playas       | —                      |
 | Sol                | **SunCalc + PVGIS horizon (puesta efectiva)** ✅ | afinar perfiles por playa           | DEM propio             |
 | Mar (temp/oleaje)  | Open-Meteo Marine                                | + MeteoGalicia / Puertos del Estado | —                      |
+| Mareas             | **Open-Meteo `sea_level_height_msl`** ✅         | afinar (FES2014 / Puertos Estado)   | DEM/armónicos propios  |
+| UV                 | **Open-Meteo `uv_index_max`** ✅ (en ficha)      | —                                   | —                      |
 | Catálogo playas    | **IDE Galicia 992** ✅ + curación                | cruce AEMET / bandera azul / OSM    | —                      |
 | Rutas              | semilla + Wikiloc (enlace)                       | + OSM/Waymarked Trails              | —                      |
 | Viaje coche        | ORS Matrix / haversine                           | base libre (Worker)                 | —                      |
@@ -16,10 +18,16 @@ La biblia de datos de Praia ou montaña. Toda fuente, endpoint, key, licencia y 
 
 ## Meteorología
 
-- **Open-Meteo** (principal v0). `https://api.open-meteo.com/v1/forecast` y `https://marine-api.open-meteo.com/v1/marine`. Sin key. JSON. Diario: `temperature_2m_max`, `precipitation_probability_max`, `precipitation_sum`, `wind_speed_10m_max`, `uv_index_max`; horario `cloud_cover` (nubosidad = media diurna 09–20). Marine: `sea_surface_temperature` (horario), `wave_height_max` (diario). Implementado en `scripts/ingest/fetch_forecast.py`.
+- **Open-Meteo** (principal v0). `https://api.open-meteo.com/v1/forecast` y `https://marine-api.open-meteo.com/v1/marine`. Sin key. JSON. Diario: `temperature_2m_max`, `precipitation_probability_max`, `precipitation_sum`, `wind_speed_10m_max`, `uv_index_max`; horario `cloud_cover` (nubosidad = media diurna 09–20). Marine: `sea_surface_temperature` (horario), `wave_height_max` (diario), `sea_level_height_msl` (horario → mareas, ver abajo). Implementado en `scripts/ingest/fetch_forecast.py`.
   - **Una predicción por CONCELLO**, no por playa: las ~992 playas comparten ~85 concellos, así que se piden ~85 (la primera playa como representante) y se replica a cada playa. Evita el rate limit (429) y es meteorológicamente equivalente. Llamadas troceadas (`CHUNK=100`).
-- **MeteoGalicia MeteoSIX v4** (v1, principal Galicia). `https://servizos.meteogalicia.gal/apiv4/`. **Requiere API key** (solicitar). Modelo WRF local + oceanografía + mareas + orto/ocaso. Máx 7 días/llamada.
+- **MeteoGalicia MeteoSIX v4** (opción v1 para meteo oficial; **no se usa**). `https://servizos.meteogalicia.gal/apiv4/`. WRF local + oceanografía + orto/ocaso. **Descartada por ahora**: requiere API key gratuita pero solicitada por email (fricción y dependencia que preferimos evitar). Open-Meteo cubre meteo y mareas sin key.
 - **AEMET OpenData** (v1, predicción oficial de PLAYAS). `https://opendata.aemet.es/`. API key gratis (email). Patrón HATEOAS de doble salto. Rate limit ~40–50/min → cachear. Predice por **código de playa propio de AEMET**.
+
+## Mareas
+
+- **Open-Meteo `sea_level_height_msl`** ✅ (Marine API, horario, sin key). En `fetch_forecast.py`, `extract_tides()` toma la curva horaria de nivel del mar y detecta los **extremos locales** (máximos = pleamares, mínimos = bajamares); la hora del pico se refina con interpolación parabólica de 3 puntos. Se mapea a `TideEvent { time, type }` (contrato interno en `core/types.ts`).
+  - **Caveats (mostrar como "estimación")**: el nivel va referido a la **media del mar (MSL)**, no al cero hidrográfico de las tablas náuticas (LAT) → **la altura no es comparable con una tabla de mareas, por eso se omite** (`heightM` es opcional). Resolución **8 km**: la hora es fiable pero aproximada (±min) y no capta rías muy encajonadas. Con `forecast_days=1` se pierden los extremos pegados a 00/24 h.
+  - **Afinado futuro (v1+)**: cálculo armónico propio con constituyentes FES2014 (`pyfes`/`pyTMD`) o constantes de Puertos del Estado para dar altura sobre el cero hidrográfico. El contrato `TideEvent` no cambia.
 
 ## Sol y puesta de sol efectiva (el diferenciador)
 
@@ -52,7 +60,24 @@ La curación manual (`data/mapping/curado_*.csv`) es el activo de calidad: marca
 ## Bundles servidos (`public/data/`)
 
 - `catalog/playas.json`, `catalog/rutas.json` — cambian con ingesta mensual.
-- `forecast/latest.json` (+ `YYYY-MM-DD.json`) — diario, ligero.
+- `forecast/latest.json` (+ `YYYY-MM-DD.json`) — diario.
 - `meta/bases.json` — bases disponibles.
+
+Tamaños actuales (crudo → gzip; **Cloudflare comprime al vuelo**, así que lo que viaja es el gzip):
+
+| Fichero                | Crudo   | gzip   | Nota                                             |
+| ---------------------- | ------- | ------ | ------------------------------------------------ |
+| `catalog/playas.json`  | ~1.0 MB | ~79 KB | 992 playas + `travel` + `horizonProfile` (48 pt) |
+| `forecast/latest.json` | ~586 KB | ~12 KB | 997 destinos; creció al añadir mareas horarias   |
+| `catalog/rutas.json`   | ~2 KB   | —      | semilla                                          |
+
+El cliente carga **~91 KB gzip** en total: aceptable para el MVP. Si el forecast crece (más días, altura de marea, más campos), la palanca es **particionar** (p. ej. mareas a `forecast/tides/{id}.json` bajo demanda) antes que engordar `latest.json`.
+
+## Robustez y validación de la ingesta
+
+- **Reintentos**: todos los scripts comparten `scripts/ingest/common.py` (`make_session`), una `requests.Session` con reintentos exponenciales ante 429/5xx, para que un fallo transitorio de Open-Meteo/PVGIS/OSRM/ArcGIS no aborte la ingesta. `common.py` también centraliza `haversine_*` y `chunks` (antes duplicados).
+- **Validación de salida** ✅: `scripts/ingest/validate_forecast.py` corre en `ingest-forecast.yml` **antes del commit**. Comprueba que el JSON parsea, que cubre ≥90 % del catálogo, que la fecha es única y que cada entrada tiene los campos numéricos del contrato. Si falla, el workflow aborta y **no se commitea nada corrupto**.
+- **Validación en cliente** ✅: `src/lib/data/load.ts` valida los bundles con **zod** al cargarlos (esquema por `passthrough`, no descarta campos); un bundle inesperado falla con mensaje claro en vez de romper la UI a mitad de uso.
+- **Tests de ingesta**: `tests/ingest/` (pytest) cubre las funciones puras (`haversine`, `chunks`, extracción de mareas). Lint/format/tipos con `ruff` y `mypy` (`npm run lint:py`, `format:py`, `test:py`; deps en `scripts/ingest/requirements-dev.txt`). No están en `npm run check` porque el CI de Node no tiene Python.
 
 Las **API keys** (MeteoGalicia, AEMET, ORS) van en GitHub Secrets y solo se usan en la ingesta (CI), **nunca en el cliente**.

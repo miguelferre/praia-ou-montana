@@ -19,6 +19,9 @@ test-results/
 scripts/ingest/.venv/
 __pycache__/
 *.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
 # impeccable (herramienta de diseño local; se reinstala con `npx impeccable install`)
 .claude/skills/

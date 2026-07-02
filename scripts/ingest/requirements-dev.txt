@@ -1,0 +1,6 @@
+# Herramientas de desarrollo de la ingesta (no necesarias en el runtime de datos).
+# Uso: pip install -r scripts/ingest/requirements-dev.txt
+-r requirements.txt
+pytest>=8.0
+ruff>=0.6
+mypy>=1.11

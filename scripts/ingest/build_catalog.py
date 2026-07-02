@@ -17,15 +17,15 @@ Fuente confirmada (ver docs/DATA.md):
 Uso:
     python scripts/ingest/build_catalog.py [--wfs] [--dry-run]
 """
+
 from __future__ import annotations
 
 import argparse
 import csv
 import json
-from math import asin, cos, radians, sin, sqrt
 from pathlib import Path
 
-import requests
+from common import haversine_m, make_session
 
 ROOT = Path(__file__).resolve().parents[2]
 CATALOG = ROOT / "public" / "data" / "catalog"
@@ -39,11 +39,17 @@ DEDUP_METERS = 400  # una playa de la IDE más cerca que esto de una curada se d
 
 PMR_COLS = ["pmr_rampa", "pmr_sillaAnfibia", "pmr_aseoAdaptado", "pmr_aparcamiento"]
 
+# Columnas de curación que se parsean como número (el resto, como texto).
+NUMERIC_FIELDS = (
+    "orientacionDeg",
+    "longitudM",
+    "chiringuitosCount",
+    "restauracionM",
+    "km",
+    "desnivelPosM",
+)
 
-def haversine_m(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
-    dlat, dlon = radians(lat2 - lat1), radians(lon2 - lon1)
-    h = sin(dlat / 2) ** 2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon / 2) ** 2
-    return 2 * 6371000 * asin(min(1, sqrt(h)))
+SESSION = make_session()
 
 
 def fetch_ide_galicia_beaches() -> list[dict]:
@@ -54,19 +60,19 @@ def fetch_ide_galicia_beaches() -> list[dict]:
         "outSR": 4326,
         "f": "geojson",
         "resultRecordCount": 2000,
-        "resultOffset": 0,
     }
     feats: list[dict] = []
+    offset = 0
     try:
         while True:
-            resp = requests.get(ARCGIS_URL, params=params, timeout=60)
+            resp = SESSION.get(ARCGIS_URL, params={**params, "resultOffset": offset}, timeout=60)
             resp.raise_for_status()
             fc = resp.json()
             batch = fc.get("features", [])
             feats.extend(batch)
             if not fc.get("exceededTransferLimit") or not batch:
                 break
-            params["resultOffset"] += len(batch)
+            offset += len(batch)
     except Exception as err:  # noqa: BLE001 - degradación deliberada
         print(f"  [aviso] IDE Galicia no disponible ({err}); se conserva el catálogo actual.")
         return []
@@ -121,7 +127,7 @@ def apply_curation(items: list[dict], csv_path: Path, is_route: bool) -> int:
             for key, raw in row.items():
                 if key in ("id", *PMR_COLS) or raw is None or raw.strip() == "":
                     continue
-                if key in ("orientacionDeg", "longitudM", "chiringuitosCount", "restauracionM", "km", "desnivelPosM"):
+                if key in NUMERIC_FIELDS:
                     item[key] = _num(raw)
                 elif key == "banderaAzul":
                     item[key] = raw.strip().lower() == "true"
@@ -147,7 +153,10 @@ def main() -> None:
             for d in descargadas:
                 if d["id"] in ids:
                     continue
-                if any(haversine_m(d["lat"], d["lon"], la, lo) < DEDUP_METERS for la, lo in curadas):
+                too_close = any(
+                    haversine_m(d["lat"], d["lon"], la, lo) < DEDUP_METERS for la, lo in curadas
+                )
+                if too_close:
                     continue  # duplica una playa ya curada a mano
                 playas.append(d)
                 added += 1

@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import maplibregl from 'maplibre-gl';
 import type { Dict } from '@/i18n';
 import type { ScoredPlaya, ScoredRuta } from '@/lib/core/result';
+import { GALICIA_CENTER } from '@/lib/core/geo';
 import type { Base } from '@/lib/core/types';
 import { hhmm, round, scoreColor } from '@/lib/ui/format';
 
@@ -55,7 +56,7 @@ export function MapDashboard(props: Props) {
     const map = new maplibregl.Map({
       container: containerRef.current,
       style: STYLE,
-      center: [-8.7, 42.75],
+      center: [GALICIA_CENTER.lon, GALICIA_CENTER.lat],
       zoom: 8,
     });
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');

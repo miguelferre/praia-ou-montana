@@ -31,8 +31,8 @@ export default function Dashboard() {
   const [modo, setModo] = useState<Modo>(initial.modo);
   const [requierePmr, setRequierePmr] = useState(initial.requierePmr);
   const [maxViajeMin, setMaxViajeMin] = useState(initial.maxViajeMin);
-  const [pesos, setPesos] = useState<Pesos>({ ...DEFAULT_PESOS });
-  const [tab, setTab] = useState<Tab>('playa');
+  const [pesos, setPesos] = useState<Pesos>(initial.pesos);
+  const [tab, setTab] = useState<Tab>(initial.tab);
   const [mapMetric, setMapMetric] = useState<MapMetric>('score');
   const [activeId, setActiveId] = useState<string | null>(null);
   const [date] = useState(() => new Date());
@@ -50,8 +50,8 @@ export default function Dashboard() {
   }, []);
 
   useEffect(() => {
-    writeUrlState({ baseId, modo, lang, requierePmr, maxViajeMin });
-  }, [baseId, modo, lang, requierePmr, maxViajeMin]);
+    writeUrlState({ baseId, modo, lang, requierePmr, maxViajeMin, pesos, tab });
+  }, [baseId, modo, lang, requierePmr, maxViajeMin, pesos, tab]);
 
   const base: Base | undefined = data?.bases.find((b) => b.id === baseId) ?? data?.bases[0];
 

@@ -9,3 +9,7 @@ public/data
 .claude
 .github/skills
 .impeccable
+.pytest_cache
+.mypy_cache
+.ruff_cache
+__pycache__

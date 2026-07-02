@@ -20,6 +20,8 @@ jobs:
           python-version: '3.13'
       - run: pip install -r scripts/ingest/requirements.txt
       - run: python scripts/ingest/fetch_forecast.py
+      - name: Validar salida (aborta antes de commitear si está corrupta)
+        run: python scripts/ingest/validate_forecast.py
       - name: Commit si cambió
         run: |
           git config user.name "github-actions[bot]"

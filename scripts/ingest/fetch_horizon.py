@@ -13,24 +13,29 @@ Sin API key. Se cachea: el horizonte no cambia, basta correrlo al curar playas.
 Uso:
     python scripts/ingest/fetch_horizon.py [--dry-run]
 """
+
 from __future__ import annotations
 
 import argparse
 import json
 import time
-import urllib.parse
-import urllib.request
 from pathlib import Path
+
+from common import make_session
 
 ROOT = Path(__file__).resolve().parents[2]
 PLAYAS = ROOT / "public" / "data" / "catalog" / "playas.json"
 PVGIS_URL = "https://re.jrc.ec.europa.eu/api/printhorizon"
 
+SESSION = make_session()
+
 
 def fetch_profile(lat: float, lon: float) -> list[float]:
-    q = urllib.parse.urlencode({"lat": lat, "lon": lon, "outputformat": "json"})
-    with urllib.request.urlopen(f"{PVGIS_URL}?{q}", timeout=60) as resp:
-        data = json.loads(resp.read().decode("utf-8"))
+    resp = SESSION.get(
+        PVGIS_URL, params={"lat": lat, "lon": lon, "outputformat": "json"}, timeout=60
+    )
+    resp.raise_for_status()
+    data = resp.json()
     points = data["outputs"]["horizon_profile"]
     # 48 valores A=-180..172.5; se descarta A==180 (duplicado del wraparound).
     return [round(p["H_hor"], 1) for p in points if p["A"] < 180]
@@ -39,7 +44,9 @@ def fetch_profile(lat: float, lon: float) -> list[float]:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
-    parser.add_argument("--force", action="store_true", help="refresca también las que ya tienen perfil")
+    parser.add_argument(
+        "--force", action="store_true", help="refresca también las que ya tienen perfil"
+    )
     parser.add_argument("--all", action="store_true", help="todas las playas, no solo las curadas")
     args = parser.parse_args()
 
