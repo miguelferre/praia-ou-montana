@@ -42,7 +42,7 @@ No hay clave universal. Estrategia (`scripts/ingest/build_catalog.py`):
 1. **IDE de Galicia = maestra** ✅ (987 playas). Fuente CONFIRMADA: servicio ArcGIS REST de la Xunta con GeoJSON nativo (no WFS clásico): `https://ideg.xunta.gal/servizos/rest/services/CubertaTerrestre/Clasificacion_PRAIAS/MapServer/0/query?where=1=1&outFields=*&outSR=4326&f=geojson`. Campos: `NOME_PRAIA`, `CONCELLO`, `COD_PRAIA` (id), `B_AZUL`. Coords ya en WGS84 `[lon, lat, z, m]` (usar los 2 primeros). `Playa.id` = `COD_PRAIA`. Las playas curadas a mano se preservan por dedup de proximidad (<400 m). Catálogo actual: **992 playas** (984 IDE + 8 semilla curadas).
 2. **IDE ↔ AEMET**: AEMET no da coords limpias por código → cruce por `(concello + nombre normalizado)` fuzzy + validación manual en `data/mapping/`.
 3. **IDE ↔ bandera azul** (dataset Xunta, CSV, CC BY-SA): por concello+nombre+proximidad <300 m.
-4. **IDE ↔ OSM**: por proximidad; los chiringuitos salen de Overpass `amenity=bar|restaurant` alrededor de las coords (precalcular, no en runtime).
+4. **IDE ↔ OSM**: por proximidad. Los **servicios** ✅ (`scripts/ingest/build_services.py`) salen de Overpass `amenity=bar|restaurant|cafe`: una consulta trae los ~7.400 locales de Galicia y se cuentan los que hay a <350 m de cada playa (índice de rejilla, no en runtime) → `chiringuitosCount`. Respeta la curación manual (no toca las `curado=true`).
 5. **PMR** (COGAMI, no estructurado): extracción manual a `data/mapping/curado_playas.csv`.
 
 La curación manual (`data/mapping/curado_*.csv`) es el activo de calidad: marca `curado=true` y añade orientación, PMR, longitud, bandera azul, enlaces Wikiloc.

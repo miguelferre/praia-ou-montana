@@ -22,6 +22,7 @@ jobs:
           python-version: '3.13'
       - run: pip install -r scripts/ingest/requirements.txt
       - run: python scripts/ingest/build_catalog.py --wfs
+      - run: python scripts/ingest/build_services.py
       - run: python scripts/ingest/build_routes.py
       - run: python scripts/ingest/fetch_horizon.py
       - run: python scripts/ingest/build_travel.py

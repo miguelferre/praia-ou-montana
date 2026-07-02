@@ -14,6 +14,7 @@ python scripts/ingest/fetch_forecast.py        # predicción diaria (Open-Meteo,
 python scripts/ingest/fetch_horizon.py [--dry-run]  # perfil de horizonte PVGIS -> sol efectivo
 python scripts/ingest/build_travel.py [--dry-run]   # tiempos de viaje (ORS_API_KEY opcional)
 python scripts/ingest/build_catalog.py [--wfs] [--dry-run]  # catálogo playas + curación
+python scripts/ingest/build_services.py [--dry-run] [--radius M]  # chiringuitos por playa (OSM)
 python scripts/ingest/build_routes.py [--dry-run] [--limit N]  # rutas de senderismo (OSM Overpass)
 python scripts/ingest/validate_catalog.py / validate_forecast.py  # barreras de calidad (corren en CI)
 ```
