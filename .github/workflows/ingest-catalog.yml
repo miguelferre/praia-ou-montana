@@ -24,6 +24,8 @@ jobs:
       - run: python scripts/ingest/build_catalog.py --wfs
       - run: python scripts/ingest/fetch_horizon.py
       - run: python scripts/ingest/build_travel.py
+      - name: Validar catálogo (aborta antes de commitear si está corrupto)
+        run: python scripts/ingest/validate_catalog.py
       - name: Commit si cambió
         run: |
           git config user.name "github-actions[bot]"

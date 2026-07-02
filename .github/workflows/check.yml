@@ -16,3 +16,41 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check
+
+  # Valida los bundles de datos servidos (protege ediciones manuales del catálogo/forecast).
+  data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install -r scripts/ingest/requirements.txt
+      - run: python scripts/ingest/validate_catalog.py
+      - run: python scripts/ingest/validate_forecast.py
+
+  # Lint + tests de la ingesta (Python).
+  py:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install -r scripts/ingest/requirements-dev.txt
+      - run: ruff check scripts tests/ingest
+      - run: ruff format --check scripts tests/ingest
+      - run: pytest tests/ingest -q
+
+  # Suite end-to-end (Playwright): smoke + accesibilidad, sobre el dev server.
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e

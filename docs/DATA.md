@@ -76,7 +76,10 @@ El cliente carga **~91 KB gzip** en total: aceptable para el MVP. Si el forecast
 ## Robustez y validación de la ingesta
 
 - **Reintentos**: todos los scripts comparten `scripts/ingest/common.py` (`make_session`), una `requests.Session` con reintentos exponenciales ante 429/5xx, para que un fallo transitorio de Open-Meteo/PVGIS/OSRM/ArcGIS no aborte la ingesta. `common.py` también centraliza `haversine_*` y `chunks` (antes duplicados).
-- **Validación de salida** ✅: `scripts/ingest/validate_forecast.py` corre en `ingest-forecast.yml` **antes del commit**. Comprueba que el JSON parsea, que cubre ≥90 % del catálogo, que la fecha es única y que cada entrada tiene los campos numéricos del contrato. Si falla, el workflow aborta y **no se commitea nada corrupto**.
+- **Validación de salida** ✅: dos validadores corren **antes del commit** en sus workflows (y en cada PR, en `check.yml`):
+  - `validate_forecast.py` (en `ingest-forecast.yml`): JSON parseable, cobertura ≥90 % del catálogo, fecha única y campos numéricos del contrato.
+  - `validate_catalog.py` (en `ingest-catalog.yml`): coordenadas dentro de Galicia (bbox), campos requeridos, sin ids duplicados; y **avisa** de dos entradas con el mismo nombre y concello a >1.2 km (el patrón del bug de Praia do Testal, que colocó una playa curada a 1.5 km de su sitio).
+  - Si un validador falla, el workflow aborta y **no se commitea nada corrupto**.
 - **Validación en cliente** ✅: `src/lib/data/load.ts` valida los bundles con **zod** al cargarlos (esquema por `passthrough`, no descarta campos); un bundle inesperado falla con mensaje claro en vez de romper la UI a mitad de uso.
 - **Tests de ingesta**: `tests/ingest/` (pytest) cubre las funciones puras (`haversine`, `chunks`, extracción de mareas). Lint/format/tipos con `ruff` y `mypy` (`npm run lint:py`, `format:py`, `test:py`; deps en `scripts/ingest/requirements-dev.txt`). No están en `npm run check` porque el CI de Node no tiene Python.
 
