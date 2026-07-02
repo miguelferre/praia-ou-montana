@@ -65,6 +65,22 @@ describe('readUrlState — pesos (parámetro w)', () => {
   });
 });
 
+describe('readUrlState — base libre (custom)', () => {
+  it('lee coordenadas y nombre cuando base=custom', () => {
+    const s = readUrlState('?base=custom&blat=42.24&blon=-8.72&bn=Vigo', 'santiago');
+    expect(s.baseId).toBe('custom');
+    expect(s.baseLat).toBe(42.24);
+    expect(s.baseLon).toBe(-8.72);
+    expect(s.baseName).toBe('Vigo');
+  });
+
+  it('ignora blat/blon si la base no es custom', () => {
+    const s = readUrlState('?base=santiago&blat=42.24&blon=-8.72', 'santiago');
+    expect(s.baseLat).toBeUndefined();
+    expect(s.baseLon).toBeUndefined();
+  });
+});
+
 describe('readUrlState — pestaña', () => {
   it('acepta tab=ruta', () => {
     expect(readUrlState('?tab=ruta', 'santiago').tab).toBe('ruta');

@@ -43,3 +43,19 @@ test('elegir base la refleja en la URL', async ({ page }) => {
   await page.getByLabel('Tu base', { exact: true }).selectOption({ label: 'Esteiro (Muros)' });
   await expect(page).toHaveURL(/base=esteiro/);
 });
+
+test('base libre: geocodifica un lugar y fija una base personalizada', async ({ page }) => {
+  // Nominatim mockeado → test hermético (no depende de un servicio vivo).
+  await page.route(/nominatim\.openstreetmap\.org\/search/, (route) =>
+    route.fulfill({
+      json: [{ display_name: 'Lugo, Galicia, España', lat: '43.0396', lon: '-7.4568' }],
+    }),
+  );
+  await page.goto('/');
+  await page.getByPlaceholder(/Otra base/).fill('Lugo');
+  await page.getByRole('button', { name: 'Buscar', exact: true }).click();
+  await expect(page).toHaveURL(/base=custom/);
+  await expect(page).toHaveURL(/bn=Lugo/);
+  // La base libre aparece como opción seleccionada del selector.
+  await expect(page.getByLabel('Tu base', { exact: true })).toHaveValue('custom');
+});

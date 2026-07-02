@@ -1,10 +1,14 @@
+import { BaseSearch } from '@/components/BaseSearch';
 import type { Dict, Lang } from '@/i18n';
+import type { GeoPlace } from '@/lib/data/geocode';
+import { CUSTOM_BASE_ID } from '@/lib/ui/url-state';
 import type { Base, Modo } from '@/lib/core/types';
 
 interface Props {
   bases: Base[];
   baseId: string;
   onBase: (id: string) => void;
+  onCustomBase: (p: GeoPlace) => void;
   modo: Modo;
   onModo: (m: Modo) => void;
   requierePmr: boolean;
@@ -21,6 +25,7 @@ export function Controls(props: Props) {
     bases,
     baseId,
     onBase,
+    onCustomBase,
     modo,
     onModo,
     requierePmr,
@@ -43,6 +48,10 @@ export function Controls(props: Props) {
             </option>
           ))}
         </select>
+        <BaseSearch onPick={onCustomBase} dict={dict} />
+        {baseId === CUSTOM_BASE_ID && (
+          <span className="field-hint">{dict.controls.baseApprox}</span>
+        )}
       </div>
 
       <div className="field">

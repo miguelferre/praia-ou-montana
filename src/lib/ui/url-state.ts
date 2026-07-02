@@ -8,6 +8,10 @@ export type PanelTab = 'playa' | 'ruta';
 /** Estado persistido en la URL (compartible/recargable). */
 export interface UrlState {
   baseId: string;
+  /** Coordenadas y nombre de la base libre (solo cuando `baseId === 'custom'`). */
+  baseLat?: number;
+  baseLon?: number;
+  baseName?: string;
   modo: Modo;
   lang: Lang;
   requierePmr: boolean;
@@ -15,6 +19,15 @@ export interface UrlState {
   /** Pesos del motor: se comparten para reproducir el mismo ranking. */
   pesos: Pesos;
   tab: PanelTab;
+}
+
+/** Id reservado para la base introducida por el usuario (geocoding). */
+export const CUSTOM_BASE_ID = 'custom';
+
+function numOrUndef(raw: string | null): number | undefined {
+  if (raw === null) return undefined;
+  const n = Number(raw);
+  return Number.isFinite(n) ? n : undefined;
 }
 
 const MODOS: Modo[] = ['auto', 'solo_playa', 'solo_ruta'];
@@ -64,8 +77,17 @@ export function readUrlState(search: string, fallbackBase: string): UrlState {
   const langRaw = p.get('lang') ?? DEFAULT_LANG;
   const maxRaw = Number(p.get('max'));
   const tabRaw = p.get('tab');
+  const baseId = p.get('base') ?? fallbackBase;
+  const custom = baseId === CUSTOM_BASE_ID;
+  const baseLat = custom ? numOrUndef(p.get('blat')) : undefined;
+  const baseLon = custom ? numOrUndef(p.get('blon')) : undefined;
+  const baseName = custom ? (p.get('bn') ?? undefined) : undefined;
   return {
-    baseId: p.get('base') ?? fallbackBase,
+    baseId,
+    // Cada clave opcional se incluye solo si tiene valor (exactOptionalPropertyTypes).
+    ...(baseLat !== undefined ? { baseLat } : {}),
+    ...(baseLon !== undefined ? { baseLon } : {}),
+    ...(baseName !== undefined ? { baseName } : {}),
     modo: isModo(modoRaw) ? modoRaw : 'auto',
     lang: isLang(langRaw) ? langRaw : DEFAULT_LANG,
     requierePmr: p.get('pmr') === '1',
@@ -78,6 +100,15 @@ export function readUrlState(search: string, fallbackBase: string): UrlState {
 export function writeUrlState(state: UrlState): void {
   const p = new URLSearchParams();
   p.set('base', state.baseId);
+  if (
+    state.baseId === CUSTOM_BASE_ID &&
+    state.baseLat !== undefined &&
+    state.baseLon !== undefined
+  ) {
+    p.set('blat', state.baseLat.toFixed(5));
+    p.set('blon', state.baseLon.toFixed(5));
+    if (state.baseName) p.set('bn', state.baseName);
+  }
   p.set('modo', state.modo);
   p.set('lang', state.lang);
   if (state.requierePmr) p.set('pmr', '1');

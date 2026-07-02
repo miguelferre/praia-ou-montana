@@ -12,6 +12,12 @@ export const gl: Dict = {
     soloRuta: 'Só ruta',
     maxTravel: 'Tempo máx. de viaxe',
     pmr: 'Necesito acceso adaptado (PMR)',
+    basePlaceholder: 'Outra base (vila, enderezo)…',
+    baseSearch: 'Buscar',
+    myLocation: 'A miña localización',
+    baseSearching: 'Buscando…',
+    baseNotFound: 'Sen resultados',
+    baseApprox: 'Base libre: os tempos de viaxe son estimados (liña recta).',
   },
   verdict: {
     heading: 'Hoxe mellor…',
@@ -106,6 +112,5 @@ export const gl: Dict = {
     datos:
       'Datos: tempo de Open-Meteo, horizonte de PVGIS, praias da Xunta de Galicia, mapa de OpenStreetMap. As rutas ligan a Wikiloc.',
   },
-  footer:
-    'Datos: Open-Meteo · IDE Galicia · OpenStreetMap. As rutas fanse en Wikiloc. Demo con datos de exemplo.',
+  footer: 'Datos: Open-Meteo · IDE Galicia · OpenStreetMap · PVGIS. As rutas fanse en Wikiloc.',
 };

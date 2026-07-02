@@ -11,8 +11,9 @@ import { DEFAULT_PESOS } from '@/lib/core/prefs';
 import type { ScoredItem } from '@/lib/core/result';
 import type { Base, Modo, Pesos, UserPrefs } from '@/lib/core/types';
 import { loadAppData, type AppData } from '@/lib/data/load';
+import type { GeoPlace } from '@/lib/data/geocode';
 import { plan } from '@/lib/planner';
-import { readUrlState, writeUrlState } from '@/lib/ui/url-state';
+import { CUSTOM_BASE_ID, readUrlState, writeUrlState } from '@/lib/ui/url-state';
 
 function idOf(it: ScoredItem): string {
   return it.kind === 'playa' ? it.playa.id : it.ruta.id;
@@ -28,6 +29,18 @@ export default function Dashboard() {
   const [loadError, setLoadError] = useState<string | null>(null);
   const [lang, setLang] = useState<Lang>(initial.lang);
   const [baseId, setBaseId] = useState(initial.baseId);
+  const [customBase, setCustomBase] = useState<GeoPlace | null>(
+    initial.baseId === CUSTOM_BASE_ID &&
+      initial.baseLat !== undefined &&
+      initial.baseLon !== undefined
+      ? { nombre: initial.baseName ?? 'Base libre', lat: initial.baseLat, lon: initial.baseLon }
+      : null,
+  );
+
+  function pickCustomBase(p: GeoPlace) {
+    setCustomBase(p);
+    setBaseId(CUSTOM_BASE_ID);
+  }
   const [modo, setModo] = useState<Modo>(initial.modo);
   const [requierePmr, setRequierePmr] = useState(initial.requierePmr);
   const [maxViajeMin, setMaxViajeMin] = useState(initial.maxViajeMin);
@@ -50,10 +63,35 @@ export default function Dashboard() {
   }, []);
 
   useEffect(() => {
-    writeUrlState({ baseId, modo, lang, requierePmr, maxViajeMin, pesos, tab });
-  }, [baseId, modo, lang, requierePmr, maxViajeMin, pesos, tab]);
+    writeUrlState({
+      baseId,
+      ...(baseId === CUSTOM_BASE_ID && customBase
+        ? { baseLat: customBase.lat, baseLon: customBase.lon, baseName: customBase.nombre }
+        : {}),
+      modo,
+      lang,
+      requierePmr,
+      maxViajeMin,
+      pesos,
+      tab,
+    });
+  }, [baseId, customBase, modo, lang, requierePmr, maxViajeMin, pesos, tab]);
 
-  const base: Base | undefined = data?.bases.find((b) => b.id === baseId) ?? data?.bases[0];
+  const base: Base | undefined = useMemo(() => {
+    if (baseId === CUSTOM_BASE_ID && customBase) {
+      return {
+        id: CUSTOM_BASE_ID,
+        nombre: customBase.nombre,
+        lat: customBase.lat,
+        lon: customBase.lon,
+      };
+    }
+    return data?.bases.find((b) => b.id === baseId) ?? data?.bases[0];
+  }, [baseId, customBase, data]);
+
+  // Cuando la base es libre, se añade como opción al selector (no está en bases.json).
+  const basesForSelect: Base[] =
+    base?.id === CUSTOM_BASE_ID ? [...(data?.bases ?? []), base] : (data?.bases ?? []);
 
   const result = useMemo(() => {
     if (!data || !base) return null;
@@ -114,9 +152,10 @@ export default function Dashboard() {
       </header>
 
       <Controls
-        bases={data.bases}
+        bases={basesForSelect}
         baseId={baseId}
         onBase={setBaseId}
+        onCustomBase={pickCustomBase}
         modo={modo}
         onModo={setModo}
         requierePmr={requierePmr}

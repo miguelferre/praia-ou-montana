@@ -2,6 +2,13 @@
 import '@/styles/global.css';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import Dashboard from '@/islands/dashboard/Dashboard';
+
+const site = Astro.site?.href.replace(/\/$/, '') ?? 'https://praiaoumontana.gal';
+const title = 'Praia ou montaña — ¿playa o ruta hoy en Galicia?';
+const description =
+  '¿Playa o ruta hoy en Galicia? Un veredicto del día según el tiempo, las horas de luz y el tiempo de viaje desde tu base, con el ranking de destinos y su desglose.';
+const ogImage = `${site}/img/playa.jpg`;
+const canonical = `${site}/`;
 ---
 
 <!doctype html>
@@ -9,11 +16,26 @@ import Dashboard from '@/islands/dashboard/Dashboard';
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="¿Playa o ruta hoy en Galicia? Recomendación según el tiempo, la luz y tu base."
-    />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="robots" content="index,follow" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph / redes sociales -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Praia ou montaña" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:locale:alternate" content="gl_ES" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +47,6 @@ import Dashboard from '@/islands/dashboard/Dashboard';
       rel="stylesheet"
     />
     <meta name="theme-color" content="#0b3a4a" />
-    <title>Praia ou montaña</title>
   </head>
   <body>
     <Dashboard client:only="react" />
