@@ -11,12 +11,14 @@ sus keys, manteniendo Open-Meteo como fallback (ver docs/DATA.md).
 Uso:
     python scripts/ingest/fetch_forecast.py
 """
+
 from __future__ import annotations
 
 import json
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-import requests
+from common import chunks, make_session
 
 ROOT = Path(__file__).resolve().parents[2]
 CATALOG = ROOT / "public" / "data" / "catalog"
@@ -27,10 +29,7 @@ MARINE_URL = "https://marine-api.open-meteo.com/v1/marine"
 TZ = "Europe/Madrid"
 CHUNK = 100  # Open-Meteo admite varias coords por llamada, pero la URL no puede ser infinita
 
-
-def _chunks(seq: list[dict], size: int):
-    for i in range(0, len(seq), size):
-        yield seq[i : i + size]
+SESSION = make_session()
 
 
 def _as_list(data: dict | list) -> list:
@@ -44,10 +43,46 @@ def _daytime_mean(values: list[float | None]) -> float:
     return round(sum(window) / len(window), 1) if window else 0.0
 
 
+def _parabolic_offset(y0: float, y1: float, y2: float) -> float:
+    """Posición (en horas, −0.5..0.5) del vértice de la parábola por 3 puntos
+    horarios, para refinar la hora del extremo más allá de la rejilla horaria."""
+    denom = y0 - 2 * y1 + y2
+    if denom == 0:
+        return 0.0
+    return max(-0.5, min(0.5, 0.5 * (y0 - y2) / denom))
+
+
+def extract_tides(times: list[str], levels: list[float | None], offset_s: int) -> list[dict]:
+    """Pleamares y bajamares como extremos locales de la curva de nivel del mar
+    (`sea_level_height_msl`). Hora refinada por interpolación parabólica; la altura
+    se omite (Open-Meteo la da sobre la media del mar, no sobre el cero de las
+    tablas náuticas, ver docs/DATA.md). Pierde los extremos pegados a 00/24 h."""
+    tz = timezone(timedelta(seconds=offset_s))
+    tides: list[dict] = []
+    for i in range(1, len(levels) - 1):
+        a, b, c = levels[i - 1], levels[i], levels[i + 1]
+        if a is None or b is None or c is None:
+            continue
+        is_high = b > a and b >= c
+        is_low = b < a and b <= c
+        if not (is_high or is_low):
+            continue
+        when = datetime.strptime(times[i], "%Y-%m-%dT%H:%M") + timedelta(
+            hours=_parabolic_offset(a, b, c)
+        )
+        tides.append(
+            {
+                "time": when.replace(tzinfo=tz, second=0, microsecond=0).isoformat(),
+                "type": "high" if is_high else "low",
+            }
+        )
+    return tides
+
+
 def fetch_forecast(points: list[dict]) -> dict[str, dict]:
     out: dict[str, dict] = {}
-    for chunk in _chunks(points, CHUNK):
-        resp = requests.get(
+    for chunk in chunks(points, CHUNK):
+        resp = SESSION.get(
             FORECAST_URL,
             params={
                 "latitude": ",".join(str(p["lat"]) for p in chunk),
@@ -61,7 +96,7 @@ def fetch_forecast(points: list[dict]) -> dict[str, dict]:
             timeout=40,
         )
         resp.raise_for_status()
-        for point, loc in zip(chunk, _as_list(resp.json())):
+        for point, loc in zip(chunk, _as_list(resp.json()), strict=False):
             daily = loc["daily"]
             hourly = loc.get("hourly", {})
             out[point["id"]] = {
@@ -78,29 +113,37 @@ def fetch_forecast(points: list[dict]) -> dict[str, dict]:
 
 def fetch_marine(beaches: list[dict]) -> dict[str, dict]:
     out: dict[str, dict] = {}
-    for chunk in _chunks(beaches, CHUNK):
-        resp = requests.get(
+    for chunk in chunks(beaches, CHUNK):
+        resp = SESSION.get(
             MARINE_URL,
             params={
                 "latitude": ",".join(str(b["lat"]) for b in chunk),
                 "longitude": ",".join(str(b["lon"]) for b in chunk),
                 "daily": "wave_height_max",
-                "hourly": "sea_surface_temperature",
+                "hourly": "sea_surface_temperature,sea_level_height_msl",
                 "timezone": TZ,
                 "forecast_days": 1,
             },
             timeout=40,
         )
         resp.raise_for_status()
-        for beach, loc in zip(chunk, _as_list(resp.json())):
-            sst = loc.get("hourly", {}).get("sea_surface_temperature", [])
+        for beach, loc in zip(chunk, _as_list(resp.json()), strict=False):
+            hourly = loc.get("hourly", {})
+            sst = hourly.get("sea_surface_temperature", [])
             wave = loc.get("daily", {}).get("wave_height_max", [None])
-            extra: dict[str, float] = {}
+            extra: dict = {}
             warm = [v for v in sst if v is not None]
             if warm:
                 extra["tempAguaC"] = round(sum(warm) / len(warm), 1)
             if wave and wave[0] is not None:
                 extra["oleajeM"] = round(wave[0], 1)
+            tides = extract_tides(
+                hourly.get("time", []),
+                hourly.get("sea_level_height_msl", []),
+                loc.get("utc_offset_seconds", 0),
+            )
+            if tides:
+                extra["mareas"] = tides
             out[beach["id"]] = extra
     return out
 

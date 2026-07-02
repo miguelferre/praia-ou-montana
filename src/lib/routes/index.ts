@@ -83,7 +83,13 @@ export function rankRoutes(rutas: Ruta[], ctx: RouteContext): RouteRanking {
         value: ruta.tipo === 'circular' ? 1 : 0,
       },
     ];
-    ranked.push({ kind: 'ruta', ruta, score: score(factors), travelMin });
+    ranked.push({
+      kind: 'ruta',
+      ruta,
+      score: score(factors),
+      travelMin,
+      ...(f?.uvIndex !== undefined ? { uvIndex: f.uvIndex } : {}),
+    });
   }
 
   ranked.sort((a, b) => b.score.total - a.score.total);

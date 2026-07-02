@@ -139,6 +139,8 @@ export function rankBeaches(playas: Playa[], ctx: BeachContext): BeachRanking {
       travelMin: r.travelMin,
       effectiveSunsetIso: r.effectiveSunsetIso,
       ...(r.tempAguaC !== undefined ? { tempAguaC: r.tempAguaC } : {}),
+      ...(r.forecast?.uvIndex !== undefined ? { uvIndex: r.forecast.uvIndex } : {}),
+      ...(r.forecast?.mareas !== undefined ? { mareas: r.forecast.mareas } : {}),
     };
     return scored;
   });

@@ -497,6 +497,49 @@ input[type='range'] {
   font-variant-numeric: tabular-nums;
 }
 
+/* ---------- Mareas (ficha de playa) ---------- */
+.tides {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 14px;
+  margin: 2px 0 14px;
+  font-variant-numeric: tabular-nums;
+}
+
+.tides .k {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.tide {
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.tide .arrow {
+  font-size: 0.78rem;
+}
+
+.tide.is-high .arrow {
+  color: var(--accent-deep);
+}
+
+.tide.is-low .arrow {
+  color: var(--muted);
+}
+
+.tide .h {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.tides-note {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-style: italic;
+}
+
 .breakdown {
   display: flex;
   flex-direction: column;

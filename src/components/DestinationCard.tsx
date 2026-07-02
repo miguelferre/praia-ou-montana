@@ -1,7 +1,7 @@
 import type { Dict } from '@/i18n';
 import type { ScoredItem } from '@/lib/core/result';
-import type { Base } from '@/lib/core/types';
-import { hhmm, round, scoreColor } from '@/lib/ui/format';
+import type { Base, TideEvent } from '@/lib/core/types';
+import { hhmm, round, scoreColor, uvLevel } from '@/lib/ui/format';
 
 function mapsDirUrl(base: Base, lat: number, lon: number): string {
   return `https://www.google.com/maps/dir/?api=1&origin=${base.lat},${base.lon}&destination=${lat},${lon}&travelmode=driving`;
@@ -12,6 +12,39 @@ function Stat({ k, v }: { k: string; v: string }) {
     <div className="stat">
       <div className="k">{k}</div>
       <div className="v">{v}</div>
+    </div>
+  );
+}
+
+/** Índice UV con su nivel de riesgo (OMS). Informativo: no entra en la puntuación. */
+function UvStat({ uv, dict }: { uv: number | undefined; dict: Dict }) {
+  if (uv === undefined) return null;
+  return <Stat k={dict.card.uv} v={`${round(uv)} · ${dict.card.uvLevels[uvLevel(uv)]}`} />;
+}
+
+/** Pleamares y bajamares del día (Open-Meteo). Informativo: no entra en la puntuación. */
+function Tides({ mareas, dict }: { mareas: TideEvent[] | undefined; dict: Dict }) {
+  if (!mareas || mareas.length === 0) return null;
+  return (
+    <div className="tides">
+      <span className="k">{dict.card.tides}</span>
+      {mareas.map((m) => {
+        const label = m.type === 'high' ? dict.card.highTide : dict.card.lowTide;
+        return (
+          <span
+            className={`tide ${m.type === 'high' ? 'is-high' : 'is-low'}`}
+            key={m.time}
+            title={label}
+          >
+            <span className="arrow" aria-hidden="true">
+              {m.type === 'high' ? '▲' : '▼'}
+            </span>{' '}
+            {hhmm(m.time)}
+            {m.heightM !== undefined && <span className="h"> {m.heightM.toFixed(1)} m</span>}
+          </span>
+        );
+      })}
+      <span className="tides-note">· {dict.card.tidesEstimate}</span>
     </div>
   );
 }
@@ -65,11 +98,13 @@ export function DestinationCard({
           {item.effectiveSunsetIso && (
             <Stat k={dict.card.sunset} v={hhmm(item.effectiveSunsetIso)} />
           )}
-          {p.longitudM !== undefined && <Stat k="Longitud" v={`${p.longitudM} m`} />}
+          <UvStat uv={item.uvIndex} dict={dict} />
+          {p.longitudM !== undefined && <Stat k={dict.card.length} v={`${p.longitudM} m`} />}
           {p.chiringuitosCount !== undefined && (
             <Stat k={dict.factors.servicios} v={`${p.chiringuitosCount}`} />
           )}
         </div>
+        <Tides mareas={item.mareas} dict={dict} />
         <div>
           {p.banderaAzul && <span className="tag">Bandera azul</span>}{' '}
           {p.pmr && (p.pmr.rampa || p.pmr.sillaAnfibia) && <span className="tag">PMR</span>}{' '}
@@ -103,10 +138,14 @@ export function DestinationCard({
       <div className="muted">{r.concello}</div>
       <div className="detail-grid">
         <Stat k={dict.card.travel} v={`${item.travelMin} min`} />
-        <Stat k="km" v={`${r.km}`} />
+        <Stat k={dict.card.km} v={`${r.km}`} />
         <Stat k={dict.card.elevation} v={`${r.desnivelPosM} m`} />
-        <Stat k="Tipo" v={r.tipo === 'circular' ? dict.card.circular : dict.card.linear} />
-        <Stat k="Dificultad" v={r.dificultad} />
+        <Stat
+          k={dict.card.type}
+          v={r.tipo === 'circular' ? dict.card.circular : dict.card.linear}
+        />
+        <Stat k={dict.card.difficulty} v={dict.card.difficultyLevels[r.dificultad]} />
+        <UvStat uv={item.uvIndex} dict={dict} />
       </div>
       <Breakdown item={item} dict={dict} />
       <div className="actions">

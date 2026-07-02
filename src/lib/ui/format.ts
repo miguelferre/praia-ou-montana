@@ -20,3 +20,14 @@ export function round(value: number, decimals = 0): number {
   const f = 10 ** decimals;
   return Math.round((value + Number.EPSILON) * f) / f;
 }
+
+export type UvLevel = 'low' | 'moderate' | 'high' | 'veryHigh' | 'extreme';
+
+/** Nivel de riesgo UV según la escala OMS (0–2 bajo … 11+ extremo). */
+export function uvLevel(uv: number): UvLevel {
+  if (uv < 3) return 'low';
+  if (uv < 6) return 'moderate';
+  if (uv < 8) return 'high';
+  if (uv < 11) return 'veryHigh';
+  return 'extreme';
+}

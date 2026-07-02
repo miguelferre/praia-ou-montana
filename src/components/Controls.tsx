@@ -69,7 +69,7 @@ export function Controls(props: Props) {
           type="range"
           min={15}
           max={240}
-          step={15}
+          step={1}
           value={maxViajeMin}
           onChange={(e) => onMax(Number(e.target.value))}
         />

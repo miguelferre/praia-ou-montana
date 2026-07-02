@@ -74,3 +74,46 @@ describe('rankBeaches — mover un peso reordena el ranking', () => {
     expect(best?.playa.id).toBe('lejos-grande');
   });
 });
+
+describe('rankBeaches — propaga el UV del forecast a la ficha', () => {
+  it('expone uvIndex en el item puntuado cuando hay forecast', () => {
+    const playa = makePlaya({ id: 'p', travel: { santiago: { cocheMin: 20 } } });
+    const forecast: ForecastIndex = { p: makeForecast({ uvIndex: 9 }) };
+    const { best } = rankBeaches([playa], {
+      base: santiago,
+      date,
+      forecast,
+      prefs: defaultPrefs(),
+    });
+    expect(best?.uvIndex).toBe(9);
+  });
+
+  it('deja uvIndex indefinido si la playa no tiene forecast', () => {
+    const playa = makePlaya({ id: 'p', travel: { santiago: { cocheMin: 20 } } });
+    const { best } = rankBeaches([playa], {
+      base: santiago,
+      date,
+      forecast: {},
+      prefs: defaultPrefs(),
+    });
+    expect(best?.uvIndex).toBeUndefined();
+  });
+});
+
+describe('rankBeaches — propaga las mareas del forecast a la ficha', () => {
+  it('expone las mareas (pleamar/bajamar) en el item puntuado', () => {
+    const playa = makePlaya({ id: 'p', travel: { santiago: { cocheMin: 20 } } });
+    const mareas = [
+      { time: '2026-07-15T08:15:00+02:00', heightM: 3.8, type: 'high' as const },
+      { time: '2026-07-15T14:30:00+02:00', heightM: 0.9, type: 'low' as const },
+    ];
+    const forecast: ForecastIndex = { p: makeForecast({ mareas }) };
+    const { best } = rankBeaches([playa], {
+      base: santiago,
+      date,
+      forecast,
+      prefs: defaultPrefs(),
+    });
+    expect(best?.mareas).toEqual(mareas);
+  });
+});

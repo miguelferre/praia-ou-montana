@@ -83,6 +83,24 @@ export interface Ruta {
   travel: Record<string, TravelLeg>;
 }
 
+/**
+ * Evento de marea (pleamar o bajamar) de la jornada. Contrato interno estable:
+ * la ingesta mapea su fuente a esta forma. `type` usa `high`/`low` en inglés por
+ * neutralidad; la UI lo traduce por idioma.
+ *
+ * Fuente v1: Open-Meteo `sea_level_height_msl` (sin key), de la que se extraen los
+ * extremos horarios. La hora es fiable; la altura va referida a la media del mar
+ * (no al cero hidrográfico de las tablas náuticas) y a 8 km de resolución, así que
+ * es opcional y se omite mientras la fuente no dé una altura comparable.
+ */
+export interface TideEvent {
+  /** Instante del evento, ISO 8601 con zona (Europe/Madrid). */
+  time: string;
+  type: 'high' | 'low';
+  /** Altura en metros, si la fuente da una referencia comparable. */
+  heightM?: number;
+}
+
 /** Predicción diaria para un punto (playa o concello). Fuente Open-Meteo en v0. */
 export interface Forecast {
   /** ISO date YYYY-MM-DD */
@@ -102,6 +120,8 @@ export interface Forecast {
   tempAguaC?: number;
   /** Altura de ola (m) */
   oleajeM?: number;
+  /** Mareas del día, ordenadas por hora (solo costa, Open-Meteo). */
+  mareas?: TideEvent[];
 }
 
 /** Mapa destinoId → forecast del día. */
