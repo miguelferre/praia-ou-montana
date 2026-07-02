@@ -9,9 +9,10 @@ import { WeightSliders } from '@/components/WeightSliders';
 import { getDict, type Lang } from '@/i18n';
 import { DEFAULT_PESOS } from '@/lib/core/prefs';
 import type { ScoredItem } from '@/lib/core/result';
-import type { Base, Modo, Pesos, UserPrefs } from '@/lib/core/types';
+import type { Base, Modo, Pesos, Playa, Ruta, UserPrefs } from '@/lib/core/types';
 import { loadAppData, type AppData } from '@/lib/data/load';
 import type { GeoPlace } from '@/lib/data/geocode';
+import { fetchCustomTravel, type TravelPoint } from '@/lib/data/travel';
 import { plan } from '@/lib/planner';
 import { CUSTOM_BASE_ID, readUrlState, writeUrlState } from '@/lib/ui/url-state';
 
@@ -49,6 +50,8 @@ export default function Dashboard() {
   const [mapMetric, setMapMetric] = useState<MapMetric>('score');
   const [activeId, setActiveId] = useState<string | null>(null);
   const [date] = useState(() => new Date());
+  const [customTravel, setCustomTravel] = useState<Record<string, number> | null>(null);
+  const [travelState, setTravelState] = useState<'idle' | 'loading' | 'real' | 'approx'>('idle');
 
   const dict = getDict(lang);
 
@@ -77,6 +80,36 @@ export default function Dashboard() {
     });
   }, [baseId, customBase, modo, lang, requierePmr, maxViajeMin, pesos, tab]);
 
+  // Base libre: pide a OSRM los tiempos de coche reales (las bases preset ya los traen
+  // precalculados). Progresivo y tolerante a fallos; cae a la estimación si algo falla.
+  useEffect(() => {
+    if (baseId !== CUSTOM_BASE_ID || !customBase || !data) {
+      setCustomTravel(null);
+      setTravelState('idle');
+      return;
+    }
+    const ctrl = new AbortController();
+    setTravelState('loading');
+    setCustomTravel(null);
+    const points: TravelPoint[] = [
+      ...data.playas.map((p) => ({ id: p.id, lat: p.lat, lon: p.lon })),
+      ...data.rutas.map((r) => ({ id: r.id, lat: r.latInicio, lon: r.lonInicio })),
+    ];
+    fetchCustomTravel({ lat: customBase.lat, lon: customBase.lon }, points, {
+      signal: ctrl.signal,
+      onProgress: (m) => setCustomTravel({ ...m }),
+    })
+      .then((res) => {
+        setCustomTravel(res.minutes);
+        setTravelState(res.partial ? 'approx' : 'real');
+      })
+      .catch((err: unknown) => {
+        if (err instanceof DOMException && err.name === 'AbortError') return;
+        setTravelState('approx');
+      });
+    return () => ctrl.abort();
+  }, [baseId, customBase, data]);
+
   const base: Base | undefined = useMemo(() => {
     if (baseId === CUSTOM_BASE_ID && customBase) {
       return {
@@ -89,12 +122,31 @@ export default function Dashboard() {
     return data?.bases.find((b) => b.id === baseId) ?? data?.bases[0];
   }, [baseId, customBase, data]);
 
+  // Inyecta el tiempo real de la base libre (clave 'custom') en el catálogo para que el
+  // ranking lo use igual que el de una base preset; sin él cae a roughDriveMinutes.
+  const catalogForPlan = useMemo(() => {
+    if (!data) return null;
+    if (baseId !== CUSTOM_BASE_ID || !customTravel) {
+      return { playas: data.playas, rutas: data.rutas };
+    }
+    const t = customTravel;
+    const playas: Playa[] = data.playas.map((p) => {
+      const m = t[p.id];
+      return m == null ? p : { ...p, travel: { ...p.travel, [CUSTOM_BASE_ID]: { cocheMin: m } } };
+    });
+    const rutas: Ruta[] = data.rutas.map((r) => {
+      const m = t[r.id];
+      return m == null ? r : { ...r, travel: { ...r.travel, [CUSTOM_BASE_ID]: { cocheMin: m } } };
+    });
+    return { playas, rutas };
+  }, [data, baseId, customTravel]);
+
   // Cuando la base es libre, se añade como opción al selector (no está en bases.json).
   const basesForSelect: Base[] =
     base?.id === CUSTOM_BASE_ID ? [...(data?.bases ?? []), base] : (data?.bases ?? []);
 
   const result = useMemo(() => {
-    if (!data || !base) return null;
+    if (!data || !base || !catalogForPlan) return null;
     const prefs: UserPrefs = {
       baseId: base.id,
       modo,
@@ -105,13 +157,13 @@ export default function Dashboard() {
       pesos,
     };
     return plan({
-      catalog: { playas: data.playas, rutas: data.rutas },
+      catalog: catalogForPlan,
       base,
       date,
       forecast: data.forecast,
       prefs,
     });
-  }, [data, base, modo, maxViajeMin, requierePmr, pesos, date]);
+  }, [data, base, catalogForPlan, modo, maxViajeMin, requierePmr, pesos, date]);
 
   if (loadError) {
     return (
@@ -164,6 +216,7 @@ export default function Dashboard() {
         onMax={setMaxViajeMin}
         lang={lang}
         onLang={setLang}
+        travelState={baseId === CUSTOM_BASE_ID ? travelState : 'idle'}
         dict={dict}
       />
 

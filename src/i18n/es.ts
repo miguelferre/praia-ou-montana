@@ -17,6 +17,8 @@ export const es = {
     baseSearching: 'Buscando…',
     baseNotFound: 'Sin resultados',
     baseApprox: 'Base libre: los tiempos de viaje son estimados (línea recta).',
+    baseCalculating: 'Base libre: calculando tiempos de viaje reales…',
+    baseReal: 'Base libre: tiempos de viaje reales por carretera.',
   },
   verdict: {
     heading: 'Hoy mejor…',

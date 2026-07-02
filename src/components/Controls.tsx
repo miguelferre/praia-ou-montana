@@ -17,6 +17,7 @@ interface Props {
   onMax: (v: number) => void;
   lang: Lang;
   onLang: (l: Lang) => void;
+  travelState?: 'idle' | 'loading' | 'real' | 'approx';
   dict: Dict;
 }
 
@@ -34,6 +35,7 @@ export function Controls(props: Props) {
     onMax,
     lang,
     onLang,
+    travelState = 'idle',
     dict,
   } = props;
 
@@ -50,7 +52,13 @@ export function Controls(props: Props) {
         </select>
         <BaseSearch onPick={onCustomBase} dict={dict} />
         {baseId === CUSTOM_BASE_ID && (
-          <span className="field-hint">{dict.controls.baseApprox}</span>
+          <span className="field-hint">
+            {travelState === 'loading'
+              ? dict.controls.baseCalculating
+              : travelState === 'real'
+                ? dict.controls.baseReal
+                : dict.controls.baseApprox}
+          </span>
         )}
       </div>
 

@@ -18,6 +18,8 @@ export const gl: Dict = {
     baseSearching: 'Buscando…',
     baseNotFound: 'Sen resultados',
     baseApprox: 'Base libre: os tempos de viaxe son estimados (liña recta).',
+    baseCalculating: 'Base libre: calculando os tempos de viaxe reais…',
+    baseReal: 'Base libre: tempos de viaxe reais por estrada.',
   },
   verdict: {
     heading: 'Hoxe mellor…',
