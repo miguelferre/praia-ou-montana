@@ -444,9 +444,12 @@ input[type='range'] {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  color: white;
+  /* Tinta oscura, no blanco: sobre la escala de puntuación (L≈0.62) el blanco queda
+     en 3:1. La tinta a 1.2rem/700 cuenta como "texto grande" (≥18.66px bold), cuyo
+     umbral AA es 3:1 y el contraste real (~4.5:1) lo supera. Ver tests/e2e/a11y.spec.ts. */
+  color: var(--ink);
   font-weight: 700;
-  font-size: 1.02rem;
+  font-size: 1.2rem;
   font-variant-numeric: tabular-nums;
 }
 
