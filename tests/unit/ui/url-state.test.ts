@@ -10,7 +10,6 @@ describe('readUrlState — valores por defecto', () => {
     const s = readUrlState('', 'santiago');
     expect(s.baseId).toBe('santiago');
     expect(s.modo).toBe('auto');
-    expect(s.lang).toBe('es');
     expect(s.requierePmr).toBe(false);
     expect(s.maxViajeMin).toBe(90);
     expect(s.pesos).toEqual(DEFAULT_PESOS);
@@ -19,19 +18,17 @@ describe('readUrlState — valores por defecto', () => {
 });
 
 describe('readUrlState — parámetros base', () => {
-  it('lee base, modo, lang, pmr y max', () => {
-    const s = readUrlState('?base=esteiro&modo=solo_playa&lang=gl&pmr=1&max=30', 'santiago');
+  it('lee base, modo, pmr y max', () => {
+    const s = readUrlState('?base=esteiro&modo=solo_playa&pmr=1&max=30', 'santiago');
     expect(s.baseId).toBe('esteiro');
     expect(s.modo).toBe('solo_playa');
-    expect(s.lang).toBe('gl');
     expect(s.requierePmr).toBe(true);
     expect(s.maxViajeMin).toBe(30);
   });
 
-  it('descarta valores inválidos de modo, lang y max', () => {
-    const s = readUrlState('?modo=volar&lang=fr&max=-5', 'santiago');
+  it('descarta valores inválidos de modo y max', () => {
+    const s = readUrlState('?modo=volar&max=-5', 'santiago');
     expect(s.modo).toBe('auto');
-    expect(s.lang).toBe('es');
     expect(s.maxViajeMin).toBe(90);
   });
 });

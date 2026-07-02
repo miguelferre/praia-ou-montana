@@ -6,7 +6,7 @@ import { MapDashboard, type MapMetric } from '@/components/MapDashboard';
 import { Methodology } from '@/components/Methodology';
 import { VerdictCard } from '@/components/VerdictCard';
 import { WeightSliders } from '@/components/WeightSliders';
-import { getDict, type Lang } from '@/i18n';
+import { DEFAULT_LANG, getDict, type Lang } from '@/i18n';
 import { DEFAULT_PESOS } from '@/lib/core/prefs';
 import type { ScoredItem } from '@/lib/core/result';
 import type { Base, Modo, Pesos, Playa, Ruta, UserPrefs } from '@/lib/core/types';
@@ -20,7 +20,7 @@ function idOf(it: ScoredItem): string {
   return it.kind === 'playa' ? it.playa.id : it.ruta.id;
 }
 
-export default function Dashboard() {
+export default function Dashboard({ lang: initialLang = DEFAULT_LANG }: { lang?: Lang }) {
   const initial = useMemo(
     () => readUrlState(typeof window !== 'undefined' ? window.location.search : '', 'santiago'),
     [],
@@ -28,7 +28,8 @@ export default function Dashboard() {
 
   const [data, setData] = useState<AppData | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
-  const [lang, setLang] = useState<Lang>(initial.lang);
+  // El idioma lo fija la ruta (/ = es, /gl/ = gl); el toggle navega a la otra ruta.
+  const lang = initialLang;
   const [baseId, setBaseId] = useState(initial.baseId);
   const [customBase, setCustomBase] = useState<GeoPlace | null>(
     initial.baseId === CUSTOM_BASE_ID &&
@@ -41,6 +42,11 @@ export default function Dashboard() {
   function pickCustomBase(p: GeoPlace) {
     setCustomBase(p);
     setBaseId(CUSTOM_BASE_ID);
+  }
+  // Cambiar de idioma navega a la ruta espejo, conservando el estado (va en la query).
+  function switchLang(next: Lang) {
+    if (next === lang) return;
+    window.location.assign((next === 'gl' ? '/gl/' : '/') + window.location.search);
   }
   const [modo, setModo] = useState<Modo>(initial.modo);
   const [requierePmr, setRequierePmr] = useState(initial.requierePmr);
@@ -72,13 +78,12 @@ export default function Dashboard() {
         ? { baseLat: customBase.lat, baseLon: customBase.lon, baseName: customBase.nombre }
         : {}),
       modo,
-      lang,
       requierePmr,
       maxViajeMin,
       pesos,
       tab,
     });
-  }, [baseId, customBase, modo, lang, requierePmr, maxViajeMin, pesos, tab]);
+  }, [baseId, customBase, modo, requierePmr, maxViajeMin, pesos, tab]);
 
   // Base libre: pide a OSRM los tiempos de coche reales (las bases preset ya los traen
   // precalculados). Progresivo y tolerante a fallos; cae a la estimación si algo falla.
@@ -215,7 +220,7 @@ export default function Dashboard() {
         maxViajeMin={maxViajeMin}
         onMax={setMaxViajeMin}
         lang={lang}
-        onLang={setLang}
+        onLang={switchLang}
         travelState={baseId === CUSTOM_BASE_ID ? travelState : 'idle'}
         dict={dict}
       />

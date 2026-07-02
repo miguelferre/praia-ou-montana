@@ -1,6 +1,5 @@
 import { DEFAULT_PESOS } from '@/lib/core/prefs';
 import type { Modo, Pesos } from '@/lib/core/types';
-import { DEFAULT_LANG, isLang, type Lang } from '@/i18n';
 
 /** Pestaña activa de la lista/mapa (playa o ruta). */
 export type PanelTab = 'playa' | 'ruta';
@@ -13,7 +12,6 @@ export interface UrlState {
   baseLon?: number;
   baseName?: string;
   modo: Modo;
-  lang: Lang;
   requierePmr: boolean;
   maxViajeMin: number;
   /** Pesos del motor: se comparten para reproducir el mismo ranking. */
@@ -74,7 +72,6 @@ function samePesos(a: Pesos, b: Pesos): boolean {
 export function readUrlState(search: string, fallbackBase: string): UrlState {
   const p = new URLSearchParams(search);
   const modoRaw = p.get('modo') ?? 'auto';
-  const langRaw = p.get('lang') ?? DEFAULT_LANG;
   const maxRaw = Number(p.get('max'));
   const tabRaw = p.get('tab');
   const baseId = p.get('base') ?? fallbackBase;
@@ -89,7 +86,6 @@ export function readUrlState(search: string, fallbackBase: string): UrlState {
     ...(baseLon !== undefined ? { baseLon } : {}),
     ...(baseName !== undefined ? { baseName } : {}),
     modo: isModo(modoRaw) ? modoRaw : 'auto',
-    lang: isLang(langRaw) ? langRaw : DEFAULT_LANG,
     requierePmr: p.get('pmr') === '1',
     maxViajeMin: Number.isFinite(maxRaw) && maxRaw > 0 ? maxRaw : 90,
     pesos: decodePesos(p.get('w')),
@@ -110,7 +106,6 @@ export function writeUrlState(state: UrlState): void {
     if (state.baseName) p.set('bn', state.baseName);
   }
   p.set('modo', state.modo);
-  p.set('lang', state.lang);
   if (state.requierePmr) p.set('pmr', '1');
   if (state.maxViajeMin !== 90) p.set('max', String(state.maxViajeMin));
   // Solo se añaden a la URL cuando difieren del defecto, para no ensuciarla.
