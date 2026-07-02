@@ -49,8 +49,10 @@ La curación manual (`data/mapping/curado_*.csv`) es el activo de calidad: marca
 
 ## Rutas
 
-- **OSM / Waymarked Trails** (v1): relaciones `route=hiking`, geometría, GPX. Desnivel vía DEM/Open-Elevation.
-- **Wikiloc**: NO tiene API. Solo **enlace** curado (encaja con "la app no hace la ruta"). No scrapear trazados.
+- **OSM Overpass** ✅ (`scripts/ingest/build_routes.py`): relaciones `route=hiking` **locales/regionales** (`network` lwn/rwn) de Galicia. Se excluyen los Caminos de Santiago (nwn/iwn, decenas de km) y se filtra a **3–25 km** (senderismo de día). Por ruta: longitud (tag `distance` o geometría), **desnivel positivo** (tag `ascent`, o muestreo de la elevación de Open-Meteo con banda de histéresis anti-ruido), circular vs lineal (`roundtrip` o inicio≈fin), dificultad (heurística km+desnivel) y **concello** (reverse de Nominatim; se descartan las de fuera de Galicia).
+  - _Caveats_: el desnivel es una **estimación** (DEM ~90 m + histéresis); en rutas largas o con variantes solapadas puede quedar alto. La longitud del tag `distance` es más fiable que la geométrica cuando existe. Sin altura/GPX: la app propone y enlaza, no ejecuta la ruta.
+- **Rutas semilla curadas**: 5 rutas top con `wikilocUrl` a mano; `build_routes.py` las **preserva** y deduplica las de OSM por proximidad de inicio (<400 m).
+- **Waymarked Trails / Wikiloc** (futuro): enriquecer con más metadatos; Wikiloc NO tiene API (solo enlace curado, no scrapear trazados).
 
 ## Transporte
 

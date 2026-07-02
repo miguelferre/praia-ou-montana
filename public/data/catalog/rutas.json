@@ -113,5 +113,4513 @@
         "cocheMin": 70
       }
     }
+  },
+  {
+    "id": "osm-2096316",
+    "osmRelationId": 2096316,
+    "nombre": "De ponte a ponte polo río Sarela",
+    "concello": "Santiago de Compostela",
+    "latInicio": 42.90484,
+    "lonInicio": -8.54653,
+    "km": 8,
+    "desnivelPosM": 188,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 10
+      },
+      "esteiro": {
+        "cocheMin": 52
+      },
+      "sanxenxo": {
+        "cocheMin": 61
+      }
+    }
+  },
+  {
+    "id": "osm-2389913",
+    "osmRelationId": 2389913,
+    "nombre": "Sendero Quintá-Río Donsal",
+    "concello": "Becerreá",
+    "latInicio": 42.96566,
+    "lonInicio": -7.10969,
+    "km": 15,
+    "desnivelPosM": 1339,
+    "tipo": "lineal",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 116
+      },
+      "esteiro": {
+        "cocheMin": 149
+      },
+      "sanxenxo": {
+        "cocheMin": 158
+      }
+    }
+  },
+  {
+    "id": "osm-2415483",
+    "osmRelationId": 2415483,
+    "nombre": "Senda litoral de Liméns-Areamilla",
+    "concello": "Cangas de Morrazo",
+    "latInicio": 42.25048,
+    "lonInicio": -8.79459,
+    "km": 4,
+    "desnivelPosM": 237,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 73
+      },
+      "esteiro": {
+        "cocheMin": 95
+      },
+      "sanxenxo": {
+        "cocheMin": 47
+      }
+    }
+  },
+  {
+    "id": "osm-2418246",
+    "osmRelationId": 2418246,
+    "nombre": "Sendeiro histórico de Mos",
+    "concello": "Mos",
+    "latInicio": 42.20398,
+    "lonInicio": -8.60511,
+    "km": 15,
+    "desnivelPosM": 1025,
+    "tipo": "lineal",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 75
+      },
+      "esteiro": {
+        "cocheMin": 97
+      },
+      "sanxenxo": {
+        "cocheMin": 49
+      }
+    }
+  },
+  {
+    "id": "osm-2536060",
+    "osmRelationId": 2536060,
+    "nombre": "Ruta da agua de Guitiriz",
+    "concello": "Guitiriz",
+    "latInicio": 43.17187,
+    "lonInicio": -7.79374,
+    "km": 18,
+    "desnivelPosM": 225,
+    "tipo": "lineal",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 74
+      },
+      "esteiro": {
+        "cocheMin": 106
+      },
+      "sanxenxo": {
+        "cocheMin": 115
+      }
+    }
+  },
+  {
+    "id": "osm-2583727",
+    "osmRelationId": 2583727,
+    "nombre": "Sendeiro de San Xoán da Cova",
+    "concello": "Vedra",
+    "latInicio": 42.74522,
+    "lonInicio": -8.4731,
+    "km": 11,
+    "desnivelPosM": 430,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 26
+      },
+      "esteiro": {
+        "cocheMin": 57
+      },
+      "sanxenxo": {
+        "cocheMin": 66
+      }
+    }
+  },
+  {
+    "id": "osm-2591985",
+    "osmRelationId": 2591985,
+    "nombre": "Sendeiro Natural Aciveiro-Candán",
+    "concello": "Forcarei",
+    "latInicio": 42.61989,
+    "lonInicio": -8.28058,
+    "km": 14,
+    "desnivelPosM": 500,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 47
+      },
+      "esteiro": {
+        "cocheMin": 78
+      },
+      "sanxenxo": {
+        "cocheMin": 63
+      }
+    }
+  },
+  {
+    "id": "osm-2591989",
+    "osmRelationId": 2591989,
+    "nombre": "Rota da Ribeira do Ulla",
+    "concello": "Touro",
+    "latInicio": 42.83128,
+    "lonInicio": -8.29294,
+    "km": 24,
+    "desnivelPosM": 604,
+    "tipo": "lineal",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 52
+      },
+      "esteiro": {
+        "cocheMin": 86
+      },
+      "sanxenxo": {
+        "cocheMin": 94
+      }
+    }
+  },
+  {
+    "id": "osm-2598806",
+    "osmRelationId": 2598806,
+    "nombre": "Circular do Galiñeiro",
+    "concello": "Gondomar",
+    "latInicio": 42.15402,
+    "lonInicio": -8.72109,
+    "km": 9,
+    "desnivelPosM": 226,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 73
+      },
+      "esteiro": {
+        "cocheMin": 95
+      },
+      "sanxenxo": {
+        "cocheMin": 48
+      }
+    }
+  },
+  {
+    "id": "osm-2598833",
+    "osmRelationId": 2598833,
+    "nombre": "Camiño Real de San Pedro de Rocas",
+    "concello": "Esgos",
+    "latInicio": 42.32696,
+    "lonInicio": -7.69755,
+    "km": 8,
+    "desnivelPosM": 203,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 91
+      },
+      "esteiro": {
+        "cocheMin": 122
+      },
+      "sanxenxo": {
+        "cocheMin": 114
+      }
+    }
+  },
+  {
+    "id": "osm-2598849",
+    "osmRelationId": 2598849,
+    "nombre": "Galiñeiro-Aloia",
+    "concello": "Gondomar",
+    "latInicio": 42.1418,
+    "lonInicio": -8.70996,
+    "km": 9,
+    "desnivelPosM": 220,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 89
+      },
+      "esteiro": {
+        "cocheMin": 110
+      },
+      "sanxenxo": {
+        "cocheMin": 63
+      }
+    }
+  },
+  {
+    "id": "osm-2824512",
+    "osmRelationId": 2824512,
+    "nombre": "Ruta dos Montes de San Cibrán",
+    "concello": "Ponteareas",
+    "latInicio": 42.16246,
+    "lonInicio": -8.57819,
+    "km": 4,
+    "desnivelPosM": 101,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 79
+      },
+      "esteiro": {
+        "cocheMin": 101
+      },
+      "sanxenxo": {
+        "cocheMin": 53
+      }
+    }
+  },
+  {
+    "id": "osm-3005937",
+    "osmRelationId": 3005937,
+    "nombre": "Sendeiro Frei Martín Sarmiento",
+    "concello": "Cerdedo Cotobade",
+    "latInicio": 42.52619,
+    "lonInicio": -8.36561,
+    "km": 11,
+    "desnivelPosM": 265,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 69
+      },
+      "esteiro": {
+        "cocheMin": 99
+      },
+      "sanxenxo": {
+        "cocheMin": 59
+      }
+    }
+  },
+  {
+    "id": "osm-3170018",
+    "osmRelationId": 3170018,
+    "nombre": "Sendeiro das Fragas e levadas do Calvo e Deva",
+    "concello": "A Caniza",
+    "latInicio": 42.18717,
+    "lonInicio": -8.29805,
+    "km": 16,
+    "desnivelPosM": 394,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 95
+      },
+      "esteiro": {
+        "cocheMin": 125
+      },
+      "sanxenxo": {
+        "cocheMin": 80
+      }
+    }
+  },
+  {
+    "id": "osm-3171938",
+    "osmRelationId": 3171938,
+    "nombre": "Ruta dos Tres Ríos",
+    "concello": "Touro",
+    "latInicio": 42.8499,
+    "lonInicio": -8.27755,
+    "km": 8,
+    "desnivelPosM": 590,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 48
+      },
+      "esteiro": {
+        "cocheMin": 82
+      },
+      "sanxenxo": {
+        "cocheMin": 91
+      }
+    }
+  },
+  {
+    "id": "osm-3172155",
+    "osmRelationId": 3172155,
+    "nombre": "Sendeiro Laxe-Traba",
+    "concello": "Laxe",
+    "latInicio": 43.21429,
+    "lonInicio": -9.01822,
+    "km": 8,
+    "desnivelPosM": 189,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 84
+      },
+      "esteiro": {
+        "cocheMin": 88
+      },
+      "sanxenxo": {
+        "cocheMin": 123
+      }
+    }
+  },
+  {
+    "id": "osm-3172156",
+    "osmRelationId": 3172156,
+    "nombre": "Sendeiro Laxe-Punta Insua",
+    "concello": "Laxe",
+    "latInicio": 43.22224,
+    "lonInicio": -9.00534,
+    "km": 5,
+    "desnivelPosM": 163,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 83
+      },
+      "esteiro": {
+        "cocheMin": 87
+      },
+      "sanxenxo": {
+        "cocheMin": 122
+      }
+    }
+  },
+  {
+    "id": "osm-3172617",
+    "osmRelationId": 3172617,
+    "nombre": "Ruta dos ríos Vilacova e San Xusto",
+    "concello": "Lousame",
+    "latInicio": 42.78913,
+    "lonInicio": -8.86365,
+    "km": 19,
+    "desnivelPosM": 774,
+    "tipo": "lineal",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 36
+      },
+      "esteiro": {
+        "cocheMin": 19
+      },
+      "sanxenxo": {
+        "cocheMin": 67
+      }
+    }
+  },
+  {
+    "id": "osm-3172666",
+    "osmRelationId": 3172666,
+    "nombre": "sendeiro de Visantoña",
+    "concello": "Santiso",
+    "latInicio": 42.87674,
+    "lonInicio": -8.13153,
+    "km": 15,
+    "desnivelPosM": 533,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 47
+      },
+      "esteiro": {
+        "cocheMin": 81
+      },
+      "sanxenxo": {
+        "cocheMin": 90
+      }
+    }
+  },
+  {
+    "id": "osm-3172784",
+    "osmRelationId": 3172784,
+    "nombre": "Ruta do Xabriña",
+    "concello": "Covelo",
+    "latInicio": 42.20299,
+    "lonInicio": -8.388,
+    "km": 16,
+    "desnivelPosM": 575,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 91
+      },
+      "esteiro": {
+        "cocheMin": 113
+      },
+      "sanxenxo": {
+        "cocheMin": 65
+      }
+    }
+  },
+  {
+    "id": "osm-3172813",
+    "osmRelationId": 3172813,
+    "nombre": "Ruta das Almiñas e foxo do lobo",
+    "concello": "Ponte Caldelas",
+    "latInicio": 42.40311,
+    "lonInicio": -8.48282,
+    "km": 11,
+    "desnivelPosM": 529,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 71
+      },
+      "esteiro": {
+        "cocheMin": 93
+      },
+      "sanxenxo": {
+        "cocheMin": 45
+      }
+    }
+  },
+  {
+    "id": "osm-3181385",
+    "osmRelationId": 3181385,
+    "nombre": "A Vía Escondida",
+    "concello": "Cerdedo Cotobade",
+    "latInicio": 42.48649,
+    "lonInicio": -8.54596,
+    "km": 13,
+    "desnivelPosM": 729,
+    "tipo": "lineal",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 62
+      },
+      "esteiro": {
+        "cocheMin": 83
+      },
+      "sanxenxo": {
+        "cocheMin": 36
+      }
+    }
+  },
+  {
+    "id": "osm-3186603",
+    "osmRelationId": 3186603,
+    "nombre": "Costa Norte de Oleiros",
+    "concello": "Oleiros",
+    "latInicio": 43.37678,
+    "lonInicio": -8.33769,
+    "km": 24,
+    "desnivelPosM": 589,
+    "tipo": "lineal",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 59
+      },
+      "esteiro": {
+        "cocheMin": 91
+      },
+      "sanxenxo": {
+        "cocheMin": 100
+      }
+    }
+  },
+  {
+    "id": "osm-3501415",
+    "osmRelationId": 3501415,
+    "nombre": "As Fragas da Ribeira e Lostegal",
+    "concello": "As Pontes de García Rodríguez",
+    "latInicio": 43.44845,
+    "lonInicio": -7.84361,
+    "km": 20,
+    "desnivelPosM": 488,
+    "tipo": "circular",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 89
+      },
+      "esteiro": {
+        "cocheMin": 121
+      },
+      "sanxenxo": {
+        "cocheMin": 130
+      }
+    }
+  },
+  {
+    "id": "osm-3599254",
+    "osmRelationId": 3599254,
+    "nombre": "Canón do Sil - Santa Cristina",
+    "concello": "Parada de Sil",
+    "latInicio": 42.38258,
+    "lonInicio": -7.56847,
+    "km": 19,
+    "desnivelPosM": 905,
+    "tipo": "circular",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 122
+      },
+      "esteiro": {
+        "cocheMin": 152
+      },
+      "sanxenxo": {
+        "cocheMin": 145
+      }
+    }
+  },
+  {
+    "id": "osm-3631441",
+    "osmRelationId": 3631441,
+    "nombre": "Roteiro da Ermida",
+    "concello": "Toques",
+    "latInicio": 42.9782,
+    "lonInicio": -7.94975,
+    "km": 9,
+    "desnivelPosM": 225,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 60
+      },
+      "esteiro": {
+        "cocheMin": 94
+      },
+      "sanxenxo": {
+        "cocheMin": 103
+      }
+    }
+  },
+  {
+    "id": "osm-3631442",
+    "osmRelationId": 3631442,
+    "nombre": "Ruta dos Megalitos",
+    "concello": "Toques",
+    "latInicio": 42.99282,
+    "lonInicio": -7.95463,
+    "km": 12,
+    "desnivelPosM": 300,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 62
+      },
+      "esteiro": {
+        "cocheMin": 95
+      },
+      "sanxenxo": {
+        "cocheMin": 104
+      }
+    }
+  },
+  {
+    "id": "osm-3631551",
+    "osmRelationId": 3631551,
+    "nombre": "Roteiro das Fervenzas de Toques",
+    "concello": "Toques",
+    "latInicio": 42.96894,
+    "lonInicio": -7.96382,
+    "km": 11,
+    "desnivelPosM": 100,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 58
+      },
+      "esteiro": {
+        "cocheMin": 92
+      },
+      "sanxenxo": {
+        "cocheMin": 101
+      }
+    }
+  },
+  {
+    "id": "osm-3668012",
+    "osmRelationId": 3668012,
+    "nombre": "Ruta das Fervanzas",
+    "concello": "Carballo",
+    "latInicio": 43.12324,
+    "lonInicio": -8.68276,
+    "km": 21,
+    "desnivelPosM": 230,
+    "tipo": "lineal",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 44
+      },
+      "esteiro": {
+        "cocheMin": 67
+      },
+      "sanxenxo": {
+        "cocheMin": 87
+      }
+    }
+  },
+  {
+    "id": "osm-3728531",
+    "osmRelationId": 3728531,
+    "nombre": "Ruta de riamonte",
+    "concello": "Ames",
+    "latInicio": 42.9105,
+    "lonInicio": -8.64508,
+    "km": 7,
+    "desnivelPosM": 350,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 25
+      },
+      "esteiro": {
+        "cocheMin": 42
+      },
+      "sanxenxo": {
+        "cocheMin": 62
+      }
+    }
+  },
+  {
+    "id": "osm-3736192",
+    "osmRelationId": 3736192,
+    "nombre": "riveira do rio tambre",
+    "concello": "A Baña",
+    "latInicio": 42.93857,
+    "lonInicio": -8.69178,
+    "km": 5,
+    "desnivelPosM": 20,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 33
+      },
+      "esteiro": {
+        "cocheMin": 49
+      },
+      "sanxenxo": {
+        "cocheMin": 70
+      }
+    }
+  },
+  {
+    "id": "osm-3860394",
+    "osmRelationId": 3860394,
+    "nombre": "Os Cerqueiros",
+    "concello": "Monfero",
+    "latInicio": 43.35191,
+    "lonInicio": -8.00343,
+    "km": 7,
+    "desnivelPosM": 300,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 88
+      },
+      "esteiro": {
+        "cocheMin": 120
+      },
+      "sanxenxo": {
+        "cocheMin": 129
+      }
+    }
+  },
+  {
+    "id": "osm-3860395",
+    "osmRelationId": 3860395,
+    "nombre": "Pena Fesa",
+    "concello": "Monfero",
+    "latInicio": 43.34299,
+    "lonInicio": -7.99708,
+    "km": 10,
+    "desnivelPosM": 50,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 91
+      },
+      "esteiro": {
+        "cocheMin": 123
+      },
+      "sanxenxo": {
+        "cocheMin": 132
+      }
+    }
+  },
+  {
+    "id": "osm-3860412",
+    "osmRelationId": 3860412,
+    "nombre": "Os Cumios de Sanguiñedo",
+    "concello": "Monfero",
+    "latInicio": 43.37444,
+    "lonInicio": -8.01317,
+    "km": 12,
+    "desnivelPosM": 309,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 89
+      },
+      "esteiro": {
+        "cocheMin": 122
+      },
+      "sanxenxo": {
+        "cocheMin": 130
+      }
+    }
+  },
+  {
+    "id": "osm-3916101",
+    "osmRelationId": 3916101,
+    "nombre": "Ruta do Mera",
+    "concello": "Lugo",
+    "latInicio": 43.00064,
+    "lonInicio": -7.6109,
+    "km": 4,
+    "desnivelPosM": 107,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 78
+      },
+      "esteiro": {
+        "cocheMin": 112
+      },
+      "sanxenxo": {
+        "cocheMin": 121
+      }
+    }
+  },
+  {
+    "id": "osm-4024615",
+    "osmRelationId": 4024615,
+    "nombre": "Ruta do Monte Faro",
+    "concello": "Rodeiro",
+    "latInicio": 42.66427,
+    "lonInicio": -7.88883,
+    "km": 12,
+    "desnivelPosM": 916,
+    "tipo": "lineal",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 63
+      },
+      "esteiro": {
+        "cocheMin": 93
+      },
+      "sanxenxo": {
+        "cocheMin": 101
+      }
+    }
+  },
+  {
+    "id": "osm-4224874",
+    "osmRelationId": 4224874,
+    "nombre": "Senda do Arenteiro",
+    "concello": "O Carballiño",
+    "latInicio": 42.42494,
+    "lonInicio": -8.09375,
+    "km": 12,
+    "desnivelPosM": 359,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 66
+      },
+      "esteiro": {
+        "cocheMin": 96
+      },
+      "sanxenxo": {
+        "cocheMin": 75
+      }
+    }
+  },
+  {
+    "id": "osm-4777136",
+    "osmRelationId": 4777136,
+    "nombre": "Subida ao Monte da Muralla",
+    "concello": "Rianxo",
+    "latInicio": 42.72575,
+    "lonInicio": -8.77985,
+    "km": 17,
+    "desnivelPosM": 670,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 49
+      },
+      "esteiro": {
+        "cocheMin": 52
+      },
+      "sanxenxo": {
+        "cocheMin": 59
+      }
+    }
+  },
+  {
+    "id": "osm-5200853",
+    "osmRelationId": 5200853,
+    "nombre": "Senda da Fraga do Barragán",
+    "concello": "Pazos de Borbén",
+    "latInicio": 42.31339,
+    "lonInicio": -8.48661,
+    "km": 17,
+    "desnivelPosM": 516,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 85
+      },
+      "esteiro": {
+        "cocheMin": 107
+      },
+      "sanxenxo": {
+        "cocheMin": 60
+      }
+    }
+  },
+  {
+    "id": "osm-5434597",
+    "osmRelationId": 5434597,
+    "nombre": "Ruta da Pedra e da Auga",
+    "concello": "Ribadumia",
+    "latInicio": 42.49262,
+    "lonInicio": -8.77047,
+    "km": 7,
+    "desnivelPosM": 478,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 48
+      },
+      "esteiro": {
+        "cocheMin": 70
+      },
+      "sanxenxo": {
+        "cocheMin": 13
+      }
+    }
+  },
+  {
+    "id": "osm-5434760",
+    "osmRelationId": 5434760,
+    "nombre": "Ruta do Río San Martiño",
+    "concello": "Meis",
+    "latInicio": 42.4641,
+    "lonInicio": -8.74111,
+    "km": 11,
+    "desnivelPosM": 739,
+    "tipo": "lineal",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 51
+      },
+      "esteiro": {
+        "cocheMin": 73
+      },
+      "sanxenxo": {
+        "cocheMin": 16
+      }
+    }
+  },
+  {
+    "id": "osm-5480612",
+    "osmRelationId": 5480612,
+    "nombre": "Miradoiro da Terra Chá",
+    "concello": "Outeiro de Rei",
+    "latInicio": 43.1192,
+    "lonInicio": -7.67263,
+    "km": 11,
+    "desnivelPosM": 311,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 89
+      },
+      "esteiro": {
+        "cocheMin": 121
+      },
+      "sanxenxo": {
+        "cocheMin": 130
+      }
+    }
+  },
+  {
+    "id": "osm-5489221",
+    "osmRelationId": 5489221,
+    "nombre": "Ruta das Insuas do Miño",
+    "concello": "Outeiro de Rei",
+    "latInicio": 43.12074,
+    "lonInicio": -7.61144,
+    "km": 5,
+    "desnivelPosM": 123,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 86
+      },
+      "esteiro": {
+        "cocheMin": 118
+      },
+      "sanxenxo": {
+        "cocheMin": 127
+      }
+    }
+  },
+  {
+    "id": "osm-5507831",
+    "osmRelationId": 5507831,
+    "nombre": "Ruta do río de Ouro",
+    "concello": "Foz",
+    "latInicio": 43.59341,
+    "lonInicio": -7.29982,
+    "km": 10,
+    "desnivelPosM": 242,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 131
+      },
+      "esteiro": {
+        "cocheMin": 163
+      },
+      "sanxenxo": {
+        "cocheMin": 172
+      }
+    }
+  },
+  {
+    "id": "osm-6086885",
+    "osmRelationId": 6086885,
+    "nombre": "Ruta dos Miradoiros Lobeira - Faro das Lúas",
+    "concello": "Vilanova de Arousa",
+    "latInicio": 42.56367,
+    "lonInicio": -8.76199,
+    "km": 4,
+    "desnivelPosM": 110,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 49
+      },
+      "esteiro": {
+        "cocheMin": 71
+      },
+      "sanxenxo": {
+        "cocheMin": 30
+      }
+    }
+  },
+  {
+    "id": "osm-6259849",
+    "osmRelationId": 6259849,
+    "nombre": "Ruta do Umia",
+    "concello": "Ribadumia",
+    "latInicio": 42.53495,
+    "lonInicio": -8.7523,
+    "km": 6,
+    "desnivelPosM": 138,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 48
+      },
+      "esteiro": {
+        "cocheMin": 70
+      },
+      "sanxenxo": {
+        "cocheMin": 21
+      }
+    }
+  },
+  {
+    "id": "osm-6271187",
+    "osmRelationId": 6271187,
+    "nombre": "Ruta do Río Chanca",
+    "concello": "Meaño",
+    "latInicio": 42.4375,
+    "lonInicio": -8.76056,
+    "km": 7,
+    "desnivelPosM": 175,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 53
+      },
+      "esteiro": {
+        "cocheMin": 74
+      },
+      "sanxenxo": {
+        "cocheMin": 11
+      }
+    }
+  },
+  {
+    "id": "osm-6690032",
+    "osmRelationId": 6690032,
+    "nombre": "Ruta Cornería",
+    "concello": "Foz",
+    "latInicio": 43.54987,
+    "lonInicio": -7.29989,
+    "km": 14,
+    "desnivelPosM": 827,
+    "tipo": "lineal",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 128
+      },
+      "esteiro": {
+        "cocheMin": 160
+      },
+      "sanxenxo": {
+        "cocheMin": 169
+      }
+    }
+  },
+  {
+    "id": "osm-6994271",
+    "osmRelationId": 6994271,
+    "nombre": "Rota da Fraga da Becerreira",
+    "concello": "Trabada",
+    "latInicio": 43.43765,
+    "lonInicio": -7.21167,
+    "km": 4,
+    "desnivelPosM": 412,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 132
+      },
+      "esteiro": {
+        "cocheMin": 164
+      },
+      "sanxenxo": {
+        "cocheMin": 173
+      }
+    }
+  },
+  {
+    "id": "osm-6994272",
+    "osmRelationId": 6994272,
+    "nombre": "Rota do monte Roxal -Teixido",
+    "concello": "Trabada",
+    "latInicio": 43.42468,
+    "lonInicio": -7.23751,
+    "km": 8,
+    "desnivelPosM": 743,
+    "tipo": "circular",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 129
+      },
+      "esteiro": {
+        "cocheMin": 161
+      },
+      "sanxenxo": {
+        "cocheMin": 170
+      }
+    }
+  },
+  {
+    "id": "osm-7514169",
+    "osmRelationId": 7514169,
+    "nombre": "Ruta do Camiño do Miño",
+    "concello": "Outeiro de Rei",
+    "latInicio": 43.15441,
+    "lonInicio": -7.57504,
+    "km": 18,
+    "desnivelPosM": 74,
+    "tipo": "lineal",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 95
+      },
+      "esteiro": {
+        "cocheMin": 128
+      },
+      "sanxenxo": {
+        "cocheMin": 136
+      }
+    }
+  },
+  {
+    "id": "osm-7538341",
+    "osmRelationId": 7538341,
+    "nombre": "O Camiño dos faros. Etapa 5 Arou-Camariñas",
+    "concello": "Camariñas",
+    "latInicio": 43.18489,
+    "lonInicio": -9.10687,
+    "km": 23,
+    "desnivelPosM": 415,
+    "tipo": "lineal",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 83
+      },
+      "esteiro": {
+        "cocheMin": 85
+      },
+      "sanxenxo": {
+        "cocheMin": 120
+      }
+    }
+  },
+  {
+    "id": "osm-7706902",
+    "osmRelationId": 7706902,
+    "nombre": "Ruta da Devesa da Rogueira",
+    "concello": "Folgoso do Courel",
+    "latInicio": 42.6256,
+    "lonInicio": -7.1199,
+    "km": 13,
+    "desnivelPosM": 1785,
+    "tipo": "lineal",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 155
+      },
+      "esteiro": {
+        "cocheMin": 189
+      },
+      "sanxenxo": {
+        "cocheMin": 198
+      }
+    }
+  },
+  {
+    "id": "osm-7793688",
+    "osmRelationId": 7793688,
+    "nombre": "Ruta da Fraga Vella",
+    "concello": "Mondoñedo",
+    "latInicio": 43.44068,
+    "lonInicio": -7.4366,
+    "km": 6,
+    "desnivelPosM": 249,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 127
+      },
+      "esteiro": {
+        "cocheMin": 159
+      },
+      "sanxenxo": {
+        "cocheMin": 168
+      }
+    }
+  },
+  {
+    "id": "osm-8142348",
+    "osmRelationId": 8142348,
+    "nombre": "Ruta do Río Landro",
+    "concello": "Viveiro",
+    "latInicio": 43.65389,
+    "lonInicio": -7.60161,
+    "km": 4,
+    "desnivelPosM": 92,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 126
+      },
+      "esteiro": {
+        "cocheMin": 158
+      },
+      "sanxenxo": {
+        "cocheMin": 167
+      }
+    }
+  },
+  {
+    "id": "osm-8142361",
+    "osmRelationId": 8142361,
+    "nombre": "Ruta do Penedo do Galo",
+    "concello": "Viveiro",
+    "latInicio": 43.66265,
+    "lonInicio": -7.59239,
+    "km": 8,
+    "desnivelPosM": 191,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 130
+      },
+      "esteiro": {
+        "cocheMin": 162
+      },
+      "sanxenxo": {
+        "cocheMin": 171
+      }
+    }
+  },
+  {
+    "id": "osm-8142853",
+    "osmRelationId": 8142853,
+    "nombre": "Sendero Azul Playa de Abrela - Punta Socastro (Fuciño do Porco)",
+    "concello": "O Vicedo",
+    "latInicio": 43.7012,
+    "lonInicio": -7.61501,
+    "km": 3,
+    "desnivelPosM": 75,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 138
+      },
+      "esteiro": {
+        "cocheMin": 170
+      },
+      "sanxenxo": {
+        "cocheMin": 179
+      }
+    }
+  },
+  {
+    "id": "osm-8142942",
+    "osmRelationId": 8142942,
+    "nombre": "Costa de O Vicedo",
+    "concello": "O Vicedo",
+    "latInicio": 43.71718,
+    "lonInicio": -7.6209,
+    "km": 13,
+    "desnivelPosM": 325,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 134
+      },
+      "esteiro": {
+        "cocheMin": 166
+      },
+      "sanxenxo": {
+        "cocheMin": 175
+      }
+    }
+  },
+  {
+    "id": "osm-9039191",
+    "osmRelationId": 9039191,
+    "nombre": "Sendeiro dos Pescadores",
+    "concello": "O Rosal",
+    "latInicio": 41.92781,
+    "lonInicio": -8.77587,
+    "km": 7,
+    "desnivelPosM": 187,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 103
+      },
+      "esteiro": {
+        "cocheMin": 124
+      },
+      "sanxenxo": {
+        "cocheMin": 77
+      }
+    }
+  },
+  {
+    "id": "osm-9499480",
+    "osmRelationId": 9499480,
+    "nombre": "Rota de subida ao Picato",
+    "concello": "Lourenzá",
+    "latInicio": 43.41081,
+    "lonInicio": -7.23858,
+    "km": 8,
+    "desnivelPosM": 188,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 127
+      },
+      "esteiro": {
+        "cocheMin": 159
+      },
+      "sanxenxo": {
+        "cocheMin": 168
+      }
+    }
+  },
+  {
+    "id": "osm-9503482",
+    "osmRelationId": 9503482,
+    "nombre": "Rota do Vento",
+    "concello": "A Pontenova",
+    "latInicio": 43.39413,
+    "lonInicio": -7.23334,
+    "km": 11,
+    "desnivelPosM": 665,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 134
+      },
+      "esteiro": {
+        "cocheMin": 166
+      },
+      "sanxenxo": {
+        "cocheMin": 175
+      }
+    }
+  },
+  {
+    "id": "osm-9523896",
+    "osmRelationId": 9523896,
+    "nombre": "Ruta da Fraga da Vilapena",
+    "concello": "Trabada",
+    "latInicio": 43.41132,
+    "lonInicio": -7.2141,
+    "km": 10,
+    "desnivelPosM": 810,
+    "tipo": "circular",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 135
+      },
+      "esteiro": {
+        "cocheMin": 167
+      },
+      "sanxenxo": {
+        "cocheMin": 176
+      }
+    }
+  },
+  {
+    "id": "osm-10322598",
+    "osmRelationId": 10322598,
+    "nombre": "Ruta Cerceda - Portobrea",
+    "concello": "Cerceda",
+    "latInicio": 43.1834,
+    "lonInicio": -8.46392,
+    "km": 8,
+    "desnivelPosM": 155,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 47
+      },
+      "esteiro": {
+        "cocheMin": 79
+      },
+      "sanxenxo": {
+        "cocheMin": 88
+      }
+    }
+  },
+  {
+    "id": "osm-10978815",
+    "osmRelationId": 10978815,
+    "nombre": "Roteiro Illas Cíes 1: O Monte Faro",
+    "concello": "Vigo",
+    "latInicio": 42.22697,
+    "lonInicio": -8.8994,
+    "km": 4,
+    "desnivelPosM": 554,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 90
+      },
+      "esteiro": {
+        "cocheMin": 112
+      },
+      "sanxenxo": {
+        "cocheMin": 65
+      }
+    }
+  },
+  {
+    "id": "osm-11084647",
+    "osmRelationId": 11084647,
+    "nombre": "Ruta dos Tres Pazos",
+    "concello": "Negreira",
+    "latInicio": 42.91037,
+    "lonInicio": -8.74785,
+    "km": 16,
+    "desnivelPosM": 539,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 28
+      },
+      "esteiro": {
+        "cocheMin": 42
+      },
+      "sanxenxo": {
+        "cocheMin": 65
+      }
+    }
+  },
+  {
+    "id": "osm-11094727",
+    "osmRelationId": 11094727,
+    "nombre": "Roteiro de Ponte da Pedra a San Xoán do Carballoso",
+    "concello": "Negreira",
+    "latInicio": 42.89855,
+    "lonInicio": -8.81432,
+    "km": 8,
+    "desnivelPosM": 381,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 43
+      },
+      "esteiro": {
+        "cocheMin": 40
+      },
+      "sanxenxo": {
+        "cocheMin": 80
+      }
+    }
+  },
+  {
+    "id": "osm-11496223",
+    "osmRelationId": 11496223,
+    "nombre": "Ruta Ribeira do Bispo - Miradoiro de Augas Caídas",
+    "concello": "Mañón",
+    "latInicio": 43.63803,
+    "lonInicio": -7.71941,
+    "km": 12,
+    "desnivelPosM": 531,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 143
+      },
+      "esteiro": {
+        "cocheMin": 175
+      },
+      "sanxenxo": {
+        "cocheMin": 184
+      }
+    }
+  },
+  {
+    "id": "osm-11496522",
+    "osmRelationId": 11496522,
+    "nombre": "Ruta Ponte do Porto - Ponte Ulló",
+    "concello": "Mañón",
+    "latInicio": 43.68824,
+    "lonInicio": -7.71433,
+    "km": 6,
+    "desnivelPosM": 160,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 135
+      },
+      "esteiro": {
+        "cocheMin": 167
+      },
+      "sanxenxo": {
+        "cocheMin": 176
+      }
+    }
+  },
+  {
+    "id": "osm-11500697",
+    "osmRelationId": 11500697,
+    "nombre": "Morgallón - Río Sor - Morgallon",
+    "concello": "O Vicedo",
+    "latInicio": 43.70378,
+    "lonInicio": -7.69477,
+    "km": 9,
+    "desnivelPosM": 233,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 134
+      },
+      "esteiro": {
+        "cocheMin": 166
+      },
+      "sanxenxo": {
+        "cocheMin": 175
+      }
+    }
+  },
+  {
+    "id": "osm-11500869",
+    "osmRelationId": 11500869,
+    "nombre": "O Camiño dos Faros. Etapa 1 Malpica-Niñóns",
+    "concello": "Malpica de Bergantiños",
+    "latInicio": 43.32377,
+    "lonInicio": -8.80824,
+    "km": 21,
+    "desnivelPosM": 532,
+    "tipo": "lineal",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 74
+      },
+      "esteiro": {
+        "cocheMin": 96
+      },
+      "sanxenxo": {
+        "cocheMin": 117
+      }
+    }
+  },
+  {
+    "id": "osm-11537853",
+    "osmRelationId": 11537853,
+    "nombre": "Sendeiro Local de Coruxo",
+    "concello": "Vigo",
+    "latInicio": 42.1802,
+    "lonInicio": -8.76723,
+    "km": 10,
+    "desnivelPosM": 261,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 81
+      },
+      "esteiro": {
+        "cocheMin": 103
+      },
+      "sanxenxo": {
+        "cocheMin": 56
+      }
+    }
+  },
+  {
+    "id": "osm-11561600",
+    "osmRelationId": 11561600,
+    "nombre": "Sendeiro Local de Saiáns",
+    "concello": "Vigo",
+    "latInicio": 42.1686,
+    "lonInicio": -8.79357,
+    "km": 3,
+    "desnivelPosM": 80,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 84
+      },
+      "esteiro": {
+        "cocheMin": 105
+      },
+      "sanxenxo": {
+        "cocheMin": 58
+      }
+    }
+  },
+  {
+    "id": "osm-11568643",
+    "osmRelationId": 11568643,
+    "nombre": "Sendeiro Local de Zamáns",
+    "concello": "Vigo",
+    "latInicio": 42.14649,
+    "lonInicio": -8.68908,
+    "km": 7,
+    "desnivelPosM": 178,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 84
+      },
+      "esteiro": {
+        "cocheMin": 106
+      },
+      "sanxenxo": {
+        "cocheMin": 58
+      }
+    }
+  },
+  {
+    "id": "osm-11726783",
+    "osmRelationId": 11726783,
+    "nombre": "Sendeiro Local de Candeán",
+    "concello": "Vigo",
+    "latInicio": 42.25203,
+    "lonInicio": -8.65089,
+    "km": 7,
+    "desnivelPosM": 359,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 70
+      },
+      "esteiro": {
+        "cocheMin": 92
+      },
+      "sanxenxo": {
+        "cocheMin": 45
+      }
+    }
+  },
+  {
+    "id": "osm-12001714",
+    "osmRelationId": 12001714,
+    "nombre": "Ruta da Lagoa da Lucenza",
+    "concello": "Quiroga",
+    "latInicio": 42.59305,
+    "lonInicio": -7.11354,
+    "km": 10,
+    "desnivelPosM": 825,
+    "tipo": "lineal",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 185
+      },
+      "esteiro": {
+        "cocheMin": 219
+      },
+      "sanxenxo": {
+        "cocheMin": 228
+      }
+    }
+  },
+  {
+    "id": "osm-12003551",
+    "osmRelationId": 12003551,
+    "nombre": "Ruta de Cibrisqueiros a San Cosmede",
+    "concello": "Pantón",
+    "latInicio": 42.44877,
+    "lonInicio": -7.70119,
+    "km": 4,
+    "desnivelPosM": 410,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 92
+      },
+      "esteiro": {
+        "cocheMin": 122
+      },
+      "sanxenxo": {
+        "cocheMin": 118
+      }
+    }
+  },
+  {
+    "id": "osm-12097648",
+    "osmRelationId": 12097648,
+    "nombre": "Sendeiro Local de Valadares",
+    "concello": "Vigo",
+    "latInicio": 42.18258,
+    "lonInicio": -8.73893,
+    "km": 8,
+    "desnivelPosM": 769,
+    "tipo": "circular",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 79
+      },
+      "esteiro": {
+        "cocheMin": 101
+      },
+      "sanxenxo": {
+        "cocheMin": 53
+      }
+    }
+  },
+  {
+    "id": "osm-12097913",
+    "osmRelationId": 12097913,
+    "nombre": "Sendeiro Local de Oia",
+    "concello": "Vigo",
+    "latInicio": 42.17444,
+    "lonInicio": -8.79332,
+    "km": 4,
+    "desnivelPosM": 458,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 85
+      },
+      "esteiro": {
+        "cocheMin": 107
+      },
+      "sanxenxo": {
+        "cocheMin": 60
+      }
+    }
+  },
+  {
+    "id": "osm-12181204",
+    "osmRelationId": 12181204,
+    "nombre": "Ruta dos Muíños da Ponte do Porto",
+    "concello": "Camariñas",
+    "latInicio": 43.13912,
+    "lonInicio": -9.11439,
+    "km": 4,
+    "desnivelPosM": 170,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 74
+      },
+      "esteiro": {
+        "cocheMin": 75
+      },
+      "sanxenxo": {
+        "cocheMin": 110
+      }
+    }
+  },
+  {
+    "id": "osm-12295715",
+    "osmRelationId": 12295715,
+    "nombre": "Roteiro do Río Mercurín",
+    "concello": "Ordes",
+    "latInicio": 43.09382,
+    "lonInicio": -8.42068,
+    "km": 7,
+    "desnivelPosM": 139,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 43
+      },
+      "esteiro": {
+        "cocheMin": 75
+      },
+      "sanxenxo": {
+        "cocheMin": 84
+      }
+    }
+  },
+  {
+    "id": "osm-12300074",
+    "osmRelationId": 12300074,
+    "nombre": "Roteiro de San Paio",
+    "concello": "Ordes",
+    "latInicio": 43.09428,
+    "lonInicio": -8.38072,
+    "km": 7,
+    "desnivelPosM": 138,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 35
+      },
+      "esteiro": {
+        "cocheMin": 67
+      },
+      "sanxenxo": {
+        "cocheMin": 76
+      }
+    }
+  },
+  {
+    "id": "osm-12302485",
+    "osmRelationId": 12302485,
+    "nombre": "Ruta dos Camiños Vellos de Tordoia",
+    "concello": "Cerceda",
+    "latInicio": 43.12755,
+    "lonInicio": -8.52717,
+    "km": 22,
+    "desnivelPosM": 170,
+    "tipo": "lineal",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 44
+      },
+      "esteiro": {
+        "cocheMin": 76
+      },
+      "sanxenxo": {
+        "cocheMin": 85
+      }
+    }
+  },
+  {
+    "id": "osm-12335762",
+    "osmRelationId": 12335762,
+    "nombre": "Sendeiro Local de Matamá-Comesaña",
+    "concello": "Vigo",
+    "latInicio": 42.19086,
+    "lonInicio": -8.74138,
+    "km": 11,
+    "desnivelPosM": 505,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 78
+      },
+      "esteiro": {
+        "cocheMin": 99
+      },
+      "sanxenxo": {
+        "cocheMin": 52
+      }
+    }
+  },
+  {
+    "id": "osm-12357395",
+    "osmRelationId": 12357395,
+    "nombre": "Sendeiro Local de Bembrive-Beade",
+    "concello": "Vigo",
+    "latInicio": 42.17436,
+    "lonInicio": -8.68879,
+    "km": 14,
+    "desnivelPosM": 362,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 77
+      },
+      "esteiro": {
+        "cocheMin": 99
+      },
+      "sanxenxo": {
+        "cocheMin": 52
+      }
+    }
+  },
+  {
+    "id": "osm-12360804",
+    "osmRelationId": 12360804,
+    "nombre": "Sendeiro Local de Cabral",
+    "concello": "Vigo",
+    "latInicio": 42.21285,
+    "lonInicio": -8.66941,
+    "km": 11,
+    "desnivelPosM": 277,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 68
+      },
+      "esteiro": {
+        "cocheMin": 90
+      },
+      "sanxenxo": {
+        "cocheMin": 43
+      }
+    }
+  },
+  {
+    "id": "osm-12695934",
+    "osmRelationId": 12695934,
+    "nombre": "Camiño Natural dos Arrieiros",
+    "concello": "O Carballiño",
+    "latInicio": 42.39042,
+    "lonInicio": -8.11014,
+    "km": 6,
+    "desnivelPosM": 151,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 66
+      },
+      "esteiro": {
+        "cocheMin": 97
+      },
+      "sanxenxo": {
+        "cocheMin": 84
+      }
+    }
+  },
+  {
+    "id": "osm-12696012",
+    "osmRelationId": 12696012,
+    "nombre": "Camiño Natural da Ribeira Sacra",
+    "concello": "Maceda",
+    "latInicio": 42.31299,
+    "lonInicio": -7.67414,
+    "km": 24,
+    "desnivelPosM": 599,
+    "tipo": "lineal",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 93
+      },
+      "esteiro": {
+        "cocheMin": 124
+      },
+      "sanxenxo": {
+        "cocheMin": 116
+      }
+    }
+  },
+  {
+    "id": "osm-12841996",
+    "osmRelationId": 12841996,
+    "nombre": "Sendeiro circular da serra da Madalena",
+    "concello": "Cangas de Morrazo",
+    "latInicio": 42.29505,
+    "lonInicio": -8.79124,
+    "km": 8,
+    "desnivelPosM": 190,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 68
+      },
+      "esteiro": {
+        "cocheMin": 90
+      },
+      "sanxenxo": {
+        "cocheMin": 43
+      }
+    }
+  },
+  {
+    "id": "osm-12858963",
+    "osmRelationId": 12858963,
+    "nombre": "Sendeiro dos Bosques Máxicos do Castro de Caldelas",
+    "concello": "O Castro de Caldelas",
+    "latInicio": 42.37437,
+    "lonInicio": -7.40972,
+    "km": 20,
+    "desnivelPosM": 506,
+    "tipo": "circular",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 122
+      },
+      "esteiro": {
+        "cocheMin": 153
+      },
+      "sanxenxo": {
+        "cocheMin": 145
+      }
+    }
+  },
+  {
+    "id": "osm-12859611",
+    "osmRelationId": 12859611,
+    "nombre": "Sendeiro do Miradoiro de Matacás",
+    "concello": "O Castro de Caldelas",
+    "latInicio": 42.37487,
+    "lonInicio": -7.41562,
+    "km": 19,
+    "desnivelPosM": 1258,
+    "tipo": "circular",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 119
+      },
+      "esteiro": {
+        "cocheMin": 150
+      },
+      "sanxenxo": {
+        "cocheMin": 142
+      }
+    }
+  },
+  {
+    "id": "osm-12859689",
+    "osmRelationId": 12859689,
+    "nombre": "Roteiros de Matacás",
+    "concello": "O Castro de Caldelas",
+    "latInicio": 42.40512,
+    "lonInicio": -7.43456,
+    "km": 10,
+    "desnivelPosM": 821,
+    "tipo": "lineal",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 130
+      },
+      "esteiro": {
+        "cocheMin": 160
+      },
+      "sanxenxo": {
+        "cocheMin": 153
+      }
+    }
+  },
+  {
+    "id": "osm-12868298",
+    "osmRelationId": 12868298,
+    "nombre": "Ruta da Costa da Morte",
+    "concello": "Camariñas",
+    "latInicio": 43.12413,
+    "lonInicio": -9.18453,
+    "km": 22,
+    "desnivelPosM": 409,
+    "tipo": "circular",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 86
+      },
+      "esteiro": {
+        "cocheMin": 88
+      },
+      "sanxenxo": {
+        "cocheMin": 123
+      }
+    }
+  },
+  {
+    "id": "osm-12871615",
+    "osmRelationId": 12871615,
+    "nombre": "Ruta de la Insua",
+    "concello": "Camariñas",
+    "latInicio": 43.13029,
+    "lonInicio": -9.15777,
+    "km": 5,
+    "desnivelPosM": 46,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 80
+      },
+      "esteiro": {
+        "cocheMin": 82
+      },
+      "sanxenxo": {
+        "cocheMin": 117
+      }
+    }
+  },
+  {
+    "id": "osm-13025894",
+    "osmRelationId": 13025894,
+    "nombre": "Ruta do Andoriña",
+    "concello": "Ames",
+    "latInicio": 42.94248,
+    "lonInicio": -8.65268,
+    "km": 5,
+    "desnivelPosM": 130,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 25
+      },
+      "esteiro": {
+        "cocheMin": 43
+      },
+      "sanxenxo": {
+        "cocheMin": 63
+      }
+    }
+  },
+  {
+    "id": "osm-13046016",
+    "osmRelationId": 13046016,
+    "nombre": "Ruta do Mar de Corme e Ribeira do Anllóns",
+    "concello": "Ponteceso",
+    "latInicio": 43.24233,
+    "lonInicio": -8.90064,
+    "km": 11,
+    "desnivelPosM": 298,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 79
+      },
+      "esteiro": {
+        "cocheMin": 85
+      },
+      "sanxenxo": {
+        "cocheMin": 120
+      }
+    }
+  },
+  {
+    "id": "osm-13049950",
+    "osmRelationId": 13049950,
+    "nombre": "Ruta do Mar de Corme e Ribeira do Anllóns",
+    "concello": "Ponteceso",
+    "latInicio": 43.24714,
+    "lonInicio": -8.91709,
+    "km": 10,
+    "desnivelPosM": 242,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 81
+      },
+      "esteiro": {
+        "cocheMin": 88
+      },
+      "sanxenxo": {
+        "cocheMin": 122
+      }
+    }
+  },
+  {
+    "id": "osm-13070679",
+    "osmRelationId": 13070679,
+    "nombre": "Ruta Litoral",
+    "concello": "Camariñas",
+    "latInicio": 43.18428,
+    "lonInicio": -9.09106,
+    "km": 24,
+    "desnivelPosM": 450,
+    "tipo": "lineal",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 83
+      },
+      "esteiro": {
+        "cocheMin": 85
+      },
+      "sanxenxo": {
+        "cocheMin": 119
+      }
+    }
+  },
+  {
+    "id": "osm-13476036",
+    "osmRelationId": 13476036,
+    "nombre": "Senda Fluvial da Tarroeira",
+    "concello": "O Pino",
+    "latInicio": 42.95257,
+    "lonInicio": -8.34627,
+    "km": 11,
+    "desnivelPosM": 40,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 24
+      },
+      "esteiro": {
+        "cocheMin": 58
+      },
+      "sanxenxo": {
+        "cocheMin": 67
+      }
+    }
+  },
+  {
+    "id": "osm-13765646",
+    "osmRelationId": 13765646,
+    "nombre": "Meirama - Xalo - Meirama",
+    "concello": "Cerceda",
+    "latInicio": 43.20894,
+    "lonInicio": -8.43749,
+    "km": 8,
+    "desnivelPosM": 336,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 52
+      },
+      "esteiro": {
+        "cocheMin": 84
+      },
+      "sanxenxo": {
+        "cocheMin": 93
+      }
+    }
+  },
+  {
+    "id": "osm-13767013",
+    "osmRelationId": 13767013,
+    "nombre": "Senda Rodís - Xesteda",
+    "concello": "Cerceda",
+    "latInicio": 43.14041,
+    "lonInicio": -8.52833,
+    "km": 12,
+    "desnivelPosM": 360,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 49
+      },
+      "esteiro": {
+        "cocheMin": 81
+      },
+      "sanxenxo": {
+        "cocheMin": 90
+      }
+    }
+  },
+  {
+    "id": "osm-14321600",
+    "osmRelationId": 14321600,
+    "nombre": "Ruta do Lago das Encrobas",
+    "concello": "Cerceda",
+    "latInicio": 43.20046,
+    "lonInicio": -8.4341,
+    "km": 7,
+    "desnivelPosM": 173,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 57
+      },
+      "esteiro": {
+        "cocheMin": 89
+      },
+      "sanxenxo": {
+        "cocheMin": 98
+      }
+    }
+  },
+  {
+    "id": "osm-14324434",
+    "osmRelationId": 14324434,
+    "nombre": "Roteiro Mariñán - Costa da Égoa",
+    "concello": "Carral",
+    "latInicio": 43.21267,
+    "lonInicio": -8.37382,
+    "km": 12,
+    "desnivelPosM": 310,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 50
+      },
+      "esteiro": {
+        "cocheMin": 82
+      },
+      "sanxenxo": {
+        "cocheMin": 91
+      }
+    }
+  },
+  {
+    "id": "osm-14496226",
+    "osmRelationId": 14496226,
+    "nombre": "Senda Azul de Arteixo",
+    "concello": "Arteixo",
+    "latInicio": 43.32442,
+    "lonInicio": -8.51045,
+    "km": 6,
+    "desnivelPosM": 160,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 66
+      },
+      "esteiro": {
+        "cocheMin": 98
+      },
+      "sanxenxo": {
+        "cocheMin": 107
+      }
+    }
+  },
+  {
+    "id": "osm-14593538",
+    "osmRelationId": 14593538,
+    "nombre": "Roteiro da Aldea",
+    "concello": "Camariñas",
+    "latInicio": 43.12928,
+    "lonInicio": -9.18034,
+    "km": 12,
+    "desnivelPosM": 142,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 83
+      },
+      "esteiro": {
+        "cocheMin": 85
+      },
+      "sanxenxo": {
+        "cocheMin": 120
+      }
+    }
+  },
+  {
+    "id": "osm-14610882",
+    "osmRelationId": 14610882,
+    "nombre": "Moaña na Mochila - Roteiro dos Muiños do Río da Fraga",
+    "concello": "Moaña",
+    "latInicio": 42.32941,
+    "lonInicio": -8.703,
+    "km": 11,
+    "desnivelPosM": 281,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 68
+      },
+      "esteiro": {
+        "cocheMin": 90
+      },
+      "sanxenxo": {
+        "cocheMin": 42
+      }
+    }
+  },
+  {
+    "id": "osm-14611115",
+    "osmRelationId": 14611115,
+    "nombre": "Moaña na Mochila - Pazo da Moura/Ruta do Rio Freixa e da Miñouba",
+    "concello": "Moaña",
+    "latInicio": 42.29838,
+    "lonInicio": -8.68345,
+    "km": 7,
+    "desnivelPosM": 163,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 70
+      },
+      "esteiro": {
+        "cocheMin": 92
+      },
+      "sanxenxo": {
+        "cocheMin": 45
+      }
+    }
+  },
+  {
+    "id": "osm-14611418",
+    "osmRelationId": 14611418,
+    "nombre": "Moaña na Mochila - Miradores do Monte Faro Candóns e Chan da Arquiña",
+    "concello": "Moaña",
+    "latInicio": 42.31487,
+    "lonInicio": -8.70401,
+    "km": 4,
+    "desnivelPosM": 91,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 73
+      },
+      "esteiro": {
+        "cocheMin": 95
+      },
+      "sanxenxo": {
+        "cocheMin": 48
+      }
+    }
+  },
+  {
+    "id": "osm-14614054",
+    "osmRelationId": 14614054,
+    "nombre": "Moaña na Mochila - San Martiño-Cruz de Xestoso",
+    "concello": "Moaña",
+    "latInicio": 42.28148,
+    "lonInicio": -8.74667,
+    "km": 10,
+    "desnivelPosM": 256,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 69
+      },
+      "esteiro": {
+        "cocheMin": 91
+      },
+      "sanxenxo": {
+        "cocheMin": 44
+      }
+    }
+  },
+  {
+    "id": "osm-14614055",
+    "osmRelationId": 14614055,
+    "nombre": "Moaña na Mochila - Petróglifos de Meira",
+    "concello": "Moaña",
+    "latInicio": 42.30618,
+    "lonInicio": -8.71932,
+    "km": 4,
+    "desnivelPosM": 88,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 63
+      },
+      "esteiro": {
+        "cocheMin": 85
+      },
+      "sanxenxo": {
+        "cocheMin": 37
+      }
+    }
+  },
+  {
+    "id": "osm-14614192",
+    "osmRelationId": 14614192,
+    "nombre": "Sendeiro dos Petroglifos dos Cobres",
+    "concello": "Vilaboa",
+    "latInicio": 42.33549,
+    "lonInicio": -8.65559,
+    "km": 3,
+    "desnivelPosM": 83,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 60
+      },
+      "esteiro": {
+        "cocheMin": 82
+      },
+      "sanxenxo": {
+        "cocheMin": 34
+      }
+    }
+  },
+  {
+    "id": "osm-14616741",
+    "osmRelationId": 14616741,
+    "nombre": "Sendero Circular de la Costa de Soavela. O Hío",
+    "concello": "Cangas de Morrazo",
+    "latInicio": 42.28114,
+    "lonInicio": -8.85267,
+    "km": 7,
+    "desnivelPosM": 181,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 90
+      },
+      "esteiro": {
+        "cocheMin": 111
+      },
+      "sanxenxo": {
+        "cocheMin": 64
+      }
+    }
+  },
+  {
+    "id": "osm-14617375",
+    "osmRelationId": 14617375,
+    "nombre": "Sendeiro do Monte do Castelo",
+    "concello": "Cangas de Morrazo",
+    "latInicio": 42.2721,
+    "lonInicio": -8.79735,
+    "km": 4,
+    "desnivelPosM": 108,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 72
+      },
+      "esteiro": {
+        "cocheMin": 94
+      },
+      "sanxenxo": {
+        "cocheMin": 47
+      }
+    }
+  },
+  {
+    "id": "osm-14617659",
+    "osmRelationId": 14617659,
+    "nombre": "Camiño Real Moaña - Cangas do Morrazo",
+    "concello": "Moaña",
+    "latInicio": 42.28638,
+    "lonInicio": -8.733,
+    "km": 10,
+    "desnivelPosM": 244,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 65
+      },
+      "esteiro": {
+        "cocheMin": 87
+      },
+      "sanxenxo": {
+        "cocheMin": 40
+      }
+    }
+  },
+  {
+    "id": "osm-14617660",
+    "osmRelationId": 14617660,
+    "nombre": "Roteiro de Donón - Sendeiro Azul",
+    "concello": "Cangas de Morrazo",
+    "latInicio": 42.24774,
+    "lonInicio": -8.86412,
+    "km": 9,
+    "desnivelPosM": 233,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 90
+      },
+      "esteiro": {
+        "cocheMin": 112
+      },
+      "sanxenxo": {
+        "cocheMin": 65
+      }
+    }
+  },
+  {
+    "id": "osm-14617661",
+    "osmRelationId": 14617661,
+    "nombre": "Senda Costeira Cangas-Donón",
+    "concello": "Cangas de Morrazo",
+    "latInicio": 42.2617,
+    "lonInicio": -8.7853,
+    "km": 13,
+    "desnivelPosM": 331,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 70
+      },
+      "esteiro": {
+        "cocheMin": 92
+      },
+      "sanxenxo": {
+        "cocheMin": 45
+      }
+    }
+  },
+  {
+    "id": "osm-14618927",
+    "osmRelationId": 14618927,
+    "nombre": "Ruta dos Abades",
+    "concello": "Moaña",
+    "latInicio": 42.29283,
+    "lonInicio": -8.76058,
+    "km": 5,
+    "desnivelPosM": 119,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 72
+      },
+      "esteiro": {
+        "cocheMin": 93
+      },
+      "sanxenxo": {
+        "cocheMin": 46
+      }
+    }
+  },
+  {
+    "id": "osm-14618928",
+    "osmRelationId": 14618928,
+    "nombre": "Chans de Cela",
+    "concello": "Bueu",
+    "latInicio": 42.32604,
+    "lonInicio": -8.74262,
+    "km": 3,
+    "desnivelPosM": 80,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 72
+      },
+      "esteiro": {
+        "cocheMin": 94
+      },
+      "sanxenxo": {
+        "cocheMin": 46
+      }
+    }
+  },
+  {
+    "id": "osm-14620790",
+    "osmRelationId": 14620790,
+    "nombre": "Ruta de Ermelo",
+    "concello": "Bueu",
+    "latInicio": 42.30318,
+    "lonInicio": -8.76607,
+    "km": 3,
+    "desnivelPosM": 82,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 74
+      },
+      "esteiro": {
+        "cocheMin": 95
+      },
+      "sanxenxo": {
+        "cocheMin": 48
+      }
+    }
+  },
+  {
+    "id": "osm-14620791",
+    "osmRelationId": 14620791,
+    "nombre": "Ruta dos Pazos",
+    "concello": "Bueu",
+    "latInicio": 42.30622,
+    "lonInicio": -8.79189,
+    "km": 11,
+    "desnivelPosM": 263,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 70
+      },
+      "esteiro": {
+        "cocheMin": 91
+      },
+      "sanxenxo": {
+        "cocheMin": 44
+      }
+    }
+  },
+  {
+    "id": "osm-14620836",
+    "osmRelationId": 14620836,
+    "nombre": "Ruta Arquelóxico de Ons",
+    "concello": "Bueu",
+    "latInicio": 42.37882,
+    "lonInicio": -8.93072,
+    "km": 6,
+    "desnivelPosM": 139,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 64
+      },
+      "esteiro": {
+        "cocheMin": 85
+      },
+      "sanxenxo": {
+        "cocheMin": 14
+      }
+    }
+  },
+  {
+    "id": "osm-14620901",
+    "osmRelationId": 14620901,
+    "nombre": "Sendeiro Litoral",
+    "concello": "Bueu",
+    "latInicio": 42.33199,
+    "lonInicio": -8.77027,
+    "km": 11,
+    "desnivelPosM": 271,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 64
+      },
+      "esteiro": {
+        "cocheMin": 85
+      },
+      "sanxenxo": {
+        "cocheMin": 38
+      }
+    }
+  },
+  {
+    "id": "osm-14622381",
+    "osmRelationId": 14622381,
+    "nombre": "Montes e Praias - corta (Sendeiro Azul)",
+    "concello": "Marín",
+    "latInicio": 42.36628,
+    "lonInicio": -8.72604,
+    "km": 16,
+    "desnivelPosM": 395,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 61
+      },
+      "esteiro": {
+        "cocheMin": 82
+      },
+      "sanxenxo": {
+        "cocheMin": 35
+      }
+    }
+  },
+  {
+    "id": "osm-14622393",
+    "osmRelationId": 14622393,
+    "nombre": "Ruta Monte Penizas",
+    "concello": "Marín",
+    "latInicio": 42.39356,
+    "lonInicio": -8.70348,
+    "km": 8,
+    "desnivelPosM": 209,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 55
+      },
+      "esteiro": {
+        "cocheMin": 77
+      },
+      "sanxenxo": {
+        "cocheMin": 29
+      }
+    }
+  },
+  {
+    "id": "osm-14622402",
+    "osmRelationId": 14622402,
+    "nombre": "Ruta Variante de San Tomé de Piñeiro",
+    "concello": "Marín",
+    "latInicio": 42.35496,
+    "lonInicio": -8.71822,
+    "km": 5,
+    "desnivelPosM": 135,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 64
+      },
+      "esteiro": {
+        "cocheMin": 85
+      },
+      "sanxenxo": {
+        "cocheMin": 38
+      }
+    }
+  },
+  {
+    "id": "osm-14622474",
+    "osmRelationId": 14622474,
+    "nombre": "Ruta das Praias (Sendeiro Azul)",
+    "concello": "Marín",
+    "latInicio": 42.35022,
+    "lonInicio": -8.75,
+    "km": 9,
+    "desnivelPosM": 216,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 62
+      },
+      "esteiro": {
+        "cocheMin": 83
+      },
+      "sanxenxo": {
+        "cocheMin": 36
+      }
+    }
+  },
+  {
+    "id": "osm-14622485",
+    "osmRelationId": 14622485,
+    "nombre": "Roteiro dos Cinco Miradoiros",
+    "concello": "Marín",
+    "latInicio": 42.37893,
+    "lonInicio": -8.7094,
+    "km": 9,
+    "desnivelPosM": 224,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 60
+      },
+      "esteiro": {
+        "cocheMin": 82
+      },
+      "sanxenxo": {
+        "cocheMin": 34
+      }
+    }
+  },
+  {
+    "id": "osm-14622944",
+    "osmRelationId": 14622944,
+    "nombre": "Sendeiro de Croa",
+    "concello": "Vilaboa",
+    "latInicio": 42.33562,
+    "lonInicio": -8.64383,
+    "km": 5,
+    "desnivelPosM": 129,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 58
+      },
+      "esteiro": {
+        "cocheMin": 80
+      },
+      "sanxenxo": {
+        "cocheMin": 33
+      }
+    }
+  },
+  {
+    "id": "osm-14648109",
+    "osmRelationId": 14648109,
+    "nombre": "Ruta dos Sete Camiños",
+    "concello": "Pontevedra",
+    "latInicio": 42.38798,
+    "lonInicio": -8.65656,
+    "km": 7,
+    "desnivelPosM": 181,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 58
+      },
+      "esteiro": {
+        "cocheMin": 79
+      },
+      "sanxenxo": {
+        "cocheMin": 32
+      }
+    }
+  },
+  {
+    "id": "osm-14671916",
+    "osmRelationId": 14671916,
+    "nombre": "Roteiro das Mámoas",
+    "concello": "Vilaboa",
+    "latInicio": 42.3587,
+    "lonInicio": -8.67197,
+    "km": 6,
+    "desnivelPosM": 137,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 63
+      },
+      "esteiro": {
+        "cocheMin": 85
+      },
+      "sanxenxo": {
+        "cocheMin": 38
+      }
+    }
+  },
+  {
+    "id": "osm-14675517",
+    "osmRelationId": 14675517,
+    "nombre": "Camiño do Río do Mar",
+    "concello": "Ribeira",
+    "latInicio": 42.57557,
+    "lonInicio": -9.04367,
+    "km": 4,
+    "desnivelPosM": 88,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 58
+      },
+      "esteiro": {
+        "cocheMin": 51
+      },
+      "sanxenxo": {
+        "cocheMin": 65
+      }
+    }
+  },
+  {
+    "id": "osm-14675611",
+    "osmRelationId": 14675611,
+    "nombre": "Camiño da Gandarela",
+    "concello": "Ribeira",
+    "latInicio": 42.55515,
+    "lonInicio": -9.02796,
+    "km": 4,
+    "desnivelPosM": 103,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 59
+      },
+      "esteiro": {
+        "cocheMin": 55
+      },
+      "sanxenxo": {
+        "cocheMin": 67
+      }
+    }
+  },
+  {
+    "id": "osm-14675679",
+    "osmRelationId": 14675679,
+    "nombre": "Camiño da Auga",
+    "concello": "Ribeira",
+    "latInicio": 42.54973,
+    "lonInicio": -9.02476,
+    "km": 4,
+    "desnivelPosM": 109,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 59
+      },
+      "esteiro": {
+        "cocheMin": 55
+      },
+      "sanxenxo": {
+        "cocheMin": 66
+      }
+    }
+  },
+  {
+    "id": "osm-14691507",
+    "osmRelationId": 14691507,
+    "nombre": "Rota Natural dos Castros a Nivieira",
+    "concello": "Rubiá",
+    "latInicio": 42.46546,
+    "lonInicio": -6.957,
+    "km": 6,
+    "desnivelPosM": 158,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 167
+      },
+      "esteiro": {
+        "cocheMin": 200
+      },
+      "sanxenxo": {
+        "cocheMin": 209
+      }
+    }
+  },
+  {
+    "id": "osm-14694589",
+    "osmRelationId": 14694589,
+    "nombre": "Ruta da Ermida de Santo Estevo",
+    "concello": "Rubiá",
+    "latInicio": 42.45903,
+    "lonInicio": -6.8261,
+    "km": 6,
+    "desnivelPosM": 150,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 156
+      },
+      "esteiro": {
+        "cocheMin": 190
+      },
+      "sanxenxo": {
+        "cocheMin": 199
+      }
+    }
+  },
+  {
+    "id": "osm-16205199",
+    "osmRelationId": 16205199,
+    "nombre": "Ruta A Moa",
+    "concello": "Carnota",
+    "latInicio": 42.88888,
+    "lonInicio": -9.11162,
+    "km": 10,
+    "desnivelPosM": 434,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 78
+      },
+      "esteiro": {
+        "cocheMin": 39
+      },
+      "sanxenxo": {
+        "cocheMin": 110
+      }
+    }
+  },
+  {
+    "id": "osm-16216090",
+    "osmRelationId": 16216090,
+    "nombre": "Ruta á Moa desde O Pindo",
+    "concello": "Carnota",
+    "latInicio": 42.87795,
+    "lonInicio": -9.12987,
+    "km": 10,
+    "desnivelPosM": 691,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 84
+      },
+      "esteiro": {
+        "cocheMin": 45
+      },
+      "sanxenxo": {
+        "cocheMin": 116
+      }
+    }
+  },
+  {
+    "id": "osm-17871937",
+    "osmRelationId": 17871937,
+    "nombre": "Ruta do Adro Vello",
+    "concello": "O Grove",
+    "latInicio": 42.47231,
+    "lonInicio": -8.92792,
+    "km": 4,
+    "desnivelPosM": 90,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 67
+      },
+      "esteiro": {
+        "cocheMin": 89
+      },
+      "sanxenxo": {
+        "cocheMin": 19
+      }
+    }
+  },
+  {
+    "id": "osm-17872074",
+    "osmRelationId": 17872074,
+    "nombre": "Ruta do Con Negro",
+    "concello": "O Grove",
+    "latInicio": 42.46066,
+    "lonInicio": -8.93234,
+    "km": 4,
+    "desnivelPosM": 93,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 69
+      },
+      "esteiro": {
+        "cocheMin": 90
+      },
+      "sanxenxo": {
+        "cocheMin": 20
+      }
+    }
+  },
+  {
+    "id": "osm-17874707",
+    "osmRelationId": 17874707,
+    "nombre": "Ruta da Fervenza do Rexedoiro",
+    "concello": "Val do Dubra",
+    "latInicio": 43.02376,
+    "lonInicio": -8.66473,
+    "km": 11,
+    "desnivelPosM": 286,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 30
+      },
+      "esteiro": {
+        "cocheMin": 52
+      },
+      "sanxenxo": {
+        "cocheMin": 73
+      }
+    }
+  },
+  {
+    "id": "osm-17878783",
+    "osmRelationId": 17878783,
+    "nombre": "Ruta da Fraga aos Muíños",
+    "concello": "Mesía",
+    "latInicio": 43.1385,
+    "lonInicio": -8.30844,
+    "km": 14,
+    "desnivelPosM": 353,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 48
+      },
+      "esteiro": {
+        "cocheMin": 80
+      },
+      "sanxenxo": {
+        "cocheMin": 89
+      }
+    }
+  },
+  {
+    "id": "osm-17878880",
+    "osmRelationId": 17878880,
+    "nombre": "Ruta dos Muíños do Río das Gándaras",
+    "concello": "Vilasantar",
+    "latInicio": 43.06342,
+    "lonInicio": -8.14029,
+    "km": 5,
+    "desnivelPosM": 135,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 54
+      },
+      "esteiro": {
+        "cocheMin": 86
+      },
+      "sanxenxo": {
+        "cocheMin": 95
+      }
+    }
+  },
+  {
+    "id": "osm-17879001",
+    "osmRelationId": 17879001,
+    "nombre": "Ruta da Fervenza das Hortas ao Río Lañas",
+    "concello": "Touro",
+    "latInicio": 42.83609,
+    "lonInicio": -8.25651,
+    "km": 12,
+    "desnivelPosM": 308,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 49
+      },
+      "esteiro": {
+        "cocheMin": 82
+      },
+      "sanxenxo": {
+        "cocheMin": 91
+      }
+    }
+  },
+  {
+    "id": "osm-17887903",
+    "osmRelationId": 17887903,
+    "nombre": "Arredor de Cambre",
+    "concello": "Cambre",
+    "latInicio": 43.2887,
+    "lonInicio": -8.34887,
+    "km": 9,
+    "desnivelPosM": 233,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 51
+      },
+      "esteiro": {
+        "cocheMin": 84
+      },
+      "sanxenxo": {
+        "cocheMin": 92
+      }
+    }
+  },
+  {
+    "id": "osm-17938085",
+    "osmRelationId": 17938085,
+    "nombre": "Ruta dos Soutos",
+    "concello": "Vilariño de Conso",
+    "latInicio": 42.16725,
+    "lonInicio": -7.18222,
+    "km": 11,
+    "desnivelPosM": 283,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 167
+      },
+      "esteiro": {
+        "cocheMin": 197
+      },
+      "sanxenxo": {
+        "cocheMin": 190
+      }
+    }
+  },
+  {
+    "id": "osm-17941090",
+    "osmRelationId": 17941090,
+    "nombre": "Senda Peonil da Ponte do Ramo",
+    "concello": "Cuntis",
+    "latInicio": 42.59411,
+    "lonInicio": -8.52835,
+    "km": 7,
+    "desnivelPosM": 176,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 54
+      },
+      "esteiro": {
+        "cocheMin": 81
+      },
+      "sanxenxo": {
+        "cocheMin": 46
+      }
+    }
+  },
+  {
+    "id": "osm-17949201",
+    "osmRelationId": 17949201,
+    "nombre": "Roteiro da Escuadra",
+    "concello": "A Lama",
+    "latInicio": 42.45464,
+    "lonInicio": -8.40182,
+    "km": 7,
+    "desnivelPosM": 178,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 102
+      },
+      "esteiro": {
+        "cocheMin": 126
+      },
+      "sanxenxo": {
+        "cocheMin": 79
+      }
+    }
+  },
+  {
+    "id": "osm-17949332",
+    "osmRelationId": 17949332,
+    "nombre": "Ruta dos Muíños do Folón e do Picón",
+    "concello": "O Rosal",
+    "latInicio": 41.95682,
+    "lonInicio": -8.83804,
+    "km": 4,
+    "desnivelPosM": 88,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 112
+      },
+      "esteiro": {
+        "cocheMin": 133
+      },
+      "sanxenxo": {
+        "cocheMin": 86
+      }
+    }
+  },
+  {
+    "id": "osm-17949659",
+    "osmRelationId": 17949659,
+    "nombre": "Senda de Boborás",
+    "concello": "Boborás",
+    "latInicio": 42.433,
+    "lonInicio": -8.11642,
+    "km": 16,
+    "desnivelPosM": 410,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 67
+      },
+      "esteiro": {
+        "cocheMin": 97
+      },
+      "sanxenxo": {
+        "cocheMin": 73
+      }
+    }
+  },
+  {
+    "id": "osm-17951735",
+    "osmRelationId": 17951735,
+    "nombre": "Sendeiro de Zobra",
+    "concello": "Lalín",
+    "latInicio": 42.56764,
+    "lonInicio": -8.20244,
+    "km": 25,
+    "desnivelPosM": 618,
+    "tipo": "circular",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 64
+      },
+      "esteiro": {
+        "cocheMin": 95
+      },
+      "sanxenxo": {
+        "cocheMin": 94
+      }
+    }
+  },
+  {
+    "id": "osm-17952752",
+    "osmRelationId": 17952752,
+    "nombre": "Sendeiro dos Carranos",
+    "concello": "Covelo",
+    "latInicio": 42.28002,
+    "lonInicio": -8.34571,
+    "km": 4,
+    "desnivelPosM": 112,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 100
+      },
+      "esteiro": {
+        "cocheMin": 122
+      },
+      "sanxenxo": {
+        "cocheMin": 74
+      }
+    }
+  },
+  {
+    "id": "osm-17990610",
+    "osmRelationId": 17990610,
+    "nombre": "Ruta das Lagoas",
+    "concello": "Cospeito",
+    "latInicio": 43.23928,
+    "lonInicio": -7.55218,
+    "km": 14,
+    "desnivelPosM": 358,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 100
+      },
+      "esteiro": {
+        "cocheMin": 132
+      },
+      "sanxenxo": {
+        "cocheMin": 141
+      }
+    }
+  },
+  {
+    "id": "osm-18559313",
+    "osmRelationId": 18559313,
+    "nombre": "Ruta do Loio",
+    "concello": "Paradela",
+    "latInicio": 42.77346,
+    "lonInicio": -7.56499,
+    "km": 7,
+    "desnivelPosM": 180,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 95
+      },
+      "esteiro": {
+        "cocheMin": 129
+      },
+      "sanxenxo": {
+        "cocheMin": 138
+      }
+    }
+  },
+  {
+    "id": "osm-18559470",
+    "osmRelationId": 18559470,
+    "nombre": "Sendeiro de Pena Guímara",
+    "concello": "A Fonsagrada",
+    "latInicio": 43.2263,
+    "lonInicio": -7.08385,
+    "km": 9,
+    "desnivelPosM": 234,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 157
+      },
+      "esteiro": {
+        "cocheMin": 191
+      },
+      "sanxenxo": {
+        "cocheMin": 200
+      }
+    }
+  },
+  {
+    "id": "osm-18562551",
+    "osmRelationId": 18562551,
+    "nombre": "Ruta do Azúmara",
+    "concello": "Castro de Rei",
+    "latInicio": 43.17838,
+    "lonInicio": -7.39018,
+    "km": 7,
+    "desnivelPosM": 175,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 102
+      },
+      "esteiro": {
+        "cocheMin": 136
+      },
+      "sanxenxo": {
+        "cocheMin": 144
+      }
+    }
+  },
+  {
+    "id": "osm-18563371",
+    "osmRelationId": 18563371,
+    "nombre": "Camiño do Ferradal",
+    "concello": "Quiroga",
+    "latInicio": 42.48435,
+    "lonInicio": -7.1534,
+    "km": 10,
+    "desnivelPosM": 249,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 158
+      },
+      "esteiro": {
+        "cocheMin": 189
+      },
+      "sanxenxo": {
+        "cocheMin": 192
+      }
+    }
+  },
+  {
+    "id": "osm-18563695",
+    "osmRelationId": 18563695,
+    "nombre": "Ruta do Val do Río Quiroga",
+    "concello": "Quiroga",
+    "latInicio": 42.4928,
+    "lonInicio": -7.22611,
+    "km": 9,
+    "desnivelPosM": 236,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 135
+      },
+      "esteiro": {
+        "cocheMin": 165
+      },
+      "sanxenxo": {
+        "cocheMin": 169
+      }
+    }
+  },
+  {
+    "id": "osm-18585132",
+    "osmRelationId": 18585132,
+    "nombre": "Xiro dos Montes 01 Monte do Viso - Monte do Gozo",
+    "concello": "Santiago de Compostela",
+    "latInicio": 42.87443,
+    "lonInicio": -8.51551,
+    "km": 5,
+    "desnivelPosM": 114,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 13
+      },
+      "esteiro": {
+        "cocheMin": 43
+      },
+      "sanxenxo": {
+        "cocheMin": 52
+      }
+    }
+  },
+  {
+    "id": "osm-18585416",
+    "osmRelationId": 18585416,
+    "nombre": "Xiro dos Montes 02 Monte do Gozo - Monte de Deus",
+    "concello": "Santiago de Compostela",
+    "latInicio": 42.88925,
+    "lonInicio": -8.4943,
+    "km": 7,
+    "desnivelPosM": 168,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 11
+      },
+      "esteiro": {
+        "cocheMin": 47
+      },
+      "sanxenxo": {
+        "cocheMin": 56
+      }
+    }
+  },
+  {
+    "id": "osm-18585833",
+    "osmRelationId": 18585833,
+    "nombre": "Xiro dos Montes 03 Monte de Deus - Monte Pedroso",
+    "concello": "Santiago de Compostela",
+    "latInicio": 42.89756,
+    "lonInicio": -8.54195,
+    "km": 5,
+    "desnivelPosM": 132,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 9
+      },
+      "esteiro": {
+        "cocheMin": 50
+      },
+      "sanxenxo": {
+        "cocheMin": 60
+      }
+    }
+  },
+  {
+    "id": "osm-18585903",
+    "osmRelationId": 18585903,
+    "nombre": "Xiro dos Montes 04 Monte Pedroso - Monte de Vidán",
+    "concello": "Santiago de Compostela",
+    "latInicio": 42.89804,
+    "lonInicio": -8.56485,
+    "km": 4,
+    "desnivelPosM": 88,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 14
+      },
+      "esteiro": {
+        "cocheMin": 53
+      },
+      "sanxenxo": {
+        "cocheMin": 66
+      }
+    }
+  },
+  {
+    "id": "osm-18590827",
+    "osmRelationId": 18590827,
+    "nombre": "Xiro dos Montes 05 Monte de Vidán - Monte de Conxo",
+    "concello": "Santiago de Compostela",
+    "latInicio": 42.87732,
+    "lonInicio": -8.5685,
+    "km": 5,
+    "desnivelPosM": 115,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 8
+      },
+      "esteiro": {
+        "cocheMin": 43
+      },
+      "sanxenxo": {
+        "cocheMin": 56
+      }
+    }
+  },
+  {
+    "id": "osm-18591073",
+    "osmRelationId": 18591073,
+    "nombre": "Xiro dos Montes 06 Monte de Conxo - Monte Santas Mariñas",
+    "concello": "Santiago de Compostela",
+    "latInicio": 42.85667,
+    "lonInicio": -8.55599,
+    "km": 4,
+    "desnivelPosM": 90,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 11
+      },
+      "esteiro": {
+        "cocheMin": 43
+      },
+      "sanxenxo": {
+        "cocheMin": 54
+      }
+    }
+  },
+  {
+    "id": "osm-18595157",
+    "osmRelationId": 18595157,
+    "nombre": "Ruta Maquino Largaño",
+    "concello": "Nogueira de Ramuín",
+    "latInicio": 42.4106,
+    "lonInicio": -7.72347,
+    "km": 15,
+    "desnivelPosM": 366,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 95
+      },
+      "esteiro": {
+        "cocheMin": 126
+      },
+      "sanxenxo": {
+        "cocheMin": 123
+      }
+    }
+  },
+  {
+    "id": "osm-18605875",
+    "osmRelationId": 18605875,
+    "nombre": "Ruta Canón do Río Mao",
+    "concello": "Parada de Sil",
+    "latInicio": 42.37483,
+    "lonInicio": -7.49709,
+    "km": 16,
+    "desnivelPosM": 398,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 130
+      },
+      "esteiro": {
+        "cocheMin": 160
+      },
+      "sanxenxo": {
+        "cocheMin": 153
+      }
+    }
+  },
+  {
+    "id": "osm-18696451",
+    "osmRelationId": 18696451,
+    "nombre": "Xiro Grande dos Montes 01 Ermida de Santa Lucía - A Lavacolla",
+    "concello": "Santiago de Compostela",
+    "latInicio": 42.84531,
+    "lonInicio": -8.5201,
+    "km": 13,
+    "desnivelPosM": 332,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 11
+      },
+      "esteiro": {
+        "cocheMin": 42
+      },
+      "sanxenxo": {
+        "cocheMin": 51
+      }
+    }
+  },
+  {
+    "id": "osm-18696452",
+    "osmRelationId": 18696452,
+    "nombre": "Xiro Grande dos Montes 02 A Lavacolla - A Igrexa",
+    "concello": "Santiago de Compostela",
+    "latInicio": 42.90075,
+    "lonInicio": -8.44494,
+    "km": 11,
+    "desnivelPosM": 282,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 16
+      },
+      "esteiro": {
+        "cocheMin": 50
+      },
+      "sanxenxo": {
+        "cocheMin": 59
+      }
+    }
+  },
+  {
+    "id": "osm-18696856",
+    "osmRelationId": 18696856,
+    "nombre": "Xiro Grande dos Montes 03 A Igrexa - Carballeira de Nemenzo",
+    "concello": "Santiago de Compostela",
+    "latInicio": 42.9637,
+    "lonInicio": -8.41671,
+    "km": 10,
+    "desnivelPosM": 250,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 27
+      },
+      "esteiro": {
+        "cocheMin": 61
+      },
+      "sanxenxo": {
+        "cocheMin": 70
+      }
+    }
+  },
+  {
+    "id": "osm-18696857",
+    "osmRelationId": 18696857,
+    "nombre": "Xiro Grande dos Montes 04 Carballeira de Nemenzo - Igrexa de Grixoa",
+    "concello": "Santiago de Compostela",
+    "latInicio": 42.95816,
+    "lonInicio": -8.48762,
+    "km": 16,
+    "desnivelPosM": 400,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 21
+      },
+      "esteiro": {
+        "cocheMin": 56
+      },
+      "sanxenxo": {
+        "cocheMin": 65
+      }
+    }
+  },
+  {
+    "id": "osm-18697629",
+    "osmRelationId": 18697629,
+    "nombre": "Xiro Grande dos Montes 05 Igrexa de Grixoa - Castromaior",
+    "concello": "Santiago de Compostela",
+    "latInicio": 42.94606,
+    "lonInicio": -8.54867,
+    "km": 11,
+    "desnivelPosM": 275,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 19
+      },
+      "esteiro": {
+        "cocheMin": 56
+      },
+      "sanxenxo": {
+        "cocheMin": 65
+      }
+    }
+  },
+  {
+    "id": "osm-18697630",
+    "osmRelationId": 18697630,
+    "nombre": "Xiro Grandes dos Montes 06 Castromaior - Portela de Figueiras",
+    "concello": "Santiago de Compostela",
+    "latInicio": 42.95803,
+    "lonInicio": -8.59063,
+    "km": 10,
+    "desnivelPosM": 238,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 27
+      },
+      "esteiro": {
+        "cocheMin": 59
+      },
+      "sanxenxo": {
+        "cocheMin": 76
+      }
+    }
+  },
+  {
+    "id": "osm-18697631",
+    "osmRelationId": 18697631,
+    "nombre": "Xiro Grande dos Montes 07 Portela de Figueiras - Portela de Villestro",
+    "concello": "Santiago de Compostela",
+    "latInicio": 42.91972,
+    "lonInicio": -8.58992,
+    "km": 8,
+    "desnivelPosM": 208,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 17
+      },
+      "esteiro": {
+        "cocheMin": 51
+      },
+      "sanxenxo": {
+        "cocheMin": 66
+      }
+    }
+  },
+  {
+    "id": "osm-18697868",
+    "osmRelationId": 18697868,
+    "nombre": "Xiro Grande dos Montes 08 Portela de Villestro - Monte da Curuxeira",
+    "concello": "Santiago de Compostela",
+    "latInicio": 42.87715,
+    "lonInicio": -8.62257,
+    "km": 10,
+    "desnivelPosM": 242,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 16
+      },
+      "esteiro": {
+        "cocheMin": 36
+      },
+      "sanxenxo": {
+        "cocheMin": 54
+      }
+    }
+  },
+  {
+    "id": "osm-18697869",
+    "osmRelationId": 18697869,
+    "nombre": "Xiro Grande dos Montes 09 Monte da Curuxeira - Ermida de Santa Lucía",
+    "concello": "Santiago de Compostela",
+    "latInicio": 42.84926,
+    "lonInicio": -8.56858,
+    "km": 8,
+    "desnivelPosM": 212,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 17
+      },
+      "esteiro": {
+        "cocheMin": 47
+      },
+      "sanxenxo": {
+        "cocheMin": 60
+      }
+    }
+  },
+  {
+    "id": "osm-19352706",
+    "osmRelationId": 19352706,
+    "nombre": "Senda da Ribeira",
+    "concello": "As Pontes de García Rodríguez",
+    "latInicio": 43.44538,
+    "lonInicio": -7.85127,
+    "km": 6,
+    "desnivelPosM": 150,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 87
+      },
+      "esteiro": {
+        "cocheMin": 119
+      },
+      "sanxenxo": {
+        "cocheMin": 128
+      }
+    }
+  },
+  {
+    "id": "osm-19618705",
+    "osmRelationId": 19618705,
+    "nombre": "Ruta da Teixeira",
+    "concello": "A Teixeira",
+    "latInicio": 42.3864,
+    "lonInicio": -7.48881,
+    "km": 14,
+    "desnivelPosM": 342,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 124
+      },
+      "esteiro": {
+        "cocheMin": 155
+      },
+      "sanxenxo": {
+        "cocheMin": 147
+      }
+    }
+  },
+  {
+    "id": "osm-19740019",
+    "osmRelationId": 19740019,
+    "nombre": "Ruta do Río Miño",
+    "concello": "Carballedo",
+    "latInicio": 42.45555,
+    "lonInicio": -7.73349,
+    "km": 5,
+    "desnivelPosM": 131,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 89
+      },
+      "esteiro": {
+        "cocheMin": 120
+      },
+      "sanxenxo": {
+        "cocheMin": 116
+      }
+    }
+  },
+  {
+    "id": "osm-19758597",
+    "osmRelationId": 19758597,
+    "nombre": "Sendeiro dos Viñedos da Ribeira Sacra",
+    "concello": "Sober",
+    "latInicio": 42.45983,
+    "lonInicio": -7.6176,
+    "km": 11,
+    "desnivelPosM": 278,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 105
+      },
+      "esteiro": {
+        "cocheMin": 135
+      },
+      "sanxenxo": {
+        "cocheMin": 134
+      }
+    }
+  },
+  {
+    "id": "osm-19762809",
+    "osmRelationId": 19762809,
+    "nombre": "Ruta da Ribeira Sacra do Río Miño",
+    "concello": "Pantón",
+    "latInicio": 42.51686,
+    "lonInicio": -7.7065,
+    "km": 5,
+    "desnivelPosM": 126,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 105
+      },
+      "esteiro": {
+        "cocheMin": 136
+      },
+      "sanxenxo": {
+        "cocheMin": 132
+      }
+    }
+  },
+  {
+    "id": "osm-19771510",
+    "osmRelationId": 19771510,
+    "nombre": "Ruta dos Viñedos de Belesar",
+    "concello": "Chantada",
+    "latInicio": 42.58995,
+    "lonInicio": -7.72585,
+    "km": 5,
+    "desnivelPosM": 114,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 81
+      },
+      "esteiro": {
+        "cocheMin": 112
+      },
+      "sanxenxo": {
+        "cocheMin": 115
+      }
+    }
+  },
+  {
+    "id": "osm-20199666",
+    "osmRelationId": 20199666,
+    "nombre": "Ares Verde",
+    "concello": "Ares",
+    "latInicio": 43.4224,
+    "lonInicio": -8.24483,
+    "km": 9,
+    "desnivelPosM": 244,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 72
+      },
+      "esteiro": {
+        "cocheMin": 104
+      },
+      "sanxenxo": {
+        "cocheMin": 113
+      }
+    }
+  },
+  {
+    "id": "osm-20599956",
+    "osmRelationId": 20599956,
+    "nombre": "PR-G 28 Ruta de Padrendo",
+    "concello": "Lobios",
+    "latInicio": 41.85702,
+    "lonInicio": -8.11463,
+    "km": 11,
+    "desnivelPosM": 282,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 131
+      },
+      "esteiro": {
+        "cocheMin": 161
+      },
+      "sanxenxo": {
+        "cocheMin": 135
+      }
+    }
+  },
+  {
+    "id": "osm-20745397",
+    "osmRelationId": 20745397,
+    "nombre": "Ruta do Miradoiro do Bico do Santo",
+    "concello": "Carnota",
+    "latInicio": 42.83789,
+    "lonInicio": -9.07667,
+    "km": 3,
+    "desnivelPosM": 104,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 80
+      },
+      "esteiro": {
+        "cocheMin": 36
+      },
+      "sanxenxo": {
+        "cocheMin": 112
+      }
+    }
+  },
+  {
+    "id": "osm-20779607",
+    "osmRelationId": 20779607,
+    "nombre": "Ruta circular desde el cruce del Bañal",
+    "concello": "Laxe",
+    "latInicio": 43.16153,
+    "lonInicio": -9.0375,
+    "km": 6,
+    "desnivelPosM": 208,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 78
+      },
+      "esteiro": {
+        "cocheMin": 80
+      },
+      "sanxenxo": {
+        "cocheMin": 115
+      }
+    }
+  },
+  {
+    "id": "osm-20779684",
+    "osmRelationId": 20779684,
+    "nombre": "Ruta circular desde Pasarela",
+    "concello": "Laxe",
+    "latInicio": 43.16697,
+    "lonInicio": -9.03675,
+    "km": 8,
+    "desnivelPosM": 208,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 76
+      },
+      "esteiro": {
+        "cocheMin": 78
+      },
+      "sanxenxo": {
+        "cocheMin": 113
+      }
+    }
+  },
+  {
+    "id": "osm-20781316",
+    "osmRelationId": 20781316,
+    "nombre": "Ruta lineal Pasarela-Traba",
+    "concello": "Vimianzo",
+    "latInicio": 43.14781,
+    "lonInicio": -9.04341,
+    "km": 6,
+    "desnivelPosM": 287,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 71
+      },
+      "esteiro": {
+        "cocheMin": 73
+      },
+      "sanxenxo": {
+        "cocheMin": 108
+      }
+    }
+  },
+  {
+    "id": "osm-20828736",
+    "osmRelationId": 20828736,
+    "nombre": "Ruta do Castro de Doade",
+    "concello": "Lalín",
+    "latInicio": 42.60884,
+    "lonInicio": -8.13209,
+    "km": 16,
+    "desnivelPosM": 388,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 46
+      },
+      "esteiro": {
+        "cocheMin": 76
+      },
+      "sanxenxo": {
+        "cocheMin": 83
+      }
+    }
+  },
+  {
+    "id": "osm-20957219",
+    "osmRelationId": 20957219,
+    "nombre": "Ruta da Cubela",
+    "concello": "Ribas de Sil",
+    "latInicio": 42.4535,
+    "lonInicio": -7.35678,
+    "km": 13,
+    "desnivelPosM": 332,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 121
+      },
+      "esteiro": {
+        "cocheMin": 152
+      },
+      "sanxenxo": {
+        "cocheMin": 156
+      }
+    }
+  },
+  {
+    "id": "osm-20968924",
+    "osmRelationId": 20968924,
+    "nombre": "Ruta do Ferro",
+    "concello": "O Incio",
+    "latInicio": 42.63565,
+    "lonInicio": -7.3491,
+    "km": 5,
+    "desnivelPosM": 131,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 130
+      },
+      "esteiro": {
+        "cocheMin": 160
+      },
+      "sanxenxo": {
+        "cocheMin": 164
+      }
+    }
+  },
+  {
+    "id": "osm-20971140",
+    "osmRelationId": 20971140,
+    "nombre": "Ruta do Maluro e Pena Trevinca",
+    "concello": "A Veiga",
+    "latInicio": 42.26631,
+    "lonInicio": -6.89531,
+    "km": 13,
+    "desnivelPosM": 318,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 207
+      },
+      "esteiro": {
+        "cocheMin": 238
+      },
+      "sanxenxo": {
+        "cocheMin": 230
+      }
+    }
+  },
+  {
+    "id": "osm-20971238",
+    "osmRelationId": 20971238,
+    "nombre": "Ruta Pena Trevinca polo Sestil Alto",
+    "concello": "A Veiga",
+    "latInicio": 42.25052,
+    "lonInicio": -6.89354,
+    "km": 9,
+    "desnivelPosM": 226,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 201
+      },
+      "esteiro": {
+        "cocheMin": 231
+      },
+      "sanxenxo": {
+        "cocheMin": 224
+      }
+    }
+  },
+  {
+    "id": "osm-21041570",
+    "osmRelationId": 21041570,
+    "nombre": "Ruta dos Castros do Irixo",
+    "concello": "O Irixo",
+    "latInicio": 42.51541,
+    "lonInicio": -8.12923,
+    "km": 5,
+    "desnivelPosM": 134,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 62
+      },
+      "esteiro": {
+        "cocheMin": 92
+      },
+      "sanxenxo": {
+        "cocheMin": 86
+      }
+    }
+  },
+  {
+    "id": "osm-21043490",
+    "osmRelationId": 21043490,
+    "nombre": "Senda de Santa Marta",
+    "concello": "Ribadavia",
+    "latInicio": 42.29533,
+    "lonInicio": -8.13479,
+    "km": 5,
+    "desnivelPosM": 134,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 75
+      },
+      "esteiro": {
+        "cocheMin": 106
+      },
+      "sanxenxo": {
+        "cocheMin": 84
+      }
+    }
+  },
+  {
+    "id": "osm-21044706",
+    "osmRelationId": 21044706,
+    "nombre": "Ruta do Ouro e do Camiño Real",
+    "concello": "Quiroga",
+    "latInicio": 42.48069,
+    "lonInicio": -7.33933,
+    "km": 16,
+    "desnivelPosM": 392,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 118
+      },
+      "esteiro": {
+        "cocheMin": 148
+      },
+      "sanxenxo": {
+        "cocheMin": 152
+      }
+    }
+  },
+  {
+    "id": "osm-21050003",
+    "osmRelationId": 21050003,
+    "nombre": "Senda da Pena Corneira",
+    "concello": "Leiro",
+    "latInicio": 42.36859,
+    "lonInicio": -8.12242,
+    "km": 8,
+    "desnivelPosM": 209,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 69
+      },
+      "esteiro": {
+        "cocheMin": 99
+      },
+      "sanxenxo": {
+        "cocheMin": 86
+      }
+    }
+  },
+  {
+    "id": "osm-21052467",
+    "osmRelationId": 21052467,
+    "nombre": "Ruta dos Muíños",
+    "concello": "Abadín",
+    "latInicio": 43.31026,
+    "lonInicio": -7.49714,
+    "km": 5,
+    "desnivelPosM": 130,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 103
+      },
+      "esteiro": {
+        "cocheMin": 135
+      },
+      "sanxenxo": {
+        "cocheMin": 144
+      }
+    }
+  },
+  {
+    "id": "osm-21052801",
+    "osmRelationId": 21052801,
+    "nombre": "Senda do Río Avia",
+    "concello": "Boborás",
+    "latInicio": 42.397,
+    "lonInicio": -8.14838,
+    "km": 16,
+    "desnivelPosM": 395,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 74
+      },
+      "esteiro": {
+        "cocheMin": 104
+      },
+      "sanxenxo": {
+        "cocheMin": 78
+      }
+    }
   }
 ]

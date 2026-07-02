@@ -9,10 +9,13 @@ npm run dev          # servidor de desarrollo (localhost:4321)
 npm run check        # typecheck + lint + format:check + tests (VERDE antes de cada commit)
 npm run test         # vitest (unitarios, puros, nunca tocan red)
 npm run build        # astro build -> dist/
+npm run lint:py / format:py / test:py           # ruff + pytest de la ingesta (requirements-dev.txt)
 python scripts/ingest/fetch_forecast.py        # predicción diaria (Open-Meteo, sin key)
 python scripts/ingest/fetch_horizon.py [--dry-run]  # perfil de horizonte PVGIS -> sol efectivo
 python scripts/ingest/build_travel.py [--dry-run]   # tiempos de viaje (ORS_API_KEY opcional)
-python scripts/ingest/build_catalog.py [--wfs] [--dry-run]  # catálogo + curación
+python scripts/ingest/build_catalog.py [--wfs] [--dry-run]  # catálogo playas + curación
+python scripts/ingest/build_routes.py [--dry-run] [--limit N]  # rutas de senderismo (OSM Overpass)
+python scripts/ingest/validate_catalog.py / validate_forecast.py  # barreras de calidad (corren en CI)
 ```
 
 ## Mapa de arquitectura
