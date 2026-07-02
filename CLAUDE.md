@@ -16,6 +16,8 @@ python scripts/ingest/build_travel.py [--dry-run]   # tiempos de viaje (ORS_API_
 python scripts/ingest/build_catalog.py [--wfs] [--dry-run]  # catálogo playas + curación
 python scripts/ingest/build_services.py [--dry-run] [--radius M]  # chiringuitos por playa (OSM)
 python scripts/ingest/build_routes.py [--dry-run] [--limit N]  # rutas de senderismo (OSM Overpass)
+python scripts/ingest/reconcile_blue_flags.py [--apply]  # banderaAzul vs lista oficial del año (tras build_catalog)
+python scripts/ingest/dedup_playas.py [--apply]  # funde casi-duplicados del IDE (tras build_catalog)
 python scripts/ingest/validate_catalog.py / validate_forecast.py  # barreras de calidad (corren en CI)
 ```
 
@@ -25,8 +27,9 @@ python scripts/ingest/validate_catalog.py / validate_forecast.py  # barreras de 
 - `src/lib/beaches/` y `src/lib/routes/` — factores y ranking de cada tipo. **NO se importan entre sí** (solo importan `core`). Es lo que permite escindir una app de solo playas.
 - `src/lib/verdict/` — compone el mejor de cada tipo en el veredicto. `src/lib/planner/` — orquesta beaches+routes+verdict (capa de composición, como la UI).
 - `src/components/` — presentacionales (MapDashboard con MapLibre, VerdictCard, DestinationList/Card, WeightSliders, Controls).
-- `src/islands/dashboard/Dashboard.tsx` — única isla React (`client:only`); estado en URL.
-- `src/i18n/` — `es.ts` + `gl.ts` (tipado: `gl` es `typeof es`, claves simétricas obligatorias). Toggle en cliente, sin espejo de rutas (eso es fase pública).
+- `src/islands/dashboard/Dashboard.tsx` — única isla React (`client:only`); estado en la query de la URL.
+- `src/lib/data/` — capa de E/S (SÍ hace red, no es lib pura): `load.ts` (carga y valida los bundles con zod), `geocode.ts` (Nominatim para la base libre), `travel.ts` (OSRM on-demand para la base libre).
+- `src/i18n/` — `es.ts` + `gl.ts` (tipado: `gl` es `typeof es`, claves simétricas obligatorias) + `seo.ts` (metadatos del `<head>` por idioma). **Espejo de rutas**: `/` (es) y `/gl/` (gl), con `<head>` y hreflang pre-renderizados por `src/layouts/Base.astro`; el toggle navega entre rutas (el idioma lo fija la ruta, no la query).
 - `public/data/` — JSON servido: `catalog/{playas,rutas}.json`, `meta/bases.json`, `forecast/latest.json`. Lo escribe la ingesta.
 - `data/mapping/` — curación manual (CSV), input de `build_catalog.py`.
 - `docs/` — `DATA.md` (fuentes y claves de cruce), `SCORING.md` (factores y veredicto). **Leer antes de tocar** la materia correspondiente.
@@ -51,4 +54,4 @@ python scripts/ingest/validate_catalog.py / validate_forecast.py  # barreras de 
 
 ## Decisiones tomadas (no se reabren sin motivo)
 
-Stack Astro+React+TS estático (espejo de ComparaClima); static-first con ingesta en CI (las keys nunca van al cliente); catálogo mixto (987 IDE Galicia + curación de las top); bases preset (Santiago/Esteiro/Sanxenxo) precalculadas, base libre en fase pública; i18n ES+GL con toggle. Plan completo en `C:\Users\ferre\.claude\plans\muy-bien-quiero-hacer-greedy-peach.md`.
+Stack Astro+React+TS estático (espejo de ComparaClima); static-first con ingesta en CI (las keys nunca van al cliente); catálogo mixto (IDE Galicia + curación de las top), reconciliado y deduplicado tras cada build; bases preset (Santiago/Esteiro/Sanxenxo) precalculadas y base libre con routing OSRM on-demand (sin backend); i18n ES+GL con espejo de rutas + hreflang. Plan completo en `C:\Users\ferre\.claude\plans\muy-bien-quiero-hacer-greedy-peach.md`.
