@@ -389,7 +389,8 @@
       1.1,
       0.8
     ],
-    "chiringuitosCount": 0
+    "chiringuitosCount": 0,
+    "banderaAzul": false
   },
   {
     "id": "corrubedo-ribeira",
@@ -5538,7 +5539,7 @@
     "lat": 42.60868,
     "lon": -8.86804,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 57
@@ -7122,7 +7123,7 @@
     "lat": 42.63811,
     "lon": -8.8817,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 46
@@ -7194,7 +7195,7 @@
     "lat": 42.63232,
     "lon": -8.87367,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 48
@@ -7842,7 +7843,7 @@
     "lat": 42.54777,
     "lon": -8.85845,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 51
@@ -8202,7 +8203,7 @@
     "lat": 42.63314,
     "lon": -8.76128,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 43
@@ -10434,7 +10435,7 @@
     "lat": 42.21015,
     "lon": -8.77612,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 76
@@ -11730,7 +11731,7 @@
     "lat": 42.26333,
     "lon": -8.68106,
     "curado": false,
-    "banderaAzul": false,
+    "banderaAzul": true,
     "travel": {
       "santiago": {
         "cocheMin": 65
@@ -13170,7 +13171,7 @@
     "lat": 42.22657,
     "lon": -8.75414,
     "curado": false,
-    "banderaAzul": false,
+    "banderaAzul": true,
     "travel": {
       "santiago": {
         "cocheMin": 72
@@ -15978,7 +15979,7 @@
     "lat": 42.54436,
     "lon": -8.86696,
     "curado": false,
-    "banderaAzul": false,
+    "banderaAzul": true,
     "travel": {
       "santiago": {
         "cocheMin": 54
@@ -19866,7 +19867,7 @@
     "lat": 42.4027,
     "lon": -8.75626,
     "curado": false,
-    "banderaAzul": false,
+    "banderaAzul": true,
     "travel": {
       "santiago": {
         "cocheMin": 60
@@ -20730,7 +20731,7 @@
     "lat": 42.41386,
     "lon": -8.74022,
     "curado": false,
-    "banderaAzul": false,
+    "banderaAzul": true,
     "travel": {
       "santiago": {
         "cocheMin": 59
@@ -23106,7 +23107,7 @@
     "lat": 42.29154,
     "lon": -8.84457,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 86
@@ -23754,7 +23755,7 @@
     "lat": 42.29559,
     "lon": -8.82066,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 73
@@ -29946,7 +29947,7 @@
     "lat": 43.5558,
     "lon": -7.13839,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 130
@@ -30882,7 +30883,7 @@
     "lat": 43.56187,
     "lon": -7.20106,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 131
@@ -30954,7 +30955,7 @@
     "lat": 43.56196,
     "lon": -7.2041,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 131
@@ -31026,7 +31027,7 @@
     "lat": 43.56504,
     "lon": -7.22606,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 130
@@ -31386,7 +31387,7 @@
     "lat": 43.67154,
     "lon": -7.36484,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 145
@@ -33906,7 +33907,7 @@
     "lat": 42.24983,
     "lon": -8.79476,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 73
@@ -33978,7 +33979,7 @@
     "lat": 42.25965,
     "lon": -8.81379,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 75
@@ -34338,7 +34339,7 @@
     "lat": 42.25797,
     "lon": -8.83709,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 80
@@ -35706,7 +35707,7 @@
     "lat": 42.32719,
     "lon": -8.78889,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 66
@@ -37434,7 +37435,7 @@
     "lat": 43.35898,
     "lon": -8.21015,
     "curado": false,
-    "banderaAzul": false,
+    "banderaAzul": true,
     "travel": {
       "santiago": {
         "cocheMin": 52
@@ -43122,7 +43123,7 @@
     "lat": 43.29148,
     "lon": -8.72268,
     "curado": false,
-    "banderaAzul": false,
+    "banderaAzul": true,
     "travel": {
       "santiago": {
         "cocheMin": 72
@@ -50034,7 +50035,7 @@
     "lat": 42.75931,
     "lon": -9.07115,
     "curado": false,
-    "banderaAzul": false,
+    "banderaAzul": true,
     "travel": {
       "santiago": {
         "cocheMin": 61
@@ -50250,7 +50251,7 @@
     "lat": 43.5633,
     "lon": -7.21259,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 130
@@ -50466,7 +50467,7 @@
     "lat": 42.54624,
     "lon": -8.85931,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 55
@@ -50754,7 +50755,7 @@
     "lat": 43.72162,
     "lon": -7.81024,
     "curado": false,
-    "banderaAzul": false,
+    "banderaAzul": true,
     "travel": {
       "santiago": {
         "cocheMin": 118
@@ -50826,7 +50827,7 @@
     "lat": 43.7188,
     "lon": -7.80853,
     "curado": false,
-    "banderaAzul": false,
+    "banderaAzul": true,
     "travel": {
       "santiago": {
         "cocheMin": 116
@@ -50898,7 +50899,7 @@
     "lat": 43.71612,
     "lon": -7.80831,
     "curado": false,
-    "banderaAzul": false,
+    "banderaAzul": true,
     "travel": {
       "santiago": {
         "cocheMin": 115
@@ -56658,7 +56659,7 @@
     "lat": 43.54073,
     "lon": -8.29878,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 84
@@ -62130,7 +62131,7 @@
     "lat": 43.55554,
     "lon": -8.26696,
     "curado": false,
-    "banderaAzul": false,
+    "banderaAzul": true,
     "travel": {
       "santiago": {
         "cocheMin": 85
@@ -62850,7 +62851,7 @@
     "lat": 43.47712,
     "lon": -8.20383,
     "curado": false,
-    "banderaAzul": false,
+    "banderaAzul": true,
     "travel": {
       "santiago": {
         "cocheMin": 71
@@ -63570,7 +63571,7 @@
     "lat": 43.70409,
     "lon": -7.84899,
     "curado": false,
-    "banderaAzul": false,
+    "banderaAzul": true,
     "travel": {
       "santiago": {
         "cocheMin": 111
@@ -64218,7 +64219,7 @@
     "lat": 43.35427,
     "lon": -8.48918,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 64
@@ -65226,7 +65227,7 @@
     "lat": 43.31757,
     "lon": -8.53008,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 69
@@ -65298,7 +65299,7 @@
     "lat": 43.3157,
     "lon": -8.53316,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 69
@@ -66162,7 +66163,7 @@
     "lat": 43.31193,
     "lon": -8.56012,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 72
@@ -67170,7 +67171,7 @@
     "lat": 43.31521,
     "lon": -8.60994,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 79
@@ -68178,7 +68179,7 @@
     "lat": 43.29725,
     "lon": -8.68387,
     "curado": false,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "travel": {
       "santiago": {
         "cocheMin": 75
@@ -68898,7 +68899,7 @@
     "lat": 43.35645,
     "lon": -8.21327,
     "curado": false,
-    "banderaAzul": false,
+    "banderaAzul": true,
     "travel": {
       "santiago": {
         "cocheMin": 52
@@ -70986,7 +70987,7 @@
     "lat": 43.29455,
     "lon": -8.90527,
     "curado": false,
-    "banderaAzul": false,
+    "banderaAzul": true,
     "travel": {
       "santiago": {
         "cocheMin": 87
