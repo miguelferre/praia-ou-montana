@@ -248,7 +248,7 @@
     "orientacionDeg": -20,
     "tipoArena": "fina",
     "longitudM": 1300,
-    "banderaAzul": true,
+    "banderaAzul": false,
     "chiringuitosCount": 1,
     "restauracionM": 500,
     "pmr": {
