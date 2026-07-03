@@ -1,5 +1,10 @@
-import { DEFAULT_PESOS } from '@/lib/core/prefs';
-import type { Modo, Pesos } from '@/lib/core/types';
+import {
+  DEFAULT_PESOS,
+  DEFAULT_RUTA_PREF,
+  RUTA_DESNIVEL_RANGE,
+  RUTA_KM_RANGE,
+} from '@/lib/core/prefs';
+import type { Modo, Pesos, RutaPref } from '@/lib/core/types';
 
 /** Pestaña activa de la lista/mapa (playa o ruta). */
 export type PanelTab = 'playa' | 'ruta';
@@ -16,6 +21,8 @@ export interface UrlState {
   maxViajeMin: number;
   /** Pesos del motor: se comparten para reproducir el mismo ranking. */
   pesos: Pesos;
+  /** Ruta ideal del usuario (km y desnivel objetivo) que alimenta el factor de dureza. */
+  rutaPref: RutaPref;
   tab: PanelTab;
 }
 
@@ -26,6 +33,12 @@ function numOrUndef(raw: string | null): number | undefined {
   if (raw === null) return undefined;
   const n = Number(raw);
   return Number.isFinite(n) ? n : undefined;
+}
+
+/** Lee un número acotado al rango [min,max]; ausente o inválido → `fallback`. */
+function readRange(raw: string | null, min: number, max: number, fallback: number): number {
+  const n = numOrUndef(raw);
+  return n === undefined ? fallback : Math.max(min, Math.min(max, n));
 }
 
 const MODOS: Modo[] = ['auto', 'solo_playa', 'solo_ruta'];
@@ -92,6 +105,20 @@ export function readUrlState(search: string, fallbackBase: string): UrlState {
     requierePmr: p.get('pmr') === '1',
     maxViajeMin: Number.isFinite(maxRaw) && maxRaw > 0 ? maxRaw : 90,
     pesos: decodePesos(p.get('w')),
+    rutaPref: {
+      kmObjetivo: readRange(
+        p.get('rk'),
+        RUTA_KM_RANGE.min,
+        RUTA_KM_RANGE.max,
+        DEFAULT_RUTA_PREF.kmObjetivo,
+      ),
+      desnivelObjetivo: readRange(
+        p.get('rd'),
+        RUTA_DESNIVEL_RANGE.min,
+        RUTA_DESNIVEL_RANGE.max,
+        DEFAULT_RUTA_PREF.desnivelObjetivo,
+      ),
+    },
     tab: tabRaw === 'ruta' ? 'ruta' : 'playa',
   };
 }
@@ -113,6 +140,12 @@ export function writeUrlState(state: UrlState): void {
   if (state.maxViajeMin !== 90) p.set('max', String(state.maxViajeMin));
   // Solo se añaden a la URL cuando difieren del defecto, para no ensuciarla.
   if (!samePesos(state.pesos, DEFAULT_PESOS)) p.set('w', encodePesos(state.pesos));
+  if (state.rutaPref.kmObjetivo !== DEFAULT_RUTA_PREF.kmObjetivo) {
+    p.set('rk', String(state.rutaPref.kmObjetivo));
+  }
+  if (state.rutaPref.desnivelObjetivo !== DEFAULT_RUTA_PREF.desnivelObjetivo) {
+    p.set('rd', String(state.rutaPref.desnivelObjetivo));
+  }
   if (state.tab === 'ruta') p.set('tab', state.tab);
   window.history.replaceState(null, '', `${window.location.pathname}?${p.toString()}`);
 }

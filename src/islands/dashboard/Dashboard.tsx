@@ -4,12 +4,13 @@ import { DestinationCard } from '@/components/DestinationCard';
 import { DestinationList, type Tab } from '@/components/DestinationList';
 import { MapDashboard, type MapMetric } from '@/components/MapDashboard';
 import { Methodology } from '@/components/Methodology';
+import { RoutePrefs } from '@/components/RoutePrefs';
 import { VerdictCard } from '@/components/VerdictCard';
 import { WeightSliders } from '@/components/WeightSliders';
 import { DEFAULT_LANG, getDict, type Lang } from '@/i18n';
 import { DEFAULT_PESOS } from '@/lib/core/prefs';
 import type { ScoredItem } from '@/lib/core/result';
-import type { Base, Modo, Pesos, Playa, Ruta, UserPrefs } from '@/lib/core/types';
+import type { Base, Modo, Pesos, Playa, RutaPref, Ruta, UserPrefs } from '@/lib/core/types';
 import { loadAppData, type AppData } from '@/lib/data/load';
 import type { GeoPlace } from '@/lib/data/geocode';
 import { fetchCustomTravel, type TravelPoint } from '@/lib/data/travel';
@@ -52,6 +53,7 @@ export default function Dashboard({ lang: initialLang = DEFAULT_LANG }: { lang?:
   const [requierePmr, setRequierePmr] = useState(initial.requierePmr);
   const [maxViajeMin, setMaxViajeMin] = useState(initial.maxViajeMin);
   const [pesos, setPesos] = useState<Pesos>(initial.pesos);
+  const [rutaPref, setRutaPref] = useState<RutaPref>(initial.rutaPref);
   const [tab, setTab] = useState<Tab>(initial.tab);
   const [mapMetric, setMapMetric] = useState<MapMetric>('score');
   const [activeId, setActiveId] = useState<string | null>(null);
@@ -81,9 +83,10 @@ export default function Dashboard({ lang: initialLang = DEFAULT_LANG }: { lang?:
       requierePmr,
       maxViajeMin,
       pesos,
+      rutaPref,
       tab,
     });
-  }, [baseId, customBase, modo, requierePmr, maxViajeMin, pesos, tab]);
+  }, [baseId, customBase, modo, requierePmr, maxViajeMin, pesos, rutaPref, tab]);
 
   // Base libre: pide a OSRM los tiempos de coche reales (las bases preset ya los traen
   // precalculados). Progresivo y tolerante a fallos; cae a la estimación si algo falla.
@@ -157,7 +160,7 @@ export default function Dashboard({ lang: initialLang = DEFAULT_LANG }: { lang?:
       modo,
       transporte: 'coche',
       maxViajeMin,
-      rutaPref: { kmObjetivo: 10, desnivelObjetivo: 400 },
+      rutaPref,
       requierePmr,
       pesos,
     };
@@ -168,7 +171,7 @@ export default function Dashboard({ lang: initialLang = DEFAULT_LANG }: { lang?:
       forecast: data.forecast,
       prefs,
     });
-  }, [data, base, catalogForPlan, modo, maxViajeMin, requierePmr, pesos, date]);
+  }, [data, base, catalogForPlan, modo, maxViajeMin, requierePmr, pesos, rutaPref, date]);
 
   if (loadError) {
     return (
@@ -238,6 +241,10 @@ export default function Dashboard({ lang: initialLang = DEFAULT_LANG }: { lang?:
         onReset={() => setPesos({ ...DEFAULT_PESOS })}
         dict={dict}
       />
+
+      {modo !== 'solo_playa' && (
+        <RoutePrefs rutaPref={rutaPref} onChange={setRutaPref} dict={dict} />
+      )}
 
       <VerdictCard
         verdict={result.verdict}

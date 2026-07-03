@@ -95,6 +95,12 @@ export const es = {
     groupBeach: 'Playa',
     groupRoute: 'Ruta',
   },
+  rutaPref: {
+    title: 'Tu ruta ideal',
+    km: 'Distancia',
+    desnivel: 'Desnivel',
+    hint: 'Cuanto más se acerque una ruta a estos valores, mejor puntúa su exigencia.',
+  },
   metodologia: {
     title: 'Cómo se calcula',
     intro:

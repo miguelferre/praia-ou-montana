@@ -142,13 +142,19 @@ export interface Pesos {
   circular: number;
 }
 
+/** Preferencia de dureza de ruta (objetivos de distancia y desnivel del usuario). */
+export interface RutaPref {
+  kmObjetivo: number;
+  desnivelObjetivo: number;
+}
+
 export interface UserPrefs {
   baseId: string;
   modo: Modo;
   transporte: Transporte;
   maxViajeMin: number;
   /** Preferencia de dureza de ruta. */
-  rutaPref: { kmObjetivo: number; desnivelObjetivo: number };
+  rutaPref: RutaPref;
   /** Si necesita accesibilidad PMR, las playas sin PMR se filtran (filtro duro). */
   requierePmr: boolean;
   pesos: Pesos;

@@ -716,6 +716,14 @@ input[type='range'] {
   margin-top: 16px;
 }
 
+/* Sliders de "ruta ideal": los dos campos-range se reparten y hacen wrap en móvil. */
+.route-prefs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 22px;
+  margin-top: 14px;
+}
+
 .sliders-hint {
   margin: 14px 0 0;
   font-size: 0.82rem;

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { readUrlState } from '@/lib/ui/url-state';
-import { DEFAULT_PESOS } from '@/lib/core/prefs';
+import { DEFAULT_PESOS, DEFAULT_RUTA_PREF } from '@/lib/core/prefs';
 
 // Orden fijo de los pesos en el parámetro `w` (ver url-state.ts).
 const W_ORDER = 'clima,cercania,solEfectivo,tempAgua,masificacion,servicios,dificultadFit,circular';
@@ -13,7 +13,25 @@ describe('readUrlState — valores por defecto', () => {
     expect(s.requierePmr).toBe(false);
     expect(s.maxViajeMin).toBe(90);
     expect(s.pesos).toEqual(DEFAULT_PESOS);
+    expect(s.rutaPref).toEqual(DEFAULT_RUTA_PREF);
     expect(s.tab).toBe('playa');
+  });
+});
+
+describe('readUrlState — ruta ideal (rk/rd)', () => {
+  it('lee km y desnivel objetivo', () => {
+    const s = readUrlState('?rk=15&rd=800', 'santiago');
+    expect(s.rutaPref).toEqual({ kmObjetivo: 15, desnivelObjetivo: 800 });
+  });
+
+  it('acota los valores fuera de rango a los límites del slider', () => {
+    const s = readUrlState('?rk=999&rd=-50', 'santiago');
+    expect(s.rutaPref.kmObjetivo).toBe(25); // máximo de km
+    expect(s.rutaPref.desnivelObjetivo).toBe(0); // mínimo de desnivel
+  });
+
+  it('valores no numéricos caen al defecto', () => {
+    expect(readUrlState('?rk=foo&rd=bar', 'santiago').rutaPref).toEqual(DEFAULT_RUTA_PREF);
   });
 });
 

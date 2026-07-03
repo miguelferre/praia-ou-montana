@@ -95,6 +95,12 @@ export const gl: Dict = {
     groupBeach: 'Praia',
     groupRoute: 'Ruta',
   },
+  rutaPref: {
+    title: 'A túa ruta ideal',
+    km: 'Distancia',
+    desnivel: 'Desnivel',
+    hint: 'Canto máis se achegue unha ruta a estes valores, mellor puntúa a súa esixencia.',
+  },
   metodologia: {
     title: 'Como se calcula',
     intro:
