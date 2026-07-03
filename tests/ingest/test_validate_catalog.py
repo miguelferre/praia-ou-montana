@@ -1,6 +1,12 @@
 """Tests del validador de catálogo (funciones puras, sin red ni ficheros)."""
 
-from validate_catalog import PLAYA_REQUIRED, validate_items, warn_misplaced
+from validate_catalog import (
+    PLAYA_REQUIRED,
+    RUTA_ENUMS,
+    RUTA_REQUIRED,
+    validate_items,
+    warn_misplaced,
+)
 
 
 def _playa(**over):
@@ -10,6 +16,23 @@ def _playa(**over):
         "concello": "Noia",
         "lat": 42.79,
         "lon": -8.91,
+        "travel": {},
+    }
+    base.update(over)
+    return base
+
+
+def _ruta(**over):
+    base = {
+        "id": "r1",
+        "nombre": "Ruta Test",
+        "concello": "Noia",
+        "latInicio": 42.79,
+        "lonInicio": -8.91,
+        "km": 10,
+        "desnivelPosM": 400,
+        "tipo": "circular",
+        "dificultad": "media",
         "travel": {},
     }
     base.update(over)
@@ -60,3 +83,38 @@ def test_sin_aviso_si_estan_cerca():
         _playa(id="b", nombre="Praia do Testal", lat=42.7908, lon=-8.9128),
     ]
     assert warn_misplaced(items, "lat", "lon") == []
+
+
+# --- rutas: contrato alineado con el zod del cliente (F10) ---------------------
+
+
+def test_ruta_valida_no_da_errores():
+    assert validate_items([_ruta()], RUTA_REQUIRED, "latInicio", "lonInicio", RUTA_ENUMS) == []
+
+
+def test_falla_tipo_ruta_ausente():
+    errs = validate_items([_ruta(tipo="")], RUTA_REQUIRED, "latInicio", "lonInicio", RUTA_ENUMS)
+    assert any("tipo" in e for e in errs)
+
+
+def test_falla_dificultad_ruta_ausente():
+    errs = validate_items(
+        [_ruta(dificultad="")], RUTA_REQUIRED, "latInicio", "lonInicio", RUTA_ENUMS
+    )
+    assert any("dificultad" in e for e in errs)
+
+
+def test_falla_tipo_fuera_de_enum():
+    # 'Circular' con mayúscula pasa la presencia pero z.enum(['circular','lineal']) lo rechaza:
+    # el validador debe cazarlo para no commitear datos que rompen la carga del cliente.
+    errs = validate_items(
+        [_ruta(tipo="Circular")], RUTA_REQUIRED, "latInicio", "lonInicio", RUTA_ENUMS
+    )
+    assert any("tipo" in e and "fuera de" in e for e in errs)
+
+
+def test_falla_dificultad_fuera_de_enum():
+    errs = validate_items(
+        [_ruta(dificultad="difícil")], RUTA_REQUIRED, "latInicio", "lonInicio", RUTA_ENUMS
+    )
+    assert any("dificultad" in e and "fuera de" in e for e in errs)

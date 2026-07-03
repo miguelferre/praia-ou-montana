@@ -35,8 +35,25 @@ LON_MIN, LON_MAX = -9.5, -6.5
 # ser la propia segmentación de IDE; muy por encima huele a ubicación equivocada.
 SAME_NAME_WARN_M = 1200
 
+# Contrato ALINEADO con el zod del cliente (src/lib/data/load.ts): lo que aquí pase
+# debe cargar en el navegador. Si el validador es más laxo que zod, un dato "válido"
+# en CI puede tumbar la carga de TODA la app (loadAppData es todo-o-nada).
 PLAYA_REQUIRED = ("id", "nombre", "concello", "lat", "lon", "travel")
-RUTA_REQUIRED = ("id", "nombre", "concello", "latInicio", "lonInicio", "km", "desnivelPosM")
+RUTA_REQUIRED = (
+    "id",
+    "nombre",
+    "concello",
+    "latInicio",
+    "lonInicio",
+    "km",
+    "desnivelPosM",
+    "tipo",
+    "dificultad",
+    "travel",
+)
+# Enums que zod exige por valor (no solo presencia): un "Circular" con mayúscula
+# pasaría el chequeo de presencia pero z.enum(['circular','lineal']) lo rechaza.
+RUTA_ENUMS = {"tipo": ("circular", "lineal"), "dificultad": ("baja", "media", "alta")}
 
 
 def _is_number(x: object) -> TypeGuard[float]:
@@ -49,7 +66,13 @@ def _norm_name(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
-def validate_items(items: object, required: tuple[str, ...], latk: str, lonk: str) -> list[str]:
+def validate_items(
+    items: object,
+    required: tuple[str, ...],
+    latk: str,
+    lonk: str,
+    enums: dict[str, tuple[str, ...]] | None = None,
+) -> list[str]:
     """Errores duros de una lista de destinos (lista vacía = válida)."""
     errs: list[str] = []
     if not isinstance(items, list) or not items:
@@ -64,6 +87,10 @@ def validate_items(items: object, required: tuple[str, ...], latk: str, lonk: st
         for key in required:
             if key not in it or it[key] in (None, ""):
                 errs.append(f"{ident}: falta '{key}'")
+        for field, allowed in (enums or {}).items():
+            val = it.get(field)
+            if val is not None and val not in allowed:
+                errs.append(f"{ident}: '{field}' fuera de {allowed} ({val!r})")
         if ident in seen_ids:
             errs.append(f"id duplicado: {ident}")
         seen_ids.add(ident)
@@ -110,7 +137,7 @@ def main() -> int:
     rutas_path = CATALOG / "rutas.json"
     if rutas_path.exists():
         rutas = json.loads(rutas_path.read_text(encoding="utf-8"))
-        errs += validate_items(rutas, RUTA_REQUIRED, "latInicio", "lonInicio")
+        errs += validate_items(rutas, RUTA_REQUIRED, "latInicio", "lonInicio", RUTA_ENUMS)
 
     for w in warns:
         print(f"  [aviso] posible ubicación errónea: {w}", file=sys.stderr)

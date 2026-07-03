@@ -33,6 +33,19 @@ def rough_minutes(base: dict, lat: float, lon: float) -> int:
     return round(haversine_km(base["lat"], base["lon"], lat, lon) * 1.3 / 65 * 60)
 
 
+def minutes_or_rough(
+    base: dict, dests: list[tuple[float, float]], durations_s: list[float | None]
+) -> list[int]:
+    """Empareja cada destino con su duración (segundos) y cae a la estimación
+    haversine cuando la matriz no da ruta (`None`). Un destino irrutable NO debe
+    quedar en 0 min (cercanía perfecta falsa): esa era la diferencia entre el camino
+    ORS y el OSRM; ahora ambos comparten este fallback."""
+    return [
+        round(d / 60) if d is not None else rough_minutes(base, lat, lon)
+        for (lat, lon), d in zip(dests, durations_s, strict=False)
+    ]
+
+
 def ors_minutes(base: dict, dests: list[tuple[float, float]], key: str) -> list[int]:
     locations = [[base["lon"], base["lat"]]] + [[lon, lat] for lat, lon in dests]
     body = {
@@ -43,7 +56,8 @@ def ors_minutes(base: dict, dests: list[tuple[float, float]], key: str) -> list[
     }
     resp = SESSION.post(ORS_URL, json=body, headers={"Authorization": key}, timeout=40)
     resp.raise_for_status()
-    return [round((s or 0) / 60) for s in resp.json()["durations"][0]]
+    # `destinations` excluye el origen, así que la fila ya está alineada con `dests`.
+    return minutes_or_rough(base, dests, resp.json()["durations"][0])
 
 
 def osrm_minutes(base: dict, dests: list[tuple[float, float]]) -> list[int]:
@@ -61,8 +75,7 @@ def osrm_minutes(base: dict, dests: list[tuple[float, float]]) -> list[int]:
             )
             resp.raise_for_status()
             durs = resp.json()["durations"][0][1:]  # quita el origen->origen
-            for (lat, lon), d in zip(chunk, durs, strict=False):
-                out.append(round(d / 60) if d is not None else rough_minutes(base, lat, lon))
+            out.extend(minutes_or_rough(base, list(chunk), durs))
         except Exception as err:  # noqa: BLE001 - degradación deliberada
             print(f"  [aviso] OSRM fallo en un tramo ({err}); haversine para {len(chunk)}")
             out.extend(rough_minutes(base, lat, lon) for (lat, lon) in chunk)

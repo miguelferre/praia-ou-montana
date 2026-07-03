@@ -74,16 +74,19 @@ export function readUrlState(search: string, fallbackBase: string): UrlState {
   const modoRaw = p.get('modo') ?? 'auto';
   const maxRaw = Number(p.get('max'));
   const tabRaw = p.get('tab');
-  const baseId = p.get('base') ?? fallbackBase;
-  const custom = baseId === CUSTOM_BASE_ID;
-  const baseLat = custom ? numOrUndef(p.get('blat')) : undefined;
-  const baseLon = custom ? numOrUndef(p.get('blon')) : undefined;
+  const rawBase = p.get('base') ?? fallbackBase;
+  const baseLat = rawBase === CUSTOM_BASE_ID ? numOrUndef(p.get('blat')) : undefined;
+  const baseLon = rawBase === CUSTOM_BASE_ID ? numOrUndef(p.get('blon')) : undefined;
+  // base=custom exige coordenadas: sin ellas (URL truncada o manipulada) se cae al
+  // fallback en vez de dejar un estado colgado — selector en 'custom' sin punto y el
+  // ranking usando Santiago mientras la URL se reescribe como custom.
+  const custom = baseLat !== undefined && baseLon !== undefined;
+  const baseId = rawBase === CUSTOM_BASE_ID && !custom ? fallbackBase : rawBase;
   const baseName = custom ? (p.get('bn') ?? undefined) : undefined;
   return {
     baseId,
     // Cada clave opcional se incluye solo si tiene valor (exactOptionalPropertyTypes).
-    ...(baseLat !== undefined ? { baseLat } : {}),
-    ...(baseLon !== undefined ? { baseLon } : {}),
+    ...(baseLat !== undefined && baseLon !== undefined ? { baseLat, baseLon } : {}),
     ...(baseName !== undefined ? { baseName } : {}),
     modo: isModo(modoRaw) ? modoRaw : 'auto',
     requierePmr: p.get('pmr') === '1',

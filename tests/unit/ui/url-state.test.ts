@@ -76,6 +76,19 @@ describe('readUrlState — base libre (custom)', () => {
     expect(s.baseLat).toBeUndefined();
     expect(s.baseLon).toBeUndefined();
   });
+
+  it('base=custom sin coordenadas cae al fallback (no deja estado colgado)', () => {
+    const s = readUrlState('?base=custom', 'santiago');
+    expect(s.baseId).toBe('santiago');
+    expect(s.baseLat).toBeUndefined();
+    expect(s.baseLon).toBeUndefined();
+  });
+
+  it('base=custom con coordenadas inválidas cae al fallback', () => {
+    const s = readUrlState('?base=custom&blat=foo&blon=-8.72', 'santiago');
+    expect(s.baseId).toBe('santiago');
+    expect(s.baseLat).toBeUndefined();
+  });
 });
 
 describe('readUrlState — pestaña', () => {
