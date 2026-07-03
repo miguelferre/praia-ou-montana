@@ -23,6 +23,7 @@ export const gl: Dict = {
   },
   verdict: {
     heading: 'Hoxe mellor…',
+    staleNote: 'a predición de hoxe aínda non está',
     playa: 'PRAIA',
     montana: 'MONTAÑA',
     ambas: 'Bo día para as dúas',

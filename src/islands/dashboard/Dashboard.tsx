@@ -197,6 +197,13 @@ export default function Dashboard({ lang: initialLang = DEFAULT_LANG }: { lang?:
     effTab === 'playa' ? result.beaches.ranked.length : result.routes.ranked.length;
   const selected: ScoredItem | undefined = list.find((it) => idOf(it) === activeId) ?? list[0];
 
+  // Frescura del forecast: el bundle servido puede quedarse atrás si la ingesta diaria
+  // falla. Se compara su fecha (Europe/Madrid, como la escribe la ingesta) con hoy para
+  // no vender una meteo caducada como "hoy mejor…".
+  const todayMadrid = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Madrid' }).format(date);
+  const forecastDate = Object.values(data.forecast)[0]?.fecha;
+  const forecastStale = forecastDate !== undefined && forecastDate !== todayMadrid;
+
   return (
     <div className="app">
       <header className="app-header">
@@ -232,7 +239,12 @@ export default function Dashboard({ lang: initialLang = DEFAULT_LANG }: { lang?:
         dict={dict}
       />
 
-      <VerdictCard verdict={result.verdict} dict={dict} />
+      <VerdictCard
+        verdict={result.verdict}
+        dict={dict}
+        stale={forecastStale}
+        {...(forecastDate !== undefined ? { forecastDate } : {})}
+      />
 
       <div className="dashboard">
         <div className="col-map">

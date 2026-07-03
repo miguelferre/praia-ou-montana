@@ -336,6 +336,18 @@ input[type='range'] {
   color: var(--muted);
 }
 
+/* Aviso de forecast no actualizado: discreto, sobre el héroe (mismo tratamiento de
+   texto claro que el eyebrow) y legible también sobre el fondo claro de 'ninguna'. */
+.verdict-stale {
+  margin: 4px 0 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: oklch(1 0 0 / 0.92);
+}
+.verdict[data-kind='ninguna'] .verdict-stale {
+  color: var(--muted);
+}
+
 .verdict-title {
   font-family: var(--font-display);
   font-weight: 600;

@@ -22,6 +22,7 @@ export const es = {
   },
   verdict: {
     heading: 'Hoy mejor…',
+    staleNote: 'la predicción de hoy aún no está',
     playa: 'PLAYA',
     montana: 'MONTAÑA',
     ambas: 'Buen día para ambas',
