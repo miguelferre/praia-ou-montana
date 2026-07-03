@@ -36,7 +36,7 @@
 
   /* Tipografía: una grotesca para la UI; serif SOLO para el héroe del veredicto */
   --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
-  --font-sans: 'Hanken Grotesque', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-sans: 'Hanken Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
   /* Métricas — redondeadas y con aire (referencia outdoor) */
   --radius: 14px;

@@ -50,18 +50,23 @@ function Tides({ mareas, dict }: { mareas: TideEvent[] | undefined; dict: Dict }
 }
 
 function Breakdown({ item, dict }: { item: ScoredItem; dict: Dict }) {
+  // El desglose explica el número del badge: cada fila muestra los PUNTOS que ese
+  // factor aporta a la nota (los `points` suman el total). La barra es esa
+  // contribución como fracción de la nota, así el desglose y el badge cuadran
+  // (antes se pintaba el valor normalizado suelto, que no sumaba el total).
+  const total = item.score.total;
   return (
     <div className="breakdown">
       {item.score.breakdown.map((b) => {
         const label = dict.factors[b.key as keyof Dict['factors']] ?? b.label;
-        const pct = round(b.value * 100);
+        const share = total > 0 ? (b.points / total) * 100 : 0;
         return (
           <div className="bd-row" key={b.key}>
             <span className="muted">{label}</span>
             <span className="bd-bar">
-              <span className="bd-fill" style={{ width: `${pct}%` }} />
+              <span className="bd-fill" style={{ width: `${round(share)}%` }} />
             </span>
-            <span style={{ textAlign: 'right' }}>{pct}</span>
+            <span style={{ textAlign: 'right' }}>{round(b.points)}</span>
           </div>
         );
       })}

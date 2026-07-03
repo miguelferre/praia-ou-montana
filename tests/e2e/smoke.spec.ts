@@ -25,7 +25,8 @@ test('el veredicto del día se renderiza', async ({ page }) => {
 test('el cambio de idioma ES→GL actualiza texto y URL', async ({ page }) => {
   await page.goto('/');
   await page.getByRole('button', { name: 'GL', exact: true }).click();
-  await expect(page).toHaveURL(/lang=gl/);
+  // El toggle navega a la ruta espejo /gl/ (el idioma lo fija la ruta, no la query).
+  await expect(page).toHaveURL(/\/gl\//);
   await expect(page.getByText(/hoxe en Galicia/i)).toBeVisible();
 });
 
