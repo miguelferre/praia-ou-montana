@@ -4,6 +4,7 @@ import type { Dict } from './es';
 export const gl: Dict = {
   appName: 'Praia ou montaña',
   tagline: 'Praia ou ruta hoxe en Galicia? Segundo o tempo, a luz e a túa base.',
+  loading: 'Cargando…',
   controls: {
     base: 'A túa base',
     mode: 'Que che apetece',
@@ -33,6 +34,7 @@ export const gl: Dict = {
     water: 'auga a',
     minCar: 'min en coche',
     tie: 'Están moi igualadas: escolle segundo che apeteza.',
+    handicap: 'de desvantaxe para a praia hoxe (inverno ou auga fría)',
   },
   panel: {
     beaches: 'Praias',
@@ -48,6 +50,7 @@ export const gl: Dict = {
     agua: 'Tª auga',
     sol: 'Solpor',
     viaje: 'Viaxe',
+    aria: 'Mapa de Galicia',
   },
   card: {
     travel: 'min en coche',
@@ -76,6 +79,7 @@ export const gl: Dict = {
     wikiloc: 'Ver en Wikiloc',
     directions: 'Como chegar',
     crowdEstimate: 'masificación estimada',
+    blueFlag: 'Bandeira azul',
   },
   factors: {
     clima: 'Clima',

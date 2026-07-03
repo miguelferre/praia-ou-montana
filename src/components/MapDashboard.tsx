@@ -44,11 +44,18 @@ function routeLabel(r: ScoredRuta, metric: MapMetric): string {
 
 export function MapDashboard(props: Props) {
   const { base, playas, rutas, tab, metric, onMetric, activeId, onSelect, dict } = props;
+  // Agua y ocaso no aplican a rutas: en esa pestaña la métrica efectiva cae a 'score'
+  // (y sus botones se deshabilitan) para que no queden inertes pero pulsables (F23).
+  const effectiveMetric: MapMetric =
+    tab === 'ruta' && (metric === 'agua' || metric === 'sol') ? 'score' : metric;
   const containerRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const markersRef = useRef<maplibregl.Marker[]>([]);
+  const markersById = useRef<Map<string, HTMLButtonElement>>(new Map());
   const onSelectRef = useRef(onSelect);
   onSelectRef.current = onSelect;
+  const activeIdRef = useRef(activeId);
+  activeIdRef.current = activeId;
 
   // Inicialización del mapa (una vez).
   useEffect(() => {
@@ -67,13 +74,17 @@ export function MapDashboard(props: Props) {
     };
   }, []);
 
-  // Marcadores: se recrean al cambiar datos, pestaña, métrica o selección.
+  // Marcadores: se recrean al cambiar datos, pestaña, métrica o base — y solo entonces
+  // se re-encuadra el mapa. La SELECCIÓN no entra aquí: antes re-encuadraba y deshacía
+  // el zoom/pan del usuario al tocar un marcador (F8); su resaltado vive en el efecto
+  // siguiente, que solo cambia la clase sin recrear ni mover el mapa.
   useEffect(() => {
     const map = mapRef.current;
     if (!map) return;
 
     for (const m of markersRef.current) m.remove();
     markersRef.current = [];
+    markersById.current = new Map();
     const bounds = new maplibregl.LngLatBounds();
 
     const addMarker = (
@@ -86,7 +97,7 @@ export function MapDashboard(props: Props) {
     ) => {
       const el = document.createElement('button');
       el.type = 'button';
-      el.className = `marker${isRuta ? ' ruta' : ''}${activeId === id ? ' is-active' : ''}`;
+      el.className = `marker${isRuta ? ' ruta' : ''}${activeIdRef.current === id ? ' is-active' : ''}`;
       el.style.background = scoreColor(total);
       el.textContent = label;
       el.addEventListener('click', (e) => {
@@ -95,6 +106,7 @@ export function MapDashboard(props: Props) {
       });
       const marker = new maplibregl.Marker({ element: el }).setLngLat([lon, lat]).addTo(map);
       markersRef.current.push(marker);
+      markersById.current.set(id, el);
       bounds.extend([lon, lat]);
     };
 
@@ -105,7 +117,7 @@ export function MapDashboard(props: Props) {
           p.playa.lat,
           p.playa.lon,
           p.score.total,
-          beachLabel(p, metric),
+          beachLabel(p, effectiveMetric),
           false,
         );
       }
@@ -116,7 +128,7 @@ export function MapDashboard(props: Props) {
           r.ruta.latInicio,
           r.ruta.lonInicio,
           r.score.total,
-          routeLabel(r, metric),
+          routeLabel(r, effectiveMetric),
           true,
         );
       }
@@ -135,21 +147,38 @@ export function MapDashboard(props: Props) {
     if (!bounds.isEmpty()) {
       map.fitBounds(bounds, { padding: 60, maxZoom: 11, duration: 400 });
     }
-  }, [playas, rutas, tab, metric, activeId, base]);
+  }, [playas, rutas, tab, effectiveMetric, base]);
+
+  // Resaltado del marcador activo: togglea la clase sobre los marcadores ya creados,
+  // sin recrearlos ni re-encuadrar el mapa (F8).
+  useEffect(() => {
+    markersById.current.forEach((el, id) => {
+      el.classList.toggle('is-active', id === activeId);
+    });
+  }, [activeId]);
 
   return (
     <div>
       <div className="map-toolbar">
         <span className="map-toolbar-cap">{dict.map.show}</span>
         <div className="seg" role="group" aria-label={dict.map.show}>
-          {MAP_METRICS.map((m) => (
-            <button key={m} type="button" aria-pressed={metric === m} onClick={() => onMetric(m)}>
-              {dict.map[m]}
-            </button>
-          ))}
+          {MAP_METRICS.map((m) => {
+            const disabled = tab === 'ruta' && (m === 'agua' || m === 'sol');
+            return (
+              <button
+                key={m}
+                type="button"
+                aria-pressed={effectiveMetric === m}
+                disabled={disabled}
+                onClick={() => onMetric(m)}
+              >
+                {dict.map[m]}
+              </button>
+            );
+          })}
         </div>
       </div>
-      <div className="map" ref={containerRef} role="application" aria-label="Mapa de Galicia" />
+      <div className="map" ref={containerRef} role="application" aria-label={dict.map.aria} />
       <div className="map-legend">
         <span>
           <span className="legend-dot" style={{ background: 'var(--accent)' }} />

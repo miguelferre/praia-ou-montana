@@ -11,9 +11,14 @@ export function scoreColor(total: number): string {
   return `oklch(0.62 0.16 ${Math.round(hue)})`;
 }
 
-/** Hora local HH:MM (formato 24 h) de un ISO. */
+/** Hora HH:MM (24 h) de un ISO, en la zona de Galicia. Fijar la zona evita que un
+ *  visitante desde otro huso vea el ocaso o las mareas en su hora local sin avisar. */
 export function hhmm(iso: string): string {
-  return new Date(iso).toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
+  return new Date(iso).toLocaleTimeString('es-ES', {
+    hour: '2-digit',
+    minute: '2-digit',
+    timeZone: 'Europe/Madrid',
+  });
 }
 
 export function round(value: number, decimals = 0): number {

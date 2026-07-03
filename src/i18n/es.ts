@@ -3,6 +3,7 @@
 export const es = {
   appName: 'Praia ou montaña',
   tagline: '¿Playa o ruta hoy en Galicia? Según el tiempo, la luz y tu base.',
+  loading: 'Cargando…',
   controls: {
     base: 'Tu base',
     mode: 'Qué te apetece',
@@ -33,6 +34,7 @@ export const es = {
     water: 'agua a',
     minCar: 'min en coche',
     tie: 'Están muy igualadas: elige según te apetezca.',
+    handicap: 'de desventaja para la playa hoy (invierno o agua fría)',
   },
   panel: {
     beaches: 'Playas',
@@ -48,6 +50,7 @@ export const es = {
     agua: 'Tª agua',
     sol: 'Ocaso',
     viaje: 'Viaje',
+    aria: 'Mapa de Galicia',
   },
   card: {
     travel: 'min en coche',
@@ -76,6 +79,7 @@ export const es = {
     wikiloc: 'Ver en Wikiloc',
     directions: 'Cómo llegar',
     crowdEstimate: 'masificación estimada',
+    blueFlag: 'Bandera azul',
   },
   factors: {
     clima: 'Clima',

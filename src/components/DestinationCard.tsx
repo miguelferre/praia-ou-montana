@@ -111,7 +111,7 @@ export function DestinationCard({
         </div>
         <Tides mareas={item.mareas} dict={dict} />
         <div>
-          {p.banderaAzul && <span className="tag">Bandera azul</span>}{' '}
+          {p.banderaAzul && <span className="tag">{dict.card.blueFlag}</span>}{' '}
           {p.pmr && (p.pmr.rampa || p.pmr.sillaAnfibia) && <span className="tag">PMR</span>}{' '}
           {p.longitudM !== undefined && <span className="tag">{dict.card.crowdEstimate}</span>}
         </div>

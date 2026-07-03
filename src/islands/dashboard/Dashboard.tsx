@@ -21,6 +21,9 @@ function idOf(it: ScoredItem): string {
   return it.kind === 'playa' ? it.playa.id : it.ruta.id;
 }
 
+// Recorte de destinos mostrados en mapa/lista (el veredicto usa el ranking completo).
+const TOP = 40;
+
 export default function Dashboard({ lang: initialLang = DEFAULT_LANG }: { lang?: Lang }) {
   const initial = useMemo(
     () => readUrlState(typeof window !== 'undefined' ? window.location.search : '', 'santiago'),
@@ -173,6 +176,13 @@ export default function Dashboard({ lang: initialLang = DEFAULT_LANG }: { lang?:
     });
   }, [data, base, catalogForPlan, modo, maxViajeMin, requierePmr, pesos, rutaPref, date]);
 
+  // Recorte a las mejores para no saturar mapa/lista. Memoizado para que la REFERENCIA
+  // sea estable entre renders: un .slice() suelto crea un array nuevo en cada render, y
+  // como el mapa recrea sus marcadores cuando cambia esta prop, seleccionar un destino
+  // (que provoca un render) los recrearía y re-encuadraría el mapa (F8).
+  const playasTop = useMemo(() => result?.beaches.ranked.slice(0, TOP) ?? [], [result]);
+  const rutasTop = useMemo(() => result?.routes.ranked.slice(0, TOP) ?? [], [result]);
+
   if (loadError) {
     return (
       <div className="app">
@@ -183,16 +193,10 @@ export default function Dashboard({ lang: initialLang = DEFAULT_LANG }: { lang?:
   if (!data || !base || !result) {
     return (
       <div className="app">
-        <p className="muted">Cargando…</p>
+        <p className="muted">{dict.loading}</p>
       </div>
     );
   }
-
-  // El catálogo tiene cientos de playas; mostramos solo las mejores para no saturar
-  // el mapa ni la lista. El veredicto usa el ranking completo (best), no el recorte.
-  const TOP = 40;
-  const playasTop = result.beaches.ranked.slice(0, TOP);
-  const rutasTop = result.routes.ranked.slice(0, TOP);
 
   const effTab: Tab = modo === 'solo_playa' ? 'playa' : modo === 'solo_ruta' ? 'ruta' : tab;
   const list: ScoredItem[] = effTab === 'playa' ? playasTop : rutasTop;

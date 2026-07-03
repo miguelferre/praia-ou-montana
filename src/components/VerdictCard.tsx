@@ -77,6 +77,11 @@ export function VerdictCard({
         )}
         <h2 className="verdict-title">{title}</h2>
         <div className="verdict-why">{why(verdict, dict)}</div>
+        {verdict.seasonalHandicap > 0 && verdict.beach && verdict.route && (
+          <p className="verdict-handicap">
+            −{verdict.seasonalHandicap} {dict.verdict.handicap}
+          </p>
+        )}
       </div>
     </section>
   );
