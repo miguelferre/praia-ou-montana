@@ -41,8 +41,10 @@ export interface FetchOptions {
 // límite (y el demo público topa el tamaño de la matriz): se trocea.
 const CHUNK = 90;
 // Preselección: por encima de esto nadie conduce a una playa o ruta, así que no se
-// gastan llamadas. Fijo (no atado al slider) para no re-pedir al moverlo.
-const DEFAULT_MAX_MIN = 150;
+// gastan llamadas. Fijo (no atado al slider) para no re-pedir al moverlo. También es
+// la cobertura de "tiempos reales": si el slider pide más, los destinos más lejanos
+// quedan en estimación y el aviso lo reconoce (F11), en vez de venderlos como reales.
+export const DEFAULT_MAX_MIN = 150;
 
 const ENDPOINT =
   (import.meta.env as Record<string, string | undefined>).PUBLIC_TRAVEL_ENDPOINT?.replace(

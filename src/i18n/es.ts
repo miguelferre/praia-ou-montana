@@ -19,6 +19,8 @@ export const es = {
     baseApprox: 'Base libre: los tiempos de viaje son estimados (línea recta).',
     baseCalculating: 'Base libre: calculando tiempos de viaje reales…',
     baseReal: 'Base libre: tiempos de viaje reales por carretera.',
+    baseRealPartial:
+      'Base libre: tiempos reales por carretera; los destinos más lejanos, estimados.',
   },
   verdict: {
     heading: 'Hoy mejor…',

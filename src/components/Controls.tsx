@@ -1,6 +1,8 @@
 import { BaseSearch } from '@/components/BaseSearch';
 import type { Dict, Lang } from '@/i18n';
 import type { GeoPlace } from '@/lib/data/geocode';
+import { DEFAULT_MAX_MIN } from '@/lib/data/travel';
+import { baseTravelHint, type TravelState } from '@/lib/ui/format';
 import { CUSTOM_BASE_ID } from '@/lib/ui/url-state';
 import type { Base, Modo } from '@/lib/core/types';
 
@@ -17,7 +19,7 @@ interface Props {
   onMax: (v: number) => void;
   lang: Lang;
   onLang: (l: Lang) => void;
-  travelState?: 'idle' | 'loading' | 'real' | 'approx';
+  travelState?: TravelState;
   dict: Dict;
 }
 
@@ -39,6 +41,8 @@ export function Controls(props: Props) {
     dict,
   } = props;
 
+  const travelHint = baseTravelHint(travelState, maxViajeMin, DEFAULT_MAX_MIN);
+
   return (
     <div className="controls">
       <div className="field">
@@ -51,14 +55,8 @@ export function Controls(props: Props) {
           ))}
         </select>
         <BaseSearch onPick={onCustomBase} dict={dict} />
-        {baseId === CUSTOM_BASE_ID && (
-          <span className="field-hint">
-            {travelState === 'loading'
-              ? dict.controls.baseCalculating
-              : travelState === 'real'
-                ? dict.controls.baseReal
-                : dict.controls.baseApprox}
-          </span>
+        {baseId === CUSTOM_BASE_ID && travelHint && (
+          <span className="field-hint">{dict.controls[travelHint]}</span>
         )}
       </div>
 
