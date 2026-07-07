@@ -2,9 +2,6 @@ import { describe, expect, it } from 'vitest';
 import { readUrlState } from '@/lib/ui/url-state';
 import { DEFAULT_PESOS, DEFAULT_RUTA_PREF } from '@/lib/core/prefs';
 
-// Orden fijo de los pesos en el parámetro `w` (ver url-state.ts).
-const W_ORDER = 'clima,cercania,solEfectivo,tempAgua,masificacion,servicios,dificultadFit,circular';
-
 describe('readUrlState — valores por defecto', () => {
   it('sin query usa base de fallback y defaults', () => {
     const s = readUrlState('', 'santiago');
@@ -52,22 +49,18 @@ describe('readUrlState — parámetros base', () => {
 });
 
 describe('readUrlState — pesos (parámetro w)', () => {
-  it('reconstruye los pesos desde un CSV válido', () => {
-    const s = readUrlState(
-      `?w=${W_ORDER.split(',')
-        .map((_, i) => i + 1)
-        .join(',')}`,
-      'santiago',
-    );
+  it('reconstruye los pesos desde un CSV válido, en el orden fijo', () => {
+    // Valores dentro de 1..5 (distintos por posición) para probar el mapeo de orden.
+    const s = readUrlState('?w=1,2,3,4,5,4,3,2', 'santiago');
     expect(s.pesos).toEqual({
       clima: 1,
       cercania: 2,
       solEfectivo: 3,
       tempAgua: 4,
       masificacion: 5,
-      servicios: 6,
-      dificultadFit: 7,
-      circular: 8,
+      servicios: 4,
+      dificultadFit: 3,
+      circular: 2,
     });
   });
 
@@ -77,6 +70,13 @@ describe('readUrlState — pesos (parámetro w)', () => {
 
   it('cae a los pesos por defecto si hay valores no numéricos', () => {
     expect(readUrlState('?w=1,2,x,4,5,6,7,8', 'santiago').pesos).toEqual(DEFAULT_PESOS);
+  });
+
+  it('acota los pesos fuera del rango 1..5 (URL manipulada)', () => {
+    const s = readUrlState('?w=0,9,3,3,3,3,3,3', 'santiago');
+    expect(s.pesos.clima).toBe(1); // 0 → 1
+    expect(s.pesos.cercania).toBe(5); // 9 → 5
+    expect(s.pesos.solEfectivo).toBe(3);
   });
 });
 

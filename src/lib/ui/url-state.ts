@@ -68,12 +68,15 @@ function encodePesos(pesos: Pesos): string {
 function decodePesos(raw: string | null): Pesos {
   if (!raw) return { ...DEFAULT_PESOS };
   const parts = raw.split(',').map(Number);
-  if (parts.length !== PESO_KEYS.length || parts.some((n) => !Number.isFinite(n) || n < 0)) {
+  if (parts.length !== PESO_KEYS.length || parts.some((n) => !Number.isFinite(n))) {
     return { ...DEFAULT_PESOS };
   }
   const pesos = {} as Pesos;
   PESO_KEYS.forEach((k, i) => {
-    pesos[k] = parts[i] as number;
+    // Los pesos son la escala 1..5 del RatingControl: se acotan (y redondean) para que
+    // una URL manipulada (w=0, w=9…) no deje un estado irrepresentable en la UI, con el
+    // radiogroup sin ninguna opción marcada ni enfocable (F25).
+    pesos[k] = Math.max(1, Math.min(5, Math.round(parts[i] as number)));
   });
   return pesos;
 }

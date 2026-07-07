@@ -15,6 +15,7 @@ Uso:
 from __future__ import annotations
 
 import json
+import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -183,6 +184,9 @@ def main() -> None:
         if r["id"] in by_key:
             forecast[r["id"]] = by_key[r["id"]]
 
+    if not forecast:
+        print("ERROR: no se generó ninguna predicción (fuente vacía)", file=sys.stderr)
+        raise SystemExit(1)
     OUT.mkdir(parents=True, exist_ok=True)
     fecha = next(iter(forecast.values()))["fecha"]
     payload = json.dumps(forecast, ensure_ascii=False, indent=2)

@@ -71,6 +71,11 @@ def length_km(ways: list[list[tuple[float, float]]]) -> float:
 def endpoints(
     ways: list[list[tuple[float, float]]],
 ) -> tuple[tuple[float, float], tuple[float, float]]:
+    # Asume los ways ordenados y orientados, como los entrega `out geom` para una relación
+    # route bien formada. Con miembros desordenados el "inicio" podría no ser el extremo
+    # topológico; pero el tag `roundtrip` manda en is_circular cuando existe, y para el
+    # marcador y el tiempo de viaje basta con un punto real de la ruta. Reordenar la
+    # topología por conectividad sería desproporcionado para lo raro del caso.
     return ways[0][0], ways[-1][-1]
 
 
@@ -200,8 +205,8 @@ def build(session, limit: int | None) -> list[dict]:
 
         loc = reverse_concello(session, first[0], first[1])
         time.sleep(1)  # cortesía con Nominatim (1 req/s)
-        if not loc or "galic" not in loc[1].lower():
-            continue  # sin concello fiable o fuera de Galicia
+        if not loc or not any(g in loc[1].lower() for g in ("galic", "galiz")):
+            continue  # sin concello fiable o fuera de Galicia (galic/galiz: es y gl)
         concello, _ = loc
 
         tags = el.get("tags", {})

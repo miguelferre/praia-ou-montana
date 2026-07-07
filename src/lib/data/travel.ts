@@ -55,6 +55,15 @@ const TABLE_PATH = '/table/v1/driving/';
 
 const DB_NAME = 'praia-travel';
 const STORE = 'byBase';
+// La caché por base caduca: las carreteras cambian poco, pero así no se sirve para
+// siempre un cálculo viejo si cambia la red vial o el algoritmo. Una entrada con el
+// formato antiguo (sin `ts`) se trata como caducada y se recalcula.
+const CACHE_TTL_MS = 30 * 24 * 60 * 60 * 1000; // 30 días
+
+interface CacheEntry {
+  minutes: Record<string, number>;
+  ts: number;
+}
 
 /** Trocea `items` en grupos de `size`. */
 export function chunk<T>(items: T[], size: number): T[][] {
@@ -147,7 +156,10 @@ export async function fetchCustomTravel(
   let cached: Record<string, number> = {};
   if (cache) {
     try {
-      cached = ((await cache.get(STORE, key)) as Record<string, number> | undefined) ?? {};
+      const entry = (await cache.get(STORE, key)) as CacheEntry | undefined;
+      if (entry && typeof entry.ts === 'number' && Date.now() - entry.ts < CACHE_TTL_MS) {
+        cached = entry.minutes ?? {};
+      }
     } catch {
       cached = {};
     }
@@ -171,7 +183,7 @@ export async function fetchCustomTravel(
 
   if (cache && missing.length) {
     try {
-      await cache.put(STORE, minutes, key);
+      await cache.put(STORE, { minutes, ts: Date.now() }, key);
     } catch {
       // caché best-effort: si no se puede persistir, no pasa nada
     }
