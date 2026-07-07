@@ -7,19 +7,23 @@ const lightness = (oklch: string) => Number(oklch.match(/oklch\(([\d.]+)/)?.[1])
 const hue = (oklch: string) => Number(oklch.match(/([\d.]+)\)$/)?.[1]);
 
 describe('waterColor / sunsetColor — escalas de color del mapa', () => {
-  it('agua más cálida → azul más profundo (menor L)', () => {
-    expect(lightness(waterColor(22))).toBeLessThan(lightness(waterColor(14)));
+  it('agua más cálida → azul más profundo dentro del rango del día', () => {
+    expect(lightness(waterColor(20, 15, 20))).toBeLessThan(lightness(waterColor(15, 15, 20)));
   });
 
   it('el agua se mantiene en tonos azules (hue 220..245)', () => {
-    const h = hue(waterColor(18));
+    const h = hue(waterColor(17, 15, 20));
     expect(h).toBeGreaterThanOrEqual(220);
     expect(h).toBeLessThanOrEqual(245);
   });
 
-  it('1 °C de diferencia se distingue (ΔL perceptible)', () => {
-    const dL = Math.abs(lightness(waterColor(18)) - lightness(waterColor(19)));
+  it('1 °C se distingue con el rango dinámico del día (ΔL perceptible)', () => {
+    const dL = Math.abs(lightness(waterColor(18, 15, 20)) - lightness(waterColor(19, 15, 20)));
     expect(dL).toBeGreaterThan(0.03);
+  });
+
+  it('rango degenerado (span 0) usa el punto medio sin romper', () => {
+    expect(lightness(waterColor(18, 18, 18))).toBeCloseTo(0.58, 2); // t=0.5 → L 0.58
   });
 
   it('ocaso más tardío → más naranja (menor hue que el temprano)', () => {

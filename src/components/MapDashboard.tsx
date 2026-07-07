@@ -9,7 +9,7 @@ import { hhmm, NEUTRAL_MARKER, round, scoreColor, sunsetColor, waterColor } from
 // Estilo de mapa gratuito y sin API key.
 const STYLE = 'https://tiles.openfreemap.org/styles/liberty';
 
-/** Qué dato muestran los marcadores del mapa (el color siempre es la puntuación). */
+/** Qué dato muestran los marcadores del mapa (etiqueta y escala de color). */
 export type MapMetric = 'score' | 'agua' | 'sol' | 'viaje';
 export const MAP_METRICS: MapMetric[] = ['score', 'agua', 'sol', 'viaje'];
 
@@ -42,24 +42,29 @@ function routeLabel(r: ScoredRuta, metric: MapMetric): string {
   return metric === 'viaje' ? `${r.travelMin}'` : `${round(r.score.total)}`;
 }
 
+/** Rangos dinámicos (agua, ocaso) de las playas visibles, para normalizar el color. */
+interface MarkerRanges {
+  sunMin: number;
+  sunMax: number;
+  aguaMin: number;
+  aguaMax: number;
+}
+
 /**
- * Color del marcador de playa según la métrica: azules para el agua, atardecer para el
- * ocaso (normalizado sobre el rango visible `sunMin..sunMax`), y la escala de puntuación
- * para score/viaje. Sin dato en la métrica, gris neutro.
+ * Color del marcador de playa según la métrica: azules para el agua y atardecer para el
+ * ocaso, ambos normalizados sobre el rango del día (`MarkerRanges`), y la escala de
+ * puntuación para score/viaje. Sin dato en la métrica, gris neutro.
  */
-function beachMarkerColor(
-  p: ScoredPlaya,
-  metric: MapMetric,
-  sunMin: number,
-  sunMax: number,
-): string {
+function beachMarkerColor(p: ScoredPlaya, metric: MapMetric, r: MarkerRanges): string {
   if (metric === 'agua') {
-    return p.tempAguaC !== undefined ? waterColor(p.tempAguaC) : NEUTRAL_MARKER;
+    return p.tempAguaC !== undefined
+      ? waterColor(p.tempAguaC, r.aguaMin, r.aguaMax)
+      : NEUTRAL_MARKER;
   }
   if (metric === 'sol') {
     if (!p.effectiveSunsetIso) return NEUTRAL_MARKER;
-    const span = sunMax - sunMin;
-    const t = span > 0 ? (new Date(p.effectiveSunsetIso).getTime() - sunMin) / span : 0.5;
+    const span = r.sunMax - r.sunMin;
+    const t = span > 0 ? (new Date(p.effectiveSunsetIso).getTime() - r.sunMin) / span : 0.5;
     return sunsetColor(t);
   }
   return scoreColor(p.score.total);
@@ -134,9 +139,12 @@ export function MapDashboard(props: Props) {
     };
 
     if (tab === 'playa') {
-      // Para la métrica 'sol', el color se normaliza sobre el rango de ocasos visibles.
+      // Rango dinámico de la métrica sobre las playas visibles (agua y ocaso), para que
+      // el gradiente cubra el rango real del día y las diferencias pequeñas se distingan.
       let sunMin = Infinity;
       let sunMax = -Infinity;
+      let aguaMin = Infinity;
+      let aguaMax = -Infinity;
       if (effectiveMetric === 'sol') {
         for (const p of playas) {
           if (p.effectiveSunsetIso) {
@@ -145,13 +153,28 @@ export function MapDashboard(props: Props) {
             sunMax = Math.max(sunMax, t);
           }
         }
+      } else if (effectiveMetric === 'agua') {
+        for (const p of playas) {
+          if (p.tempAguaC !== undefined) {
+            aguaMin = Math.min(aguaMin, p.tempAguaC);
+            aguaMax = Math.max(aguaMax, p.tempAguaC);
+          }
+        }
+        // Span mínimo de 2 °C: si las playas visibles están casi a la misma temperatura,
+        // no se estira una diferencia trivial al gradiente completo.
+        if (Number.isFinite(aguaMin) && aguaMax - aguaMin < 2) {
+          const mid = (aguaMin + aguaMax) / 2;
+          aguaMin = mid - 1;
+          aguaMax = mid + 1;
+        }
       }
+      const ranges: MarkerRanges = { sunMin, sunMax, aguaMin, aguaMax };
       for (const p of playas) {
         addMarker(
           p.playa.id,
           p.playa.lat,
           p.playa.lon,
-          beachMarkerColor(p, effectiveMetric, sunMin, sunMax),
+          beachMarkerColor(p, effectiveMetric, ranges),
           beachLabel(p, effectiveMetric),
           false,
         );

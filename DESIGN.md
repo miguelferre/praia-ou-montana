@@ -33,7 +33,8 @@ Todo color es un token en `tokens.css`; los componentes nunca llevan hex ni OKLC
 Los marcadores del mapa cambian de **escala según la métrica** mostrada (todas en OKLCH,
 en `src/lib/ui/format.ts`): **puntuación** rojo→ámbar→verde (`scoreColor`, anclada al rango
 real de notas ≈35–72, anclas `--score-bad/-mid/-good`); **agua** una escala de azules
-(`waterColor`, fría clara → cálida profunda); **ocaso** un atardecer dorado→naranja
+(`waterColor`, fría clara → cálida profunda, normalizada sobre el rango del día con un
+span mínimo para que 1 °C se distinga); **ocaso** un atardecer dorado→naranja
 (`sunsetColor`, normalizado sobre el rango de ocasos visibles); **viaje** usa la puntuación.
 El texto blanco del marcador lleva sombra para seguir legible sobre los tonos claros. El
 color nunca es el único portador: el veredicto se nombra ("PRAIA"/"MONTAÑA").

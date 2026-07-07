@@ -15,15 +15,16 @@ export function scoreColor(total: number): string {
 export const NEUTRAL_MARKER = 'oklch(0.72 0.02 240)';
 
 /**
- * Escala de AZULES para la temperatura del agua, anclada a un rango FIJO y estrecho
- * (14–21 °C, el que de verdad se da en Galicia) para que el color sea comparable entre
- * días —16° es siempre el mismo azul— y, sobre todo, para que **1 °C se distinga**: el
- * rango real de un día es de pocos grados, así que se estira el recorrido de L, croma y
- * tono (fría = cian claro apagado; cálida = azul profundo e intenso). Fuera de rango
- * satura. L tope 0.72 para que el texto blanco (con sombra) siga legible.
+ * Escala de AZULES para la temperatura del agua, DINÁMICA por día: se normaliza sobre el
+ * rango `[min,max]` de las playas visibles (lo calcula quien llama, con un span mínimo
+ * para no exagerar diferencias triviales). Así el gradiente completo cubre el rango real
+ * del día —que suele ser de pocos grados— y **1 °C se distingue** de un vistazo (fría =
+ * cian claro apagado; cálida = azul profundo e intenso). L tope 0.72 para que el texto
+ * blanco (con sombra) siga legible.
  */
-export function waterColor(tempAguaC: number): string {
-  const t = Math.max(0, Math.min(1, (tempAguaC - 14) / 7));
+export function waterColor(tempAguaC: number, min: number, max: number): string {
+  const span = max - min;
+  const t = span > 0 ? Math.max(0, Math.min(1, (tempAguaC - min) / span)) : 0.5;
   const l = 0.72 - 0.28 * t;
   const c = 0.05 + 0.12 * t;
   const h = 245 - 25 * t;
