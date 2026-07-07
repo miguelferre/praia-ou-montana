@@ -30,11 +30,13 @@ Todo color es un token en `tokens.css`; los componentes nunca llevan hex ni OKLC
 | Montaña                 | `--mountain`       | `oklch(0.52 0.11 150)`   |
 | Sol (acento)            | `--sun`            | `oklch(0.72 0.15 70)`    |
 
-Escala de puntuación de los marcadores (rojo→ámbar→verde), interpolada en OKLCH en
-`scoreColor` (`src/lib/ui/format.ts`), anclada al rango real de notas (≈35–72) y no a 0–100.
-Anclas: `--score-bad oklch(0.58 0.16 25)`, `--score-mid oklch(0.72 0.14 70)`,
-`--score-good oklch(0.6 0.13 150)`. El color nunca es el único portador: el veredicto se
-nombra ("PRAIA"/"MONTAÑA").
+Los marcadores del mapa cambian de **escala según la métrica** mostrada (todas en OKLCH,
+en `src/lib/ui/format.ts`): **puntuación** rojo→ámbar→verde (`scoreColor`, anclada al rango
+real de notas ≈35–72, anclas `--score-bad/-mid/-good`); **agua** una escala de azules
+(`waterColor`, fría clara → cálida profunda); **ocaso** un atardecer dorado→naranja
+(`sunsetColor`, normalizado sobre el rango de ocasos visibles); **viaje** usa la puntuación.
+El texto blanco del marcador lleva sombra para seguir legible sobre los tonos claros. El
+color nunca es el único portador: el veredicto se nombra ("PRAIA"/"MONTAÑA").
 
 ## Typography
 
@@ -47,7 +49,7 @@ Eje de contraste serif + sans (no dos sans parecidas):
 ## Components
 
 - **Veredicto (héroe)**: tarjeta con **tinte de fondo suave** del polo ganador (`--sea-wash`/`--mountain-wash`/`--sun-wash`) sobre un scrim, y el titular en Newsreader. **Sin franja lateral de color** (`border-left` de acento está prohibido). El "Hoxe mellor…" es una entradilla en minúscula, no un eyebrow en mayúsculas. Bajo el desglose puede aparecer, en su caso, el aviso de forecast no actualizado y la desventaja estacional de la playa (reglas legibles, no pesos ocultos).
-- **Marcadores de mapa**: pastilla con el dato elegido (puntuación/agua/sol/viaje); color = puntuación. Base = estrella ámbar.
+- **Marcadores de mapa**: pastilla con el dato elegido (puntuación/agua/sol/viaje); color = la escala de esa métrica (ver Color). Base = estrella ámbar.
 - **Controles de peso**: escala 1–5 con círculos numerados (`RatingControl`), navegable por teclado, con una ⓘ que explica cada factor. Los objetivos de ruta (km/desnivel) son sliders aparte (`RoutePrefs`), visibles solo cuando el modo incluye rutas.
 - **Lista/fichas**: una sola capa. **Nada de tarjetas anidadas**: las estadísticas van en una fila limpia con divisores, no en cajitas dentro de la tarjeta.
 - **Etiquetas**: minúscula natural, pequeñas y `--muted`. **Nada de mayúsculas con tracking** como scaffolding en cada sección.

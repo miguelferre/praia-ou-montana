@@ -4,7 +4,7 @@ import type { Dict } from '@/i18n';
 import type { ScoredPlaya, ScoredRuta } from '@/lib/core/result';
 import { GALICIA_CENTER } from '@/lib/core/geo';
 import type { Base } from '@/lib/core/types';
-import { hhmm, round, scoreColor } from '@/lib/ui/format';
+import { hhmm, NEUTRAL_MARKER, round, scoreColor, sunsetColor, waterColor } from '@/lib/ui/format';
 
 // Estilo de mapa gratuito y sin API key.
 const STYLE = 'https://tiles.openfreemap.org/styles/liberty';
@@ -40,6 +40,29 @@ function beachLabel(p: ScoredPlaya, metric: MapMetric): string {
 
 function routeLabel(r: ScoredRuta, metric: MapMetric): string {
   return metric === 'viaje' ? `${r.travelMin}'` : `${round(r.score.total)}`;
+}
+
+/**
+ * Color del marcador de playa según la métrica: azules para el agua, atardecer para el
+ * ocaso (normalizado sobre el rango visible `sunMin..sunMax`), y la escala de puntuación
+ * para score/viaje. Sin dato en la métrica, gris neutro.
+ */
+function beachMarkerColor(
+  p: ScoredPlaya,
+  metric: MapMetric,
+  sunMin: number,
+  sunMax: number,
+): string {
+  if (metric === 'agua') {
+    return p.tempAguaC !== undefined ? waterColor(p.tempAguaC) : NEUTRAL_MARKER;
+  }
+  if (metric === 'sol') {
+    if (!p.effectiveSunsetIso) return NEUTRAL_MARKER;
+    const span = sunMax - sunMin;
+    const t = span > 0 ? (new Date(p.effectiveSunsetIso).getTime() - sunMin) / span : 0.5;
+    return sunsetColor(t);
+  }
+  return scoreColor(p.score.total);
 }
 
 export function MapDashboard(props: Props) {
@@ -91,14 +114,14 @@ export function MapDashboard(props: Props) {
       id: string,
       lat: number,
       lon: number,
-      total: number,
+      bg: string,
       label: string,
       isRuta: boolean,
     ) => {
       const el = document.createElement('button');
       el.type = 'button';
       el.className = `marker${isRuta ? ' ruta' : ''}${activeIdRef.current === id ? ' is-active' : ''}`;
-      el.style.background = scoreColor(total);
+      el.style.background = bg;
       el.textContent = label;
       el.addEventListener('click', (e) => {
         e.stopPropagation();
@@ -111,12 +134,24 @@ export function MapDashboard(props: Props) {
     };
 
     if (tab === 'playa') {
+      // Para la métrica 'sol', el color se normaliza sobre el rango de ocasos visibles.
+      let sunMin = Infinity;
+      let sunMax = -Infinity;
+      if (effectiveMetric === 'sol') {
+        for (const p of playas) {
+          if (p.effectiveSunsetIso) {
+            const t = new Date(p.effectiveSunsetIso).getTime();
+            sunMin = Math.min(sunMin, t);
+            sunMax = Math.max(sunMax, t);
+          }
+        }
+      }
       for (const p of playas) {
         addMarker(
           p.playa.id,
           p.playa.lat,
           p.playa.lon,
-          p.score.total,
+          beachMarkerColor(p, effectiveMetric, sunMin, sunMax),
           beachLabel(p, effectiveMetric),
           false,
         );
@@ -127,7 +162,7 @@ export function MapDashboard(props: Props) {
           r.ruta.id,
           r.ruta.latInicio,
           r.ruta.lonInicio,
-          r.score.total,
+          scoreColor(r.score.total),
           routeLabel(r, effectiveMetric),
           true,
         );

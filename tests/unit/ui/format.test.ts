@@ -1,7 +1,29 @@
 import { describe, expect, it } from 'vitest';
-import { baseTravelHint, hhmm } from '@/lib/ui/format';
+import { baseTravelHint, hhmm, sunsetColor, waterColor } from '@/lib/ui/format';
 
 const COVERAGE = 150;
+
+const lightness = (oklch: string) => Number(oklch.match(/oklch\(([\d.]+)/)?.[1]);
+const hue = (oklch: string) => Number(oklch.match(/([\d.]+)\)$/)?.[1]);
+
+describe('waterColor / sunsetColor — escalas de color del mapa', () => {
+  it('agua más cálida → azul más profundo (menor L)', () => {
+    expect(lightness(waterColor(22))).toBeLessThan(lightness(waterColor(14)));
+  });
+
+  it('el agua se mantiene en tono azul (hue 232)', () => {
+    expect(hue(waterColor(18))).toBe(232);
+  });
+
+  it('ocaso más tardío → más naranja (menor hue que el temprano)', () => {
+    expect(hue(sunsetColor(1))).toBeLessThan(hue(sunsetColor(0)));
+  });
+
+  it('acota t fuera de [0,1]', () => {
+    expect(sunsetColor(-1)).toBe(sunsetColor(0));
+    expect(sunsetColor(2)).toBe(sunsetColor(1));
+  });
+});
 
 describe('hhmm — hora en Europe/Madrid (F24)', () => {
   it('convierte un ISO UTC a la hora de Galicia (verano, +02)', () => {

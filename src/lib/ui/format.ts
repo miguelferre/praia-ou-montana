@@ -11,6 +11,34 @@ export function scoreColor(total: number): string {
   return `oklch(0.62 0.16 ${Math.round(hue)})`;
 }
 
+/** Color neutro para un marcador sin dato en la métrica elegida (gris azulado). */
+export const NEUTRAL_MARKER = 'oklch(0.72 0.02 240)';
+
+/**
+ * Escala de AZULES para la temperatura del agua (14–22 °C): fría = azul apagado y
+ * claro; cálida = azul profundo e intenso ("agua que invita"). L en rango medio para
+ * que el texto blanco del marcador siga legible.
+ */
+export function waterColor(tempAguaC: number): string {
+  const t = Math.max(0, Math.min(1, (tempAguaC - 14) / 8));
+  const l = 0.66 - 0.16 * t;
+  const c = 0.06 + 0.1 * t;
+  return `oklch(${l.toFixed(3)} ${c.toFixed(3)} 232)`;
+}
+
+/**
+ * Escala de ATARDECER (dorado → naranja) para la hora de ocaso. Recibe `t` ya
+ * normalizado [0,1] dentro del rango de ocasos visibles (más tarde = más naranja), no
+ * la hora absoluta, porque ese rango cambia con la estación.
+ */
+export function sunsetColor(t: number): string {
+  const u = Math.max(0, Math.min(1, t));
+  const l = 0.72 - 0.14 * u;
+  const c = 0.13 + 0.04 * u;
+  const h = 88 - 43 * u;
+  return `oklch(${l.toFixed(3)} ${c.toFixed(3)} ${h.toFixed(1)})`;
+}
+
 /** Hora HH:MM (24 h) de un ISO, en la zona de Galicia. Fijar la zona evita que un
  *  visitante desde otro huso vea el ocaso o las mareas en su hora local sin avisar. */
 export function hhmm(iso: string): string {
