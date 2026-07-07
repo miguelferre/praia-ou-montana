@@ -11,8 +11,15 @@ describe('waterColor / sunsetColor — escalas de color del mapa', () => {
     expect(lightness(waterColor(22))).toBeLessThan(lightness(waterColor(14)));
   });
 
-  it('el agua se mantiene en tono azul (hue 232)', () => {
-    expect(hue(waterColor(18))).toBe(232);
+  it('el agua se mantiene en tonos azules (hue 220..245)', () => {
+    const h = hue(waterColor(18));
+    expect(h).toBeGreaterThanOrEqual(220);
+    expect(h).toBeLessThanOrEqual(245);
+  });
+
+  it('1 °C de diferencia se distingue (ΔL perceptible)', () => {
+    const dL = Math.abs(lightness(waterColor(18)) - lightness(waterColor(19)));
+    expect(dL).toBeGreaterThan(0.03);
   });
 
   it('ocaso más tardío → más naranja (menor hue que el temprano)', () => {
