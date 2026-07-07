@@ -1,0 +1,13 @@
+# Cabeceras de seguridad para el sitio estático (formato de Cloudflare Pages/Workers
+# Static Assets: https://developers.cloudflare.com/workers/static-assets/headers/).
+#
+# La Content-Security-Policy va en un <meta http-equiv> del HTML (garantizada en
+# cualquier hosting y verificable en el build); aquí solo las cabeceras que un <meta>
+# no puede fijar. Estas dependen de que el Worker sirva _headers — verificar tras deploy:
+#   curl -sI https://praia-ou-montanha.ferreirogarciamiguel.workers.dev/ | grep -i x-frame-options
+# Si no aparecen, este Worker no aplica _headers y hay que fijarlas en su código.
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(self), camera=(), microphone=(), payment=()
