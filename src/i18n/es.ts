@@ -80,6 +80,9 @@ export const es = {
     directions: 'Cómo llegar',
     crowdEstimate: 'masificación estimada',
     blueFlag: 'Bandera azul',
+    ferryAccess: 'En barco',
+    ferryNote:
+      'Solo se llega en barco (ferry de temporada). El tiempo en coche es hasta el puerto.',
   },
   factors: {
     clima: 'Clima',

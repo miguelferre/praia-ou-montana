@@ -47,6 +47,9 @@ export interface Playa {
   ria?: string;
   lat: number;
   lon: number;
+  /** Cómo se llega. Ausente = rodado normal; 'ferry' = solo en barco (Illas Atlánticas:
+   *  Cíes, Ons, Sálvora, Cortegada). Lo marca la ingesta por ubicación. */
+  acceso?: 'ferry';
   curado: boolean;
   // --- enriquecimiento (curado) ---
   /** Azimut sur-referenciado (grados, sur=0, oeste positivo) al que mira la playa. */

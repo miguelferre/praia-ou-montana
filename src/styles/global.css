@@ -945,6 +945,12 @@ input[type='range'] {
   padding: 3px 10px;
 }
 
+/* Nota de acceso en barco (islas): tiempo en coche = hasta el puerto (F5). */
+.ferry-note {
+  margin: 8px 0 0;
+  font-size: 0.82rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

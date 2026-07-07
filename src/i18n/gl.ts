@@ -80,6 +80,8 @@ export const gl: Dict = {
     directions: 'Como chegar',
     crowdEstimate: 'masificación estimada',
     blueFlag: 'Bandeira azul',
+    ferryAccess: 'En barco',
+    ferryNote: 'Só se chega en barco (ferry de tempada). O tempo en coche é ata o porto.',
   },
   factors: {
     clima: 'Clima',

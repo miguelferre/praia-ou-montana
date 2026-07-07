@@ -26,6 +26,7 @@ export const PlayaSchema = z
     concello: z.string(),
     lat: z.number(),
     lon: z.number(),
+    acceso: z.enum(['ferry']).optional(),
     travel: z.record(TravelLegSchema),
   })
   .passthrough();

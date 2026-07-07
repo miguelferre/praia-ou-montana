@@ -111,10 +111,12 @@ export function DestinationCard({
         </div>
         <Tides mareas={item.mareas} dict={dict} />
         <div>
+          {p.acceso === 'ferry' && <span className="tag">🚤 {dict.card.ferryAccess}</span>}{' '}
           {p.banderaAzul && <span className="tag">{dict.card.blueFlag}</span>}{' '}
           {p.pmr && (p.pmr.rampa || p.pmr.sillaAnfibia) && <span className="tag">PMR</span>}{' '}
           {p.longitudM !== undefined && <span className="tag">{dict.card.crowdEstimate}</span>}
         </div>
+        {p.acceso === 'ferry' && <p className="muted ferry-note">{dict.card.ferryNote}</p>}
         <Breakdown item={item} dict={dict} />
         <div className="actions">
           <a

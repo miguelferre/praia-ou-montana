@@ -40,6 +40,16 @@ DEDUP_METERS = 400  # una playa de la IDE más cerca que esto de una curada se d
 
 PMR_COLS = ["pmr_rampa", "pmr_sillaAnfibia", "pmr_aseoAdaptado", "pmr_aparcamiento"]
 
+# Illas Atlánticas (Parque Nacional): sin carretera, se llega en barco. Se marca
+# acceso='ferry' por bbox de cada isla (están claramente separadas del continente).
+# (lat_min, lat_max, lon_min, lon_max)
+ISLAS_FERRY_BBOX = {
+    "Cíes": (42.19, 42.25, -8.95, -8.88),
+    "Ons": (42.36, 42.42, -8.96, -8.91),
+    "Sálvora": (42.45, 42.49, -9.03, -8.98),
+    "Cortegada": (42.61, 42.63, -8.79, -8.77),
+}
+
 # Columnas de curación que se parsean como número (el resto, como texto).
 NUMERIC_FIELDS = (
     "orientacionDeg",
@@ -146,6 +156,23 @@ def apply_curation(items: list[dict], csv_path: Path, is_route: bool) -> int:
     return touched
 
 
+def mark_island_access(playas: list[dict]) -> int:
+    """Marca acceso='ferry' en las playas de las Illas Atlánticas (no tienen carretera).
+    Idempotente: retira el flag si una playa deja de caer en una isla (dato corregido)."""
+    n = 0
+    for p in playas:
+        on_island = any(
+            la0 <= p["lat"] <= la1 and lo0 <= p["lon"] <= lo1
+            for (la0, la1, lo0, lo1) in ISLAS_FERRY_BBOX.values()
+        )
+        if on_island:
+            p["acceso"] = "ferry"
+            n += 1
+        elif p.get("acceso") == "ferry":
+            del p["acceso"]
+    return n
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -179,10 +206,12 @@ def main() -> None:
             print(f"  Añadidas {added} playas nuevas (dedup por proximidad <{DEDUP_METERS} m)")
 
     n_p = apply_curation(playas, MAPPING / "curado_playas.csv", is_route=False)
+    n_isla = mark_island_access(playas)
     rutas_path = CATALOG / "rutas.json"
     rutas = json.loads(rutas_path.read_text(encoding="utf-8"))
     n_r = apply_curation(rutas, MAPPING / "curado_rutas.csv", is_route=True)
 
+    print(f"Acceso en barco (Illas Atlánticas): {n_isla} playas")
     curadas_n = sum(1 for p in playas if p.get("curado"))
     print(
         f"Curación: {n_p} playas, {n_r} rutas. Total: {len(playas)} playas "

@@ -1857,7 +1857,8 @@
       0.4,
       0.4
     ],
-    "chiringuitosCount": 0
+    "chiringuitosCount": 0,
+    "acceso": "ferry"
   },
   {
     "id": "praia_432",
@@ -1929,7 +1930,8 @@
       0.4,
       0.4
     ],
-    "chiringuitosCount": 0
+    "chiringuitosCount": 0,
+    "acceso": "ferry"
   },
   {
     "id": "praia_434",
@@ -2001,7 +2003,8 @@
       0.4,
       0.4
     ],
-    "chiringuitosCount": 0
+    "chiringuitosCount": 0,
+    "acceso": "ferry"
   },
   {
     "id": "praia_679",
@@ -3657,7 +3660,8 @@
       2.7,
       2.7
     ],
-    "chiringuitosCount": 0
+    "chiringuitosCount": 0,
+    "acceso": "ferry"
   },
   {
     "id": "praia_960",
@@ -9561,7 +9565,8 @@
       8.8,
       8.0
     ],
-    "chiringuitosCount": 0
+    "chiringuitosCount": 0,
+    "acceso": "ferry"
   },
   {
     "id": "praia_588",
@@ -9633,7 +9638,8 @@
       2.3,
       9.9
     ],
-    "chiringuitosCount": 0
+    "chiringuitosCount": 0,
+    "acceso": "ferry"
   },
   {
     "id": "praia_584",
@@ -21729,7 +21735,8 @@
       11.1,
       10.3
     ],
-    "chiringuitosCount": 0
+    "chiringuitosCount": 0,
+    "acceso": "ferry"
   },
   {
     "id": "praia_579",
@@ -21801,7 +21808,8 @@
       5.0,
       4.6
     ],
-    "chiringuitosCount": 0
+    "chiringuitosCount": 0,
+    "acceso": "ferry"
   },
   {
     "id": "praia_573",
@@ -21873,7 +21881,8 @@
       8.0,
       6.1
     ],
-    "chiringuitosCount": 5
+    "chiringuitosCount": 5,
+    "acceso": "ferry"
   },
   {
     "id": "praia_568",
@@ -21945,7 +21954,8 @@
       6.9,
       5.7
     ],
-    "chiringuitosCount": 4
+    "chiringuitosCount": 4,
+    "acceso": "ferry"
   },
   {
     "id": "praia_886",
@@ -24105,7 +24115,8 @@
       8.8,
       7.3
     ],
-    "chiringuitosCount": 1
+    "chiringuitosCount": 1,
+    "acceso": "ferry"
   },
   {
     "id": "praia_908",
@@ -24177,7 +24188,8 @@
       6.5,
       6.1
     ],
-    "chiringuitosCount": 2
+    "chiringuitosCount": 2,
+    "acceso": "ferry"
   },
   {
     "id": "praia_916",
@@ -24249,7 +24261,8 @@
       5.0,
       3.4
     ],
-    "chiringuitosCount": 0
+    "chiringuitosCount": 0,
+    "acceso": "ferry"
   },
   {
     "id": "praia_822",
@@ -27633,7 +27646,8 @@
       3.8,
       2.3
     ],
-    "chiringuitosCount": 0
+    "chiringuitosCount": 0,
+    "acceso": "ferry"
   },
   {
     "id": "praia_827",
@@ -31233,7 +31247,8 @@
       0.4,
       0.8
     ],
-    "chiringuitosCount": 0
+    "chiringuitosCount": 0,
+    "acceso": "ferry"
   },
   {
     "id": "praia_585",
@@ -31305,7 +31320,8 @@
       0.0,
       0.4
     ],
-    "chiringuitosCount": 0
+    "chiringuitosCount": 0,
+    "acceso": "ferry"
   },
   {
     "id": "praia_929",
@@ -35121,7 +35137,8 @@
       4.2,
       3.4
     ],
-    "chiringuitosCount": 1
+    "chiringuitosCount": 1,
+    "acceso": "ferry"
   },
   {
     "id": "praia_931",
@@ -35193,7 +35210,8 @@
       4.6,
       2.7
     ],
-    "chiringuitosCount": 1
+    "chiringuitosCount": 1,
+    "acceso": "ferry"
   },
   {
     "id": "praia_941",
@@ -35265,7 +35283,8 @@
       3.1,
       3.1
     ],
-    "chiringuitosCount": 1
+    "chiringuitosCount": 1,
+    "acceso": "ferry"
   },
   {
     "id": "praia_909",
@@ -35337,7 +35356,8 @@
       3.1,
       0.4
     ],
-    "chiringuitosCount": 1
+    "chiringuitosCount": 1,
+    "acceso": "ferry"
   },
   {
     "id": "praia_907",
@@ -35409,7 +35429,8 @@
       2.7,
       0.4
     ],
-    "chiringuitosCount": 0
+    "chiringuitosCount": 0,
+    "acceso": "ferry"
   },
   {
     "id": "praia_900",
@@ -38937,7 +38958,8 @@
       3.1,
       0.8
     ],
-    "chiringuitosCount": 0
+    "chiringuitosCount": 0,
+    "acceso": "ferry"
   },
   {
     "id": "praia_131",
@@ -39297,7 +39319,8 @@
       3.4,
       2.3
     ],
-    "chiringuitosCount": 0
+    "chiringuitosCount": 0,
+    "acceso": "ferry"
   },
   {
     "id": "praia_311",
@@ -42465,7 +42488,8 @@
       0.4,
       0.4
     ],
-    "chiringuitosCount": 0
+    "chiringuitosCount": 0,
+    "acceso": "ferry"
   },
   {
     "id": "praia_841",
@@ -46857,7 +46881,8 @@
       2.7,
       2.3
     ],
-    "chiringuitosCount": 1
+    "chiringuitosCount": 1,
+    "acceso": "ferry"
   },
   {
     "id": "praia_389",
