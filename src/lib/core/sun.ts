@@ -23,8 +23,9 @@ export interface SunInfo {
 }
 
 /**
- * Convención del perfil PVGIS (a verificar con un fixture real en v1, ver
- * docs/DATA.md): índice `i` → azimut sur-referenciado `az_i = -180 + i·(360/N)`,
+ * Convención del perfil PVGIS (verificada con fixtures reales en
+ * tests/unit/core/effective-sunset.test.ts, ver docs/DATA.md): índice `i` → azimut
+ * sur-referenciado `az_i = -180 + i·(360/N)`,
  * con oeste positivo, igual que el azimut de SunCalc. Devuelve el ángulo de
  * elevación del horizonte (grados) en `azSouthDegrees`, interpolado linealmente.
  */

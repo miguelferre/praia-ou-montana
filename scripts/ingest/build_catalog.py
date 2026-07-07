@@ -2,20 +2,21 @@
 """Construye el catálogo de playas/rutas.
 
 Enfoque mixto:
-  1. (--wfs) Descarga las 987 playas de la IDE de Galicia (servicio ArcGIS REST
-     de la Xunta, GeoJSON nativo) como base: id, nombre, concello, coords, bandera
-     azul. Se deduplican por proximidad contra las playas ya curadas a mano.
+  1. (--ide) Descarga las playas de la IDE de Galicia (servicio ArcGIS REST
+     de la Xunta, GeoJSON nativo — NO es WFS pese al viejo nombre --wfs) como base:
+     id, nombre, concello, coords, bandera azul. Se deduplican por proximidad contra
+     las playas ya curadas a mano.
   2. Fusiona la CURACIÓN manual de data/mapping/curado_*.csv (orientación, PMR,
      longitud, enlaces Wikiloc…), marcando curado=true.
   3. Escribe public/data/catalog/{playas,rutas}.json.
 
-Sin --wfs usa el catálogo existente como base y solo aplica la curación (idempotente).
+Sin --ide usa el catálogo existente como base y solo aplica la curación (idempotente).
 
 Fuente confirmada (ver docs/DATA.md):
   https://ideg.xunta.gal/servizos/rest/services/CubertaTerrestre/Clasificacion_PRAIAS/MapServer/0/query
 
 Uso:
-    python scripts/ingest/build_catalog.py [--wfs] [--dry-run]
+    python scripts/ingest/build_catalog.py [--ide] [--dry-run]
 """
 
 from __future__ import annotations
@@ -53,7 +54,7 @@ SESSION = make_session()
 
 
 def fetch_ide_galicia_beaches() -> list[dict]:
-    """Descarga las 987 playas de la Xunta (ArcGIS REST → GeoJSON). Tolerante a fallos."""
+    """Descarga las playas de la Xunta (ArcGIS REST → GeoJSON). Tolerante a fallos."""
     params = {
         "where": "1=1",
         "outFields": "NOME_PRAIA,CONCELLO,PROVINCIA,COD_PRAIA,B_AZUL,OBJECTID",
@@ -147,13 +148,19 @@ def apply_curation(items: list[dict], csv_path: Path, is_route: bool) -> int:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--wfs", action="store_true", help="descarga las 987 de la IDE de Galicia")
+    parser.add_argument(
+        "--ide",
+        "--wfs",
+        dest="ide",
+        action="store_true",
+        help="descarga las playas de la IDE de Galicia (ArcGIS REST; --wfs es alias histórico)",
+    )
     parser.add_argument("--dry-run", action="store_true", help="no escribe, solo informa")
     args = parser.parse_args()
 
     playas_path = CATALOG / "playas.json"
     playas = json.loads(playas_path.read_text(encoding="utf-8"))
-    if args.wfs:
+    if args.ide:
         descargadas = fetch_ide_galicia_beaches()
         if descargadas:
             ids = {p["id"] for p in playas}

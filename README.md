@@ -1,6 +1,6 @@
 # Praia ou montaña 🏖️🥾
 
-¿Playa o ruta de senderismo hoy en Galicia? Esta app web (instalable como PWA) toma tu **base** (Santiago por defecto, o cualquier lugar) y, según la meteorología, las horas de luz y el tiempo de viaje, te da un **veredicto del día — playa o montaña** y un **ranking de destinos concretos** con el porqué de cada uno. No hace la ruta: te la propone y te enlaza a Wikiloc.
+¿Playa o ruta de senderismo hoy en Galicia? Esta app web toma tu **base** (Santiago por defecto, o cualquier lugar) y, según la meteorología, las horas de luz y el tiempo de viaje, te da un **veredicto del día — playa o montaña** y un **ranking de destinos concretos** con el porqué de cada uno. No hace la ruta: te la propone y te enlaza a Wikiloc.
 
 Centrada **solo en Galicia**. Castellano + galego, con espejo de rutas (`/` es, `/gl/` gl) y `hreflang`. Estado actual: **MVP** con datos reales — 954 playas (IDE Galicia + curación, banderas azules reconciliadas contra la lista oficial del año), 201 rutas de OSM, predicción de Open-Meteo (meteo, mar, mareas, UV) y tiempos de coche reales (ORS para las bases preset, OSRM bajo demanda para la base libre).
 
@@ -11,7 +11,7 @@ npm install
 npm run dev          # http://localhost:4321
 ```
 
-Regenerar la predicción del día (datos reales, sin API key):
+Regenerar la predicción del día (datos reales, sin API key; requiere **Python ≥ 3.12**):
 
 ```bash
 python -m pip install -r scripts/ingest/requirements.txt

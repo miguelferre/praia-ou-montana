@@ -33,7 +33,7 @@ export interface PmrInfo {
 
 /**
  * Playa del catálogo. Los campos marcados (curado) solo están presentes cuando
- * `curado === true` (enfoque mixto: las 987 cargan con lo básico; las top se
+ * `curado === true` (enfoque mixto: las 954 cargan con lo básico; las top se
  * enriquecen a mano).
  */
 export interface Playa {

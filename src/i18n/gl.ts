@@ -126,5 +126,6 @@ export const gl: Dict = {
     datos:
       'Datos: tempo de Open-Meteo, horizonte de PVGIS, praias da Xunta de Galicia, mapa de OpenStreetMap. As rutas ligan a Wikiloc.',
   },
-  footer: 'Datos: Open-Meteo · IDE Galicia · OpenStreetMap · PVGIS. As rutas fanse en Wikiloc.',
+  footer:
+    'Datos: Open-Meteo · IDE Galicia · OpenStreetMap · OpenFreeMap · PVGIS · ADEAC. As rutas fanse en Wikiloc.',
 };

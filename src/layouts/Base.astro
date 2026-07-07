@@ -12,7 +12,9 @@ interface Props {
 }
 const { lang } = Astro.props;
 const meta = SEO[lang];
-const site = Astro.site?.href.replace(/\/$/, '') ?? 'https://praiaoumontana.gal';
+const site =
+  Astro.site?.href.replace(/\/$/, '') ??
+  'https://praia-ou-montanha.ferreirogarciamiguel.workers.dev';
 const canonical = `${site}${lang === 'gl' ? '/gl/' : '/'}`;
 const ogImage = `${site}/img/playa.jpg`;
 const alternates = [

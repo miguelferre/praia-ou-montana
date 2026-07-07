@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://praiaoumontana.gal/sitemap.xml
+Sitemap: https://praia-ou-montanha.ferreirogarciamiguel.workers.dev/sitemap.xml
