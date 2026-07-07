@@ -35,6 +35,7 @@ export const es = {
     minCar: 'min en coche',
     tie: 'Están muy igualadas: elige según te apetezca.',
     handicap: 'de desventaja para la playa hoy (invierno o agua fría)',
+    winsBy: 'Gana por',
   },
   panel: {
     beaches: 'Playas',
@@ -64,6 +65,7 @@ export const es = {
       veryHigh: 'muy alto',
       extreme: 'extremo',
     },
+    oleaje: 'Oleaje',
     tides: 'Mareas',
     highTide: 'pleamar',
     lowTide: 'bajamar',

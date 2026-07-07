@@ -100,6 +100,7 @@ export function DestinationCard({
           {item.tempAguaC !== undefined && (
             <Stat k={dict.card.water} v={`${round(item.tempAguaC)}°`} />
           )}
+          {item.oleajeM !== undefined && <Stat k={dict.card.oleaje} v={`${item.oleajeM} m`} />}
           {item.effectiveSunsetIso && (
             <Stat k={dict.card.sunset} v={hhmm(item.effectiveSunsetIso)} />
           )}

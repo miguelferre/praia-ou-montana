@@ -100,6 +100,20 @@ describe('rankBeaches — propaga el UV del forecast a la ficha', () => {
   });
 });
 
+describe('rankBeaches — propaga el oleaje del forecast a la ficha', () => {
+  it('expone oleajeM en el item puntuado cuando hay forecast', () => {
+    const playa = makePlaya({ id: 'p', travel: { santiago: { cocheMin: 20 } } });
+    const forecast: ForecastIndex = { p: makeForecast({ oleajeM: 1.4 }) };
+    const { best } = rankBeaches([playa], {
+      base: santiago,
+      date,
+      forecast,
+      prefs: defaultPrefs(),
+    });
+    expect(best?.oleajeM).toBe(1.4);
+  });
+});
+
 describe('rankBeaches — propaga las mareas del forecast a la ficha', () => {
   it('expone las mareas (pleamar/bajamar) en el item puntuado', () => {
     const playa = makePlaya({ id: 'p', travel: { santiago: { cocheMin: 20 } } });

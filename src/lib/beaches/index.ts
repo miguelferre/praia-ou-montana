@@ -140,6 +140,7 @@ export function rankBeaches(playas: Playa[], ctx: BeachContext): BeachRanking {
       effectiveSunsetIso: r.effectiveSunsetIso,
       ...(r.tempAguaC !== undefined ? { tempAguaC: r.tempAguaC } : {}),
       ...(r.forecast?.uvIndex !== undefined ? { uvIndex: r.forecast.uvIndex } : {}),
+      ...(r.forecast?.oleajeM !== undefined ? { oleajeM: r.forecast.oleajeM } : {}),
       ...(r.forecast?.mareas !== undefined ? { mareas: r.forecast.mareas } : {}),
     };
     return scored;

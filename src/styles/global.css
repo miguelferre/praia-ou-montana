@@ -350,12 +350,17 @@ input[type='range'] {
 
 /* Regla legible del veredicto: la desventaja estacional de la playa, ahora visible
    (antes solo estaba en el código/SCORING.md). Discreta, bajo el desglose. */
+.verdict-margin,
 .verdict-handicap {
   margin: 10px 0 0;
   font-size: 0.82rem;
   font-weight: 600;
   color: oklch(1 0 0 / 0.82);
 }
+.verdict-margin {
+  margin-top: 12px;
+}
+.verdict[data-kind='ninguna'] .verdict-margin,
 .verdict[data-kind='ninguna'] .verdict-handicap {
   color: var(--muted);
 }

@@ -35,6 +35,7 @@ export const gl: Dict = {
     minCar: 'min en coche',
     tie: 'Están moi igualadas: escolle segundo che apeteza.',
     handicap: 'de desvantaxe para a praia hoxe (inverno ou auga fría)',
+    winsBy: 'Gaña por',
   },
   panel: {
     beaches: 'Praias',
@@ -64,6 +65,7 @@ export const gl: Dict = {
       veryHigh: 'moi alto',
       extreme: 'extremo',
     },
+    oleaje: 'Ondada',
     tides: 'Mareas',
     highTide: 'preamar',
     lowTide: 'baixamar',

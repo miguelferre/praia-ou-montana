@@ -13,6 +13,8 @@ export interface ScoredPlaya {
   tempAguaC?: number;
   /** Índice UV máximo del día (informativo, no puntúa). */
   uvIndex?: number;
+  /** Altura de ola máxima (m) del día (informativo, no puntúa). */
+  oleajeM?: number;
   /** Mareas del día (informativo, no puntúa). */
   mareas?: TideEvent[];
 }
