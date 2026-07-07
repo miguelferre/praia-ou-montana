@@ -1,0 +1,52 @@
+[
+  {
+    "id": "carnota-area-maior",
+    "nombre": "Praia de Area Maior (Carnota)",
+    "lat": 42.8226,
+    "lon": -9.1086,
+    "curado": true,
+    "concello": "Carnota",
+    "ideGaliciaId": "carnota-area-maior",
+    "travel": {
+      "santiago": {
+        "cocheMin": 75
+      },
+      "esteiro": {
+        "cocheMin": 31
+      },
+      "sanxenxo": {
+        "cocheMin": 107
+      }
+    },
+    "horizonProfile": [
+      4.2, 2.7, 3.1, 4.2, 3.8, 4.2, 4.6, 5.3, 5.7, 5.7, 6.5, 6.5, 6.5, 6.5, 7.6, 8.8, 8.4, 8.8, 7.6,
+      6.9, 6.1, 6.5, 5.7, 4.2, 5.0, 6.1, 5.3, 3.1, 1.9, 1.1, 0.4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0, 0.0, 0.8, 0.8, 0.4, 0.4, 0.8, 1.9, 2.3, 4.2
+    ]
+  },
+  {
+    "id": "ancoradoiro-muros",
+    "nombre": "Praia do Ancoradoiro (Muros)",
+    "lat": 42.786,
+    "lon": -9.062,
+    "curado": true,
+    "concello": "Muros",
+    "ideGaliciaId": "ancoradoiro-muros",
+    "travel": {
+      "santiago": {
+        "cocheMin": 56
+      },
+      "esteiro": {
+        "cocheMin": 12
+      },
+      "sanxenxo": {
+        "cocheMin": 88
+      }
+    },
+    "horizonProfile": [
+      5.7, 5.7, 5.0, 5.7, 7.6, 8.8, 9.5, 9.5, 7.6, 5.0, 2.3, 1.5, 0.8, 1.5, 1.5, 1.9, 3.1, 2.3, 2.7,
+      2.3, 2.7, 2.7, 3.1, 3.1, 5.3, 6.5, 8.4, 8.8, 9.5, 9.9, 8.0, 6.1, 5.7, 6.5, 8.0, 8.4, 8.4, 8.4,
+      8.0, 7.3, 6.9, 7.3, 7.3, 8.4, 9.2, 8.4, 7.3, 5.7
+    ]
+  }
+]

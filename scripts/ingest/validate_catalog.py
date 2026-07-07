@@ -124,6 +124,22 @@ def warn_misplaced(items: list[dict], latk: str, lonk: str) -> list[str]:
     return warns
 
 
+def warn_horizon(items: list[dict]) -> list[str]:
+    """Avisa de perfiles de horizonte con un tamaño distinto del esperado. La convención
+    PVGIS del proyecto son 48 puntos (azimut -180..172.5); el cliente tolera cualquier
+    longitud, pero una desviación delata un perfil mal poblado. Vive aquí, en la barrera
+    de datos, y ya no en el test unitario (que usa un fixture congelado; T2)."""
+    warns: list[str] = []
+    for it in items:
+        hp = it.get("horizonProfile")
+        if hp is None:
+            continue
+        n = len(hp) if isinstance(hp, list) else None
+        if n != 48:
+            warns.append(f"{it.get('id')}: horizonProfile con {n} puntos (esperado 48)")
+    return warns
+
+
 def main() -> int:
     errs: list[str] = []
     warns: list[str] = []
@@ -132,7 +148,9 @@ def main() -> int:
     playas = json.loads(playas_path.read_text(encoding="utf-8"))
     errs += validate_items(playas, PLAYA_REQUIRED, "lat", "lon")
     if isinstance(playas, list):
-        warns += warn_misplaced([p for p in playas if isinstance(p, dict)], "lat", "lon")
+        dict_playas = [p for p in playas if isinstance(p, dict)]
+        warns += warn_misplaced(dict_playas, "lat", "lon")
+        warns += warn_horizon(dict_playas)
 
     rutas_path = CATALOG / "rutas.json"
     if rutas_path.exists():
