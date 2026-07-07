@@ -40,6 +40,7 @@ jobs:
       - run: pip install -r scripts/ingest/requirements-dev.txt
       - run: ruff check scripts tests/ingest
       - run: ruff format --check scripts tests/ingest
+      - run: mypy scripts/ingest
       - run: pytest tests/ingest -q
 
   # Suite end-to-end (Playwright): smoke + accesibilidad, sobre el dev server.

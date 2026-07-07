@@ -102,7 +102,8 @@ def fetch_ide_galicia_beaches() -> list[dict]:
 
 
 def _num(value: str):
-    value = value.strip()
+    # Admite coma decimal ("7,5"): antes reventaba con int("7,5") sin contexto.
+    value = value.strip().replace(",", ".")
     if value == "":
         return None
     return float(value) if "." in value else int(value)
@@ -113,10 +114,16 @@ def apply_curation(items: list[dict], csv_path: Path, is_route: bool) -> int:
         return 0
     by_id = {it["id"]: it for it in items}
     touched = 0
+    missing: list[str] = []
     with csv_path.open(encoding="utf-8") as fh:
         for row in csv.DictReader(fh):
-            item = by_id.get(row.get("id", "").strip())
+            rid = row.get("id", "").strip()
+            item = by_id.get(rid)
             if not item:
+                # Un id curado que no casa con ninguna playa (typo, o id fundido por el
+                # dedup) perdería su curación en silencio: se avisa para no perderla ciega.
+                if rid:
+                    missing.append(rid)
                 continue
             touched += 1
             if not is_route:
@@ -133,6 +140,8 @@ def apply_curation(items: list[dict], csv_path: Path, is_route: bool) -> int:
                     item[key] = raw.strip().lower() == "true"
                 else:
                     item[key] = raw.strip()
+    if missing:
+        print(f"  [aviso] {len(missing)} id(s) de curación sin playa en {csv_path.name}: {missing}")
     return touched
 
 

@@ -96,7 +96,10 @@ def fetch_forecast(points: list[dict]) -> dict[str, dict]:
             timeout=40,
         )
         resp.raise_for_status()
-        for point, loc in zip(chunk, _as_list(resp.json()), strict=False):
+        locs = _as_list(resp.json())
+        if len(locs) != len(chunk):
+            print(f"  [aviso] Open-Meteo devolvió {len(locs)}/{len(chunk)} puntos (forecast)")
+        for point, loc in zip(chunk, locs, strict=False):
             daily = loc["daily"]
             hourly = loc.get("hourly", {})
             out[point["id"]] = {
@@ -127,7 +130,10 @@ def fetch_marine(beaches: list[dict]) -> dict[str, dict]:
             timeout=40,
         )
         resp.raise_for_status()
-        for beach, loc in zip(chunk, _as_list(resp.json()), strict=False):
+        locs = _as_list(resp.json())
+        if len(locs) != len(chunk):
+            print(f"  [aviso] Open-Meteo devolvió {len(locs)}/{len(chunk)} puntos (marine)")
+        for beach, loc in zip(chunk, locs, strict=False):
             hourly = loc.get("hourly", {})
             sst = hourly.get("sea_surface_temperature", [])
             wave = loc.get("daily", {}).get("wave_height_max", [None])

@@ -5,7 +5,7 @@ El flag `banderaAzul` del catálogo procede del campo B_AZUL de la IDE de Galici
 que NO se actualiza con el galardón anual: en 2026 seguía marcando playas que ya lo
 habían perdido (p. ej. Samil, o todo el concello de Cangas) y arrastraba duplicados
 del propio IDE. Este script vuelve a derivar el flag desde una lista oficial
-versionada (data/mapping/banderas_azul_2026.csv) cruzando por concello + nombre
+versionada (data/mapping/banderas_azul_YYYY.csv, la del año en curso) cruzando por concello + nombre
 normalizados (sin tildes, sin artículos, sin el prefijo "Praia de…").
 
 Los pocos casos que el cruce por nombre no resuelve —variantes ortográficas o tramos
@@ -23,14 +23,16 @@ from __future__ import annotations
 
 import argparse
 import csv
+import datetime
 import json
 import re
+import sys
 import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 PLAYAS = ROOT / "public" / "data" / "catalog" / "playas.json"
-OFICIAL = ROOT / "data" / "mapping" / "banderas_azul_2026.csv"
+MAPPING = ROOT / "data" / "mapping"
 
 # Playas cuyo nombre en el catálogo no casa con el oficial por variante o por ser un
 # tramo con otro nombre, pero que SÍ tienen bandera azul 2026 (revisado a mano).
@@ -72,9 +74,30 @@ def _nc(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", s).strip()
 
 
-def load_oficial() -> dict[str, set[str]]:
+def resolve_oficial(year: int) -> Path:
+    """Lista oficial del año pedido. Si falta, cae a la más reciente disponible con un
+    AVISO ruidoso (no en silencio): así, en enero del año siguiente el workflow no
+    reconcilia contra una lista caducada sin que nadie se entere, sino que pide a gritos
+    transcribir la del año en curso (F13)."""
+    exact = MAPPING / f"banderas_azul_{year}.csv"
+    if exact.exists():
+        return exact
+    candidates = sorted(MAPPING.glob("banderas_azul_*.csv"))
+    if not candidates:
+        print("ERROR: no hay ninguna lista banderas_azul_*.csv en data/mapping", file=sys.stderr)
+        raise SystemExit(2)
+    latest = candidates[-1]
+    print(
+        f"  [AVISO] no existe {exact.name}; uso {latest.name}. "
+        f"Transcribe la lista oficial de {year} y añádela a data/mapping/.",
+        file=sys.stderr,
+    )
+    return latest
+
+
+def load_oficial(path: Path) -> dict[str, set[str]]:
     by_c: dict[str, set[str]] = {}
-    with OFICIAL.open(encoding="utf-8") as fh:
+    with path.open(encoding="utf-8") as fh:
         for row in csv.DictReader(fh):
             by_c.setdefault(_nc(row["concello"]), set()).add(_norm(row["nombre"]))
     return by_c
@@ -93,9 +116,15 @@ def is_blue(playa: dict, by_c: dict[str, set[str]]) -> bool:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--apply", action="store_true", help="escribe playas.json (si no, dry-run)")
+    ap.add_argument(
+        "--year", type=int, default=None, help="año de la lista oficial (def: el actual)"
+    )
     args = ap.parse_args()
 
-    by_c = load_oficial()
+    year = args.year or datetime.date.today().year
+    oficial = resolve_oficial(year)
+    print(f"Lista oficial: {oficial.name}")
+    by_c = load_oficial(oficial)
     playas = json.loads(PLAYAS.read_text(encoding="utf-8"))
 
     old_true = sum(1 for p in playas if p.get("banderaAzul"))
@@ -117,6 +146,10 @@ def main() -> int:
             to_true.append(p)
         elif old and not new:
             to_false.append(p)
+        # La lista oficial del año es la ÚNICA fuente de verdad de banderaAzul: se
+        # sobreescribe incluso en playas curadas a mano (a diferencia del resto de la
+        # curación, que sí se preserva). El galardón es anual y el CSV de curación puede
+        # quedar desfasado, así que aquí manda ADEAC — decisión deliberada (F14).
         if args.apply:
             p["banderaAzul"] = new
 

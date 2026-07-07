@@ -47,7 +47,7 @@ No hay clave universal. Estrategia (`scripts/ingest/build_catalog.py`):
 5. **PMR** (COGAMI, no estructurado): extracción manual a `data/mapping/curado_playas.csv`.
 6. **Dedup** ✅ (`scripts/ingest/dedup_playas.py`): el IDE parte muchas playas en 2-3 registros (mismo nombre, coords a unos cientos de metros). Se agrupan por concello+nombre normalizado y, cuando están cerca (<1,2 km = "segmentación del IDE", el mismo umbral que `validate_catalog`), se conserva la entrada con más señal y se funden banderaAzul/chiringuitos. En 2026: **991 → 954**. Los homónimos LEJANOS (p. ej. _Area Grande_ en Arteixo a 5,5 km) NO se tocan: son dos playas o un error de ubicación, y los delata el validador.
 
-La curación manual (`data/mapping/curado_*.csv`) es el activo de calidad: marca `curado=true` y añade orientación, PMR, longitud, bandera azul, enlaces Wikiloc. **`reconcile_blue_flags.py` y `dedup_playas.py` corren DESPUÉS de `build_catalog`** (encadenados en `ingest-catalog.yml`), porque cada `--wfs` reintroduce los duplicados y el `B_AZUL` histórico del IDE.
+La curación manual (`data/mapping/curado_*.csv`) es el activo de calidad: marca `curado=true` y añade orientación, PMR, longitud, enlaces Wikiloc. **Excepción — `banderaAzul`**: no la manda la curación sino la lista oficial del año; `reconcile_blue_flags.py` la sobreescribe **deliberadamente incluso en playas curadas** (el galardón es anual y el CSV puede quedar desfasado, así que aquí manda ADEAC). El resto de campos curados sí se preservan. **`reconcile_blue_flags.py` y `dedup_playas.py` corren DESPUÉS de `build_catalog`** (encadenados en `ingest-catalog.yml`), porque cada `--wfs` reintroduce los duplicados y el `B_AZUL` histórico del IDE.
 
 ## Rutas
 

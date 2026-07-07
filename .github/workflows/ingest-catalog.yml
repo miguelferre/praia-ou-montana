@@ -24,7 +24,9 @@ jobs:
       - run: python scripts/ingest/build_catalog.py --wfs
       - run: python scripts/ingest/build_services.py
       - run: python scripts/ingest/build_routes.py
-      - run: python scripts/ingest/fetch_horizon.py
+      # --all: repone el perfil de horizonte de las playas nuevas del IDE (salta las ya
+      # cacheadas). Sin él, cada ciclo re-añade playas sin puesta efectiva, el diferenciador.
+      - run: python scripts/ingest/fetch_horizon.py --all
       - run: python scripts/ingest/build_travel.py
       # Post-proceso: cada build reintroduce desde el IDE los casi-duplicados y un
       # banderaAzul histórico (~2024). Se reconcilia contra la lista oficial del año
@@ -38,5 +40,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/data/catalog
-          git diff --staged --quiet || git commit -m "chore: catálogo $(date -u +%F)"
-          git push
+          if git diff --staged --quiet; then
+            echo "sin cambios en el catálogo"
+          else
+            git commit -m "chore: catálogo $(date -u +%F)"
+            # El otro workflow (forecast) puede haber empujado entretanto: rebase antes
+            # de push. Los ficheros son disjuntos, así que no hay conflicto (F12).
+            git pull --rebase origin main
+            git push
+          fi

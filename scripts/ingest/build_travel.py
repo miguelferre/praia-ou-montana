@@ -24,7 +24,7 @@ from common import chunks, haversine_km, make_session
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "public" / "data"
 ORS_URL = "https://api.openrouteservice.org/v2/matrix/driving-car"
-OSRM_URL = "http://router.project-osrm.org/table/v1/driving/"
+OSRM_URL = "https://router.project-osrm.org/table/v1/driving/"
 
 SESSION = make_session()
 

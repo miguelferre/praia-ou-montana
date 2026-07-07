@@ -44,10 +44,13 @@ def _norm(s: str) -> str:
 
 
 def _score(p: dict) -> tuple:
-    """Prioridad para elegir la entrada que se conserva: la de más señal."""
+    """Prioridad para elegir la entrada que se conserva: la de más señal. Incluye tener
+    horizonProfile (el diferenciador del producto): si no se valorase, el dedup podría
+    quedarse con la entrada SIN perfil y esa playa perdería la puesta efectiva (F18)."""
     return (
         bool(p.get("curado")),
         bool(p.get("banderaAzul")),
+        bool(p.get("horizonProfile")),
         p.get("chiringuitosCount") or 0,
         -len(p["id"]),
     )
@@ -63,6 +66,12 @@ def _merge_into(keeper: dict, group: list[dict]) -> None:
     rest = [p["restauracionM"] for p in group if isinstance(p.get("restauracionM"), (int, float))]
     if rest:
         keeper["restauracionM"] = min(rest)
+    # Hereda el perfil de horizonte si el keeper no lo trae pero otro del grupo sí (F18).
+    if not keeper.get("horizonProfile"):
+        for p in group:
+            if p.get("horizonProfile"):
+                keeper["horizonProfile"] = p["horizonProfile"]
+                break
 
 
 def main() -> int:
