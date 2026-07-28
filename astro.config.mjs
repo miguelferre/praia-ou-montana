@@ -2,6 +2,8 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 
+import cloudflare from "@astrojs/cloudflare";
+
 // Praia ou montaña — sitio estático con una sola isla React (el dashboard).
 // La i18n tiene espejo de rutas: / (es) y /gl/ (gl), con <head> y hreflang
 // pre-renderizados por idioma (SEO multilingüe). El dashboard es la misma isla
@@ -12,6 +14,8 @@ export default defineConfig({
   // deben apuntar a la URL realmente servida, no a un host muerto. Cambiar aquí cuando
   // se registre el dominio.
   site: 'https://praia-ou-montanha.ferreirogarciamiguel.workers.dev',
+
   output: 'static',
   integrations: [react()],
+  adapter: cloudflare()
 });
