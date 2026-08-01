@@ -4621,5 +4621,212 @@
         "cocheMin": 78
       }
     }
+  },
+  {
+    "id": "osm-2259725",
+    "osmRelationId": 2259725,
+    "nombre": "Tui - Caldelas - Tui",
+    "concello": "Tui",
+    "latInicio": 42.03745,
+    "lonInicio": -8.64815,
+    "km": 22,
+    "desnivelPosM": 289,
+    "tipo": "lineal",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 83
+      },
+      "esteiro": {
+        "cocheMin": 104
+      },
+      "sanxenxo": {
+        "cocheMin": 57
+      }
+    }
+  },
+  {
+    "id": "osm-3172700",
+    "osmRelationId": 3172700,
+    "nombre": "Roteiro da Batalla de Cacheiras",
+    "concello": "Teo",
+    "latInicio": 42.78569,
+    "lonInicio": -8.5114,
+    "km": 9,
+    "desnivelPosM": 214,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 20
+      },
+      "esteiro": {
+        "cocheMin": 50
+      },
+      "sanxenxo": {
+        "cocheMin": 59
+      }
+    }
+  },
+  {
+    "id": "osm-21089841",
+    "osmRelationId": 21089841,
+    "nombre": "Ribeira do Ulla Teense",
+    "concello": "Teo",
+    "latInicio": 42.75603,
+    "lonInicio": -8.51499,
+    "km": 9,
+    "desnivelPosM": 218,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 25
+      },
+      "esteiro": {
+        "cocheMin": 56
+      },
+      "sanxenxo": {
+        "cocheMin": 59
+      }
+    }
+  },
+  {
+    "id": "osm-21112911",
+    "osmRelationId": 21112911,
+    "nombre": "Ruta dos Petróglifos de Teo",
+    "concello": "Teo",
+    "latInicio": 42.8057,
+    "lonInicio": -8.60197,
+    "km": 8,
+    "desnivelPosM": 198,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 21
+      },
+      "esteiro": {
+        "cocheMin": 45
+      },
+      "sanxenxo": {
+        "cocheMin": 52
+      }
+    }
+  },
+  {
+    "id": "osm-21118482",
+    "osmRelationId": 21118482,
+    "nombre": "Subida á Curota polo Río das Pedras",
+    "concello": "A Pobra do Caramiñal",
+    "latInicio": 42.62969,
+    "lonInicio": -8.94895,
+    "km": 9,
+    "desnivelPosM": 236,
+    "tipo": "circular",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 53
+      },
+      "esteiro": {
+        "cocheMin": 52
+      },
+      "sanxenxo": {
+        "cocheMin": 60
+      }
+    }
+  },
+  {
+    "id": "osm-21122777",
+    "osmRelationId": 21122777,
+    "nombre": "Ruta das Loras",
+    "concello": "Baleira",
+    "latInicio": 43.01748,
+    "lonInicio": -7.24422,
+    "km": 15,
+    "desnivelPosM": 385,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 106
+      },
+      "esteiro": {
+        "cocheMin": 140
+      },
+      "sanxenxo": {
+        "cocheMin": 149
+      }
+    }
+  },
+  {
+    "id": "osm-21123853",
+    "osmRelationId": 21123853,
+    "nombre": "Camiño Vello de Aldosende",
+    "concello": "Paradela",
+    "latInicio": 42.74829,
+    "lonInicio": -7.63614,
+    "km": 11,
+    "desnivelPosM": 267,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 104
+      },
+      "esteiro": {
+        "cocheMin": 137
+      },
+      "sanxenxo": {
+        "cocheMin": 146
+      }
+    }
+  },
+  {
+    "id": "osm-21127576",
+    "osmRelationId": 21127576,
+    "nombre": "Ruta do Río Arnoia",
+    "concello": "Ramirás",
+    "latInicio": 42.20896,
+    "lonInicio": -8.07209,
+    "km": 11,
+    "desnivelPosM": 269,
+    "tipo": "lineal",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 106
+      },
+      "esteiro": {
+        "cocheMin": 137
+      },
+      "sanxenxo": {
+        "cocheMin": 101
+      }
+    }
+  },
+  {
+    "id": "osm-21158044",
+    "osmRelationId": 21158044,
+    "nombre": "Punta Coitelada",
+    "concello": "Ares",
+    "latInicio": 43.43977,
+    "lonInicio": -8.2754,
+    "km": 11,
+    "desnivelPosM": 263,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 75
+      },
+      "esteiro": {
+        "cocheMin": 107
+      },
+      "sanxenxo": {
+        "cocheMin": 116
+      }
+    }
   }
 ]
