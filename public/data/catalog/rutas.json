@@ -4828,5 +4828,74 @@
         "cocheMin": 116
       }
     }
+  },
+  {
+    "id": "osm-21178764",
+    "osmRelationId": 21178764,
+    "nombre": "Senda Sisalde Amarilla",
+    "concello": "Arteixo",
+    "latInicio": 43.30425,
+    "lonInicio": -8.55463,
+    "km": 7,
+    "desnivelPosM": 180,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 72
+      },
+      "esteiro": {
+        "cocheMin": 104
+      },
+      "sanxenxo": {
+        "cocheMin": 113
+      }
+    }
+  },
+  {
+    "id": "osm-21178814",
+    "osmRelationId": 21178814,
+    "nombre": "Senda Sisalde Roja",
+    "concello": "Arteixo",
+    "latInicio": 43.27176,
+    "lonInicio": -8.55752,
+    "km": 9,
+    "desnivelPosM": 214,
+    "tipo": "lineal",
+    "dificultad": "baja",
+    "travel": {
+      "santiago": {
+        "cocheMin": 71
+      },
+      "esteiro": {
+        "cocheMin": 99
+      },
+      "sanxenxo": {
+        "cocheMin": 112
+      }
+    }
+  },
+  {
+    "id": "osm-21281252",
+    "osmRelationId": 21281252,
+    "nombre": "Ruta do río Pequeno",
+    "concello": "Folgoso do Courel",
+    "latInicio": 42.64626,
+    "lonInicio": -7.15605,
+    "km": 14,
+    "desnivelPosM": 338,
+    "tipo": "circular",
+    "dificultad": "media",
+    "travel": {
+      "santiago": {
+        "cocheMin": 147
+      },
+      "esteiro": {
+        "cocheMin": 180
+      },
+      "sanxenxo": {
+        "cocheMin": 189
+      }
+    }
   }
 ]
