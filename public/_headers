@@ -3,9 +3,8 @@
 #
 # La Content-Security-Policy va en un <meta http-equiv> del HTML (garantizada en
 # cualquier hosting y verificable en el build); aquí solo las cabeceras que un <meta>
-# no puede fijar. Estas dependen de que el Worker sirva _headers — verificar tras deploy:
-#   curl -sI https://praia-ou-montanha.ferreirogarciamiguel.workers.dev/ | grep -i x-frame-options
-# Si no aparecen, este Worker no aplica _headers y hay que fijarlas en su código.
+# no puede fijar. Dependen de que el hosting sirva _headers (Cloudflare y Netlify lo
+# hacen; GitHub Pages no).
 /*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff

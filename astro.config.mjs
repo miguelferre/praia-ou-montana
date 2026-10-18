@@ -8,10 +8,8 @@ import react from '@astrojs/react';
 // client:only en ambas rutas; el idioma se lo fija la ruta y el toggle navega.
 // https://astro.build/config
 export default defineConfig({
-  // Dominio propio (praiaoumontana.gal) aún sin registrar: el canonical/hreflang/OG
-  // deben apuntar a la URL realmente servida, no a un host muerto. Cambiar aquí cuando
-  // se registre el dominio.
-  site: 'https://praia-ou-montanha.ferreirogarciamiguel.workers.dev',
+  // Sin `site`: no hay URL pública desplegada. Cuando exista, ponla aquí y Base.astro
+  // emitirá canonical, hreflang y Open Graph con URLs absolutas.
   output: 'static',
   integrations: [react()],
 });

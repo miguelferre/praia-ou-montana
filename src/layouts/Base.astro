@@ -14,16 +14,17 @@ interface Props {
 }
 const { lang } = Astro.props;
 const meta = SEO[lang];
-const site =
-  Astro.site?.href.replace(/\/$/, '') ??
-  'https://praia-ou-montanha.ferreirogarciamiguel.workers.dev';
-const canonical = `${site}${lang === 'gl' ? '/gl/' : '/'}`;
-const ogImage = `${site}/img/playa.jpg`;
-const alternates = [
-  { hreflang: 'es', href: `${site}/` },
-  { hreflang: 'gl', href: `${site}/gl/` },
-  { hreflang: 'x-default', href: `${site}/` },
-];
+// Sin `site` (sin URL pública) no hay canonical, hreflang ni Open Graph absolutos.
+const site = Astro.site?.href.replace(/\/$/, '');
+const canonical = site ? `${site}${lang === 'gl' ? '/gl/' : '/'}` : undefined;
+const ogImage = site ? `${site}/img/playa.jpg` : undefined;
+const alternates = site
+  ? [
+      { hreflang: 'es', href: `${site}/` },
+      { hreflang: 'gl', href: `${site}/gl/` },
+      { hreflang: 'x-default', href: `${site}/` },
+    ]
+  : [];
 ---
 
 <!doctype html>
@@ -46,7 +47,7 @@ const alternates = [
     }
     <title>{meta.title}</title>
     <meta name="description" content={meta.description} />
-    <link rel="canonical" href={canonical} />
+    {canonical && <link rel="canonical" href={canonical} />}
     {alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
     <meta name="robots" content="index,follow" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -56,14 +57,14 @@ const alternates = [
     <meta property="og:site_name" content="Praia ou montaña" />
     <meta property="og:title" content={meta.title} />
     <meta property="og:description" content={meta.description} />
-    <meta property="og:url" content={canonical} />
-    <meta property="og:image" content={ogImage} />
+    {canonical && <meta property="og:url" content={canonical} />}
+    {ogImage && <meta property="og:image" content={ogImage} />}
     <meta property="og:locale" content={meta.ogLocale} />
     <meta property="og:locale:alternate" content={lang === 'gl' ? 'es_ES' : 'gl_ES'} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={meta.title} />
     <meta name="twitter:description" content={meta.description} />
-    <meta name="twitter:image" content={ogImage} />
+    {ogImage && <meta name="twitter:image" content={ogImage} />}
 
     <meta name="theme-color" content="#0b3a4a" />
   </head>
