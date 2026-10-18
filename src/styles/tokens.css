@@ -35,8 +35,8 @@
   --score-good: oklch(0.6 0.13 150);
 
   /* Tipografía: una grotesca para la UI; serif SOLO para el héroe del veredicto */
-  --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
-  --font-sans: 'Hanken Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Newsreader Variable', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Hanken Grotesk Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
   /* Métricas — redondeadas y con aire (referencia outdoor) */
   --radius: 14px;

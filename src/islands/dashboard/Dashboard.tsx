@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Controls } from '@/components/Controls';
 import { DestinationCard } from '@/components/DestinationCard';
+import { Footer } from '@/components/Footer';
 import { DestinationList, type Tab } from '@/components/DestinationList';
 import { MapDashboard, type MapMetric } from '@/components/MapDashboard';
 import { Methodology } from '@/components/Methodology';
@@ -298,7 +299,7 @@ export default function Dashboard({ lang: initialLang = DEFAULT_LANG }: { lang?:
 
       <Methodology dict={dict} />
 
-      <footer className="app-footer">{dict.footer}</footer>
+      <Footer dict={dict} />
     </div>
   );
 }

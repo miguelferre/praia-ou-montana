@@ -131,8 +131,11 @@ export const es = {
     datos:
       'Datos: tiempo de Open-Meteo, horizonte de PVGIS, playas de la Xunta de Galicia, mapa de OpenStreetMap. Las rutas se enlazan a Wikiloc.',
   },
-  footer:
-    'Datos: Open-Meteo · IDE Galicia · OpenStreetMap · OpenFreeMap · PVGIS · ADEAC. Las rutas se hacen en Wikiloc.',
+  footer: {
+    label: 'Datos:',
+    note: 'Las rutas se hacen en Wikiloc.',
+    licenses: 'Licencias y atribuciones',
+  },
 };
 
 export type Dict = typeof es;

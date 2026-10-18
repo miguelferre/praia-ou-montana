@@ -54,4 +54,4 @@ python scripts/ingest/validate_catalog.py / validate_forecast.py  # barreras de 
 
 ## Decisiones tomadas (no se reabren sin motivo)
 
-Stack Astro+React+TS estático (espejo de ComparaClima); static-first con ingesta en CI (las keys nunca van al cliente); catálogo mixto (IDE Galicia + curación de las top), reconciliado y deduplicado tras cada build; bases preset (Santiago/Esteiro/Sanxenxo) precalculadas y base libre con routing OSRM on-demand (sin backend); i18n ES+GL con espejo de rutas + hreflang. Plan completo en `C:\Users\ferre\.claude\plans\muy-bien-quiero-hacer-greedy-peach.md`.
+Stack Astro+React+TS estático (espejo de ComparaClima); static-first con ingesta en CI (las keys nunca van al cliente); catálogo mixto (IDE Galicia + curación de las top), reconciliado y deduplicado tras cada build; bases preset (Santiago/Esteiro/Sanxenxo) precalculadas y base libre con routing OSRM on-demand (sin backend); i18n ES+GL con espejo de rutas + hreflang.

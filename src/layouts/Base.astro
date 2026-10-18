@@ -1,6 +1,8 @@
 ---
 import '@/styles/global.css';
 import 'maplibre-gl/dist/maplibre-gl.css';
+import '@fontsource-variable/newsreader/opsz.css';
+import '@fontsource-variable/hanken-grotesk';
 import { SEO } from '@/i18n/seo';
 import type { Lang } from '@/i18n';
 
@@ -34,11 +36,11 @@ const alternates = [
          script-src es necesario para los scripts de hidratación que Astro emite inline;
          la app no tiene sinks de XSS (nada de innerHTML/eval), y la defensa real la dan
          connect-src en lista blanca, object-src y base-uri. Orígenes = los que usa la
-         app: fuentes de Google, tiles de OpenFreeMap, Nominatim y OSRM (base libre). */
+         app: fuentes propias (@fontsource), tiles de OpenFreeMap, Nominatim y OSRM (base libre). */
       import.meta.env.PROD && (
         <meta
           http-equiv="Content-Security-Policy"
-          content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval'; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://tiles.openfreemap.org; connect-src 'self' https://tiles.openfreemap.org https://nominatim.openstreetmap.org https://router.project-osrm.org"
+          content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval'; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: blob: https://tiles.openfreemap.org; connect-src 'self' https://tiles.openfreemap.org https://nominatim.openstreetmap.org https://router.project-osrm.org"
         />
       )
     }
@@ -63,16 +65,6 @@ const alternates = [
     <meta name="twitter:description" content={meta.description} />
     <meta name="twitter:image" content={ogImage} />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400..600&display=swap"
-      rel="stylesheet"
-    />
     <meta name="theme-color" content="#0b3a4a" />
   </head>
   <body>

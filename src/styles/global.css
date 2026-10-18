@@ -943,6 +943,14 @@ input[type='range'] {
   font-size: 0.82rem;
   max-width: 70ch;
 }
+.app-footer a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.app-footer a:hover {
+  color: var(--text);
+}
 
 .tag {
   display: inline-block;

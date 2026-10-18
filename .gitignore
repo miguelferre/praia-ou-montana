@@ -34,3 +34,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 *.local
+
+# configuración local de la app de escritorio
+.claude/launch.json
