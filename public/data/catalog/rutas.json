@@ -4897,5 +4897,28 @@
         "cocheMin": 189
       }
     }
+  },
+  {
+    "id": "osm-21634066",
+    "osmRelationId": 21634066,
+    "nombre": "Ruta da Fontaneira",
+    "concello": "Baleira",
+    "latInicio": 43.03468,
+    "lonInicio": -7.1994,
+    "km": 10,
+    "desnivelPosM": 1007,
+    "tipo": "circular",
+    "dificultad": "alta",
+    "travel": {
+      "santiago": {
+        "cocheMin": 110
+      },
+      "esteiro": {
+        "cocheMin": 144
+      },
+      "sanxenxo": {
+        "cocheMin": 153
+      }
+    }
   }
 ]
